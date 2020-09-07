@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 11 Cálculo de primitivas | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 11 Cálculo de primitivas | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 11 Cálculo de primitivas | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 11 Cálculo de primitivas | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="utilidad-del-concepto-de-derivada.html"/>
+<link rel="next" href="ecuaciones-diferenciales.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="cálculo-de-primitivas" class="section level1">
+<h1><span class="header-section-number">Capítulo 11</span> Cálculo de primitivas</h1>
+<p>En el apartado <a href="derivadas-e-integrales.html#defint">8.8</a> definimos integral de la función <span class="math inline">\(f(x)\)</span> como el área bajo la curva de esta función. Y vimos en el apartado <a href="derivadas-e-integrales.html#TFC">8.9</a> que si <span class="math inline">\(F(x)\)</span> es la función del área bajo la curva desde un punto inicial hasta <span class="math inline">\(x\)</span>, entonces <span class="math inline">\(F^\prime(x) = f(x)\)</span>. A esto lo llamamos el Teorema Fundamental del Cálculo.</p>
+<p>También vimos que la integral se puede usar para mucho más que para calcular areas. En nuestro ejemplo de partida lo usamos para calcular distancias recorridas apartir de la velocidad. Posiblemente el cálculo de areas es una utilidad menor. Las integrales se usan primordialmente para calcular energías, voltajes, masas, temperaturas, dinero, probabilidades… Cualquier cosa que podamos establecer como una suma de muchas (infinitas) cantidades pequeñas. El cálculo de áreas bajo la curva es la abstracción que usan las matemáticas de todos estos problemas más concretos: nos olvidamos de la energías, voltajes, etc, y nos concentramos en una función <span class="math inline">\(f(x)\)</span> y su área.</p>
+<div id="regla-de-barrow" class="section level2">
+<h2><span class="header-section-number">11.1</span> Regla de Barrow</h2>
+<p>Hay un primer problema que nos encontramos, que por suerte tiene una solución simple: hemos dicho que <span class="math inline">\(F(x)\)</span> nos da el área dede una cierta posición inicial. ¿Qué posición inicial es esa? Porque para diferentes posiciones iniciales la función será diferente. Resolvamos este primer problema en un ejemplo concreto.</p>
+<p>Supongamos que nuestra función es una recta, por ejemplo <span class="math inline">\(f(x) = x/3\)</span> y que nuestra posición inicial es <span class="math inline">\(x = 0\)</span>.</p>
+<p><img src="imagenes/Barrow1.jpeg" /><!-- --></p>
+<p>El área a calcular es un triángulo, de base <span class="math inline">\(x\)</span> y de altura <span class="math inline">\(f(x) = x/3\)</span>, luego la función, que llamaremos <span class="math inline">\(F_0(x)\)</span>, es el área del triángulo desde 0 hasta <span class="math inline">\(x\)</span>:
+<span class="math display">\[F(x) = \frac{1}{2} x \frac{x}{3} = \frac{x^2}{6}\]</span>
+Nótese que, como debía pasar, <span class="math inline">\(F_0^\prime(x) = f(x)\)</span>. Si nos interesa el área bajo la curva entre el punto <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 5\)</span>, lo calculamos con facilidad: <span class="math inline">\(F(5) = \frac{5^2}{6} = 4.1667\)</span>.</p>
+<p>pero digamos que no queremos en área entre <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 5\)</span>, sino que queremos empezar en <span class="math inline">\(x = 3\)</span>, es decir, queremos el área entre <span class="math inline">\(x = 3\)</span> y <span class="math inline">\(x = 5\)</span>. La solución es simple: el área entre <span class="math inline">\(x = 3\)</span> y <span class="math inline">\(x = 5\)</span> es el área entre <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 5\)</span> menos el área entre <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 3\)</span>:</p>
+<p><img src="imagenes/Barrow1.jpeg" /><!-- --></p>
+<p>Luego el área que nos interesa es</p>
+<p><span class="math display">\[F(5) - F(3) = \frac{5^2}{6} - \frac{3^2}{6} = \frac{16}{6} = 2.667\]</span></p>
+<p>A esto se le llama la regla de Barrow:</p>
+<p><span class="math display">\[\int_a^b f(x)dx = F(b) - F(a) \]</span></p>
+<hr />
+<p>Otra manera de resolver este problema sería crear una nueva función, que podemos llamar <span class="math inline">\(F_3(x)\)</span>, que calcula el área, pero empezando en <span class="math inline">\(x=3\)</span>. Esta función es
+<span class="math display">\[F_3(x) = F_0(x) - \frac{9}{6} = \frac{x^2}{6} - 1.5\]</span>
+Vemos que la derivada de <span class="math inline">\(F_3(x)\)</span> también es <span class="math inline">\(f(x)\)</span>.</p>
+<p>Observamos que no hay una única función <span class="math inline">\(F(x)\)</span> sino toda una familia de la forma <span class="math inline">\(F(x) + C\)</span>. A la función <span class="math inline">\(F(x)\)</span> se le llama la <em>primitiva</em> de <span class="math inline">\(f(x)\)</span> y a <span class="math inline">\(C\)</span>, la <em>constante de integración</em>.</p>
+<p>La forma de representar el cálculo de una primitiva es
+<span class="math display">\[\int f(x)dx\]</span>
+sin límites superior e inferior en el símbolo de la integral. A esto se le llama también una integral <em>indefinida</em> y el resultado es una función. la primitiva. En cambio, si ponemos los límites de integración:
+<span class="math display">\[\int_a^b f(x)dx\]</span>
+recibe el nombre de integral <em>definida</em> y el resultado es, en general, un número.</p>
+<hr />
+<p>Para calcular la derivada de una función <span class="math inline">\(f(x)\)</span> teníamos que calcular un límite, lo cual es relativamente simple. Pero para calcular la integral de una función tenemos que calcular una suma (infinita)y esto, salvo casos muy simples, no los sabemos hacer. Por lo tnato lo que se hace es buscar una función <span class="math inline">\(F(x)\)</span> tal que su derivada es <span class="math inline">\(f(x)\)</span>. Eso es a menudo posible, pero en general no es fácil.</p>
+<p>Por suerte hay algunas técnicas que no son excesivamente complicadas y que nos permitirá calcular la mayoría de las integrales que suelen aparecer en la práctica. El objetivo de este capítulo es dominar estas técnicas para así poder calcular con agilidad integrales simples y de complejidad media.</p>
+</div>
+<div id="técnica-1-cuadro-de-primitivas-elementales" class="section level2">
+<h2><span class="header-section-number">11.2</span> Técnica 1: Cuadro de primitivas elementales</h2>
+<p>La primera técnica es el punto de partida de todas las demás. Es muy simple, pero aburrida y con poco <em>glamour</em>: consiste en saberse de memoria unas cuantas primitivas elementales. No es simplemente saberlas, hay que dominarlas. La diferencia entre saber y dominar es esta: cuando una simplemente sabe algo, tiene que buscar la solución, pero cuando lo domina, la solución le “salta” a la mente. Cuando un mira una integral y de repnete “ve” que hay que hacerla por partes, es porque domina las primitivas elementales (y tiene práctica).</p>
+<p>Dominar la tabla es muy fácil: repeteición, repetición, repetición, práctica, práctica, práctica. Sí, es unproceso árido. Pero para llegar al oasis, primero hay que pasar por el desierto.</p>
+<p>No hay una lista oficial de primitivas elementales, pero con la docena que hay en el cuadro siguiente, tenemos lo suficietne para resolver la mayoría de las integrales que salen habitualmente.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right"><span class="math inline">\(f(x)\)</span></th>
+<th align="left"><span class="math inline">\(F(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">$dx $</td>
+<td align="left"><span class="math inline">\(x\)</span> + C</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\int x^{n} dx\)</span></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\int \frac{dx}{\sqrt{x}}\)</span></td>
+<td align="left"><span class="math inline">\(2\sqrt{x}\)</span> + C</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\int a^x dx\)</span></td>
+<td align="left"><span class="math inline">\(\frac{a^x}{\log(a)}\)</span> + C</td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\int e^x dx\)</span></td>
+<td align="left"><span class="math inline">\(e^x\)</span> + C</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\int \frac{dx}{x}\)</span></td>
+<td align="left"><span class="math inline">\(\log(|x|)\)</span> + C</td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\int \sin(x) dx\)</span></td>
+<td align="left"><span class="math inline">\(-\cos(x)\)</span> + C</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\int \cos(x) dx\)</span></td>
+<td align="left"><span class="math inline">\(\sin(x)\)</span> + C</td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\int \tan(x) dx\)</span></td>
+<td align="left"><span class="math inline">\(-\log(|\cos(x)|)\)</span> + C</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\int \frac{dx}{\cos^2(x)}\)</span></td>
+<td align="left"><span class="math inline">\(\tan(x)\)</span> + C</td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\int \frac{dx}{\sqrt{1 - x^2}}\)</span></td>
+<td align="left"><span class="math inline">\(\arcsin(x)\)</span> + C</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\int \frac{dx}{1 + x^2}\)</span></td>
+<td align="left"><span class="math inline">\(\arctan(x)\)</span> + C</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>Como en el caso de las derivadas, la <span class="math inline">\(n\)</span> de <span class="math inline">\(x^n\)</span> no tiene por qué ser un entero. Por lo tanto, aunque no aparezca explícitamente, tenemos en el cuadro la primitiva de <span class="math inline">\(\sqrt{x} = x^{1/2}\)</span>.</p>
+<p>Hemos añadido la constante de integración en todas las primitivas elementales. Ya hemos visto que a la hora de caqlcular integrales definidas la constante de integración no se usa. Hay que recordar que está ahí, pero para simplificar la notación, no la añadiremos más.</p>
+</div>
+<div id="técnica-2-tres-teoremas-básicos" class="section level2">
+<h2><span class="header-section-number">11.3</span> Técnica 2: Tres teoremas básicos</h2>
+<p>Muy a menudo las funciones a integrar no tienen exactamente la forma del cuadro de primitivas elementales y hay que manipularlas un poco. Para esto tenemos estos tres teoremas. Si recordamos que una integral es la supericie bajo la curva, son casi evidentes y no vamos a demostrar su veracidad. Sólo demostraremos su uso.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-110" class="theorem"><strong>Teorema 11.1  </strong></span><span class="math display">\[\int cf(x) dx = c \int f(x) dx\]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-111" class="example"><strong>Ejemplo 11.1  </strong></span>Calcula <span class="math inline">\(\int 3 \cos (x) dx\)</span>.</p>
+La solución en este caso es muy simple:
+<span class="math display">\[\int 3 \cos (x) dx = 3\int  \cos (x) dx = 3 \sin(x)\]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-112" class="example"><strong>Ejemplo 11.2  </strong></span>Calcula <span class="math inline">\(\int \frac{dx}{\sqrt{6x}}\)</span>.</p>
+La solución en este caso es un poco menos obvia:
+<span class="math display">\[\int \frac{dx}{\sqrt{6x}} = \int \frac{dx}{\sqrt{6}\sqrt{x}} = \int \frac{1}{\sqrt{6}}\frac{dx}{\sqrt{x}} =  \frac{1}{\sqrt{6}} \int\frac{dx}{\sqrt{x}} = \frac{1}{\sqrt{6}}\, 2\sqrt{x}\]</span>
+</div>
+
+<hr />
+El segundo teorema nos permite tratar la suma y resta de funciones.
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-113" class="theorem"><strong>Teorema 11.2  </strong></span><span class="math display">\[\int (f(x) \pm g(x)) dx = \int f(x) dx \pm \int g(x) dx\]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-114" class="example"><strong>Ejemplo 11.3  </strong></span>Calcula <span class="math inline">\(\int (\frac{1}{x} + 3e^x) dx\)</span>.</p>
+Este ejemplo es otra vez muy simple:
+<span class="math display">\[\int (\frac{1}{x} + 3e^x) dx = \int \frac{1}{x}dx + \int 3e^x dx =
+\log(|x|) + 3 e^x \]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-115" class="example"><strong>Ejemplo 11.4  </strong></span>Calcula <span class="math inline">\(\int \frac{x+5}{x^2} dx\)</span>.</p>
+Necesitamos una simple manipulación algebraica:
+<span class="math display">\[\int \frac{x+5}{x^2} dx = \int (\frac{x}{x^2} + \frac{5}{x^2}) dx =
+\int (\frac{1}{x} + \frac{5}{x^2}) dx = \log(|x|) + 5 \frac{x^3}{3}\]</span>
+</div>
+
+<hr />
+<p>Este tercer teorema no es realmente de cálculo de primitivas, sino de cálculo de integrales definidas. Debe aplicarse cuando la función está definda a trozos, o cuando en algún punto tenemos una discontinuidad o la función no es derivable.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-116" class="theorem"><strong>Teorema 11.3  </strong></span>Dado un valor <span class="math inline">\(c\)</span> tal que <span class="math inline">\(a &lt; c &lt; b\)</span>, entonces
+<span class="math display">\[\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^b f(x) dx\]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-117" class="example"><strong>Ejemplo 11.5  </strong></span>Calcula <span class="math inline">\(\int_{-3}^1 |x| dx\)</span>.</p>
+<p>En el punto <span class="math inline">\(x=0\)</span> la función no es derivable, y debemos dividir nuestra integral en dos:</p>
+<span class="math display">\[\int_{-3}^1 |x| dx = \int_{-3}^0 -x\, dx \int_0^1 x\, dx = \left.\frac{-x^2}{2}\right|_{-3}^0 + \left.\frac{x^2}{2}\right|_0^1 = 
+     \left(0 - \frac{-9}{2}\right) + \left(\frac{1}{2} - 0\right) = 5\]</span>
+</div>
+
+</div>
+<div id="técnica-3-cambio-de-variable" class="section level2">
+<h2><span class="header-section-number">11.4</span> Técnica 3: Cambio de variable</h2>
+<p>Cuando derivábamos, partíamos de las derivadas elementales, por ejemplo, derivada de <span class="math inline">\(\sin(x)\)</span> es <span class="math inline">\(\cos(x)\)</span>, y sabíamos que si lo que había en el paréntesis no era <span class="math inline">\(x\)</span> sino alguna expresión más compleja, que llamábamos <span class="math inline">\(u\)</span>, teníamos que aplicar la regla de la cadena: la derivada de <span class="math inline">\(\sin(u)\)</span> es <span class="math inline">\(u^\prime\cos(u)\)</span>.</p>
+<p>En el mundo de las integrales, esta misma idea la llevamos a cabo mediante la técnica del <em>cambio de variable</em>.</p>
+<p>Digamos que queremos calcular <span class="math inline">\(\int \cos(3x+1) dx\)</span>. Conocemos la primitiva elemental de <span class="math inline">\(\cos(x)\)</span>, pero lo que tenemos dentro del paréntesis no es <span class="math inline">\(x\)</span>, sino <span class="math inline">\(3x +1\)</span>. Hacemos el cambio de variable <span class="math inline">\(u = 3x +1\)</span> y así tenemos <span class="math inline">\(\cos(u)\)</span>. En el caso de las integrales tenemos un problema adicional: si la variable es <span class="math inline">\(u\)</span> no podemos tener <span class="math inline">\(dx\)</span> sino que tenemos que tener <span class="math inline">\(du\)</span>. Esto se arregla derivando la función <span class="math inline">\(u = 3x + 1\)</span>:</p>
+<p><span class="math display">\[\frac{du}{dx} = \frac{d(3x+1)}{dx} = 3. \]</span>
+Despejando el <span class="math inline">\(dx\)</span> nos queda
+<span class="math display">\[dx = \frac{1}{3}\, du.\]</span></p>
+<p>Entonces nuestra integral queda
+<span class="math display">\[\int \cos(3x+1) dx = \int \frac{1}{3}\cos(u) du = \frac{1}{3}\sin(u)\]</span>
+Y ahora hemos de deshacer el cambio:
+<span class="math display">\[\int \cos(3x+1) dx =  \frac{1}{3}\sin(3x + 1)\]</span></p>
+<p>Con un poco de práctica estos casos tan simples se hacen de cabeza.</p>
+<p>Veamos algunos ejemplos más.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-118" class="example"><strong>Ejemplo 11.6  </strong></span>Calcula <span class="math inline">\(\int e^{-x/3} dx\)</span>.</p>
+<p>Este es un caso muy similar al del coseno hecho antes. El cambio de variable es <span class="math inline">\(-x/3 = u\)</span> lo que implica que <span class="math inline">\(dx = -3 du\)</span>. Y entonces nos queda</p>
+<span class="math display">\[\int e^{-x/3} dx = \int -3 e^u du = -3 e^u \]</span>
+Deshacemos el cambio de variable:
+<span class="math display">\[\int e^{-x/3} dx =  -3 e^u = -3 e^{-x/3}\]</span>
+</div>
+
+<p>Este tipo de integrales aparecen a menudo y uno acaba reconvirtiendo la primitiva elemental a <span class="math inline">\(\int e^{ax} dx = \frac{1}{a} e^x\)</span>, <span class="math inline">\(\int \cos(ax) dx = \frac{1}{a}\sin(ax)\)</span>, etc.</p>
+<hr />
+<p>Veamos algún caso un poco más complejo.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-119" class="example"><strong>Ejemplo 11.7  </strong></span>Calcula <span class="math inline">\(\int \frac{3}{(x/2) - 1} dx\)</span>.</p>
+El 3 del numerador no nos molesta, lo podemos sacar fuera de la integral. Sabemos que <span class="math inline">\(\int \frac{dx}{x}\)</span> es el logaritmo, luego hacemos el cambio de variable <span class="math inline">\(\frac{x}{2} - 1 = u\)</span>, lo que implica que <span class="math inline">\(dx = 2\,du\)</span>. Entonces nos queda
+<span class="math display">\[\int \frac{3}{\frac{x}{2} - 1} dx = \int \frac{3}{u} 2\,du = 6\log(|u|). \]</span>
+Deshaciendo el cambio de variable nos queda:
+<span class="math display">\[\int \frac{3}{\frac{x}{2} - 1} dx =  6\log(|\frac{x}{2} - 1|). \]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-120" class="example"><strong>Ejemplo 11.8  </strong></span>Calcula <span class="math inline">\(\int x\sqrt{3x^2 -5}\, dx\)</span>.</p>
+Al ver esta integral es muy fácil que un novato se quede parado. No hay que desesperar, sino ir probando cosas. Hay una raíz cuadrada (o <span class="math inline">\(x^{1/2}\)</span>) y nos sabemos la primitiva inmediata de <span class="math inline">\(x^n\)</span> (si no se dominan las primitivas, es mucho más difícil ver esto). Probamos el cambio de variable <span class="math inline">\(u = 3x^2 -5\)</span>, lo que implica que <span class="math inline">\(du = 6x\, dx\)</span>. Tenemos un <span class="math inline">\(x\,dx\)</span>, y a partir de aquí todo es fácil:
+<span class="math display">\[\int x\sqrt{3x^2 -5} \,dx = \int \frac{1}{6} u^{1/2}du = 
+       \frac{1}{6} \frac{2}{3}u^{3/2} \]</span>
+Y ahora deshacemos el cambio de variable:
+<span class="math display">\[\int x\sqrt{3x^2 -5}\, dx = \frac{1}{9} \sqrt{(3x^2 -5)^3}\]</span>
+</div>
+
+<hr />
+<p>Vemos en este ejemplo que si en la función a integrar está una cosa y su derivada, el cambio de variable puede ser el camino.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-121" class="example"><strong>Ejemplo 11.9  </strong></span>Calcula <span class="math inline">\(\int \frac{\log(x)}{x}\,dx\)</span>.</p>
+<p>Si dominamos las derivadas, casi nos salta a la vista que tenemos una cosa (<span class="math inline">\(\log(x)\)</span>) y su derivada (<span class="math inline">\(1/x\)</span>). Esto nos sugiere el cambio de variable <span class="math inline">\(u = \log(x)\)</span>, quedando <span class="math inline">\(du = \frac{dx}{x}\)</span>:</p>
+<span class="math display">\[\int \frac{\log(x)}{x}\,dx = \int u\, du = \frac{u^2}{2} = \frac{log^2(x)}{2} \]</span>
+</div>
+
+<hr />
+<p>La técnica del cambio de variable permite resolver muchas más integrales, pero no todas, como vemos en el siguiente ejemplo.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-122" class="example"><strong>Ejemplo 11.10  </strong></span>Calcula <span class="math inline">\(\int x^2 \cos(3x) \,dx\)</span>.</p>
+Probamos el cambio de variable <span class="math inline">\(3x = u\)</span> lo que implica que <span class="math inline">\(dx = du\)</span>. Desgraciadamente tenemos un <span class="math inline">\(x^2\)</span> que nos impide continuar. Ese cambio de variable no va a resolver esta integral.
+</div>
+
+<p>Esta integral es fácilmente resoluble, pero hemos de utilizar otra técnica: la integración por partes.</p>
+</div>
+<div id="técnica-4-integración-por-partes" class="section level2">
+<h2><span class="header-section-number">11.5</span> Técnica 4: Integración por partes</h2>
+<p>La integración por partes es un técnica muy útil y que proviene directamente de la derivada del producto. Recordamos que
+<span class="math display">\[(f\cdot g)^\prime = f^\prime \cdot g + f\cdot g^\prime.\]</span>
+De aquí:
+<span class="math display">\[f\cdot g^\prime = (f\cdot g)^\prime - f^\prime \cdot g .\]</span>
+Ahora integramos todo:
+<span class="math display">\[\int f\cdot g^\prime dx = \int (f\cdot g)^\prime dx - \int f^\prime \cdot g\, dx = f\cdot g - \int f^\prime \cdot g\, dx.\]</span></p>
+<p>Esta expresión normalmente se escribe como
+<span class="math display">\[\int u \, dv = uv - \int v\, du\]</span></p>
+<p>A primera vista parece que no hemos ganado mucho: pasamos de una integral, <span class="math inline">\(\int u \, dv\)</span> a otra, <span class="math inline">\(\int v\, du\)</span>. Cuando la aprendí, me pareció una técnica “antipática”. Pero eso es porque no la entendí. Sospecho que el <span class="math inline">\(dv\)</span> y <span class="math inline">\(du\)</span> servían más para confundirme que otra cosa. En esta sección vamos a entender qué hace la integral por partes y después describiremos un método, el método DI, que ayuda utilizar con facilidad esta técnica.</p>
+<p>En la integral se parte del producto de dos funciones, <span class="math inline">\(u\)</span> y <span class="math inline">\(v\)</span>. Pasamos de <span class="math inline">\(\int u \, dv\)</span> a <span class="math inline">\(\int v\, du\)</span>, eso quiere decir que hemos de saber integrar la función <span class="math inline">\(v\)</span> (pasa de <span class="math inline">\(dv\)</span> a <span class="math inline">\(v\)</span>) y derivar la función <span class="math inline">\(u\)</span> (pasa de <span class="math inline">\(u\)</span> a <span class="math inline">\(du\)</span>). Expliquemos su uso con un ejemplo.</p>
+<p>Tenemos <span class="math inline">\(\int x \cos(x) \,dx\)</span>. Dejamos de lado el <span class="math inline">\(dx\)</span> y vemos que tenemos dos funciones: <span class="math inline">\(x\)</span> y <span class="math inline">\(\cos(x)\)</span>. Decidimos derivar <span class="math inline">\(x\)</span> e integrar <span class="math inline">\(\cos(x)\)</span>, es decir, <span class="math inline">\(u = x\)</span> y <span class="math inline">\(dv = \cos(x)\)</span>. La derivada de <span class="math inline">\(x\)</span> es 1, y la primitiva de <span class="math inline">\(\cos(x) = \sin(x)\)</span>, es decir <span class="math inline">\(du = dx\)</span> y <span class="math inline">\(v = \sin(x)\)</span>. Entonces nos queda
+<span class="math display">\[\int x \cos(x) \,dx = x\, \sin(x) - \int \sin(x)\, dx\]</span>
+Nos queda <span class="math inline">\(\int \sin(x)\, dx\)</span>, que es inmediata:
+<span class="math display">\[\int x \cos(x) \,dx = x\, \sin(x) + \cos(x)\]</span></p>
+<p>Esto lo podemos poner en forma tabular:
+<span class="math display">\[\begin{array}{cccc}
+       &amp; D &amp;  &amp; I\\
+    + &amp; x &amp; &amp; \cos(x)\\
+     &amp;    &amp; \searrow &amp; \\
+    - &amp; 1 &amp; &amp; \sin(x) 
+     \end{array}\]</span></p>
+<p>La columna <span class="math inline">\(D\)</span> es la función que vamos derivando, y la columna <span class="math inline">\(I\)</span> es la que vamos integrando. La diagonal (indicado con la flecha) representa el el producto <span class="math inline">\(uv\)</span>, mientras que la segunda fila es la integral <span class="math inline">\(-\int 1\cdot \sin(x)\, dx\)</span>. Los signos de la primera columna nos indica que es <span class="math inline">\(+uv\)</span> y <span class="math inline">\(- \int v\, du\)</span>. Esta tabla DI nos ordena un poco lo que hemos hecho, pero no parece que sea de mucha ayuda. Pero si añadimos otra fila, derivando e integrando lo que tenemos en la segunda fila:
+<span class="math display">\[\begin{array}{cccc}
+       &amp; D &amp;  &amp; I\\
+    + &amp; x &amp; &amp; \cos(x)\\
+     &amp;    &amp; \searrow &amp; \\
+    - &amp; 1 &amp; &amp; \sin(x)\\ 
+     &amp;    &amp; \searrow &amp; \\
+    + &amp; 0 &amp; &amp; -\cos(x)\\ 
+     \end{array}\]</span>
+las dos diagonales nos dan los dos productos, y la tercera fila es la integral, que como es 0, no hay que hacer. Obtenemos el resultado directamente:</p>
+<p><span class="math display">\[\int x \cos(x) \,dx = + x\, \sin(x) - 1\cdot (- \cos(x)) = x\, \sin(x) + \cos(x)\]</span></p>
+<p>No he explicado por qué he decidido integrar <span class="math inline">\(\cos(x)\)</span> y derivar <span class="math inline">\(x\)</span>. Podíamos haberlo escogido al revés. Vamos a crear la tabla DI con esta otra elección (ya sin las flechas) y ver qué pasa:</p>
+<p><span class="math display">\[\begin{array}{ccc}
+       &amp; D &amp;   I\\
+    + &amp; \cos(x) &amp; x\\
+    - &amp; -\sin(x) &amp; \frac{x^2}{2}\\ 
+    + &amp; -\cos(x) &amp;  \frac{x^3}{6}\\ 
+     \end{array}\]</span></p>
+<p>Vemos que con esta elección cada fila es más complicada que la anterior y no llegamos a ninguna parte.</p>
+<p>Vamos a ver 3 ejemplos de integración con el método DI, cada uno con sus características propias.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-123" class="example"><strong>Ejemplo 11.11  </strong></span>Calcula <span class="math inline">\(\int 5 x^2 \sin(3x) dx\)</span>.</p>
+<p>Este es una función similar a la vista. Vamos a derivar <span class="math inline">\(x^2\)</span> y a integrar <span class="math inline">\(\sin(3x)\)</span>. No es una integral inmediata, pero casi. Creamos la tabla DI:</p>
+<span class="math display">\[\begin{array}{ccc}
+       &amp; D &amp;   I\\
+     + &amp; x^2 &amp; \sin(3x)\\
+     - &amp; 2x &amp; -\frac{1}{3}\cos(3x)\\
+     + &amp; 2 &amp; -\frac{1}{9}\sin(3x)\\
+     - &amp; 0 &amp; \frac{1}{27}\cos(3x)
+   \end{array}
+   \]</span>
+Paramos porque hemos obtenido un 0 en la columna <span class="math inline">\(D\)</span> y ya tenemos nuestra integral multiplicando las diagonales con su signo (sin olvidarnos del 5):
+<span class="math display">\[\int 5 x^2 \sin(3x) dx = 5 (- x^2 \frac{1}{3}\cos(3x) + 2x \frac{1}{9}\sin(3x) + 2 \frac{1}{27}\cos(3x))\]</span>
+</div>
+
+<p>En este caso hemos parado cuando hemos obtenido un 0 en la fila <span class="math inline">\(D\)</span>. Esto no pasa siempre. Veamos un caso en el que tenemos otra condición de parada diferente.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-124" class="example"><strong>Ejemplo 11.12  </strong></span>Calcula <span class="math inline">\(\int x^2 \log(x) dx\)</span>.</p>
+<p>Como no sabemos (todavía) integrar <span class="math inline">\(\log(x)\)</span>, vamos a integrar <span class="math inline">\(x^2\)</span> y derivar <span class="math inline">\(\log(x)\)</span>. Creamos la tabla DI:
+<span class="math display">\[\begin{array}{ccc}
+       &amp; D &amp;   I\\
+     + &amp; \log(x) &amp; x^2\\
+     - &amp; \frac{1}{x} &amp; \frac{x^3}{3}
+  \end{array}
+   \]</span></p>
+Recordamos que cada fila representa a una integral. Sabemos integrar la segunda fila, luego podemos parar aquí. Nos queda:
+<span class="math display">\[\begin{align}
+ \int x^2 \log(x) dx &amp; = \log(x) \frac{x^3}{3} -\int \frac{1}{x} \frac{x^3}{3} \,dx \\
+ &amp;= \frac{x^3\log(x)}{3} - \frac{1}{3}\int{x^2}\, dx \\
+ &amp;=  \frac{x^3\log(x)}{3} - \frac{x^3}{9} 
+\end{align}\]</span>
+</div>
+
+<p>La parada en esta caso la hemos hecho cuando hemos obtenido una fila que sabíamos integrar. Veamos una tercera condición de parada.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-125" class="example"><strong>Ejemplo 11.13  </strong></span>Calcula <span class="math inline">\(\int e^{2x} \cos(x) dx\)</span>.</p>
+Vamos a integrar <span class="math inline">\(e^{2x}\)</span> y derivar <span class="math inline">\(\cos(x)\)</span> (probad a hacerlo al revés). La tabla DI queda:
+<span class="math display">\[\begin{array}{ccc}
+       &amp; D &amp;   I\\
+     + &amp; \cos(x) &amp; e^{2x} \\
+      - &amp; -\sin(x) &amp; \frac{1}{2}e^{2x} \\
+     + &amp; -\cos(x) &amp;  \frac{1}{4}e^{2x}
+  \end{array}
+   \]</span>
+Vemos que la última fila es, salvo constantes y signos, igual que la primera. Esto quiere decir que hemos vuelto a llegar al punto de partida. Eso es bueno:
+<span class="math display">\[\int e^{2x} \cos(x) dx = \cos(x)\frac{1}{2}e^{2x} - (-\sin(x))\frac{1}{4}e^{2x} + \int -\frac{1}{4}e^{2x}\cos(x) dx \]</span>
+Pasamos la integral al otro lado:
+<span class="math display">\[\int e^{2x} \cos(x) dx + \frac{1}{4}\int e^{2x} \cos(x) dx = 
+     \frac{\cos(x)e^{2x}}{2}  + \frac{\sin(x) e^{2x}}{4}\]</span>
+Despejamos la integral, arreglamos un poco y nos queda:
+<span class="math display">\[\int e^{2x} \cos(x) dx = \frac{4}{5} \frac{e^{2x}}{2} \left(\cos(x)  + \frac{1}{2}\sin(x)\right) \]</span>
+</div>
+
+<hr />
+<p>Para resolver una integral por partes usando el método DI debemos:</p>
+<ol style="list-style-type: decimal">
+<li>Escoger qué vamos a integrar y qué vamos a derivar</li>
+<li>Crear la tabla DI, con signos alternados, derivando una columna e integrando la otra</li>
+<li>Paramos cuando se dé una de estas tres condiciones
+<ol style="list-style-type: decimal">
+<li>Tenemos un 0 en la columna D</li>
+<li>Sabemos integrar la fila</li>
+<li>La fila es igual, salvo signo o constantes, a una fila anterior</li>
+</ol></li>
+<li>A partir de las diagonales y, si es necesario, la integral de la última fila, resolvemos la integral de partida.</li>
+</ol>
+<p>Si nunca se da ninguna de las condiciones de parada es que esta integral no se resuelve por partes, al menos no con la elección que hemos hecho de lo que vamos a derivar y lo que vamos a integrar.</p>
+<hr />
+<p>Para acabar, vamos a integrar por partes algo que parece que no es un producto de dos funciones.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-126" class="example"><strong>Ejemplo 11.14  </strong></span>Calcula <span class="math inline">\(\int \log(x) dx\)</span>.</p>
+Aunque parece que sólo hay una función, tenemos dos: <span class="math inline">\(\log(x)\)</span> y <span class="math inline">\(1\)</span>. Vamos a derivar <span class="math inline">\(\log(x)\)</span> y a integrar el 1. Nos queda:
+<span class="math display">\[\int \log(x) dx = x \log(x) - \int x \frac{1}{x}\, dx = x \log(x) - x\]</span>
+</div>
+
+<hr />
+<p>Con las técnicas vistaas hasta ahora podemos resolver la mayoría de las integrales que nos aparecen. Veamos una última técnica para resolver cierto tipo de integrales que aparecen mucho en ingeniería. las funciones racionales.</p>
+</div>
+<div id="técnica-5-integración-de-funciones-racionales" class="section level2">
+<h2><span class="header-section-number">11.6</span> Técnica 5: Integración de funciones racionales</h2>
+<p>Una función racional es una función que es el cociente de dos polinomios, por ejemplo
+<span class="math display">\[f(x) = \frac{P(x)}{Q(x)} = \frac{3x^2 + 2}{x^3 - 4x^2 - 7x + 10}.\]</span>
+Integrar estas funciones tiene una parte algebraica, que es fácil, pero larga y pesada, y después la parte de cálculo que es simple. Pasaremos rápidamente por la parte algebraica, y nos detendremos un poco más en la parte de cálculo.</p>
+<div id="descomposición-en-fracciones-simples" class="section level3">
+<h3><span class="header-section-number">11.6.1</span> Descomposición en fracciones simples</h3>
+<p>Para poder integrar una función racional hemos de descomponer como una suma de fracciones simples, fracciones cuyo denominador son de la forma <span class="math inline">\(1\)</span> (es decir, sin denominador), <span class="math inline">\((x-a)\)</span>, <span class="math inline">\((x-a)^n\)</span> para algún entero <span class="math inline">\(n\)</span> o un polinomio cuadrático <span class="math inline">\(x^2 + bx + c\)</span> sin raíces reales. Esto siempre es posible. Es un proceso pesado, pero sin trampas.</p>
+<p>En nuestro ejemplo el grado del numerador <span class="math inline">\(P(x)\)</span>, es menor que el del denominador <span class="math inline">\(Q(x)\)</span>. Vamos a empezar por este caso. Lo primero que tenemos que hacer es encontrar las raíces de <span class="math inline">\(Q(x)\)</span>. Eso puede ser más o menos fácil. En este caso tiene 3 raíces reales, <span class="math inline">\(x = -2\)</span>, <span class="math inline">\(x = 1\)</span> y <span class="math inline">\(x = 5\)</span>. Esto quiere decir que <span class="math inline">\(Q(x) = (x+2)(x-1)(x-5)\)</span>. Sabiendo las raíces, podemos escribir nuestra función como
+<span class="math display">\[\frac{3x^2 + 2}{x^3 - 4x^2 - 7x + 10} = \frac{A}{x+2} + \frac{B}{x-1}+\frac{C}{x-5}\]</span>
+y es cuestión de encontrar los valores de <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> y <span class="math inline">\(C\)</span>. Para ello juntamos la suma de las tres fracciones en una:
+<span class="math display">\[\frac{A}{x+2} + \frac{B}{x-1}+\frac{C}{x-5} = \frac{A(x-1)(x-5) + B(x+2)(x-5) + C(x+2)(x-1)}{(x+2)(x-1)(x-5)}\]</span>
+Luego
+<span class="math display">\[\frac{3x^2 + 2}{x^3 - 4x^2 - 7x + 10} = \frac{A(x-1)(x-5) + B(x+2)(x-5) + C(x+2)(x-1)}{(x+2)(x-1)(x-5)}\]</span></p>
+<p>Los dos denominadores son iguales, luego los dos numeradores deben serlo también. Desarrollamos el numerador e igualamos. Esto nos da lugar a un sistema de ecuaciones cuya solución es
+<span class="math display">\[A = \frac{2}{3}; \qquad B = \frac{-5}{12}; \qquad C = \frac{11}{4}.\]</span>
+(En este caso hay un método más simple que resolver el sistema, pero no lo explico).</p>
+<p>Luego tras descomponer nuestra función racional en fraccions simples tenemos que
+<span class="math display">\[\frac{3x^2 + 2}{x^3 - 4x^2 - 7x + 10} = \frac{1/3}{x+2} - \frac{5/12}{x-1}+\frac{11/4}{x-5}\]</span>
+Y esta expresión es la que veremos cómo se integra.</p>
+<hr />
+<p>En el caso general podemos tener raíces simples, como las que hemos visto en el ejemplo anterior, raíces múltiples de la forma <span class="math inline">\((x-a)^n\)</span> y polinomios de segundo grado sin raíces reales. Supongamos que nuestro denominador <span class="math inline">\(Q(x)\)</span> tiene una raíz simple en <span class="math inline">\(x = 2\)</span>, una de multiplicidad 3 en <span class="math inline">\(x = -1\)</span> y una ecuación de segundo grado sin raíces reales <span class="math inline">\(x^2 -4x+5\)</span>. Esto quiere decir que podemos escribir <span class="math inline">\(Q(x)\)</span> como <span class="math inline">\((x-2)(x+1)^3(x^2 -4x+5)\)</span>. Entonces la descomposición de fraciones simples tiene la forma
+<span class="math display">\[\frac{P(x)}{Q(x)} = \frac{A}{x-2} + \frac{B_1}{x+1} + \frac{B_2}{(x+1)^2} + \frac{B_3}{(x+1)^3} + \frac{Mx + N}{x^2 -4x+5}\]</span>
+Para hallar los coeficientes juntamos todo en una única fracción, desarrollamos el numerador y lo igualamos a <span class="math inline">\(P(x)\)</span>. Esto nos da un sistema de 6 ecuaciones con 6 incógnitas, que resolvemos y obtenemos <span class="math inline">\(A, B_1, B_2, B_3, M y N.\)</span> Largo y tedioso, pero no difícil.</p>
+<hr />
+<p>Es importante saber cómo hacer esta descomposición, pero después dejaremos estas tareas tediosas y que consumen mucho tiempo al ordenador.
+***</p>
+<p>Hemos exigido que el grado del denominador sea estrictamente menor que el del numerador. ¿Qué hacemos si es mayor? En este caso hay que dividir los polinomios.</p>
+<p>Supongamos que tenemos la función racional
+<span class="math display">\[f(x) = \frac{x^4 + 3x^2 + x - 1}{x^3 + 2x^2}.\]</span>
+Esto lo queremos poner de la forma
+<span class="math display">\[D(x) + \frac{P(x)}{x^3 + 2x^2}.\]</span>
+Como el denominador es de grado 3 y <span class="math inline">\(P(x)\)</span> debe tener menor grado que el denominador, debe ser de grado 2. Como <span class="math inline">\(D(x)\cdot (x^3 + 2x^2)\)</span> debe tener el mismo grado que el numerador original, entonces <span class="math inline">\(D(x)\)</span> debe ser de grado 1. Luego nos queda la ecuación
+<span class="math display">\[\frac{x^4 + 3x^2 + x - 1}{x^3 + 2x^2} = A_1x + A_0 + \frac{B_2x^2 + B_1x + B_0}{x^3 + 2x^2}.\]</span>
+Recomponemos en una fracción la parte de la derecha y queda
+<span class="math display">\[\frac{x^4 + 3x^2 + x - 1}{x^3 + 2x^2} = \frac{(A_1x + A_0)(x^3 + 2x^2) + (B_2x^2 + B_1x + B_0)}{x^3 + 2x^2}.\]</span>
+Desarrollamos, igualamos los polinomios de los numeradores y resolvemos el sistema de ecuaciones. Nos queda que
+<span class="math display">\[\frac{x^4 + 3x^2 + x - 1}{x^3 + 2x^2} = x  -2 + \frac{7x^2 + x - 1}{x^3 + 2x^2}.\]</span></p>
+<p>Y ahora estamos preparados para descomponer la segunda parte en fracciones simples.</p>
+</div>
+<div id="integración-de-las-fracciones-simples" class="section level3">
+<h3><span class="header-section-number">11.6.2</span> Integración de las fracciones simples</h3>
+<p>Una vez hecha la parte algebraica, integrar es fácil. Nos quedan 3 tipos de fracciones que debemos integrar. Dos son inmediatas.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-127" class="example"><strong>Ejemplo 11.15  </strong></span>Calcula <span class="math inline">\(\int \frac{A}{x-a} dx\)</span>.</p>
+Se puede hacer el cambio de variable <span class="math inline">\(u = x-a\)</span>, pero realmente ya deberíamos ver a simple vista que la solución es
+<span class="math display">\[\int \frac{A}{x-a} dx = A \log(|x-a|) \]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-128" class="example"><strong>Ejemplo 11.16  </strong></span>Calcula <span class="math inline">\(\int \frac{A}{(x-a)^n} dx\)</span>.</p>
+Quizá se ve mejor si reescribimos la integral como <span class="math inline">\(\int A(x-a)^{-n} dx\)</span>. Se puede hacer el cambio de variable <span class="math inline">\(u = x-a\)</span>, pero, otra vez, deberíamos ver a simple vista que la solución es
+<span class="math display">\[\int \frac{A}{(x-a)^n} dx = \frac{-A}{(n-1)(x-a)^{n-1}}  \]</span>
+</div>
+
+<p>El tercer tipo de fracción es un poco más complicada.</p>
+<p>Queremos calcular <span class="math inline">\(\int \frac{Mx + N}{(x^2 + bx + c)} dx\)</span>.</p>
+<p>Hemos supuesto que el término en <span class="math inline">\(x^2\)</span> tiene coeficiente 1. Si es otra cosa, es cuestión de multiplicar o dividir, lo que sea más fácil.</p>
+<p>También hemos supuesto que este polinomio no tiene raíces reales. Esto quiere decir que el discriminante <span class="math inline">\(b^2 - 4c\)</span> es negativo. En este caso, podemos reescribir el polinomio como
+<span class="math display">\[(x- \frac{b}{2})^2 + \frac{4c - b^2}{4}.\]</span>
+Como nos estamos quedando sin letras, aunque sea un poco confuso, lo escribiremos como <span class="math inline">\((x-a)^2 + b\)</span>.</p>
+<p>Pueden comprobar efectivamente que
+<span class="math display">\[x^2 + 2x + 4 = \left(x + \frac{2}{2}\right)^2 + \frac{4\cdot 4 - 2^2}{4} = (x+1)^2 + 3.\]</span></p>
+<p>Hemos de distinguir entre dos casos. El primer caso es que al resover el sistema de ecuaciones hemos obtenido <span class="math inline">\(M = 0\)</span>, es decir, que nuestra fracción simple es del tipo
+<span class="math display">\[\frac{N}{(x-a)^2 + b}.\]</span>
+Si miramos la lista de primitivas inmediatas se parece a la del arctan(x). Necesitamos un 1 en el denominador. Para ello dividimos todo por <span class="math inline">\(b\)</span>. Nos queda:
+<span class="math display">\[\frac{N}{b} \int \frac{1}{\left(\frac{x-a}{\sqrt{b}}\right)^2 + 1} \,dx\]</span>
+El cambio de variable que necesitamos es
+<span class="math display">\[ u = \frac{x-a}{\sqrt{b}}\]</span>
+y tenemos que <span class="math inline">\(dx = \sqrt{b}\,du\)</span>. La integral queda
+<span class="math display">\[\frac{N}{b} \int \frac{\sqrt{b}}{u^2 + 1}\,du.\]</span>
+Y esta ya es inmediata. Resolviendo y deshaciendo el cambio de variable nos queda
+<span class="math display">\[\int \frac{N}{(x-a)^2 + b}\,dx = \frac{N}{\sqrt{b}} \arctan\left(\frac{x-a}{\sqrt{b}}\right).\]</span></p>
+<p>El segundo caso es cuando <span class="math inline">\(M ≠ 0\)</span>. Tenemos
+<span class="math display">\[\int \frac{Mx + N}{(x-a)^2 + b}\,dx\]</span>
+Queremos hacer el cambio de variable <span class="math inline">\((x-a)^2 + b = u\)</span>. Más adelante se entenderá el porqué de este cambio de variable. Este cambio da lugar a <span class="math inline">\(2(x-a)dx = du\)</span>. Luego queremos un 2 multiplicando en el numerador a la <span class="math inline">\(x\)</span>. Eso es fácil:
+<span class="math display">\[\frac{2}{M} \int \frac{2x + \frac{2N}{M}}{(x-a)^2 + b}\,dx\]</span>
+Como queremos un <span class="math inline">\(2(x-a) = 2x - 2a\)</span> en el numerador, sumamos y restamos <span class="math inline">\(2a\)</span>:
+<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a + \frac{2N}{M} +2a}{(x-a)^2 + b}\,dx\]</span>
+Y ahora dividimos la integral en 2:
+<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx + \frac{2}{M} \int \frac{\frac{2N}{M} +2a}{(x-a)^2 + b}\,dx\]</span></p>
+<p>La segunda integral es la del <span class="math inline">\(\arctan\)</span> que acabamos de hacer. Vayamos con la primera. Hacemos el cambio de variable:
+<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx  = \frac{2}{M} \int \frac{du}{u}.\]</span>
+Ahora se entiende el cambio de variable: esto es un logaritmo:
+<span class="math display">\[\frac{2}{M} \int \frac{du}{u} = \frac{2}{M} \log(|u|).\]</span>
+Deshacemos el cambio de variable:
+<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx  = \frac{2}{M} \log(|(x-a)^2 +b|)\]</span></p>
+<hr />
+<p>Vemos que integrar funciones racionales es un pproceso sin misterios, pero que puede ser largo y tedioso. A veces muy largo y muy tedioso. Pero en algunas áreas estas integrales son muy habituales y hay que saber hacerlas (aunque luego se las “encarguemos” al ordenador).</p>
+<p>Acabemos con un último ejemplo.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-129" class="example"><strong>Ejemplo 11.17  </strong></span>Calcula
+<span class="math display">\[\int \frac{3x^3 - 3x^2 + 16x -17}{x^4 - 2x^3 + x^2 + 12x +8} \, dx\]</span></p>
+<p>Probando vemos que tiene una raíz en <span class="math inline">\(x = 1\)</span> (que resulta ser doble), y no tiene más raíces reales. Podemos escribir la función como
+<span class="math display">\[\frac{A_1}{x+1} + \frac{A_1}{(x+1)^2} + \frac{Mx + N}{x^2 - 4x + 8}\]</span></p>
+<p>Encontramos los valores de los coeficientes y nos queda:</p>
+<p><span class="math display">\[\frac{1}{x+1} - \frac{3}{(x+1)^2} + \frac{2x -1}{(x-2)^2 +4}\]</span></p>
+<p>Las primera integral es inmediata:</p>
+<p><span class="math display">\[\int \frac{dx}{x+1} = \log(|x+1|)\]</span></p>
+<p>y la segunda también:</p>
+<p><span class="math display">\[\int \frac{-3}{(x+1)^2}\,dx = \frac{3}{x+1}\]</span></p>
+<p>Vamos a arreglar la tercera. Queremos hacer el cambio de variable <span class="math inline">\(u = (x-2)^2 +4\)</span>. Esto nos deja <span class="math inline">\(du = (2x - 4)\, dx\)</span>. Arreglamos el numerador:</p>
+<p><span class="math display">\[\int \frac{2x -1}{(x-2)^2 +4}\, dx = \int \frac{2x -4 + 3}{(x-2)^2 +4}\, dx\]</span></p>
+<p>Y ahora dividimos en dos y resolvemos cada integral por separado. Empecemos con la primera:
+<span class="math display">\[\int \frac{2x -4}{(x-2)^2 +4}\, dx.\]</span></p>
+<p>Hacemos el cambio de variable <span class="math inline">\(u = (x-2)^2 +4\)</span> y resolvemos
+<span class="math display">\[\int \frac{2x -4}{(x-2)^2 +4}\, dx = \int \frac{du}{u} = \log(|u|) = \log((x-2)^2 +4)\]</span>
+(Podemos olvidarnos del valor absoluto, pues es siempre positivo).</p>
+<p>Vamos con la segunda integral:
+<span class="math display">\[\int \frac{3}{(x-2)^2 +4}\, dx\]</span></p>
+<p>Hemos de arreglarlo para tener un 1 en el numerador y que se sume 1 en el denominador:
+<span class="math display">\[\frac{3}{4}\int \frac{dx}{\left(\frac{x-2}{2}\right)^2 + 1}\]</span></p>
+<p>Hacemos el cambio de variable <span class="math inline">\(u = \frac{x-2}{2}\)</span> lo que implica que <span class="math inline">\(dx = 2\,du\)</span>. Sacamos de la integral (y simplificamos) 2 que ha aparecido en el numerador y queda:
+<span class="math display">\[\frac{3}{2}\int \frac{du}{u^2 + 1}\]</span>
+Y ahora es inmediata
+<span class="math display">\[\frac{3}{2}\int \frac{du}{u^2 + 1} = \frac{3}{2}\arctan(u) = \frac{3}{2}\arctan\left(\frac{x-2}{2}\right)\]</span></p>
+<p>Juntamos todo:</p>
+<span class="math display">\[\begin{array}{l}
+   \int \frac{3x^3 - 3x^2 + 16x -17}{x^4 - 2x^3 + x^2 + 12x +8} \, dx
+   = \\
+   \qquad \log(|x+1|) +  \frac{3}{x+1} + \log((x-2)^2 +4) + \frac{3}{2}\arctan\left(\frac{x-2}{2}\right)\end{array}\]</span>
+</div>
+
+</div>
+</div>
+<div id="integrales-impropias" class="section level2">
+<h2><span class="header-section-number">11.7</span> Integrales impropias</h2>
+<p>Hemos supuesto hasta ahora, aunque no lo hemos dicho explícitamente, que la función a integrar es continua en todo <span class="math inline">\([a, b]\)</span> y que este intervalo <span class="math inline">\([a, b]\)</span> es finito. Pero imaginemos que quiero calcular <span class="math inline">\(\int_{-1}^{1} \frac{1}{x^2} \,dx\)</span>, que tiene una discontinuidad en <span class="math inline">\(x = 0\)</span> o que quiero calcular <span class="math inline">\(\int_0^\infty e^{-x} dx\)</span>. Estas integrales aparecen en problemas reales y las áreas que estamos calculando puedes ser finitas. A este tipo de integrales se les llaman integrales impropias.</p>
+<p>Empecemos por la integral <span class="math inline">\(\int_{-1}^{1} \frac{1}{x^2} \,dx\)</span>.</p>
+<p><img src="imagenes/impropia1.jpg" /><!-- --></p>
+<p>Aunque tenemos esa discontinuidad en <span class="math inline">\(x=0\)</span> podría ser que el área bajo la curva sea finita. Como claramente la función es simétrica alrededor del eje Y, vamos a calcular sólo <span class="math inline">\(\int_{0}^{1} \frac{1}{x^2} \,dx\)</span>. No podemmos calcular la primitiva y aplicar la regla de Barrow, pues habría que evaluar la función en un punto en el que no existe. ¿Qué podríamos hacer? La solución es la misma que ya hemos aplicado otras veces: coger un punto <span class="math inline">\(\varepsilon\)</span>, positivo, cercano a 0, calcular la integral entre <span class="math inline">\(\varepsilon\)</span> y 1, y después calcular el límite cuando <span class="math inline">\(\varepsilon\)</span> tiende a 0. Hagámoslo:</p>
+<p><span class="math display">\[\int_\varepsilon^ 1 \frac{1}{x^2}\, dx = \left. -\frac{1}{x}\right|_\varepsilon^1 = -\frac{1}{1}+\frac{1}{\varepsilon}   = \frac{1-\varepsilon}{\varepsilon}\]</span></p>
+<p>Y ahora calculamos el límite:
+<span class="math display">\[\lim_{\varepsilon \to 0^+}\frac{1-\varepsilon}{\varepsilon} = \infty\]</span></p>
+<p>Esta integral no existe (el área es infinita).</p>
+<hr />
+<p>Uno podría pensar que siempre que la función tiende a , el área también lo va a hacer. Pero no es así.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-131" class="example"><strong>Ejemplo 11.18  </strong></span>Calcula
+<span class="math display">\[\int_0^2 \frac{1}{\sqrt{4-x^2}} \, dx.\]</span></p>
+<p>Tenemos una discontinuidad en <span class="math inline">\(x=2\)</span>, luego escogemos un valor <span class="math inline">\(\varepsilon\)</span> menor que 2, calculamos la integral entre 0 y <span class="math inline">\(\varepsilon\)</span>, y después el límite cuando <span class="math inline">\(\varepsilon\)</span> tiende a 2.</p>
+<p>La integral es, casi, una de nuestra lista de inmediatas.</p>
+<p><span class="math display">\[\int_0^\varepsilon \frac{1}{\sqrt{4-x^2}} \, dx = \left.\arcsin\left(\frac{x}{2}\right)\right|_0^\varepsilon = \arcsin\left(\frac{\varepsilon}{2}\right) - \arcsin(0) = \arcsin\left(\frac{\varepsilon}{2}\right)\]</span></p>
+Y ahora
+<span class="math display">\[\lim_{\varepsilon \to 2^-}\arcsin\left(\frac{\varepsilon}{2}\right) = \arcsin(1) = \frac{\pi}{2}\]</span>
+</div>
+
+<hr />
+<p>Ahora vamos con el caso de que uno de los extremos de la integral es . Calculemos <span class="math inline">\(\int_0^\infty e^{-x} \,dx.\)</span></p>
+<p>Vamos a calcular la integral entre 0 y <span class="math inline">\(t\)</span> y después hacemos que <span class="math inline">\(t\)</span> tienda a infinito:</p>
+<p><span class="math display">\[\int_0^t e^{-x} \,dx = \left.-e^{-x}\right|_0^t = -e^{-t} + e^0 = 1 - e^{-t}\]</span></p>
+<p>Ahora hacemos el límite cuando <span class="math inline">\(t\)</span> tiende a <span class="math inline">\(\infty\)</span>:</p>
+<p><span class="math display">\[\lim_{t \to \infty}(1 - e^{-t}) = 1 - 0 = 1\]</span></p>
+</div>
+<div id="integración-numérica" class="section level2">
+<h2><span class="header-section-number">11.8</span> Integración numérica</h2>
+<p>Como hemos visto, encontrar la primitiva de una función puede ser muy difícil, a veces casi imposible. Pero si tengo una función, aunque no tenga la primitiva, puedo calcular aproximadamente el área bajo la curva. Es lo que se llama integración numérica.</p>
+<p>La idea básica es la misma que ya vimos al definir integral en el apartado<a href="derivadas-e-integrales.html#defint">8.8</a>: aproximar el área bajo la curva mediante figuras geométricas de las que sé calcular el área. No podemos hacer el límite, luego no podremos saber el valor exacto, pero a base de aumentar el número figuras, que serán cada vez más pequeñas, puedo aproximarme al valor real tanto como quiera. Cuando había que hacer los cálculos a mano, no era una solución maravillosa: casi te costaba menos seguir buscando la primitiva. Pero ahora hay ordenadores.</p>
+<p>En el apartado <a href="derivadas-e-integrales.html#geomInte">8.5</a> usamos rectángulos para aproximar el área. Era el caso más simple de explicar y no íbamos a hacer los cálculos. Pero hay maneras mejores, que nos aproxima el área de forma más eficiente y con menos cálculos. Veámoslos.</p>
+<div id="aproximación-por-rectángulos" class="section level3">
+<h3><span class="header-section-number">11.8.1</span> Aproximación por rectángulos</h3>
+<p>Tenemos una función <span class="math inline">\(f(x)\)</span> y queremos calcular numérricamente la integral definida <span class="math inline">\(\int_a^b f(x) \, dx\)</span>. Lo primero que se nos puede ocurrir es aproximar el área mediante rectángulos:
+<img src="imagenes/Integ2.jpg" /><!-- --></p>
+<p>Para ello partimos el intervalo <span class="math inline">\([a, b]\)</span> en <span class="math inline">\(N\)</span> partes iguales. Vamos a llamar a los puntos de esta partición <span class="math inline">\(x_0, x_1, \dots, x_{n-1}, x_n\)</span>. Naturlamente <span class="math inline">\(x_0 = a\)</span> y <span class="math inline">\(x_n = b\)</span>. La distancia entre estos puntos es <span class="math inline">\(h = (b-a)/N\)</span>. Por lo tanto <span class="math inline">\(x_1 = x_0 + h\)</span>, <span class="math inline">\(x_2= x_0 + 2h\)</span> y en general <span class="math inline">\(x_i = x_0 + i\cdot h\)</span>.</p>
+<p>La superficie de cada rectángulo es <span class="math inline">\(f(x_i)\cdot h\)</span>. La suma de todos los rectángulos nos aproxima la integral:</p>
+<p><span class="math display">\[\int_a^b f(x) \, dx \approx f(x_0)\cdot h + f(x_1)\cdot h +  f(x_2)\cdot h + \cdots + f(x_{n-1})\cdot h \]</span></p>
+<p>(El símbolo “<span class="math inline">\(\approx\)</span>” significa “es aproximadamente igual”).</p>
+<p>Sacamos <span class="math inline">\(h\)</span> factor común y lo expresamos como un sumatorio:
+<span class="math display">\[\int_a^b f(x) \, dx \approx h\sum_{i = 0}^{n-1} f(x_0+i\cdot h)\]</span></p>
+<p>El algoritmo resultante es:</p>
+<ol style="list-style-type: decimal">
+<li>Decidimos el número <span class="math inline">\(N\)</span> de partes</li>
+<li>Calculamos <span class="math inline">\(h = (b-a)/N\)</span></li>
+<li>Evaluamos la función en los puntos <span class="math inline">\(f(x_0 + i\cdot h)\)</span> para <span class="math inline">\(0 ≤ i ≤ n-1\)</span> y sumamos los valores</li>
+<li>Multiplicamos la suma obtenida por <span class="math inline">\(h\)</span>.</li>
+</ol>
+<p>Cuánto menor es <span class="math inline">\(h\)</span> mejor nos vamos a aproximar al valor real de la integral, pero hay que hacer más sumas y, aunque lo haga el ordenador, más tardaremos en obtener el resultado. Hay un límite a lo pequeño que puede ser <span class="math inline">\(h\)</span>: si es muy pequeño, el error de redondeo puede ser tan grande que haga que la aproximación obtenida sea peor.</p>
+<p>Veamos lo bueno que es este método.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-133" class="example"><strong>Ejemplo 11.19  </strong></span>Calcula mediante una aproximación por rectángulos <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
+<p>Sabemos que el valor exacto de esta integral es <span class="math inline">\(\log(1) - \log(0.25) = 1.386294\)</span>.</p>
+<p>Vamos a coger 3 valores de <span class="math inline">\(N\)</span>: 10, 100 y 1000.</p>
+Para <span class="math inline">\(N = 10\)</span> obtenemos el valor 1.505761, no muy bueno. Para <span class="math inline">\(N = 100\)</span> mejoramos, 1.397615, aunque se desvía ya en el segundo decimal. Para <span class="math inline">\(N = 1000\)</span> el valor obtenido es 1.38742. Hemos mejorado, pero parece poca mejor para tanto esfuerzo.
+</div>
+
+<p>No parece un método muy bueno. Vamos a intentar mejorarlo.</p>
+</div>
+<div id="aproximación-por-trapecios" class="section level3">
+<h3><span class="header-section-number">11.8.2</span> Aproximación por trapecios</h3>
+<p>Si aproximamos mediante rectángulos, es claro que nos alejamos de la curva y erramos en el área. A veces el rectángulo es menor que el área bajo la curva, otras veces es mayor. Puede que tengammos suerte y se compense, pero mejor usar otro método que no fiarnos de la suerte.</p>
+<p>La primera posible mejora es obvia: unir mediante segmentos los puntos de la curva.
+<img src="imagenes/Integ3.jpg" /><!-- --></p>
+<p>Esto da lugar a trapecios, y entonces calculamos el área de estos trapecios. El área de un trapecio es la semisuma de las bases por la altura. En este caso la altura es <span class="math inline">\(h\)</span> y las bases son los valores de <span class="math inline">\(f(x)\)</span> en los puntos de nuestra partición. La suma queda:</p>
+<p><span class="math display">\[\int_a^b f(x) \, dx \approx \frac{f(x_0)+f(x_1)}{2}\, h + \frac{f(x_1)+f(x_2)}{2}\, h + \frac{f(x_2)+f(x_3)}{2}\, h +\cdots + \frac{f(x_{n-1})+f(x_n)}{2}\, h \]</span></p>
+<p>Notamos que, salvo para los extremos, cada término <span class="math inline">\(\frac{f(x_i)}{2}\)</span> aparece dos veces. Luego nos queda:</p>
+<p><span class="math display">\[\int_a^b f(x) \, dx \approx h\left(\frac{f(x_0)}{2} + \frac{f(x_n)}{2} + \sum_{i = 1}^{n-1} f(x_0+i\cdot h)\right)\]</span></p>
+<p>El algoritmo resultante es:</p>
+<ol style="list-style-type: decimal">
+<li>Decidimos el número <span class="math inline">\(N\)</span> de partes</li>
+<li>Calculamos <span class="math inline">\(h = (b-a)/N\)</span></li>
+<li>Evaluamos la función en los puntos <span class="math inline">\(f(x_0 + i\cdot h)\)</span> para <span class="math inline">\(0 ≤ i ≤ n\)</span></li>
+<li>Sumamos los valores de <span class="math inline">\(f(x_i)\)</span> en los puntos <span class="math inline">\(x_1, x_2, \dots, x_{n-1}\)</span> y le sumamos <span class="math inline">\(f(x_0)/2\)</span> y <span class="math inline">\(f(x_n)/2\)</span></li>
+<li>Multiplicamos la suma obtenida por <span class="math inline">\(h\)</span>.</li>
+</ol>
+<p>Veamos si es mejor que el de los rectángulos.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-135" class="example"><strong>Ejemplo 11.20  </strong></span>Calcula mediante una aproximación por trapecios <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
+<p>Sabemos que el valor exacto de esta integral es <span class="math inline">\(\log(1) - \log(0.25) = 1.386294\)</span>.</p>
+<p>Vamos a coger 3 valores de <span class="math inline">\(N\)</span>: 10, 100 y 1000.</p>
+<p>Para <span class="math inline">\(N = 10\)</span> obtenemos el valor 1.393261, que es mucho mejor que con los rectángulos. Para <span class="math inline">\(N = 100\)</span> tenemos 1.386365, que ya tiene 3 decimales exactos. Para <span class="math inline">\(N = 1000\)</span> el valor obtenido es 1.386295, que sólo varía en el sexto decimal.</p>
+Vemos que en este ejemplo, el método de los trapecios es muchísimo mejor que el de los rectángulos para el mismo esfuerzo de cálculo.
+</div>
+
+</div>
+<div id="método-de-simpson" class="section level3">
+<h3><span class="header-section-number">11.8.3</span> Método de Simpson</h3>
+<p>Hemos planteado estos métodos como el uso de rectángulos y trapecios. Pero también lo podíamos haber planteado de otra manera: en el método de los rectángulos hemos aproximado la función en cada parte como una constante (un polinomio de grado 0) mientras que en el método de los trapecios hemos aproximado la función en cada parte como una recta (polinomio de grado 1). El siguiente paso parece ser aproximar cada parte con un polinomio de grado 2 (una parábola).</p>
+<p>Es una idea similar a la de los polinomiode Taylor, aunque los polinomios que hemos usado no son los de Taylor, sino los que pasan por ciertos puntos de la función. A esto se le llama una interpolación.</p>
+<p>El caso de la aproximación por polinomios de grado 2 se le conoce como el método de Simpson. Para los polinomios de grado 0 sólo necesitábamos un punto, <span class="math inline">\(x_i\)</span>; para los de grado 1 necesitábamos dos puntos, <span class="math inline">\(x_i\)</span> y <span class="math inline">\(x_{i+1}\)</span>: para el grado 2 necesitamos tres puntos: <span class="math inline">\(x_i\)</span>, <span class="math inline">\(x_{i+1}\)</span> y <span class="math inline">\(x_{i+2}\)</span>. En cada parte, usaremos los dos puntos de los extremos y el punto del medio. Esto quiere decir que aunque tengamos <span class="math inline">\(N\)</span> puntos, tendremos <span class="math inline">\(N/2\)</span> partes. Esto obliga a que <span class="math inline">\(N\)</span> sea par.</p>
+<p>Para simplificar la notación, llamaremos <span class="math inline">\(y_i\)</span> a <span class="math inline">\(f(x_i)\)</span>. La manera de obtener el valor numérico aproximado es la siguiente. Tenemos <span class="math inline">\(x_i\)</span>, <span class="math inline">\(x_{i+1}\)</span> y <span class="math inline">\(x_{i+2}\)</span> y los valores de la función en esos puntos son <span class="math inline">\(y_i\)</span>, <span class="math inline">\(y_{i+1}\)</span> e <span class="math inline">\(y_{i+2}\)</span>. El polinomio de grado 2 es de la forma <span class="math inline">\(y = ax^2 + b^x + c\)</span> y queremos averiguar los valores de <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> y <span class="math inline">\(c\)</span> que hacen que la parábola pase por <span class="math inline">\((x_i, y_i)\)</span>, <span class="math inline">\((x_{i+1}, y_{i+1})\)</span> y <span class="math inline">\((x_{i+2}, y_{i+2})\)</span>. Esto da lugar al sistema de ecuaciones</p>
+<p><span class="math display">\[\begin{align}
+y_i &amp;= ax_i^2 + bx_i + c\\
+y_{i+1} &amp;= ax_{i+1}^2 + bx_{i+1} + c\\
+y_{i+2} &amp;= ax_{i+2}^2 + bx_{i+2} + c
+\end{align}\]</span></p>
+<p>Resolviendo este sistema obtenemos los valores de <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> y <span class="math inline">\(c\)</span>. Una vez conocidos etos parámetros, hemos de calcular el valor del área bajo la parábola. Es un polinomio que podemos integrar fácilmente:
+<span class="math display">\[\int_{x_i}^{x_{i+2}} (ax^2 + b^x + c) \, dx = \frac{a}{3}(x_{i+2}^3 - x_i^3) - \frac{b}{2}(x_{i+2}^2 - x_i^2) + c(x_{i+2} - x_i)\]</span></p>
+<p>Y una vez que se tiene el área de esta parte, se va a la siguiente y se vuelve a empezar.</p>
+<p>Esto parece horrible, pero teniendo en cuenta que <span class="math inline">\(x_{i+1} = x_i + h\)</span> y que <span class="math inline">\(x_{i+2} = x_i + 2h\)</span>, todo se simplifica bastante y nos queda que</p>
+<p><span class="math display">\[\int_a^b f(x) \, dx \approx \frac{h}{3} \left(y_0 + y_n + 4 (y_1 + y_3 + \cdots + y_{n-1}) + 2(y_2 + y_4 + \cdots + y_{n-2})\right)\]</span></p>
+<p>El algoritmo resultante es:</p>
+<ol style="list-style-type: decimal">
+<li>Decidimos el número <span class="math inline">\(N\)</span> de puntos. <span class="math inline">\(N\)</span> debe ser par.</li>
+<li>Calculamos <span class="math inline">\(h = (b-a)/N\)</span></li>
+<li>Evaluamos la función en los puntos <span class="math inline">\(f(x_0 + i\cdot h)\)</span> para <span class="math inline">\(0 ≤ i ≤ n\)</span></li>
+<li>Sumamos los valores de <span class="math inline">\(f(x_i)\)</span> en los puntos <span class="math inline">\(x_1, x_3, \dots, x_{n-1}\)</span>. Multiplicamos esta suma por 4.</li>
+<li>Sumamos los valores de <span class="math inline">\(f(x_i)\)</span> en los puntos <span class="math inline">\(x_2, x_4, \dots, x_{n-2}\)</span>. Multiplicamos esta suma por 2.</li>
+<li>Sumamos las dos cantidades obtenidas con <span class="math inline">\(f(x_0)\)</span> y <span class="math inline">\(f(x_n)\)</span>.</li>
+<li>Multiplicamos la suma obtenida por <span class="math inline">\(h/3\)</span>.</li>
+</ol>
+<p>El coste computacional del método de Simpson es prácticamente el mismo que el de los trapecios o el de los rectángulos. Veamos si es mejor.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-136" class="example"><strong>Ejemplo 11.21  </strong></span>Calcula mediante una aproximación por trapecios <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
+<p>Sabemos que el valor exacto de esta integral es <span class="math inline">\(\log(1) - \log(0.25) = 1.386294361119\)</span> (vamos a necesitar todos estos decimales)</p>
+<p>Vamos a coger 3 valores de <span class="math inline">\(N\)</span>: 10, 100 y 1000.</p>
+<p>Para <span class="math inline">\(N = 10\)</span> obtenemos el valor 1.38652, que con tan pocos puntos ya tiene 3 decimales exactos. Para <span class="math inline">\(N = 100\)</span> tenemos 1.38629438, que ya tiene 8 decimales exactos. Para <span class="math inline">\(N = 1000\)</span> el valor obtenido es 1.386294361122, con 12 decimales buenos.</p>
+Dado que con <span class="math inline">\(N=10\)</span> el método de Simpson consigue resultados casi tan buenos que el de los trapecios con <span class="math inline">\(N = 100\)</span>, vemos que un buen algoritmo te puede ahorrar el 90% de tu trabajo.
+</div>
+
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="utilidad-del-concepto-de-derivada.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ecuaciones-diferenciales.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/10_integracion.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

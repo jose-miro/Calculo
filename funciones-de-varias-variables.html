@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 13 Funciones de varias variables | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 13 Funciones de varias variables | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 13 Funciones de varias variables | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 13 Funciones de varias variables | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ecuaciones-diferenciales.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="funciones-de-varias-variables" class="section level1">
+<h1><span class="header-section-number">Capítulo 13</span> Funciones de varias variables</h1>
+<p>Las funciones que hemos estudiado hasta ahora toman como entrada un número real y dan como salida un número real. La forma de representar este hecho es
+<span class="math display">\[f:{\rm I\!R} \to {\rm I\!R}.\]</span></p>
+<p>Las hemos llamado simplemente “funciones”, pero si queremos ser más precisos deberíamos llmarlas “funciones reales de varibale real”. Pero en ciencia e ingeniería a menudo nos encontramos que la salida no es un número, sino un vector. Esto es el caso si la salida fuese un campo eléctrico, o una fuerza, que tienen magnitud y sentido. En este caso, tendríamos un numero real de entrada y un vector de <span class="math inline">\(n\)</span> componentes de salida. Lo representamos como
+<span class="math display">\[f:{\rm I\!R} \to {\rm I\!R}^n.\]</span></p>
+<p>Una función de estas características la llamamos una “función vectorial de variable real”.</p>
+<hr />
+<p>Hablar de números y vectores puede dar lugar a ambigüedades. Por ejemplo, cada componente de un vector es un número. Por eso, cuando hay vectores presentes y posibles ambigúedades, a un vector de una única posición (lo que hasta ahora hemos designado como “número”), se le da el nombre de <em>escalar</em>.
+***</p>
+<p>Podriamos tener otro caso: necesitar varios números de entrada para obtener un único número de salida. Este caso se nos da, por ejemplo, si queremos saber ela temperatura en una superficie. Necesitamos dos valores de entrada, las dos componentes necesarias para designar el punto de la superficie, y obtenemos un único valor de salida. Esto ser representa como
+<span class="math display">\[f:{\rm I\!R}^m \to {\rm I\!R}.\]</span></p>
+<p>A esto se le llama una “función real multivarible”.</p>
+<p>Finalmente, podemos tener una función con <span class="math inline">\(m\)</span> variables de entrada y que produce un vector de <span class="math inline">\(n\)</span> componentes de salida. Un ejemplo sería el viento que hay sobre una superficie, por ejemplo en un campo de regatas. Esto se representa como
+<span class="math display">\[f:{\rm I\!R}^m \to {\rm I\!R^n},\]</span>
+y se le llama una “función vectorial multivariable”.</p>
+<p>El análisis de una función de varias variables es, como era de esperar, más compleja que el de una variable. En esta introducción vamos a mostrar cómo se extienden los conceptos y operaciones que hemos visto en las funciones reales de una variable: ímites, continuidad, derivadas, integrales.</p>
+<div id="funciones-vectoriales-de-variable-real" class="section level2">
+<h2><span class="header-section-number">13.1</span> Funciones vectoriales de variable real</h2>
+<p>Supongamos que tenemos un joven que va conduciendo un coche. Por un lado nos interesa la veocidad a la que va el coche en cada instante. Y por otro nos interesa el diámetro de las pupilas del conductor en cada instante de tiempo. Esto lo podemos representar como dos funciones reales de una variable real: <span class="math inline">\(v(t)\)</span> y <span class="math inline">\(d(t)\)</span>.
+Sabemos analizar cada función: podemos determinar si es continua o no, calcular (s existe) el límite en cualquier punto, derivar, integrar…</p>
+<p>Como la variable de entrada es la misma, lo podemos combinar en un vector, que llamaremos <span class="math inline">\(\vec{y}(t)\)</span>, con la velocidad como primera componente y con el diámetro de la pupila de segundo: <span class="math inline">\(\vec{y}(t) = (v(t), d(t)).\)</span> Quizá lo hacemos porque nos simplifica la programación de cálculos y gráficas en el ordenador o por el motivo que sea. Lo que aprece obvio, es que por el heco de “empaquetar” las dos funciones en una, la continuidad, derivabilidad, etc de cada función por separado no cambia: si en <span class="math inline">\(t = 12\)</span> la derivada de <span class="math inline">\(v(t)\)</span> es 2, no por haberlo empaquetado en un vector va a pasar a ser 3. Y lo mismo con la dilatación de las pupilas.</p>
+<p>Nuestra lógica nos dice que todas las cuestiones de la función vectorial se pueden obtener mirando cada componente por separado. Entonces
+<span class="math display">\[\lim_{t \to a} \vec{y(t)} = (\lim_{t \to a}v(t), \lim_{t \to a}d(t)),\]</span>
+y
+<span class="math display">\[\vec{y^\prime(t)} = \left(v^\prime (t), d^\prime (t)\right),\]</span>
+y también
+<span class="math display">\[\int \vec{y(t)} dt = \left(\int v(t) dt, \int d(t) dt\right).\]</span></p>
+<p>Y con el mismo razonamiento poemos deducir que la función <span class="math inline">\(\vec{y}(t)\)</span> es continua en <span class="math inline">\(t = a\)</span> si ambas funciones <span class="math inline">\(v(t)\)</span> y <span class="math inline">\(d(t)\)</span> son continuas en <span class="math inline">\(t = a\)</span>, etc.</p>
+<hr />
+<p>En este ejemplo se han escogido dos funciones, <span class="math inline">\(v(t)\)</span> y <span class="math inline">\(d(t)\)</span>, que parecen independientes una de otra. Pero si escogemos, por ejemplo una fuerza en un espacio tridimensional, <span class="math inline">\(\vec{F} = (F_x, F_y, F_z)\)</span>, sabemos que podemos escribir ecuaciones de cada componente por separado, luego estamos en el mismo caso. Luego si tenemos una viga que podemos considerar unidimensional, la fuerza que se ejerce en cada punto de la viga será <span class="math inline">\(\vec{F}(x)\)</span>. Analizar esta función va a consistir en analizar por separado cad a función <span class="math inline">\(F_x(x)\)</span>, <span class="math inline">\(F_y(x)\)</span> y <span class="math inline">\(F_z(x)\)</span>.</p>
+<p>En resumen, analizar las funciones vectoriales de una variable real es más largo que si es una función real de variable real, pues hay que repetir el análisis para cada componete por separado. Pero no son más complicadas pues no hay cálculos ni conceptos nuevos. Desgraciadamente, no se puede decir lo mismo de las funciones reales multivariable.</p>
+</div>
+<div id="funciones-reales-multivariable" class="section level2">
+<h2><span class="header-section-number">13.2</span> Funciones reales multivariable</h2>
+<p>Hemos visto el caso de función más simple: un número de entrada, un número de salida. Pero en general, para saber algo necesitamos más de un número. Un caso simple es el volumen de una caja, que depende del alto, ancho y alto. O tenemos la Ley de Coulomb:
+<span class="math display">\[F(q, q^\prime, r) = \frac{1}{4π\varepsilon_0}\frac{q\,q^\prime}{r^2}\]</span>
+que vemos que depende de tres valores: las dos cargas y la distancia entre ellas.</p>
+<p>Una función real de <span class="math inline">\(n\)</span> variables reales es una función que toma <span class="math inline">\(m\)</span> números y produce un número:
+<span class="math display">\[f:{\rm I\!R}^n \to {\rm I\!R}.\]</span>
+A las <span class="math inline">\(n\)</span> variables de entrada se le llaman <em>variables independientes</em> y a la variable de salida se le llama <em>variable dependiente</em>.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-145" class="example"><strong>Ejemplo 13.1  </strong></span>El volumen de un cono se calcula con la expresión
+<span class="math display">\[V = \frac{1}{3}π R^2 h.\]</span>
+Vemos que es una función de dos variables independientes: el radio <span class="math inline">\(R\)</span> y la altura <span class="math inline">\(h\)</span>.
+</div>
+
+<hr />
+<p>Una gran ventaja de las funciones de una variable es que tienen una gráfica fácil de dibujar, lo que permite “ver” la función, lo que suele ser una gran ayuda en su análisis. Una función de dos variables se puede representar gráficamente, aunque, debido a la perspectiva, ya no se ve tan bien:
+<img src="imagenes/graf3D.jpg" /><!-- --></p>
+<p>Una alternativa a la representación en perspectiva es el uso de curvas de nivel:
+<img src="imagenes/cnivel.jpeg" /><!-- -->
+Ambas representaciones tienen sus ventajas e inconvenientes.</p>
+<p>Si la función es de más de dos variables, ya no tenemos ninguna forma de representar su gráfica. Por eso, el análisis de las funciones multivariable es simbólico y formal y menos intuitivo que el de una variable. Es una dificultad con el que hay que aprender a trabajar</p>
+<hr />
+<div id="funciones-polinómicas-y-racionales-multivariables" class="section level3">
+<h3><span class="header-section-number">13.2.1</span> Funciones polinómicas y racionales multivariables</h3>
+<p>Los olinomios y funcione racionales son fuciones de una varaible que aparecen mucho. No es obvio cómo se extiende estos tipos de funciones al caso multivariable.</p>
+<p>Empecemos con las funciones polinómicas. Vamos a suponer primero que tenemos dos variables independientes, <span class="math inline">\(x\)</span> e <span class="math inline">\(y\)</span>. Un ejemplo de función polinómica de dos variables sería
+<span class="math display">\[f(x,y) = 3 x + 2y^2 - 3xy^3 - 5.\]</span>
+Tenemos varios términos y cada uno de ellos o es una constante o aparecen <span class="math inline">\(x\)</span> o <span class="math inline">\(y\)</span> o ambos, cada uno elevado a un entero.</p>
+<p>Podemos generalizar esto a <span class="math inline">\(n\)</span> variables: una función polinómica <span class="math inline">\(f(x_1, x_2, …,x_n)\)</span> es una función que está comprendida por una suma de términos donde cada uno de estos términos es de la forma <span class="math inline">\(kx_1^{m_1}x_2^{m_2}…x_n^{m_n}\)</span>, siendo <span class="math inline">\(m_1, m_2, … m_n\)</span> enteros mayores o iguales a 0.</p>
+<hr />
+<p>Una definidas las funciones polinómicas, es fácil defiinir las racionales: una función racional es un cociente de dos funciones polinómicas. Un ejemplo sería
+<span class="math display">\[f(x_1, x_2, x_3, x_4) = \frac{3 + x_1x_3^2 + x_4}{x_2 + 5x_1x_3x_4^3}\]</span></p>
+</div>
+<div id="límites" class="section level3">
+<h3><span class="header-section-number">13.2.2</span> Límites</h3>
+<p>Habíamos definido límite de una función, <span class="math inline">\(\lim_{x \to a}f(x)\)</span>, como el valor al que tendía la función <span class="math inline">\(f(x)\)</span> cuando <span class="math inline">\(x\)</span> tendía a <span class="math inline">\(a\)</span>. Esta idea informal se sigue manteniendo cuando tenemos varias variables, pero ahora la formalización de esta idea es más complicada</p>
+<p>En el caso de una variable, veíamos que <span class="math inline">\(x\)</span> podía tender a <span class="math inline">\(a\)</span> de dos maneras: desde valores inferiores (desde la izquierda) o desde valores superiores (desde la derecha). Sólo si ambos límites existía y coincidían decíamos que la función tenía límite en <span class="math inline">\(x = a\)</span>.</p>
+<p>Vamos a ver el caso de dos variables, <span class="math inline">\(f(x_1, x_2)\)</span>. Ahora el punto al que tiende no es un número, <span class="math inline">\(x \to a\)</span>, sino dos, <span class="math inline">\((x_1, x_2) \to (a_1, a_2)\)</span>. El problema es que ahora nos podemos aproximar a <span class="math inline">\((a_1, a_2)\)</span> de infinitas maneras: desde la izquierda, desde la derecha, desde arriba, desde abajo, desde una diagonal, … y no solamente nos podemos acercar con un recta: nos podemos acercar con una curva o con una espiral. Diremos que existe el límite <span class="math inline">\(\lim{(x_1, x_2) \to (a_1, a_2)} f(x_1, x_2)\)</span> si los valores de los límites por todos estos infinitos caminos existen y son iguales.</p>
+<p>Demostrar la existencia de un límite se ha convertido en algo mucho más complicado, pero no hace falta asustarse: casi siempre es lo que nos podríamos suponer.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-148" class="example"><strong>Ejemplo 13.2  </strong></span>Sea
+<span class="math display">\[f(x_1, x_2, x_3) = \frac{x_1 - x_2^2}{1 - x_3}.\]</span></p>
+<p>Esta función tiene limite en todos los puntos en los que <span class="math inline">\(x_3 ≠ 1\)</span>.</p>
+<p>Calculemos algunos valores:
+<span class="math display">\[lim_{(x_1, x_2, x_3) \to (1, 2, -3)}f(x_1, x_2, x_3) = 
+      \frac{1 - 2^2}{1 - (-3)} = \frac{-3}{4}\]</span></p>
+<p><span class="math display">\[lim_{(x_1, x_2, x_3) \to (0,0,0)}f(x_1, x_2, x_3) = 
+      \frac{0 - 0^2}{1 - 0} = 0\]</span></p>
+<p><span class="math display">\[lim_{(x_1, x_2, x_3) \to (2,1,1)}f(x_1, x_2, x_3) = 
+      \frac{2 - 1^2}{1 - 1} = \infty\]</span></p>
+También podemos tener indeterminaciones:
+<span class="math display">\[lim_{(x_1, x_2, x_3) \to (4,2,1)}f(x_1, x_2, x_3) = 
+      \frac{4 - 2^2}{1 - 1} = \frac{0}{0}\]</span>
+No entraremos en como se resuelven las indeterminaciones.
+</div>
+
+</div>
+<div id="continuidad" class="section level3">
+<h3><span class="header-section-number">13.2.3</span> Continuidad</h3>
+<p>En el caso de una variable decíamos que una función <span class="math inline">\(f(x)\)</span> era continua en <span class="math inline">\(x = a\)</span> si <span class="math inline">\(\lim_{x \to a} = f(a)\)</span>. Esta misma idea la podemos trasladar al caso de varias variables. Una función <span class="math inline">\(f(x_1, x_2, …, x_n)\)</span> es continua en el punto <span class="math inline">\((a_1, a_2, …, a_n)\)</span> si <span class="math inline">\(\lim_{(x_1, x_2, …, x_n) \to (a_1, a_2, …, a_n)} =f(a_1, a_2, …, a_n)\)</span>.</p>
+<p>No entraremos en cómo establecer la continuidad de funciones. Baste saber que las funciones polinómicas son continuas, también las racionales, con la posible excepcion de los puntos donde se anla el denominador. También lo son funciones trigonométricas del tipo <span class="math inline">\(\cos(x+y^2)\)</span>, exponenciales, logarítmicas, etc.</p>
+</div>
+</div>
+<div id="derivadas-parciales" class="section level2">
+<h2><span class="header-section-number">13.3</span> Derivadas parciales</h2>
+<p>La derivada es la derivada respecto de una variable. Esto era implícito en la notación primada, <span class="math inline">\(f^\prime(x)\)</span>, y explicito en la notación de Leibniz:
+<span class="math display">\[\frac{df(x)}{dx}.\]</span></p>
+<p>Ahora que tenemos varias variables seguimos derivando sólo respecto de una de ellas. A esto se llama una <em>derivada parcial</em>. Su representación es similar a la de Leibniz, pero usando una “d” curvada: <span class="math inline">\(\partial\)</span>. La derivada parcial de $f(x,y) respecto de <span class="math inline">\(x\)</span> se escribiría como
+<span class="math display">\[\frac{\partial f(x,y)}{\partial x}\]</span>
+mientras que si es respecto de <span class="math inline">\(y\)</span> se escribiria
+<span class="math display">\[\frac{\partial f(x,y)}{\partial y}.\]</span></p>
+<p>Calcular estas derivadas parciales es tan fácil como calcular las derivadas ordinarias: se considera que la variable respecto a la cual se deriva es “la” variable y que las demás son constantes. Por ejemplo, sea <span class="math inline">\(f(xy) = 3x^2y\)</span>. Calculemos <span class="math inline">\(\frac{\partial f(x,y)}{\partial x}\)</span>.</p>
+<p>Como el 3 y la <span class="math inline">\(y\)</span> son constantes en esta derivada parcial, las podemos sacar fuera:
+<span class="math display">\[\frac{\partial}{\partial x} (3x^2y) = 3y \frac{\partial}{\partial x} x^2\]</span>
+Como ahora la función que queda sólo tiene una variable: aquella respecto a la cual derivamos, procedemos como si fuera una derivada ordinaria:
+<span class="math display">\[3y \frac{\partial}{\partial x} x^2 = 3y\, 2x = 6xy\]</span></p>
+Veamos un ejemplo algo mas complicado.
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-149" class="example"><strong>Ejemplo 13.3  </strong></span>Sea <span class="math inline">\(f(x,y,z) = 3xyz\sin(x^2y^2 + z)\)</span>. Calcula
+<span class="math display">\[\frac{\partial f(x,y,z)}{\partial y}.\]</span></p>
+Esto es el producto de <span class="math inline">\(3xyz\)</span> y de <span class="math inline">\(\sin(x^2y^2 + z)\)</span>. Vamos a ir despacio. Empezamos derivando cada parte por separado:
+<span class="math display">\[\frac{\partial}{\partial y} (3xyz) = 3xz\]</span>
+y
+<span class="math display">\[\frac{\partial}{\partial y} \sin(x^2y^2 + z) = 2x^2y\cos(x^2y^2 + z).\]</span>
+Y ahora aplicamos la regla de la derivada del un producto:
+<span class="math display">\[\frac{\partial f(x,y,z)}{\partial y} = 3xz \cdot \sin(x^2y^2 + z) + 3xyz \cdot 2x^2y\cos(x^2y^2 + z).\]</span>
+Esto lo podemos arreglar un poco y queda
+<span class="math display">\[3xz(\sin(x^2y^2 + z) + 2x^2y^2 \cos(x^2y^2 + z))\]</span>
+</div>
+
+<div id="interpretación-geométrica" class="section level3">
+<h3><span class="header-section-number">13.3.1</span> Interpretación geométrica</h3>
+<p>Aunque en general no hay gráficas y no hay geometría “visible”, podemos dar una interpretación intuitiva de la derivada parcial si tenemos dos variables. Esta interpretacion se puede extender al caso de 3 o más.</p>
+<p>Supongamos que estamos en una montaña y la función es la elevación sobre el nivel del mar. Es decir <span class="math inline">\(z = f(x,y)\)</span> y <span class="math inline">\(z\)</span> es la elevación. En este caso <span class="math inline">\(x\)</span> es el eje Este-Oeste e <span class="math inline">\(y\)</span> representa el eje Norte-Sur. Suponemos que es positivo hacia el Norte y hacia el Este y negativo hacia el Sur y hacia el Oeste.</p>
+<p>Entonces <span class="math inline">\(\frac{\partial z}{\partial x}\)</span> es la pendiente de la montaña en el eje Este-Oeste. Si esta derivada parcial es positiva quiere decir que la despazarnos hacia el Este estamos subiendo; si es negativo quiere decir que al desplazarnos hacia el Este estamos bajando; si es 0 quiere decir que en ese punto ni sube ni baja, al desplazarnos hacia el Este, ni sube ni baja (puede subir o bajar si cogemos otra dirección).</p>
+<p>Y análogamente <span class="math inline">\(\frac{\partial z}{\partial y}\)</span> sería la pendiente en ese punto según el eje Norte-Sur. Si es positiva es que la ir hacia el Norte estamos subiendo; si negativa, es que bajamos; si es 0, en esa dirección ni sube ni baja, aunque puede hacerlo en otras direcciones.</p>
+<p>Esta imagen de la montaña lo podemos generalizar a cualquier función de dos variables:
+<img src="imagenes/parcial.jpg" /><!-- --></p>
+<p>Y si tenemos más de dos variables la idea es la misma: si todas las variables menos una quedan constantes, lo que nos queda es una curva en una determinada dirección. La derivada parcial es la pendiente de esa curva en ese punto.</p>
+</div>
+<div id="definición-formal" class="section level3">
+<h3><span class="header-section-number">13.3.2</span> Definición formal</h3>
+<p>Después de explicar la idea general de lo que es una derivada parcial y ver su interpretacion geométrica en el caso de dos variables, definamos formalmente lo que es una derivada parcial. Es la misma idea que con la derivada ordinaria: el cálculo del límite cuando damos un “empujoncito” a la función. Solamente que en este caso lo empujamos según una de las variables, dejando el resto fijas.</p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-151" class="definition"><strong>Definición 13.1  </strong></span>Sea la función <span class="math inline">\(f(x_1, x_2, … , x_n)\)</span>. Definimos como derivada parcial de <span class="math inline">\(f\)</span> respecto a <span class="math inline">\(x_i\)</span> al límite</p>
+<span class="math display">\[\frac{\partial f}{\partial x_i} = \lim_{h \to 0} 
+   \frac{f(x_1, …, x_i + h, …, x_n) - f(x_1, …, x_i, …, x_n)}{h}\]</span>
+</div>
+
+</div>
+<div id="derivadas-parciales-sucesivas" class="section level3">
+<h3><span class="header-section-number">13.3.3</span> Derivadas parciales sucesivas</h3>
+<p>La derivada parcial de una función es otra función, que podemos volver a derivar. Así obtenemos derivadas parciales sucesivas. No tenemos que volver a derivar respecto a la misma variable, sino que podemos cambiar. En el caso de una función de dos variables <span class="math inline">\(f(x,y)\)</span> podemos tener cuatro posibles derivadas segundas:</p>
+<p><span class="math display">\[\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}\right) = \frac{\partial^2 f}{\partial x^2} \qquad 
+\frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right) = \frac{\partial^2 f}{\partial x \partial y}\]</span>
+<span class="math display">\[\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right) = \frac{\partial^2 f}{\partial y \partial x} \qquad 
+\frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}\right) = \frac{\partial^2 f}{\partial y^2}\]</span></p>
+<p>Hay que tener cuidado:
+<span class="math display">\[\frac{\partial^2 f}{\partial x \partial y}\]</span>
+quiere decir que <em>primero</em> derivamos respecto de <span class="math inline">\(y\)</span> y <em>después</em> derivamos el resultado respecto de <span class="math inline">\(x\)</span>. Por suerte para los descuidados, en se puede demostrar que para la mayoria de las funciones habituales (polinomios, racionales, trigonometricas, etc), da igual el orden, es decir
+<span class="math display">\[\frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 f}{\partial y \partial x}.\]</span></p>
+<p>Veamos un ejemplo.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-152" class="example"><strong>Ejemplo 13.4  </strong></span>Halla las cuatro derivadas segundas de la función <span class="math inline">\(f(x,y) = x\sqrt{y^2 + 1}\)</span>.</p>
+<p>Empezamos por hallar las dos derivadas primeras:
+<span class="math display">\[\begin{align}
+\frac{\partial f}{\partial x} &amp;= \sqrt{y^2 + 1}\\
+\frac{\partial f}{\partial y} &amp;= \frac{xy}{\sqrt{y^2 + 1}}
+\end{align}\]</span></p>
+<p>Y ahora calculamos las cuatro derivadas segundas
+<span class="math display">\[\begin{align}
+\frac{\partial^2 f}{\partial x^2} = \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial x}\right) &amp;= \frac{\partial}{\partial x} \sqrt{y^2 + 1} = 0\\
+\frac{\partial^2 f}{\partial y \partial x} = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)  &amp;= \frac{\partial}{\partial y}\sqrt{y^2 + 1} = \frac{y}{\sqrt{y^2 + 1}}\\
+\frac{\partial^2 f}{\partial x \partial y} = \frac{\partial}{\partial x}\left(\frac{\partial f}{\partial y}\right)  &amp;= \frac{\partial}{\partial x}\frac{xy}{\sqrt{y^2 + 1}} = \frac{y}{\sqrt{y^2 + 1}}\\
+\frac{\partial^2 f}{\partial y^2} = \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial y}\right) &amp;= \frac{\partial}{\partial y}\frac{xy}{\sqrt{y^2 + 1}} = x\, \frac{ 1 - y^2}{\sqrt{(y^2 + 1)^3}}
+\end{align}\]</span></p>
+Vemos que
+<span class="math display">\[\frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 f}{\partial y \partial x} = \frac{y}{\sqrt{y^2 + 1}}\]</span>
+</div>
+
+</div>
+</div>
+<div id="derivdirec" class="section level2">
+<h2><span class="header-section-number">13.4</span> Derivadas direccionales</h2>
+<p>Hemos visto que las derivadas parcial de <span class="math inline">\(f\)</span> respecto a <span class="math inline">\(x_i\)</span> mide la pendiente de la función si seguimos la dirección del eje <span class="math inline">\(x_i\)</span>. Pero eso es un poco restrictivo: nos puede interesar calcular la pendiente respecto a alguna otra dirección. Vamos a ver cómo podemos calcular la pendiente de la función en cualqueir dirección que nos interese. A esto se llama una derivada direccional.</p>
+<p>Lo primero que debemos hacer es definir la dirección que nos interesa. Sigamos con nuestro ejemplo de la montaña. Digamos que nos interesa la dirección Sudeste-Noroeste, una diagonal. Un vector que va en esa dirección es el vector <span class="math inline">\((-1, 1)\)</span>
+<img src="imagenes/DerDir1.jpg" /><!-- --></p>
+<p>Nos va interesar tener un vector de longitud unidad y este no lo es: es de longitud <span class="math inline">\(\sqrt{2}\)</span>. Simplemente dividimos cada componente por la oongitud del vector y tenemos nuestro <em>vector direccional unitario</em> <span class="math inline">\(\vec{u} = (u_x, u_y) = \left(\frac{-1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right)\)</span>. Para tener la derivada direccional según <span class="math inline">\(\vec{u}\)</span> hemos de dar el “empujoncito” a nuestra función en esta dirección. Vamos a movernos una pequeña distancia <span class="math inline">\(h\)</span> según esta dirección. En el sistema de coordenadas, quiere decir que nos hemos movido <span class="math inline">\(\frac{-1}{\sqrt{2}} \,h = u_x h\)</span> según el eje Este-Oeste (como es negativo, hacia el Oeste) , y <span class="math inline">\(\frac{1}{\sqrt{2}} \,h = u_y h\)</span> según el eje Norte-Sur (como es positivo, hacia el Norte). No es difícil ver que el límite que hemos de resolver para calcular la pendiente es
+<span class="math display">\[\lim_{h \to 0} \frac{f(x+ u_x h, y + u_y h) - f(x, y)}{h}.\]</span></p>
+<p>Calcular este límite puede parecer muy complicado, pero se puede demostrar que es simplemente
+<span class="math display">\[\frac{\partial f}{\partial x}u_x + \frac{\partial f}{\partial y}u_y.\]</span></p>
+<p>Esto, en nuestro ejemplo, se convierte en
+<span class="math display">\[\frac{\partial f}{\partial x}\frac{-1}{\sqrt{2}} + \frac{\partial f}{\partial y}\frac{1}{\sqrt{2}}.\]</span></p>
+
+<div class="definition">
+<p><span id="def:unnamed-chunk-154" class="definition"><strong>Definición 13.2  </strong></span>Definimos derivada direccional de la funcion <span class="math inline">\(f(x_1, …,x_n)\)</span> según el vector unitario $ = $ y lo escribimos como <span class="math inline">\(D_\vec{u}f(x_1, …,x_n)\)</span>, como el limite
+<span class="math display">\[\lim_{h \to 0}\frac{f(x_1 + u_{x_1} h + \cdots + x_n + u_{x_n} h) - f(x_1, …,x_n)}{h}\]</span></p>
+<p>Esta derivada direccional se puede calcular a partir de las derivadas parciales:</p>
+<span class="math display">\[D_\vec{u}f(x_1, …,x_n) = \frac{\partial f}{\partial x_1}u_{x_1} + \cdots +\frac{\partial f}{\partial x_n}u_{x_n}\]</span>
+</div>
+
+<hr />
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-155" class="example"><strong>Ejemplo 13.5  </strong></span>Sea <span class="math inline">\(f(x,y) = \sqrt{36 - x^2 - 3y^2}\)</span>. Calcule sus derivadas parciales y su derivada direccional según la dirección dada por el vector <span class="math inline">\(\vec{v} = (1, 3)\)</span>. Evalua las derivadas en el punto <span class="math inline">\(P = (-2,1)\)</span>.</p>
+<p>Empecemos calculando las derivadas parciales:
+<span class="math display">\[\begin{align}
+\frac{\partial f}{\partial x} &amp;= \frac{-x}{\sqrt{36 - x^2 - 3y^2}}\\
+\frac{\partial f}{\partial y} &amp;= \frac{-3y}{\sqrt{36 - x^2 - 3y^2}}
+\end{align}\]</span>
+El vector que nos han dado no es unitario. Su módulo es <span class="math inline">\(\sqrt{10}\)</span>. El vector unitario en la misma dirección es pues <span class="math inline">\(\vec{u} = \left(\frac{1}{\sqrt{10}}, \frac{3}{\sqrt{10}}\right)\)</span>. Ahora es inmediato calcular la derivada direccional:
+<span class="math display">\[D_\vec{u}f(x, y) = \frac{-x}{\sqrt{10\,(36 - x^2 - 3y^2)}} - \frac{-9y}{\sqrt{10\,(36 - x^2 - 3y^2)}} = -\frac{x + 9y}{\sqrt{10\,(36 - x^2 - 3y^2)}}.\]</span></p>
+Evaluemos estas tres derivadas en el punto <span class="math inline">\(P = (-2, 1)\)</span>:
+<span class="math display">\[\begin{align}
+\frac{\partial f}{\partial x} &amp;= \frac{2}{\sqrt{36 - 4 - 3}} = 0.371\\
+\frac{\partial f}{\partial y} &amp;= \frac{-3}{\sqrt{36 - 4 - 3}} = -0.557
+D_\vec{u}f(x, y) &amp;=  -\frac{-2 + 9}{\sqrt{10\,(36 - 4 - 3)}} = -0.411
+\end{align}\]</span>
+</div>
+
+<p>##Gradiente</p>
+<p>Con las derivadas parciales podemos saber cuánto cambia el valor de algo en las direcciones de los ejes. Con las derivadas direccionales podemos saber cuánto cambia el valor en cualquier dirección que queramos. Pero a menudo lo que queremos saber es cuánto es el máximo cambio y en qué dirección se produce. En nuestro ejemplo de la montaña, queremos saber cuál es la pendiente máxima y en qué dirección es. El <em>gradiente</em> nos va a dar esta información. Como el gradiente nos da tanto la magnitud como la dirección, va a ser un vector.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-156" class="definition"><strong>Definición 13.3  </strong></span>Dada una función <span class="math inline">\(f(x_1, …,x_n)\)</span> definimos <em>vector gradiente</em> (o simplemente gradiente) de esta función, y lo representamos por <span class="math inline">\(\vec{\nabla}f\)</span> al vector
+<span class="math display">\[\vec{\nabla}f(x_1, …,x_n) = \left(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, … , \frac{\partial f}{\partial x_n}\right)\]</span>
+</div>
+
+
+<div class="example">
+<span id="exm:unnamed-chunk-157" class="example"><strong>Ejemplo 13.6  </strong></span>Sea <span class="math inline">\(f(x,y) = \sqrt{36 - x^2 - 3y^2}\)</span>. Su gradiente es:
+<span class="math display">\[\vec{\nabla}f(x, y) = \left(\frac{-x}{\sqrt{36 - x^2 - 3y^2}}, \frac{-3y}{\sqrt{36 - x^2 - 3y^2}}\right)\]</span>
+</div>
+
+<p>Se puede demostrar que el gradiente nos da en cada punto la dirección del máximo cambio de la función en ese punto y que el módulo del vector gradiente nos da el valor de la máxima pendiente en el punto.</p>
+<p>El gradiente es muy útil. Por ejemplo, si tenemos una función con las temperaturas en un espacio, el gradiente en un punto nos indica hacia dónde está el máximo cambio de temperatura, y por lo tanto, hacia dónde va a fluir el calor. Dibuando los gradientes nos podemos hacer una idea del flujo del calor en ese espacio:
+<img src="imagenes/grad2.jpeg" /><!-- -->
+En el gráfico de la izquierda hay un foco de alta temperatura en el centro y la temperatura asciende alrededor de este foco (y el calor fluye alejandose del foco), mientras que en el de la derecha la temperatura crece uniformemente hacia la izquierda, como si tuviéramos una pared en el lado izquierdo a temperatura uniforme. Notad que en este caso (y muchos otros) el flujo va en sentido contrario al gradiente: el gradiente va de valores menores a mayores de temperatura, mientras que el calor va desde lugares calientes a lugares fríos.</p>
+<p>Por eso a veces se revierten las flechas, como en el gráfico siguiente:
+<img src="imagenes/grad1.jpeg" /><!-- -->
+Si esto fuera una superficie, las flechas degradiente nos da una indicación de hacia dónde rodaría una pelota que se dejara en un punto. EL tamaño de la flecha nos indica también la aceleración que tendría.</p>
+<p>Hay una relación interesante entre el gradiente y las curvas de nivel: el gradiente es siempre perpendicular a las curvas de nivel. Eso es lógico: si el vector gradiente no fuera perpendicular a la curva de nivel, podríamos descomponerlo en dos vectores: uno paralelo a la curva y otro perpendicular. Pero si tiene una componente paralela, quiere decir que hay un cambio de nivel en la curva, lo cual no puede ser: es una curva de nivel constante. Luego el gradiente debe ser perpendicular a la curva de nivel.
+<img src="imagenes/grad4.gif" /><!-- --></p>
+<div id="gradientes-y-derivadas-direccionales" class="section level3">
+<h3><span class="header-section-number">13.4.1</span> Gradientes y derivadas direccionales</h3>
+<p>Vimos en el apartado <a href="funciones-de-varias-variables.html#derivdirec">13.4</a> cómo calcular derivadas direccionales. Una vez se tiene el gradiente, calcular una derivada direccional según el vector unitario <span class="math inline">\(\vec{u}\)</span> es simplemente un producto escalar:
+<span class="math display">\[D_\vec{u} f = \vec{\nabla}f \cdot \vec{u}.\]</span>
+Efectivamente
+<span class="math display">\[\left(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, … , \frac{\partial f}{\partial x_n}\right) \cdot (u_{x_1}, u_{x_2}…, u_{x_n}) = \frac{\partial f}{\partial x_1}u_{x_1} + \frac{\partial f}{\partial x_2}u_{x_2} + \cdots \frac{\partial f}{\partial x_n}u_{x_n} = D_\vec{u} f.\]</span></p>
+</div>
+<div id="máximos-mínimos-puntos-de-silla" class="section level3">
+<h3><span class="header-section-number">13.4.2</span> Máximos, mínimos, puntos de silla</h3>
+<p>Con las derivadas ordinarias vimos que si el valor de la primera derivada es 0 podemos tener un máxim, un mínimo o un punto de inflexión de pendiente horizontal. En el caso de funciones de varias variables, pasa algo parecido.</p>
+<p>Vamos a centrarnos en el caso de dos variables, <span class="math inline">\(f(x,y)\)</span>. Si <em>ambas</em> derivadas parciales son 0 podemos tener un máximo:</p>
+<p><img src="imagenes/max2var.jpg" /><!-- --></p>
+<p>o un mínimo</p>
+<p><img src="imagenes/min2var.jpg" /><!-- --></p>
+<p>o algo que no es ni un máximo ni un mínimo y que se llam un <em>punto de silla</em>:</p>
+<p><img src="imagenes/ptosilla2var.jpg" /><!-- --></p>
+<p>En el caso de las derivadas ordinarias necesitábamos las derivadas segundas para saber si nos encontrábamos ante un máximo, un mínimo o un punto de inflexión. Aquí pasa algo parecido: necesitamos las cuatro derivadas segundas para poder diferenciar entre los tres casos. No es muy difícil, pero no lo vamos a ver aquí.</p>
+</div>
+</div>
+<div id="integrales-múltiples" class="section level2">
+<h2><span class="header-section-number">13.5</span> Integrales múltiples</h2>
+<p>Como podemos derivar una función de varias variables, también las podemos integrar. Y la idea general es la misma: lo hacemos respecto de una variable cada vez, manteniendo las demás constantes. A esto se llama una <em>integral múltiple</em>. Por ejemplo, si tenemos la función <span class="math inline">\(f(x,y) = \frac{3 \sin(y)}{x}\)</span>, podríamos resolver la integral doble
+<span class="math display">\[\int_0^π \int_1^e \frac{3 \sin(y)}{x} \, dx \, dy.\]</span>
+Para dejar claro lo que esto significa, vamos a poner paréntesis:
+<span class="math display">\[\int_0^π \left(\int_1^e \frac{3 \sin(y)}{x} \, dx\right) \, dy.\]</span>
+Es decir, primero vamos a integrar la función con respecto a <span class="math inline">\(x\)</span>, y haremos variar <span class="math inline">\(x\)</span> entre 1 y <span class="math inline">\(e\)</span>, y al resultado lo integraremos respecto a <span class="math inline">\(y\)</span>, haciendo variar <span class="math inline">\(y\)</span> entre 0 y π.</p>
+<p>Hagamos la primera integral. Como es respecto a <span class="math inline">\(x\)</span>, entonces <span class="math inline">\(3 \sin(y)\)</span> es constante y lo podemos sacar fuera y nos queda:
+<span class="math display">\[\int_0^π \left(3 \sin(y) \int_1^e \frac{1}{x} \, dx\right) \, dy.\]</span>
+Esta integral es inmediata:
+<span class="math display">\[\int_0^π \left(3 \sin(y) \left.\log(x)\right|_1^e\right) \, dy.\]</span>
+Evaluamos:
+<span class="math display">\[\int_0^π \left(3 \sin(y) (1 - 0)\right) \, dy = \int_0^π 3 \sin(y)  \, dy.\]</span>
+Hecha esta primera integral, pasamos a la segunda, que también es inmediata:
+<span class="math display">\[\left.-\cos(y)\right|_0^π = -cos(π) - (- cos(0)) = 1 +1 = 2.\]</span></p>
+<hr />
+<p>De la misma manera que el cálculo de derivadas parciales no es en el fondo diferente al cálculo de derivadas simples, calcular integrales múltiples no es en el fondo diferente a calcular integrales simples.</p>
+<div id="interpretación-geométrica-de-la-integral-doble" class="section level3">
+<h3><span class="header-section-number">13.5.1</span> Interpretación geométrica de la integral doble</h3>
+<p>Vimos que la integral simple <span class="math inline">\(\int_a^b f(x)\, dx\)</span> es el área bajo la curva de la función entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>. Una integral doble extiende esta misma idea a una dimensión más: la integral
+<span class="math display">\[\int_{a_y}^{b_y} \int_{a_x}^{b_x} f(x, y) \, dx \, dy\]</span>
+es el volumen bajo la superficie de <span class="math inline">\(f(x, y)\)</span> dentro del rectángulo:
+<img src="imagenes/intdoble.jpg" /><!-- --></p>
+<p>Para integrales triples o con más variables, la idea es la misma, aunque ya no podemos hablar de superficies o volúmenes: si tenemos una función con <span class="math inline">\(n\)</span> variables, la integral nos calcula el “hipervolumen” de dimensión <span class="math inline">\(n+1\)</span> bajo la función.</p>
+</div>
+<div id="primitivas-de-integrales-múltiples" class="section level3">
+<h3><span class="header-section-number">13.5.2</span> Primitivas de integrales múltiples</h3>
+<p>Aunque en el ejemplo de arriba hemos evaluado la primera integral antes de continuar con la segunda, no es necesario. Lo que generalmente se hace es calcular la primitiva de la integral múltiple y después evaluar:</p>
+<p><span class="math display">\[\int_0^π \int_1^e \frac{3 \sin(y)}{x} \, dx \, dy = \left.\left.- 3\cos(y) \log(x)\right|_1^e \right|_0^π =  \left.- 3\cos(y) (1 - 0) \right|_0^π = -\cos(0) - (- \cos(π)) = 2\]</span></p>
+</div>
+<div id="orden-de-integración" class="section level3">
+<h3><span class="header-section-number">13.5.3</span> Orden de integración</h3>
+<p>Hemos visto que hemos de integrar desde dentro hacia fuera. Si tenemos
+<span class="math display">\[\int_{z_a}^{z_b}\int_{y_a}^{y_b}\int_{x_a}^{x_b} f(x, y, z) \, dx\, dy \, dz\]</span>
+hemos primero de integrar respecto de <span class="math inline">\(x\)</span>, después respecto de <span class="math inline">\(y\)</span> y finalmente respecto de <span class="math inline">\(z\)</span>. Pero se puede demostrar que en ciertas circunstancias se puede cambiar el orden de integración sin cambiar el resultado. Si se cumplen las circunstancias
+<span class="math display">\[\int_{z_a}^{z_b}\int_{y_a}^{y_b}\int_{x_a}^{x_b} f(x, y, z) \, dx\, dy \, dz =\int_{y_a}^{y_b}\int_{z_a}^{z_b}\int_{x_a}^{x_b} f(x, y, z) \, dx\, dz \, dy\]</span>
+o cualquier otra combinación que hagamos.</p>
+<p>Nótese que si cambiamos el orden de los <span class="math inline">\(dx\)</span>, <span class="math inline">\(dy\)</span> y <span class="math inline">\(dz\)</span> del final de la integral, hemos de cambiar también el orden de los límites de integración al principio: si cambio el orden de integración he de cambiar también el orden de evaluación.</p>
+<p>¿Y cuáles son las circunstancias que permiten el cambio? No entraremos en detalle, pero las funciones habituales (polinomios, exponenciales, trigonomñetricas, etc) las cumplen. Casi siempre lo podremos hacer.</p>
+</div>
+<div id="ejemplos-3" class="section level3">
+<h3><span class="header-section-number">13.5.4</span> Ejemplos</h3>
+<p>Las integrales múltiples son muy útiles para calcular superficies y volúmenes de figuras geométricas. Sabemos que la superficie del círculo de radio <span class="math inline">\(R\)</span> es <span class="math inline">\(S = πR^2\)</span>. Vamos a usar una integral doble para deducirlo.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-165" class="example"><strong>Ejemplo 13.7  </strong></span>Calcula con integrales la superfice de un círculo de radio R.</p>
+<p>Para calcular la superficie sumaremos pequños rectángulos de lados <span class="math inline">\(dx\)</span> y <span class="math inline">\(dy\)</span>:</p>
+</div>
+
+<p><img src="imagenes/IntSupCirc.jpg" /><!-- --></p>
+<p>Empecemos por calcular la superficie de una tira horizontal que está a altura <span class="math inline">\(y\)</span>. Esto será la suma de las áreas de los rectángulos:
+<span class="math display">\[\int_a^b dx dy\]</span>
+Hemos de determinar los extremos de integración, que dependen del valor de <span class="math inline">\(y\)</span>. Por Pitágoras es fácil ver que <span class="math inline">\(a = -\sqrt{R^2 - y^2}\)</span> y que <span class="math inline">\(b = \sqrt{R^2 - y^2}\)</span>. Por lo tanto la integral es
+<span class="math display">\[\int_{-\sqrt{R^2 - y^2}}^\sqrt{R^2 - y^2} dx dy.\]</span>
+Ahora hemos de sumar todas las tiras, desde el extremo inferior del círculo (<span class="math inline">\(y = -R\)</span>) al extremo superior (<span class="math inline">\(y = R\)</span>). Y así tenemos nuestra integral doble:
+<span class="math display">\[\int_{-R}^R \int_{-\sqrt{R^2 - y^2}}^\sqrt{R^2 - y^2} dx\, dy.\]</span></p>
+<p>La primera integral es inmediata y nos queda
+<span class="math display">\[\int_{-R}^R 2\sqrt{R^2 - y^2} dy.\]</span>
+Sacamos la <span class="math inline">\(R\)</span> de la raíz y hacemos el cambio de variable <span class="math inline">\(u = \frac{y}{R}\)</span>, lo que implica que <span class="math inline">\(dy = R du\)</span>. Con el cambio de variable cambiamos los extremos de integración. Es fácil ver que si <span class="math inline">\(y = -R\)</span> entonces <span class="math inline">\(u = -1\)</span> y que si <span class="math inline">\(y = R\)</span> entonces <span class="math inline">\(u = 1\)</span>. Nos queda
+<span class="math display">\[2R\int_{-1}^1 \sqrt{1 - u^2} \, R\, du = 2R^2\int_{-1}^1 \sqrt{1 - u^2} \, du\]</span></p>
+<p>La integral <span class="math inline">\(\int \sqrt{1 - u^2} \, du\)</span>, que parece inocente, no es tan fácil. Primero hemos de hacer al cambio de variable <span class="math inline">\(u = \sin(v)\)</span>, lo que implica que <span class="math inline">\(du = \cos(v) dv\)</span>. Como <span class="math inline">\(1 - \sin^2 (v) = \cos^2(v)\)</span> (para esto hacemos el cambio), nos queda:
+<span class="math display">\[\int \sqrt{1 - u^2} \, du = \int \cos^2(v) \, dv.\]</span>
+Ahora hemos de aplicar la igualdad trigonométrica <span class="math inline">\(\cos^2(v) = \frac{1}{2}(\cos(2v) + 1)\)</span>. Y a partir de aquí ya sale. La solución es
+<span class="math display">\[2R^2 \left(\left. \frac{1}{2}(u \sqrt{1-u^2} + \arcsin(u))\right|_{-1}^{1} \right)\]</span>
+Y el resultado de esto es <span class="math inline">\(πR^2\)</span>.</p>
+<p>Parece una forma muy complicada de calcular una superficie. Eso es porque hemos usado coordenadas rectangulares aplicadas a un círculo. El cálculo de la integral se puede simplificar <em>mucho</em> si escogemos mejor las variables. Usemos coordenadas polares.</p>
+<p><img src="imagenes/IntSupCircPol.jpg" /><!-- --></p>
+<p>Nuestras coordenadas son ahora <span class="math inline">\(r\)</span>, la distancia al centro, y <span class="math inline">\(\theta\)</span>, el ángulo. Vamos a ir sumando pequeños sectores circulares. Como son muy pequeños, los podemos considerar rectángulos y su superficie será <span class="math inline">\(dr\cdot rd\theta\)</span>. Es <span class="math inline">\(rd\theta\)</span> y no sólo <span class="math inline">\(d\theta\)</span>, pues <span class="math inline">\(d\theta\)</span> es un ángulo y queremos una longitud: <span class="math inline">\(rd\theta\)</span> es una longitud.</p>
+<p>Tenemos que sumar todos estos rectángulos, desde <span class="math inline">\(r = 0\)</span> a <span class="math inline">\(r = R\)</span>, esto nos da una “cuñita”, y después debemos barrer la cuña por todo el círculo, es decir , desde <span class="math inline">\(\theta = 0\)</span> a <span class="math inline">\(\theta = 2π\)</span>. La integral a resolver es pues
+<span class="math display">\[\int_0^{2π}\int_0^R r\,dr \,d\theta\]</span>
+y esta integral es de resolución inmediata:
+<span class="math display">\[\int_0^{2π}\int_0^R r\,dr \,d\theta = \left.\left.\frac{r^2}{2} \theta\right|_{r=0}^{r = R}\right|_{\theta = 0}^{\theta = 2π} = πR^2\]</span></p>
+<hr />
+<p>Vamos a resolver otro problema, esta vez aplicando coordenadas rectangulares a un rectángulo.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-168" class="example"><strong>Ejemplo 13.8  </strong></span>Tenemos una plancha rectangular de un material que no tiene densidad constante: es más pesada a la derecha y arriba que a la izquierda y abajo. Suponiendo el origen de coordenadas en el ángulo inferior izquierdo, la densidad <span class="math inline">\(\sigma\)</span> en el punto de coordenadas <span class="math inline">\((x, y)\)</span> viene dada por la expresión <span class="math inline">\(\sigma(x, y) = 1 + 0.3 x + 0.7 y\)</span>. La plancha tiene anchura <span class="math inline">\(a\)</span> y altura <span class="math inline">\(b\)</span>. ¿Cuál es su masa?</p>
+<p>Para calcular la masa de la plancha, hemos de sumar la masa de todos los pequeños rectángulos de tamaño <span class="math inline">\(dx\)</span>, <span class="math inline">\(dy\)</span>. Como los rectángulos son muy pequeños, podemos considerar que en ellos la densidad es constante. Si el rectángulo está en el punto <span class="math inline">\((x, y)\)</span>, la masa de este pequeño rectángulo será <span class="math inline">\(\sigma\, dx\, dy = (1 + 0.3 x + 0.7 y) \, dx\, dy\)</span>. Sumamos las masas de todos estos rectángulos:</p>
+<span class="math display">\[\int_0^b\int_0^a (1 + 0.3 x + 0.7 y) \, dx\, dy = \left.\left. xy + 0.7x\frac{y^2}{2} + 0.3\frac{x^2}{2}y \right|_{x=0}^{x = a}\right|_{y = 0}^{y = b} = ab + 0.35 ab^2 + 0.15a^2b\]</span>
+</div>
+
+<hr />
+Acabemos este apartado calculando un volumen con una integral triple:
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-169" class="example"><strong>Ejemplo 13.9  </strong></span>Calcula el volumen de un cono de radio <span class="math inline">\(R\)</span> y altura <span class="math inline">\(h\)</span>.</p>
+<p>Dividiremos el cono en una serie de discosapilados verticalmente. Como los discos son círculos, usaremos coordenadas polares, <span class="math inline">\(r\)</span> y <span class="math inline">\(\theta\)</span>, como en el ejemplo del círculo, y para la altura usaremos una variable que llamaremos <span class="math inline">\(z\)</span>.</p>
+<p>Dividimos el cono en pequeños cubos de lados <span class="math inline">\(dr\)</span>, <span class="math inline">\(rd\theta\)</span> y <span class="math inline">\(dz\)</span>. El volumen de un disco se calcula casi igual que el del círculo, ya hecho:</p>
+<p><span class="math display">\[\int_0^{2π}\int_0^? r\,dr \,d\theta\, dz\]</span></p>
+He puesto un interrogante en el límite superior de la integral en <span class="math inline">\(r\)</span>, porque el radio del disco va a depender de a qué altura esté: en la base va a ser <span class="math inline">\(R\)</span>, pero después va a disminuir cuánto más alto esté. Es decir, va a depender de <span class="math inline">\(z\)</span>. No es difícil deducir que el radio de un disco a altura <span class="math inline">\(z\)</span> es <span class="math inline">\(R - \frac{R}{h}z\)</span>. Entonces esta integral queda:
+<span class="math display">\[\int_0^{2π}\int_0^{R - \frac{R}{h}z} r\,dr \,d\theta\, dz.\]</span>
+Este es el volumen de un disco que está a altura <span class="math inline">\(z\)</span>. Ahora hay que sumar todos los discos desde <span class="math inline">\(z=0\)</span> a <span class="math inline">\(z = h\)</span>:
+<span class="math display">\[\int_0^h\int_0^{2π}\int_0^{R - \frac{R}{h}z} r\,dr \,d\theta\, dz.\]</span>
+Las dos primeras integrales son fáciles y ya las hemos hecho. Nos queda la tercera:
+<span class="math display">\[π\int_0^h \left(R - \frac{R}{h}z\right)^2dz\]</span>
+Desarrollando:
+<span class="math display">\[π\int_0^h \left(R^2 + \frac{R^2}{h^2}z^2 - 2\frac{R^2}{h}z\right)dz\]</span>
+Es un polinomio, por lo tanto, inmediata:
+<span class="math display">\[π\left.\left(R^2z + \frac{R^2}{h^2}\frac{z^3}{3} - 2\frac{R^2}{h}\frac{z^2}{2}\right)\right|_0^h.\]</span>
+Para <span class="math inline">\(z=0\)</span> es 0, luego queda:
+<span class="math display">\[π\left(R^2h + \frac{R^2}{h^2}\frac{h^3}{3} - \frac{R^2}{h}h^2\right) = 
+π\left(R^2h + \frac{R^2 h}{3} - R^2h\right).\]</span>
+Y nos queda la conocida fórmula del volumen de uncono:
+<span class="math display">\[V = \frac{1}{3}πR^2 h\]</span>
+</div>
+
+<hr />
+<p>Para terminar, calculemos la posición del centro de masas de la plancha de densidad no uniforme del ejemplo que hemos visto antes. La posición del centro de masas será un vector, pues tiene dos componentes. Esto quiere decir que tenemos dos variables de entrada y un vector de salida. Luego tenemos una función vectorial multivariable. Veamos qué hacer con estas fuciones.</p>
+</div>
+</div>
+<div id="funciones-vectoriales-multivariable" class="section level2">
+<h2><span class="header-section-number">13.6</span> Funciones vectoriales multivariable</h2>
+<p>Cuando comentamos las funciones vectoriales de una variable vimos que era como tener un función real de una variable por cada componente del vector: no había ningún cálculo ni concepto nuevo, sino que había que repetir lo mismo <span class="math inline">\(m\)</span> veces. Con las funciones vectoriales multivariable pasa lo mismo: tenemos <span class="math inline">\(m\)</span> componentes, cada una de ellas, una función de <span class="math inline">\(n\)</span> variables. Repetimos de una función de <span class="math inline">\(n\)</span> variables una vez or componente, esto es, <span class="math inline">\(m\)</span> veces.</p>
+<p>No vamos a entrar más en ello. Simplemente haremos un ejemplo.</p>
+<hr />
+<p>Tenemos una plancha rectangular de un material que no tiene densidad constante: es más pesada a la derecha y arriba que a la izquierda y abajo. Suponiendo el origen de coordenadas en el ángulo inferior izquierdo, la densidad <span class="math inline">\(\sigma\)</span> en el punto de coordenadas <span class="math inline">\((x, y)\)</span> viene dada por la expresión <span class="math inline">\(\sigma(x, y) = 1 + 0.3 x + 0.7 y\)</span>. La plancha tiene anchura <span class="math inline">\(a\)</span> y altura <span class="math inline">\(b\)</span>. ¿Dónde está su centro de masas?</p>
+<p>La expresión para encontrar el centro de masas de un objeto continuo es
+<span class="math display">\[\vec{r}_{CM} = \frac{1}{M}\int\vec{r}\,dm\]</span></p>
+<p><img src="imagenes/CMasas.jpg" /><!-- --></p>
+<p>El vector <span class="math inline">\(\vec{r} = (x\,\vec{i} + y\,\vec{j})\)</span> es el vector que localiza <span class="math inline">\(dm\)</span>. Este diferencial es un rectángulo de lados <span class="math inline">\(dx\)</span> y <span class="math inline">\(dy\)</span> y su densidad la podemos considerar constante y es <span class="math inline">\(1 + 0.3 x + 0.7 y\)</span>. Sabmos la masa de la plancha, pues la hemos calculado ya, <span class="math inline">\(M = ab + 0.35 ab^2 + 0.15a^2b\)</span>. La expresión queda:
+<span class="math display">\[\vec{r}_{CM} = \frac{1}{M}\int_0^b\int_0^a(x\,\vec{i} + y\,\vec{j})(1 + 0.3 x + 0.7 y)\,dx\,dy.\]</span>
+Esta integral se descompone en 2:
+<span class="math display">\[\frac{1}{M}\left(\left(\int_0^b\int_0^a x(1 + 0.3 x + 0.7 y)\,dx\,dy\right) \vec{i} + \left(\int_0^b\int_0^a y(1 + 0.3 x + 0.7 y)\,dx\,dy\right) \vec{j}\right).\]</span>
+Son integrales fáciles y no las haremos. El resultado es
+<span class="math display">\[\vec{r}_{CM} = \frac{1}{M}\left(\frac{a^2b}{2} + 0.1a^3b + 0.175a^2b^2\right)\vec{i} + \frac{1}{M}\left(\frac{ab^2}{2} + 0.075a^2b^2 + \frac{0.7}{3}ab^3\right)\vec{j}\]</span></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ecuaciones-diferenciales.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/12_MultiV.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

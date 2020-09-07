@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 5 Series | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 5 Series | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 5 Series | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 5 Series | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="inducción-matemática.html"/>
+<link rel="next" href="aplim.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="series" class="section level1">
+<h1><span class="header-section-number">Capítulo 5</span> Series</h1>
+<p>(El ejemplo y las imágenes están sacadas de un <A HREF = "https://www.youtube.com/watch?v=rXvaCy8PMdE&t=167s" target = _blank>video de Matt Parker</A>, del canal de You Tube Standup Maths, de visión recomendable.)</p>
+<p>Supongamos que tienes un conjunto (infinito) de ladrillos sobre una mesa. Empiezas con uno y quieres ponerlo en el borde, de manera que sobresalga lo más posible, pero sin caerse:</p>
+<p><img src="imagenes/ladrillo1.jpg" /><!-- --></p>
+<p>Como el centro de gravedad del ladrillo tiene que estar sobre la mesa, y el centro de gravedad está en el centro del ladrillo, esto quiere decir que podemos tener a lo más medio ladrillo sobresaliendo de la mesa.</p>
+<p>Si ponemos dos ladrillos, el ladrillo superior sobresaldrá 1/2 sobre el inferior, pero el par sobresaldrá menos que eso sobre la mesa. Y si ponemos aún más ladrillos, cada uno sobresaldrá menos que el que tiene encima:</p>
+<p><img src="imagenes/ladrillos.jpg" /><!-- --></p>
+<p>Si añadimos más ladrillos el ladrillo superior sobresale cada vez más, pero lo que gana por cada ladrillo adicional es cada vez menos. ¿Hasta dónde podemos conseguir que sobresalga este ladrillo superior?</p>
+<hr />
+<p>Tenemos un cubo grande y una persona le mete 1 litro de agua, después viene una segunda persona y le añade 1/4 litro, una tercera persona le añade 1/9 de litro, y así: la <span class="math inline">\(n\)</span>-sima persona le añade <span class="math inline">\(1/n^2\)</span> litros. ¿Se acabará desbordando el cubo?</p>
+<hr />
+<p>En el primer ejemplo tenemos una sucesión <span class="math inline">\(s_1, s_2, s_3, …\)</span> de longitudes de ladrillo que sobresalen sobre el ladrillo inferior. Lo que sobresale el primer ladrillo sobre la mesa es <span class="math inline">\(s_1 + s_2 + s_3 + \cdots\)</span>. En el segundo, tenemos la sucesión <span class="math inline">\(\{a_n = 1/n^2\}\)</span> y la cantidad de agua en el cubo es <span class="math inline">\(1 + 1/4 + 1/9 +\cdots + 1/n^2 + \cdots\)</span>. Las soluciones a estos problemas se obtienen realizando una suma infinita. A esta suma infinita se le llama la <em>serie infinita</em> de la sucesión (o simplemente serie de la sucesión), y es lo que estudiaremos en este capítulo.</p>
+<div id="definición" class="section level2">
+<h2><span class="header-section-number">5.1</span> Definición</h2>
+<p>La idea intuitiva de serie es que es la suma de los infinitos términos de una sucesión. Lo que uno se pregunta es ¿pódemos sumar infinitos términos? Y la respuesta es: no. El concepto de serie es una <em>extensión</em> del concepto de suma. Sabemos sumar un número finito de términos, por muchos que haya. Vamos a extender esta idea a la suma de infinitos términos. Usemos un ejemplo como punto de partida.</p>
+<p>Sea la sucesión <span class="math inline">\(\{a_n = 1/2^n\}\)</span>, cuyos primeros téminos son 1/2, 1/4, 1/8, 1/16,…. Como sabemos sumar un número finito de términos, vamos a ir calculando lo que llamaremos sumas parciales: la suma de un término, de dos, de tres, etc. Llamaremos <span class="math inline">\(S_n\)</span> a la suma parcial de los <span class="math inline">\(n\)</span> primeros términos. Las sumas parciales de esta sucesión son:
+<span class="math display">\[\begin{align}
+S_1 &amp;= \frac{1}{2}\\
+S_2 &amp;= \frac{1}{2} + \frac{1}{4} = \frac{3}{4}\\
+S_3 &amp;= \frac{1}{2} + \frac{1}{4} + \frac{1}{8}= \frac{7}{8}\\
+...\\
+S_n &amp;= \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots + \frac{1}{2^n} = \frac{2^n -1}{2^n}\\
+\end{align}\]</span></p>
+<p>Vemos que <span class="math inline">\(S_n\)</span> tiende a 1. Esto nos hace pensar que una forma razonable de extender la idea de suma a una suma infinita en este caso es decir que la suma de los infinitos términos de la sucesión <span class="math inline">\(\{a_n = 1/2^n\}\)</span> es 1.</p>
+<p>Vamos a generalizar y formalizar esta idea.</p>
+<hr />
+
+<div class="definition">
+<span id="def:unnamed-chunk-25" class="definition"><strong>Definición 5.1  </strong></span>Dada una sucesión <span class="math inline">\(\{a_n\}\)</span>, llamamos sumas parciales <span class="math inline">\(S_n\)</span> a las sumas de los primeros <span class="math inline">\(n\)</span> términos:
+<span class="math display">\[S_n = \sum_{i=1}^n a_i.\]</span>
+Estas sumas parciales forman la sucesión <span class="math inline">\(\{S_n\}\)</span>. Definimos como <em>serie infinita</em> de <span class="math inline">\(\{a_n\}\)</span> (o simplemente serie de <span class="math inline">\(\{a_n\}\)</span>), y lo escribimos como <span class="math inline">\(\sum_{i = 1}^\infty a_i\)</span>, al límite de la sucesión <span class="math inline">\(\{S_n\}\)</span>:
+<span class="math display">\[\sum_{i = 1}^\infty a_i = \lim_{n \to \infty} \{S_n\}\]</span>
+</div>
+
+<hr />
+<p>Nota: La palabra <em>serie</em> designa a la suma infinita de los términos de una sucesión. Por lo tanto lo correcto es decir “La serie vale 1.66” o “La serie de la sucesión vale 1.66”. Pero muy a menudo se dice “La suma de la serie vale 1.66” o “La suma de la sucesión es 1,66”. Estrictamente, son incorrecciones, pero no son graves.</p>
+<hr />
+<p>Hemos supuesto que el primer término de la sucesión es <span class="math inline">\(n = 1\)</span>, pero la serie se puede definir de forma análoga si el primer término es el <span class="math inline">\(n=0\)</span>.</p>
+<p>Si el límite existe, decimos que la serie es convergente, si no, decimos que es divergente. Seguiremos siendo un poco incorrectos y si la sucesión <span class="math inline">\(\{S_n\}\)</span> crece (o decrece) de forma ilimitada diremos que la serie es <span class="math inline">\(\infty\)</span> (o <span class="math inline">\(-\infty\)</span>).</p>
+Veamos algunos ejemplos.
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-26" class="example"><strong>Ejemplo 5.1  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\ = n\}\)</span>. Las sumas parciales son:
+<span class="math display">\[\begin{align}
+S_1 &amp;= 1\\
+S_2 &amp;= 1+2 = 3\\
+S_3 &amp;= 1+2+3= 6\\
+S_3 &amp;= 1+2+3+4 = 10\\
+...\\
+S_n &amp;= 1+2+3 + \cdots + n = \frac{1+n}{2}n = \frac{n^2+n}{2}\\
+\end{align}\]</span></p>
+El límite de la sucesión es <span class="math inline">\(\infty\)</span> y por lo tanto decimos que la serie de esta sucesión es <span class="math inline">\(\infty\)</span>.
+</div>
+
+<hr />
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-27" class="example"><strong>Ejemplo 5.2  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\ = -1^n\}\)</span>. Los primeros términos de la sucesión son -1, 1, -1, 1,…Las sumas parciales son:
+<span class="math display">\[\begin{align}
+S_1 &amp;= -1\\
+S_2 &amp;= -1+1 = 0\\
+S_3 &amp;= -1+1-1= -1\\
+S_3 &amp;= -1+1-1+1 = 0\\
+...\\
+S_n &amp;= -1+1-1 + \cdots + -1^n = \left\{\begin{array}{ll}
+                     -1 &amp; \mbox{si } n \mbox{ es impar}\\
+                      0 &amp; \mbox{si } n \mbox{ es par}\end{array}\right.
+\end{align}\]</span></p>
+Esta sucesión <span class="math inline">\(\{S_n\}\)</span> no tiene límite y por lo tanto la serie no tiene valor. O podemos decir que la sucesion <span class="math inline">\(\{a_n\ = -1^n\}\)</span> no tiene suma.
+</div>
+
+</div>
+<div id="criterios-de-convergencia-de-una-serie" class="section level2">
+<h2><span class="header-section-number">5.2</span> Criterios de convergencia de una serie</h2>
+<p>En general no es fácil determinar cuánto vale una serie. Pero si sabemos si es convergente o no tenemos mucho ganado: si es divergente ya no nos molestamos y si es convergente, podemos hacernos una idea del valor de la serie sumando unos cuantos miles de términos con la ayuda del ordenador. Luego el primer paso es determinar si la serie es convergente o no y para eso tenemos los criterios de convergencia de las series.</p>
+<p>Enunciemos, pues, algunso criterios de convergencia. No las vamos a demostrar formalmente, pero daremos algunas indicaciones de la plausibilidad de los resultados. En estas indicaciones vamos a suponer que los términos de la sucesión son todos positivos. Si son negativos, o positivos y negativos, las ideas son las mismas, los resultados son casi los mismos, pero la notación y las explicaciones son mucho más largas. Si las ideas se entienden bien para el caso positivo, no es difícil extenderlo a los otros casos.</p>
+<hr />
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-28" class="theorem"><strong>Teorema 5.1  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\}\)</span>. Si <span class="math inline">\(\lim_{n \to \infty} \{a_n\} ≠ 0\)</span> o no existe, la serie es divergente.
+</div>
+
+<p>Si el límite no existe, es obvio que el límite de las sumas parciales tampoco puede existir. Y si existe pero no es cero, esto quiere decir que estamos sumando algo infinitas veces, y por lo tanto la sumas parciales explotarán a <span class="math inline">\(\infty\)</span>.</p>
+<hr />
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-29" class="theorem"><strong>Teorema 5.2  </strong></span>Sea la serie <span class="math inline">\(\{a_n\}\)</span>. Si la serie es convergente, <span class="math inline">\(\lim_{n \to \infty} \{a_n\} = 0\)</span>.
+</div>
+
+<p>Esta es la afirmación inversa a la del criterio anterior. Cuidado con un error lógico muy habitual. El criterio dice que si la serie es convergente, entonces el límite de la sucesión es 0. Pero <em>no</em> dice que si el límite de la sucesión es 0, entonces la serie converge. El límite de la sucesión puede ser 0 y la serie ser divergente. Veremos un ejemplo.</p>
+<hr />
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-30" class="theorem"><strong>Teorema 5.3  </strong></span>Sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y la serie de <span class="math inline">\(\{a_n\}\)</span> converge. Si existe un valor <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n ≥ N\)</span>, <span class="math inline">\(b_n ≤ a_n\)</span>, entonces la serie de <span class="math inline">\(\{b_n\}\)</span> también converge.
+</div>
+
+<p>Supongamos para empezar que <span class="math inline">\(N = 1\)</span>. Entonces si todos los términos de <span class="math inline">\(\{b_n\}\)</span> son menores que todos los términos de <span class="math inline">\(\{a_n\}\)</span>, entonces las sumas parciales de <span class="math inline">\(\{b_n\}\)</span> van a ser todas menores o iguales que las de <span class="math inline">\(\{a_n\}\)</span>. Y por lo tanto el límite de las sumas parciales de <span class="math inline">\(\{b_n\}\)</span> existirá y será menor o igual al límite de las de <span class="math inline">\(\{a_n\}\)</span>.</p>
+<p>Ahora supongamos que <span class="math inline">\(N&gt;1\)</span>. Llamemos <span class="math inline">\(Sb\)</span>, si existe, a la serie de <span class="math inline">\(\{b_n\}\)</span> y llamemos <span class="math inline">\(Sb_N\)</span> a las suma parcial de los <span class="math inline">\(N\)</span> primeros términos de la sucesión. Como <span class="math inline">\(Sb_N\)</span> se obtiene de sumas normales, es seguro que existe y es finito. Llamemos <span class="math inline">\(\{a&#39;_n\}\)</span> y <span class="math inline">\(\{b&#39;_n\}\)</span> a las sucesiones que se obtienen sustituyendo en <span class="math inline">\(\{a_n\}\)</span> y<span class="math inline">\(\{b_n\}\)</span> respectivamente los N primeros términos por 0. Entonces <span class="math inline">\(b&#39;_n ≤ a&#39;_n\)</span> para todo N y esto quiere decir que la serie de <span class="math inline">\(\{b&#39;_n\}\)</span> es convergente. Llamemos <span class="math inline">\(Sb&#39;\)</span> a esta serie. Es fácil ver que <span class="math inline">\(Sb = Sb&#39; + Sb_N\)</span>. Luego <span class="math inline">\(Sb\)</span> existe y es finito y la serie de <span class="math inline">\(\{b_n\}\)</span> es convergente.</p>
+<hr />
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-31" class="theorem"><strong>Teorema 5.4  </strong></span>Sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y la serie de <span class="math inline">\(\{a_n\}\)</span> diverge hacia <span class="math inline">\(\infty\)</span>. Si existe un valor <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n ≥ N\)</span> <span class="math inline">\(b_n ≥ a_n\)</span>, entonces <span class="math inline">\(\{b_n\}\)</span> también diverge hacia <span class="math inline">\(\infty\)</span>.
+</div>
+
+<p>El razonamiento es muy parecido al anterior.</p>
+<hr />
+<p>Usemos estos criterios en algunos ejemplos.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-32" class="example"><strong>Ejemplo 5.3  </strong></span>Estudie la convergencia de la serie
+<span class="math display">\[\sum_{n=1}^\infty \frac{n+5}{2n}.\]</span></p>
+Empezamos por calcular el límite se la sucesión:
+<span class="math display">\[\lim_{n \to \infty}  \frac{n+5}{2n}= \frac{1}{2}\]</span>
+La serie es divergente.
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-33" class="example"><strong>Ejemplo 5.4  </strong></span>Estudie la convergencia de la serie <span class="math inline">\(\sum_{n=1}^\infty\{\frac{1}{n}\}\)</span>.</p>
+<p>Empezamos por calcular el límite se la sucesión:
+<span class="math display">\[\lim_{n \to \infty}  \frac{1}{n}= 0\]</span>
+La serie puede ser convergente o no. Hemos de seguir. Los primeros términos de la serie son
+<span class="math display">\[1 + \frac{1}{2} + \frac{1}{3}+ \frac{1}{4}+ \frac{1}{5}+ \frac{1}{6} + \frac{1}{7} + \frac{1}{8}+\cdots\]</span>
+Vamos a crear otra sucesión cuyos terminos son todos menores o iguales a las de esta:
+<span class="math display">\[1 + \frac{1}{2} + \frac{1}{4}+ \frac{1}{4}+ \frac{1}{8}+ \frac{1}{8} + \frac{1}{8} + \frac{1}{8}+\cdots\]</span>
+Hemos cogido dos términos y los hemos cambiado por <span class="math inline">\(1/4\)</span>, los 4 siguientes por <span class="math inline">\(1/8\)</span>, y cogeríamos los 8 siguientes y los sustituiríamos por <span class="math inline">\(1/16\)</span>, los 16 siguientes por <span class="math inline">\(1/32\)</span> y así sucesivamente. Pero los dos téminos <span class="math inline">\(1/4\)</span> suman <span class="math inline">\(1/2\)</span>; los 4 términos <span class="math inline">\(1/8\)</span> suman <span class="math inline">\(1/2\)</span>, los 8 téminos <span class="math inline">\(1/16\)</span> suman <span class="math inline">\(1/2\)</span> y así sucesivamente. Luego la suma de esta serie es
+<span class="math display">\[1 + \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \cdots = \infty\]</span></p>
+Todos los términos de la sucesión <span class="math inline">\(\{\frac{1}{n}\}\)</span> son mayores o iguales a los términos de una sucesión divergente. Luego la serie de <span class="math inline">\(\{\frac{1}{n}\}\)</span> es divergente.
+</div>
+
+<p>Esta serie se conoce como la serie armónica. Muchos matemáticos han demostrado de forma independiente que esta serie es divergente.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-34" class="example"><strong>Ejemplo 5.5  </strong></span>Estudie la convergencia de la serie de <span class="math inline">\(\{\frac{1}{n^2}\}\)</span>.</p>
+<p>El límite de la sucesión es 0, luego la serie puede ser convergente. Los primeros téminos son:</p>
+<p><span class="math display">\[\frac{1}{2^2} + \frac{1}{3^2}+ \frac{1}{4^2}+ \frac{1}{5^2}+ \frac{1}{6^2} + \frac{1}{7^2} + \frac{1}{8^2}+ \frac{1}{9^2}+\cdots\]</span></p>
+<p>Vamos a hacer una sustitución como en el ejemplo anterior. Sustituimos los dos primeros términos por <span class="math inline">\(\frac{1}{2^2}\)</span>, los cuatro siguientes por <span class="math inline">\(\frac{1}{4^2}\)</span>, los 8 siguientes por <span class="math inline">\(\frac{1}{8^2}\)</span>, etc. Esta segunda sucesión tiene todos sus términos mayores o iguales a los de <span class="math inline">\(\{\frac{1}{n^2}\}\)</span>.</p>
+<p>Esta segunda sucesión la podemos sumar. La suma de los dos primeros términos es
+<span class="math display">\[2 \frac{1}{2^2} = \frac{1}{2}\]</span>
+La suma de los 4 siguientes términos es:
+<span class="math display">\[4 \frac{1}{4^2} = \frac{1}{4}\]</span>
+La suma de los 8 siguientes términos es:
+<span class="math display">\[8 \frac{1}{8^2} = \frac{1}{8}\]</span></p>
+<p>La suma de esta segunda serie es una que ya hemos visto antes
+<span class="math display">\[\frac{1}{2} + \frac{1}{4} + \frac{1}{8} +\cdots + \frac{1}{2^n}+\cdots = 1 \]</span></p>
+Luego la serie <span class="math inline">\(\sum_{k=1}^\infty \frac{1}{n^2}\)</span> tiene todos sus términos menores o iguales a la de una serie que suma 1. Por lo tanto
+<span class="math display">\[\sum_{k=1}^\infty \frac{1}{n^2}≤ 1\]</span>
+</div>
+
+<p>El valor de la suma de esta serie se conoce. La calculó Leonhard Euler . Bueno, para ser precisos, Euler empezó en <span class="math inline">\(k=0\)</span>: <span class="math inline">\(1 + \frac{1}{4} + \frac{1}{9} + \cdots\)</span>. La suma de la serie que calculó Euler es <span class="math inline">\(\frac{\pi^2}{6}\)</span>, luego la de la serie del ejemplo es <span class="math inline">\(\frac{\pi^2}{6} - 1 = 0.64493\)</span>. Es sorprendente que aparezca <span class="math inline">\(\pi\)</span>, que es un número que tiene que ver con circulos, en una serie donde lo que tenemos son cuadrados. Es uno de los resultados a los que Euler tenía más estima, lo cual es decir mucho, pues Euler es el matemático más prolífico de la historia y tiene cientos de resultados memorables (por ejemplo, el número <span class="math inline">\(e\)</span> se llama <span class="math inline">\(e\)</span> por Euler).</p>
+</div>
+<div id="operaciones-con-series" class="section level2">
+<h2><span class="header-section-number">5.3</span> Operaciones con series</h2>
+<p>Ya vimos que se pueden operar sucesiones: podemos tener la suma de dos sucesiones, la resta, o multiplicarla por una constante. Nos interesa saber el valor de la serie que es el resultado de una operación de sucesiones. Por suerte, es lo que intuitivamente supondríamos.</p>
+<hr />
+<p>Sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span>, con series <span class="math inline">\(Sa\)</span> y <span class="math inline">\(Sb\)</span>. Si ambas convergen entonces la serie de la sucesión <span class="math inline">\(\{a_n + b_n\}\)</span> es convergente y vale <span class="math inline">\(Sa + Sb\)</span> y la de la sucesión <span class="math inline">\(\{a_n - b_n\}\)</span> también es convergente y vale <span class="math inline">\(Sa- Sb\)</span>.</p>
+<p>Sea una sucesión <span class="math inline">\(\{a_n\}\)</span> convergente y con serie <span class="math inline">\(Sa\)</span>. Sea la serie <span class="math inline">\(\{b_n = k\cdot a_n\}\)</span>, es decir, la sucesión que se consigue multiplicando cada término por una constante. La serie de <span class="math inline">\(\{b_n\}\)</span> es convergente y <span class="math inline">\(Sb = k\cdot Sa\)</span>.</p>
+<p>Sea una sucesión <span class="math inline">\(\{a_n\}\)</span> convergente y con serie <span class="math inline">\(Sa\)</span>. Creamos una sucesión <span class="math inline">\(\{b_n\}\)</span> añadiendo un número finito de términos al inicio de <span class="math inline">\(\{a_n\}\)</span>. Sea <span class="math inline">\(St\)</span> la suma de estos términos. La serie de <span class="math inline">\(\{b_n\}\)</span> es convergente y vale <span class="math inline">\(Sb = Sa + St\)</span>.</p>
+<p>Sea una sucesión <span class="math inline">\(\{a_n\}\)</span> convergente y con serie <span class="math inline">\(Sa\)</span>. Creamos una sucesión <span class="math inline">\(\{b_n\}\)</span> eliminando un número finito de términos del inicio de <span class="math inline">\(\{a_n\}\)</span>. Sea <span class="math inline">\(St\)</span> la suma de estos términos. La serie de <span class="math inline">\(\{b_n\}\)</span> es convergente y vale <span class="math inline">\(Sb = Sa - St\)</span>.</p>
+<hr />
+<p>Nótese que en estos dos últimos resultados sumamos un número finito de términos y lo hacemos al inicio de las series. Sumar por en medio, o sumar un número infinito de términos puede dar lugar a sorpresas. Hay que ir con cuidado.</p>
+</div>
+<div id="progresiones-geométricas" class="section level2">
+<h2><span class="header-section-number">5.4</span> Progresiones geométricas</h2>
+<p>Como hemos dicho, en general no es fácil calcular la suma de una serie y nos hemos de conformar con establecer su convergencia. Pero hay una familia de series que son importantes y que sí sabemos calcular su valor. Son las series de las progresiones geométricas, que ya vimos en el apartado <a href="sucesiones.html#rec">3.3</a>, en las que cada término se obtiene de la anterior multiplicándola por una constante.</p>
+<p>Llamamos serie geométrica a:
+<span class="math display">\[\sum_{n=1}^\infty ar^{n-1}.\]</span></p>
+<p>Los primeros términos de esta serie son
+<span class="math display">\[a + ar + ar^2 + ar^3\]</span></p>
+<p>Por ejemplo, para <span class="math inline">\(a = \frac{1}{2}\)</span> y <span class="math inline">\(r = \frac{1}{2}\)</span> los primeros términos son
+<span class="math display">\[\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} +\cdots\]</span>
+Y esta es nuestra conocida serie que ya hemos estudiado y sabemos que vale 1.</p>
+<hr />
+<p><em>Nota:</em> El <span class="math inline">\(n-1\)</span> del exponente es debido a que empezamos en <span class="math inline">\(n=1\)</span>, otra manera equivalente de escribir esta serie es:
+<span class="math display">\[\sum_{n=0}^\infty ar^{n}.\]</span>
+La expresión que se use depende del gusto de cada uno.</p>
+<hr />
+<p>Vamos a estudiar la convergencia de esta serie. Empecemos por límite de la sucesión:
+<span class="math display">\[\lim_{n  \to \infty} ar^{n-1} \]</span>
+Este límite es 0 sólo si <span class="math inline">\(|r| &lt; 1\)</span>. Luego la serie diverge si <span class="math inline">\(|r|≥1\)</span>.</p>
+<p>Se puede demostrar que si <span class="math inline">\(|r| &lt; 1\)</span> la serie siempre converge y su valor es
+<span class="math display">\[\sum_{n=1}^\infty ar^{n-1} = \frac{a}{1-r}\]</span></p>
+<hr />
+<p><em>Nota:</em> Hemos dicho que hay dos maneras equivalentes de escribir la serie. Naturalmente ambas tienen el mismo valor:
+<span class="math display">\[\sum_{n=1}^\infty ar^{n-1} = \sum_{n=0}^\infty ar^{n} = \frac{a}{1-r}.\]</span>
+Hay que tener cuidado de ajustar el valor inicial y el exponente. Si no, se puede incurrir en error, pues
+<span class="math display">\[\sum_{n=1}^\infty ar^{n} ≠ \frac{a}{1-r}.\]</span>
+Pueden deducir con facilidad lo que vale esta serie.</p>
+<hr />
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-35" class="example"><strong>Ejemplo 5.6  </strong></span>Sea la sucesión <span class="math inline">\(\{\frac{0.9}{10^{n-1}}\}\)</span>. Estudie la convergencia de la serie y, si es convergente, halle su valor.</p>
+<p>Los primeros términos de la sucesión son <span class="math inline">\(0.9, 0.09, 0.009,…\)</span> Ya vemos que la serie va a ser <span class="math inline">\(0.999\dots\)</span>, pero vamos a formalizarlo como una serie geométrica. Hemos de ponerla en la forma <span class="math inline">\(ar^{n-1}\)</span>. No es difícil:
+<span class="math display">\[\sum_{n=1}^\infty 0.9 \left(\frac{1}{10}\right)^{n-1}\]</span>
+Esta es una serie geométrica con <span class="math inline">\(a = 0.9\)</span> y <span class="math inline">\(r = 0.1\)</span>. Como <span class="math inline">\(r&lt;1\)</span> es convergente y la serie es
+<span class="math display">\[\frac{a}{1-r} = \frac{0.9}{1-0.1} = \frac{0.9}{0.9} = 1\]</span></p>
+Esta es otra demostración (hay muchas) de que <span class="math inline">\(0.9999… = 1\)</span>.
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-36" class="example"><strong>Ejemplo 5.7  </strong></span>Sea la sucesión
+<span class="math display">\[-1, \frac{1}{2}, -\frac{1}{4}, \frac{1}{8}, -\frac{1}{16}, …, \frac{-1^{n}}{2^{n-1}},…\]</span>
+Estudie la convergencia de la serie y, si es convergente, halle su valor.</p>
+<p>Hemos de ponerla en forma de serie geométrica. No es difícil, pero hay que tener cuidado con los signos. Quizá sea más sencillo empezar con <span class="math inline">\(n = 0\)</span>:
+<span class="math display">\[\sum_{n = 0}^\infty -1 \left(\frac{-1}{2}\right)^n\]</span>
+(si no lo ven claro, calculen despacio los primeros términos)</p>
+Esta es una serie geométrica con <span class="math inline">\(a = -1\)</span> y <span class="math inline">\(r = -(1/2)\)</span>, luego la serie vale:
+<span class="math display">\[\frac{a}{1-r} = \frac{-1}{1- \frac{-1}{2}} = \frac{-1}{\frac{3}{2}} = -\frac{2}{3}\]</span>
+</div>
+
+Hay veces que el término general no parece el de una serie geométrica, pero sí lo es.
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-37" class="example"><strong>Ejemplo 5.8  </strong></span>Estudie la convergencia de la serie
+<span class="math display">\[\sum_{n = 1}^{\infty} 2^{2n}3^{1-n}\]</span></p>
+<p>Como ambos términos tienen un <span class="math inline">\(n\)</span> en el exponente nos sopechamos que lo podemos escribir como una serie geométrica. Como el exponente del segundo factor tiene un <span class="math inline">\(-n\)</span> lo pasamos al denominador cambiándole de signo:</p>
+<p><span class="math display">\[\sum_{n = 1}^{\infty} \frac{2^{2n}}{3^{n-1}}\]</span></p>
+Ahora cambiamos el <span class="math inline">\(2^{2n}\)</span> por <span class="math inline">\((2^2)^n = 4^n\)</span>:
+<span class="math display">\[\sum_{n = 1}^{\infty} \frac{4^n}{3^{n-1}}\]</span>
+Y ahora necesitamos que ambos exponentes sean <span class="math inline">\(n-1\)</span>:
+<span class="math display">\[\sum_{n = 1}^{\infty} \frac{4 \cdot 4^{n-1}}{3^{n-1}}\]</span>
+Y ya está:
+<span class="math display">\[\sum_{n = 1}^{\infty} 4 \cdot\left(\frac{4}{3}\right)^{n-1}\]</span>
+Tenemos una serie geométrica con <span class="math inline">\(a = 4\)</span> y <span class="math inline">\(r = 4/3\)</span>. Como <span class="math inline">\(r&gt;1\)</span> esta serie es divergente.
+</div>
+
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="inducción-matemática.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="aplim.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04_series.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

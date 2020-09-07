@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 10 Utilidad del concepto de derivada | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 10 Utilidad del concepto de derivada | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 10 Utilidad del concepto de derivada | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 10 Utilidad del concepto de derivada | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="derivación.html"/>
+<link rel="next" href="cálculo-de-primitivas.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="utilidad-del-concepto-de-derivada" class="section level1">
+<h1><span class="header-section-number">Capítulo 10</span> Utilidad del concepto de derivada</h1>
+<p>El concepto de derivada no es un concepto puramente teórico y que sirve para calcular tangentes a curvas, sino que tiene una utilidad directa para muchos problemas. En este capítuo veremos algunos ejemplos.</p>
+<div id="curvas-infinitamente-derivables" class="section level2">
+<h2><span class="header-section-number">10.1</span> Curvas infinitamente derivables</h2>
+<div id="curvas-de-carretera" class="section level3">
+<h3><span class="header-section-number">10.1.1</span> Curvas de carretera</h3>
+<p>Estamos diseñando la curva de una carretera. Queremos que tenga un trazado que los coches puedan seguir a la velocidad estipulada para este tramo. Esto significa que la curva debe ser suficientemente abierta, pero también significa que debe ser infinitamente derivable. Veamos por qué.</p>
+<p>Empezamos con los dos tramos de recta que queremos unir con la curva:</p>
+<p><img src="imagenes/Curva1.jpg" /><!-- --></p>
+<p>La dos rectas y la curva van a formar una función y queremos saber qué características debe tener esta función. La primera exigencia es que haya carretera en todo el tramo. Es decir, exigimos que la función sea continua.</p>
+<p>Podríamos prolongar las dos rectas hasta que se encuentren:</p>
+<p><img src="imagenes/Curva2.jpg" /><!-- --></p>
+<p>El problema es que ningún coche puede seguir este trazado, pues exige que en el punto de unión cambie de dirección instantáneamente. La dirección del coche viene dada por la tengente a la curva, luego este cambio instantáneo de dirección en el punto de unión equivale a decir que la función no es derivable en ese punto. Luego ya tenemos una segunda característica: la función debe ser derivable en todos los puntos.</p>
+<p>La siguiente solución que se nos ocurre es unir las rectas mediante un círculo. Si elegimos el círculo con el radio adecuado para que el coche pueda circular a la velocidad establecida y hacemos la unión con las rectas de manera que éstas sean tangentes a él, entonces aseguramos que es derivable en todos los puntos:</p>
+<p><img src="imagenes/Curva3.jpg" /><!-- --></p>
+<p>Pero un coche tampoco puede seguir este trazado. El motivo es el siguiente. En las rectas las ruedas delanteras deben ir paralelas al eje del coche; pero en la curva, que es un círculo, las ruedas deben formar un cierto ángulo <span class="math inline">\(\alpha\)</span> con el eje del coche. Una vez en la curva no hay que mover el volante, pues con un ángulo constante en las ruedas el coche traza un círculo, pero en el punto de unión de la recta con el círculo hay que cambiar el ángulo de las ruedas de forma instantánea, y esto es físicamente imposible.</p>
+<p>Desde el punto de vista de la derivabilidad, la derivada segunda de una recta es 0, pero la derivada segunda de un tramo de círculo es una constante. Luego en los puntos de unión de la recta con el círculo tenemos derivada primera, pero no tenemos derivada segunda.</p>
+<p>Vemos que la derivada segunda está relacionada con el ángulo que forman las ruedas con el eje del coche. Como ha de ser posible girar el volante con suavidad, debemos exigir que la funcion tenga derivada segunda en todos los puntos.</p>
+<p>Y podríamos seguir con este análisis y llegar a la aconclusión que la función debe tener derivada tercera en todos los puntos, y derivada cuarta, y quinta, etc. Si no es infinitamente derivable, es físicamente imposible que el coche pueda seguir exactamente el trazado de la carretera.</p>
+<p>Los ingenieros que diseñan carreteras hacen algo parecido a lo que hemos hecho nosostros: parten de dos rectas, una sección de círculo de radio adecuado para la parte central y después unen el círculo con las rectas mediante una curva llamada <em>clotoide</em>, que es infinitamente derivable y permite una transición que el coche puede seguir.</p>
+</div>
+<div id="levas" class="section level3">
+<h3><span class="header-section-number">10.1.2</span> Levas</h3>
+<p>Una manera habitual de realizar un movimiento repetido de una pieza es mediante una <em>leva</em>. Un ejemplo típico es el accionamiento de las válvulas de un motor. Las levas están montadas sobre un eje, y al girar empuja un seguidor que hace mover la válvula o el mecanismo que sea.</p>
+<p><img src="imagenes/Leva1.jpeg" /><!-- --></p>
+<p>Este accionamiento debe ser suave, sobre todo si la leva ha de girar rápido. Por ejemplo en un motor de coche el eje de la leva debe poder girar a 3000 rpm o 4000 rpm. Por argumentos similares al caso de las curvas de carretera se puede concluir que la función del perfil de la leva debe ser infinitamente derivable, pues si no, a velocidades elevadas habría vibraciones indeseadas que dañarían el mecanismo.</p>
+<p>Pero no todas las levas son así. Hay algunas levas que están diseñadas para ir a poca velocidad y no importa que el mecanismo salte. Incluso están los mecanismos de carraca, que no son siquiera continuas, pues están diseñadas para poder girar en sólo una dirección:</p>
+<p><img src="imagenes/Carraca.jpeg" /><!-- --></p>
+<p>En ninguno de los dos sentidos puede el seguidor seguir el perfil de la leva, pero en una dirección simplemente salta, lo que a bajas velocidades no es ningún problema, y en el otro, bloquea al eje impidiendo el movimiento.</p>
+<p>En resumen, la función de la leva y la velocidad a la que debe ir, exige que los perfiles de las levas sean funciones con ciertas características de continuidad y derivabilidad.</p>
+</div>
+</div>
+<div id="crecimiento" class="section level2">
+<h2><span class="header-section-number">10.2</span> Crecimiento</h2>
+<p>Vimos que la derivada nos indica la pendiente de una curva. Si la pendiente es positiva, eso quiere decir que la curva crece, si es negativa, quiere decir que decrece. Además, el valor de la derivada nos indica lo rçapido o lento que una curva crece (o decrece): cuanto mayor sea el valor absoluto de la derivada, más rápidamente varía.</p>
+<p>Por ejemplo, supongamos la función <span class="math inline">\(f(x) = x^3+3x^2-x-3\)</span>. Digamos que esta función nos describe el valor (en Pa) de la presión en un cierto circuito hidráulico. Es un polinomio, luego sabemos que es una función continua. Si queremos saber dónde es positiva y dónde es negativa la presión, hemos de saber dónde es positiva y dónde es negativa la función. Igualamos la función a 0:
+<span class="math display">\[x^3+3x^2-x-3 = 0.\]</span></p>
+<p>Es una ecuación de tercer grado, no es inmediato pero se pueden calcular las raíces (y en todo caso sabemos hacerlo numéricamente, aplicando el teorema de Bolzano, como vimos en el apartado <a href="funciones-continuidad.html#impcont">7.4</a>). Las raíces de esta función están en los puntos <span class="math inline">\(x = -3\)</span>, <span class="math inline">\(x = -1\)</span> y <span class="math inline">\(x = 1\)</span>. Es fácil ver que <span class="math inline">\(\lim_{x \to \infty} x^3+3x^2-x-3 = \infty\)</span>, luego la función es positiva para <span class="math inline">\(x &gt; 1\)</span>, es negativa para <span class="math inline">\(-1 &lt; x &lt; 1\)</span>, otra vez positiva para <span class="math inline">\(-3 &lt; x &lt; -1\)</span> y negativa para <span class="math inline">\(x &lt; -3\)</span>. ¿Pero dónde es creciente y dónde es decreciente?</p>
+<p>Para ello hemos de ver dónde es positiva y negativa la derivada de la función. Derivamos y obtenemos
+<span class="math display">\[f^{\prime}(x) = 3x^2 + 6x -1.\]</span></p>
+<p>La función será creciente allá dónde la derivada sea positiva. Otra vez, es un polinomio, luego es continua y hemos de hallar sus raíces:
+<span class="math display">\[3x^2 + 6x -1 = 0.\]</span></p>
+<p>Las raíces son <span class="math inline">\(x = \frac{-13}{6}\)</span> y <span class="math inline">\(x = \frac{1}{6}\)</span>. Luego la función es creciente para <span class="math inline">\(x &gt; \frac{1}{6}\)</span>, decreciente para <span class="math inline">\(\frac{-13}{6} &lt; x &lt; \frac{1}{6}\)</span> y otra vez creciente para <span class="math inline">\(x &lt; \frac{-13}{6}\)</span>.</p>
+<p>Queremos saber dónde el ritmo de decrecimiento es menor y cuánto vale. En general habría que hacer un análisis de la función derivada, pero en este caso es simple: sabemos que la derivada es una parábola, luego el punto donde el decrecimiento es máximo, es decir dónde la derivada es minima, es en el punto medio entre las raíces, es decir en
+<span class="math display">\[x = \frac{\frac{-13}{6} - \frac{1}{6}}{2} = -\frac{7}{6}.\]</span></p>
+<p>Para saber cuánto varía la presión en este punto, calculamos el valor de la derivada en <span class="math inline">\(x = -\frac{7}{6}\)</span> y tenemos que la presión cae en ese punto del circuito a un ritmo de <span class="math inline">\(-3.92\)</span> Pa/m.</p>
+</div>
+<div id="concavidad-y-convexidad" class="section level2">
+<h2><span class="header-section-number">10.3</span> Concavidad y convexidad</h2>
+<p>Ya hemos visto que la velocidad es la derivada de la posición. Pero la velocidad misma puede crecer o decrecer: si crece decimos que tenemos una aceleración positiva, y si decrece, que tenemos una aceleración negativa.
+Desde el punto de vista de las derivadas, la aceleración es positiva si la derivada segunda de la posición es positiva y negativa, si es negativa. Esto que, por experiencia, conocemos bien de posiciones, velocidades y aceleraciones, lo podemos extender a cualquier función y cualquier curva.</p>
+<p>Tenemos una curva y calculamos su pendiente en diferentes puntos. Estamos “acelerando” si la pendiente es cada vez más positiva (o menos negativa).</p>
+<p><img src="imagenes/Conc1.jpg" /><!-- --></p>
+<p>En este caso decimos que la curva es <em>convexa</em>.</p>
+<p>Si en cambio tenemos una curva en la que las pendientes son cada vez más negativas (o menos positivas) tenemos una curva que llamamos <em>cóncava</em>.</p>
+<p><img src="imagenes/Conc3.jpg" /><!-- --></p>
+<hr />
+<p><em>Nota. Los nombres de cóncava y convexa son bastante confusos: uno nunca se acuerda de cuál es cuál. Además los he visto usados al revés, llamando cóncava a lo que aquí llamamos convexa y viceversa. También los he visto llamados “cóncava para arriba” y “cóncava para abajo”. En casos confusos como es este, el nombre es menos importante que el concepto.</em></p>
+<hr />
+<p>Cómo calcular la concavidad o convexidad de una curva se deduce fácilmente de la definición: si es convexa va “acelerando”, es decir, que la derivada primera es cada vez mayor, lo que quiere decir que la derivada segunda es positiva; si es cóncava va “decelerando”, luego la derivada primera es cada vez menor y la derivada segunda es negativa.</p>
+<p>En resumen, dada una función <span class="math inline">\(f(x)\)</span>, si <span class="math inline">\(f^{\prime\prime}(x) &gt; 0\)</span> en una región, entonces decimos que la función es convexa en esa región. Si en cambio <span class="math inline">\(f^{\prime\prime}(x) &lt; 0\)</span> en una región, decimos que <span class="math inline">\(f(x)\)</span> es cóncava en esa región.</p>
+<hr />
+<p>Una función puede ser cóncava en unas regiones y convexa en otras. Fijémonos en la gráfica de la función <span class="math inline">\(f(x) = 0.05(x^3 - 21x -20)\)</span>:</p>
+<p><img src="imagenes/Conc2.jpg" /><!-- --></p>
+<p>Claramente es cóncava en la parte izquierda y convexa en la parte derecha. En algún punto alrededor de <span class="math inline">\(x = 0\)</span> pasa de cóncava a convexa. Ese punto se llama un <em>punto de inflexión</em>. Es algo que estasw muy acostumbrado a notar. Si estás trazando curvas enlazadas en un coche, moto o bicicleta, hay un punto en el que pasas de estar en una curva a izquierdas a una a derechas: ese es el punto de inflexión.</p>
+<p>Calcular el punto de inflexión es fácil: si es el punto en el que se pasa de convexa a cóncava, o lo que es lo mismo, de <span class="math inline">\(f^{\prime\prime}(x) &gt; 0\)</span> a <span class="math inline">\(f^{\prime\prime}(x) &lt; 0\)</span> (o viceversa), debe ser el punto donde <span class="math inline">\(f^{\prime\prime}(x) = 0\)</span>.</p>
+<p>Vamos a practicar estos conceptos</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-97" class="example"><strong>Ejemplo 10.1  </strong></span>Calcula las regiones de concavidad y convexidad de la función <span class="math inline">\(f(x) = 0.05(x^3 - 21x -20)\)</span>.</p>
+<p>Empezamos por calcular la derivada segunda:</p>
+<p><span class="math display">\[\begin{align}
+f^{\prime}(x) &amp;= 0.05(3x^2 -21)\\
+f^{\prime\prime}(x) &amp;= 0.05(6x) = 0.3 x
+\end{align}\]</span></p>
+Vemos que <span class="math inline">\(f^{\prime\prime}(x)\)</span> es positiva para <span class="math inline">\(x &gt; 0\)</span> y negativa para <span class="math inline">\(x &lt; 0\)</span>, luego la función es convexa para <span class="math inline">\(x &gt; 0\)</span> y cóncava para <span class="math inline">\(x &lt; 0\)</span> y tiene un punto de inflexión en <span class="math inline">\(x = 0\)</span>.
+</div>
+
+</div>
+<div id="máximos-y-mínimos" class="section level2">
+<h2><span class="header-section-number">10.4</span> Máximos y mínimos</h2>
+<p>Hay un dicho mallorquín que dices “<em>Entre poc i massa, sa mesura passa</em>” (“Entre poco y demasiado pasa la buena medida”). En otros idiomas hay dichos similares. Puede haber demaisado de algo y puede haber demasiaso poco de ese algo y lo que buscamos es la cántidad óptima de ese algo. Una de la utilidades mayores de las derivadas es poder calcular estos valors óptimos. Un ingeniero, al diseñar un producto, constantementese hace preguntas del estilo ¿cuál es el valor que minimiza el coste?¿cuál es la forma que maximiza su rigidez?¿cuál es el valor que minimiza las emisiones?¿Cuál es el valor que maximiza la satisfacción de los usuarios?</p>
+<p>Gracias a las derivadas podemos calcular estos valores óptimos.</p>
+<hr />
+<p>No es difícil ver que en un máximo la derivada debe ser 0. Tenemos una función que va creciendo, creciendo, hasta que en algún momento deja de crecer y empieza a decrecer. En ese momento es cuando es máximo. Como crecer quiere decir que la derivada es positiva, y decrecer quiere decir que la derivada es negativa, entonces es máximo en el punto donde la derivada es 0. Y análogamente con los mínimos: va decreciendo (derivada negativa) hasta que empieza a crecer (derivada positiva), luego en el mínimo la derivada es 0.</p>
+<p>Esto se ve muy bien gráficamente:</p>
+<p><img src="imagenes/maxmin.jpeg" /><!-- --></p>
+<p>Debe notarse que hemos mostrado que si hay un máximo o mínimo local, podemos asegurar que la derivada es 0, es decir, que la pendiente es horizontal. Pero puede ser que la derivada sea 0 y no tengamos un máximo o mínimo local, como se ve en la siguiente gráfica:</p>
+<p><img src="imagenes/inflhoriz.jpg" /><!-- --></p>
+<p>En este caso la función crece, para de crecer un instante, y después sigue creciendo, sin decrecer en ningún momento. Podemos observar que lo que ha cambiado es la concavidad y convexidad de la curva. Tenemos un punto de inflexión de pendiente horizontal.</p>
+<div id="cálculo-de-máximos-y-mínimos" class="section level3">
+<h3><span class="header-section-number">10.4.1</span> Cálculo de máximos y mínimos</h3>
+<p>De esta discusión es fácil deducir cómo calcular, a partir de las derivadas de una función, si una función <span class="math inline">\(f(x)\)</span> tiene un máximo o mínimo local. Para empezar, la derivada <span class="math inline">\(f^\prime (x)\)</span> debe ser 0. Por lo tanto hemos de derivar la función y buscar las raíces de <span class="math inline">\(f^\prime (x)\)</span>. Digamos que en el punto <span class="math inline">\(a\)</span> la derivada es 0, es decir <span class="math inline">\(f^\prime (a)\)</span>. Eso quiere decir que en este punto o tenemos un máximo o un mínimo o un punto de inflexión de pendiente horizontal. ¿Cómo sabemos cuál de los tres?</p>
+<p>Para ello hemos de mirar la derivada segunda <span class="math inline">\(f^{\prime\prime} (x)\)</span>. Si tenemos un máximo, la función es cóncava en ese punto, luego ha de pasar que <span class="math inline">\(f^{\prime\prime} (a) &lt; 0\)</span>; si es un mínimo, la función debe ser convexa, luego ha de pasar que <span class="math inline">\(f^{\prime\prime} (a) &gt; 0\)</span>; y ya sabemos que si es un punto de inflexión ha de pasar que <span class="math inline">\(f^{\prime\prime} (a) = 0\)</span>.</p>
+<p>Esto se puede resumir en el siguiente algoritmo:</p>
+<hr />
+<p><strong>Algoritmo para hallar máximo y mínimos locales de <span class="math inline">\(f(x)\)</span></strong>.</p>
+<ol style="list-style-type: decimal">
+<li>Calcula <span class="math inline">\(f^{\prime} (x)\)</span> y <span class="math inline">\(f^{\prime\prime} (x)\)</span></li>
+<li>Halla las raíces de <span class="math inline">\(f^{\prime} (x)\)</span></li>
+<li>Para cada de las raíces <span class="math inline">\(r_i\)</span> de <span class="math inline">\(f^{\prime} (x)\)</span>:
+<ol style="list-style-type: decimal">
+<li>Calcula <span class="math inline">\(f^{\prime\prime} (r_i)\)</span></li>
+<li>Si <span class="math inline">\(f^{\prime\prime} (r_i) &lt; 0\)</span> es un máximo; si <span class="math inline">\(f^{\prime\prime} (r_i) &gt; 0\)</span> es un mínimo; si <span class="math inline">\(f^{\prime\prime} (r_i) = 0\)</span> es un punto de inflexión de pendiente horizontal</li>
+</ol></li>
+</ol>
+<hr />
+<p>Practiquemos estas ideas.</p>
+</div>
+<div id="un-ejemplo" class="section level3">
+<h3><span class="header-section-number">10.4.2</span> Un ejemplo</h3>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-100" class="exercise"><strong>Ejercicio 10.1  </strong></span>Calcula los máximos y mínimos de la función <span class="math inline">\(f(x) = x^3 -5x^2 + x - 4\)</span>.
+</div>
+
+<p>Apliquemos el algoritmo.</p>
+<ol style="list-style-type: decimal">
+<li>Empecemos por calcular las dos primeras derivadas:
+<span class="math display">\[\begin{align}
+f^{\prime} (x) &amp;= 3x^2 -10x +1\\
+f^{\prime\prime} (x) &amp;= 6x - 10
+\end{align}\]</span></li>
+<li>Hallemos las raíces de <span class="math inline">\(f^{\prime} (x)\)</span>. Es una ecuación de segundo grado y las raíces son <span class="math inline">\(r_1 = 0.103\)</span> y <span class="math inline">\(r_2 = 3.230\)</span>.</li>
+<li>Calculemos el valor de la derivada segunda para cada una de las raíces. Para la primera, <span class="math inline">\(f^{\prime\prime} (0.103) = -9.38 &lt; 0\)</span>, luego es un máximo, y para la segunda, <span class="math inline">\(f^{\prime\prime} (3.230) = 9.38 &gt; 0\)</span>, luego es un mínimo.</li>
+</ol>
+<p><strong>Resultado:</strong> La función <span class="math inline">\(f(x) = x^3 -5x^2 + x - 4\)</span> tiene un máximo en <span class="math inline">\(x = 0.103\)</span> y un mínimo en <span class="math inline">\(x = 3.230\)</span>.</p>
+</div>
+<div id="otro-ejemplo" class="section level3">
+<h3><span class="header-section-number">10.4.3</span> Otro ejemplo</h3>
+
+<div class="exercise">
+<span id="exr:unnamed-chunk-101" class="exercise"><strong>Ejercicio 10.2  </strong></span>Supongamos un recipiente, por ejemplo un barril cilíndrico. Inicialmente está vacío y el centro de gravedad está a media altura. Empezamos a llenarlo de algún líquido. El centro de gravedad inicialmente irá bajando a medida que añadamos líquido, pero cuando esté lleno, el centro de gravedad volverá a estar a media altura. esto quiere decir que en algún momento intermedio el centro de gravedad está a una altura mínima ¿Cuánto líquido hay que añadir para que el centro de gravedad esté lo más bajo posible?
+</div>
+
+<p>Hay muchos parámetros en este problema: el peso y la altura del barril, la superficie de la base del barril, la densidad del líquido, la altura del líquido en el barril… Si los usamos todos, la manipulación algebraica necesaria para resolver el problema se complica mucho. Vamos a simplificarlo. Para empezar, hacemos que el peso del barril sea 1, es decir, usamos el peso del barril como unidad de peso; hacemos lo mismo con la altura del barril: es también 1; la altura del líquido en el barril es <span class="math inline">\(h\)</span>, donde <span class="math inline">\(h\)</span> toma un valor entre 0 (está vacío) y 1 (está lleno); el peso del líquido cuando el barril está lleno es <span class="math inline">\(p\)</span>: cuando está lleno, el líquido pesa <span class="math inline">\(p\)</span> veces el peso del barril. Este parámetro <span class="math inline">\(p\)</span> es un indicador de la densidad del líquido: cuánto mayor es <span class="math inline">\(p\)</span>, mayor es su densidad. Si <span class="math inline">\(p &lt; 1\)</span> quiere decir que cuando está lleno, el líquido contenido pesa menos que el barril; si <span class="math inline">\(p = 1\)</span>, quiere decir que con el barril lleno, el líquido pesa lo mismo que el barril; si <span class="math inline">\(p &gt; 1\)</span> entonces, cuando lleno, el líquido pesa más que el barril.</p>
+<p>Tenemos el barril, con líquido hasta una altura <span class="math inline">\(h\)</span>. El centro de gravedad del barril está a una altura 1/2 y el peso del barril es 1; el centro de gravedad del líquido está a una altura <span class="math inline">\(h/2\)</span> y el peso del líquido es <span class="math inline">\(p\cdot h\)</span>. El centro de gravedad del conjunto, <span class="math inline">\(C(h)\)</span>, la podemos calcular como la media ponderada de los dos centros de gravedad, con las proprociones de los dos pesos como ponderación:</p>
+<p><span class="math display">\[C(h) = \frac{1}{1 + ph} \frac{1}{2} + \frac{ph}{1 + ph} \frac{h}{2} = \frac{1 + ph^2}{2 + 2ph}. \]</span></p>
+<p>Ante un problema algo largo y complicado, es conveniente ir haciendo comprobaciones intermedias para eliminar posibles errores. Yo sólo indicaré cuçáles son las comprobaciones que debéis hacer. la primera es asegurarnos que para <span class="math inline">\(h = 0\)</span> y para <span class="math inline">\(h = 1\)</span>, el valor de <span class="math inline">\(C(h)\)</span> es 1/2.</p>
+<p>Para hallar el mínimo, hemos de derivar <span class="math inline">\(C(h)\)</span> y ver dónde es 0:</p>
+<p><span class="math display">\[C^{\prime}(h) =  \frac{-2p + 2p^2h^2 + 4ph}{(2 + 2ph)^2} = 0 \]</span></p>
+<p>Como el denominador nunca es 0, entonces basta igualar a 0 el numerador:
+<span class="math display">\[-2p + 2p^2h^2 + 4ph = 0\]</span>
+lo que arreglando un poco queda
+<span class="math display">\[2ph^2 + 4h - 2 = 0\]</span>
+Esta es una ecuación de segundo grado que podemos resolver. Tiene dos soluciones, una para <span class="math inline">\(p\)</span> negativo, que no tiene sentido en este contexto, y la otra es
+<span class="math display">\[ h_\min = \frac{\sqrt{p + 1} - 1}{p}.\]</span></p>
+<p>Para comprobar que no nos hemos equivocado al resolver la ecuación, lo que debemos hacer es meter este valor en la ecuación y comprobar que efectivamente da 0. Hacerlo algebraicamente es largo, pero se pueden hacer dos o tres comprobaciones para valores convenientes de <span class="math inline">\(p\)</span>, por ejemplo <span class="math inline">\(p = 3\)</span> y <span class="math inline">\(p = 8\)</span>.</p>
+<p>Deberíamos calcular la derivada segunda y ver si es positiva, pero por las características físicas del problema sabemos que ha de ser un mínimo, que no puede ser un máximo. Luego nos ahorramos el trabajo.</p>
+<p>Vemos que cuanta mayor es la densidad del líquido, menos hemos de meter para bajar al mínimo el centro de gravedad.</p>
+<p>Para hallar el valor de este centro de gravedad mínimo, introducimos el valor de <span class="math inline">\(h_\min\)</span> en la expresión de <span class="math inline">\(C(h)\)</span>. Tras un poco de álgebra queda
+<span class="math display">\[C_\min (p) = \frac{1 + p -\sqrt{p+1}}{p\sqrt{p+1}}.\]</span></p>
+<p>Y podemos hacer otra comprobación de lo razonable de la respuesta: para <span class="math inline">\(p = 0\)</span> (el líquido que hemos metido no pesa nada), el valor mínimo del centro de gravedad debe ser 1/2 (lógico, si el líquido no pesa nada, el centro de gravedad no se mueve de su posición de 1/2 mientras llenamos). Esto exige calcular el límite cuando <span class="math inline">\(p\)</span> tiende a 0, que es de tipo <span class="math inline">\(\frac{0}{0}\)</span>.</p>
+<p>**Resultado: Hemos calculado que para que el centro de gravedad esté lo más bajo posible, hemos de meter líquido hasta una altura de
+<span class="math display">\[ h_\min = \frac{\sqrt{p + 1} - 1}{p}.\]</span>
+El valor del centro de gravedad mínimo es
+<span class="math display">\[C_\min (p) = \frac{1 + p -\sqrt{p+1}}{p\sqrt{p+1}}.\]</span></p>
+</div>
+</div>
+<div id="dibujo-de-gráficas" class="section level2">
+<h2><span class="header-section-number">10.5</span> Dibujo de gráficas</h2>
+<p>Una buena formna de practicar todo lo visto de funciones es aprender a dibujar su gráfica. Uno se puede preguntar para qué analizar y dibujar gráficas de funciones cuando esto te lo hace el ordenador, o incluso la calculadora. Pero es lo mismo que preguntarse para qué conocer una persona si se puede ver una foto de ella. Si uno analiza y dibuja la gráfica de una función aprende mucho más de lla, la entiende mucho mejor, que si simplemente la escribe en el ordenador y mira la curva que sale. Y si uno repite este ejercicio a menudo, se crea una <em>intuición</em> de las funciones –de si es “buena” o “mala”, de sus peligros y lugares donde tener cuidado– que es muy valiosa.</p>
+<hr />
+<p>Para analizar y dibujar la gráfica de una función vamos a estudiar las siguientes características:</p>
+<ul>
+<li><em>Dominio:</em> dónde existe y no existe;</li>
+<li><em>Continuidad, derivabilidad y extremos:</em> dónde es continua, dónde es derivable, qué hace la función cuando tiende a infinito</li>
+<li><em>Signo:</em> dónde es positiva y dónde negativa;</li>
+<li><em>Cruce con los ejes:</em> en qué puntos cruza con los ejes de abscisas y ordenadas;</li>
+<li><em>Asíntotas:</em> tanto verticales como horizontales</li>
+<li><em>Crecimiento:</em> dónde crece o decrece;</li>
+<li><em>Concavidad:</em> dónde es cóncava, dónde convexa, dónde esán los puntos de inflexión;</li>
+<li>Máximos y minimos:_ qué máximos y minimos locales tiene y donde están situadas;</li>
+</ul>
+<hr />
+Hagamos dos ejemplos:
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-102" class="example"><strong>Ejemplo 10.2  </strong></span>Dibuja la gráfica de la función
+<span class="math display">\[y = \frac{\log(x)}{x}\]</span></p>
+<p><strong>Dominio:</strong> El numerador sólo existe si <span class="math inline">\(x&gt;0\)</span> y para el dominio del numerador el denominador siempre es distinto de 0, luego el dominio de <span class="math inline">\(y\)</span> es <span class="math inline">\(x &gt; 0\)</span>.</p>
+<p><strong>Continuidad, derivabilidad y extremos:</strong> Tanto el numerador como el denoinador son continuos en todo su dominio, luego la función es continua.</p>
+<p>Las derivadas son
+<span class="math display">\[\begin{align}
+y^\prime &amp;= \frac{1 - \log(x)}{x^2}\\
+y^{\prime\prime} &amp;= \frac{2\log(x) - 3}{x^3}
+\end{align}\]</span></p>
+<p>Ambas derivadas existen en todos los puntos del dominio de la función.</p>
+<p>Como <span class="math inline">\(x\)</span> domina sobre <span class="math inline">\(\log(x)\)</span>, el límite cuando tiende a <span class="math inline">\(\infty\)</span> es 0. Y el límte cuando <span class="math inline">\(x\)</span> tiende a 0 es <span class="math inline">\(\-infty\)</span>.</p>
+<p><strong>Signo:</strong> El denominador es positivo en todo el dominio, el numerador es positivo si <span class="math inline">\(x &gt; 1\)</span>. Luego <span class="math inline">\(y\)</span> es positivo si <span class="math inline">\(x &gt; 1\)</span>.</p>
+<p><strong>Cruce con los ejes:</strong> Nunca cruza con el eje <span class="math inline">\(Y\)</span>. Cruza con el eje <span class="math inline">\(X\)</span> cuando <span class="math inline">\(\log(x) = 0\)</span>, es decir, en <span class="math inline">\(x = 1\)</span>.</p>
+<p><strong>Asíntotas:</strong> Ya hemos visto que <span class="math inline">\(\lim_{x \to \infty} = 0\)</span>, luego <span class="math inline">\(y = 0\)</span> es una asíntota horizontal. También hemos visto que <span class="math inline">\(\lim_{x \to 0^+} = -\infty\)</span>, luego hay una asíntota vertical en <span class="math inline">\(x = 0\)</span>.</p>
+<p><strong>Crecimiento:</strong> Hemos de analizar el signo de
+<span class="math display">\[y^\prime = \frac{1 - \log(x)}{x^2}\]</span></p>
+<p>El denominador es siempre positivo. El numerador es positivo si <span class="math inline">\(\log(x) &lt; 1\)</span>, luego la función crece (la derivada es positiva) si <span class="math inline">\(x &lt; e\)</span> y decrece si <span class="math inline">\(x &gt; e\)</span>. La derivada es 0 en <span class="math inline">\(x = e\)</span>.</p>
+<p><strong>Concavidad:</strong> Hemos de analizar el signo de
+<span class="math display">\[y^{\prime\prime} = \frac{2\log(x) - 3}{x^3}\]</span></p>
+<p>El denominador es positivo en todo el dominio. El numerador es positivo si <span class="math inline">\(2\log(x) - 3 &gt; 0\)</span>, es decir si <span class="math inline">\(log(x) &gt; 3/2\)</span>. Esto pasa si <span class="math inline">\(x &gt; e^{3/2} = 4.48\)</span>. Luego es cóncava para <span class="math inline">\(x&lt; e^{3/2}\)</span> y convexa si <span class="math inline">\(x &gt; e^{3/2}\)</span>. Hay un punto de inflexión en <span class="math inline">\(x = e^{3/2}\)</span>. En ese punto la función vale
+<span class="math display">\[\frac{3/2}{e^{3/2}} = 0.335\]</span></p>
+<p><strong>Máximos y minimos:</strong> Ya hemos visto que la derivada es 0 en <span class="math inline">\(x = e\)</span>. También sabemos que en este punto la función es cóncava, luego es un máximo.</p>
+<p>En ese punto la función vale
+<span class="math display">\[y = \frac{1}{e} = 0.367\]</span></p>
+Y con esta información ya podemos dibujar la función:
+</div>
+
+<p><img src="imagenes/graf2.jpg" /><!-- --></p>
+<hr />
+<p>Ahora hagamos un ejemplo con una función algo más compleja.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-104" class="example"><strong>Ejemplo 10.3  </strong></span>Dibuja la gráfica de la función
+<span class="math display">\[y = \frac{x}{\sqrt[3]{x^2 -1}}\]</span></p>
+<p><strong>Dominio:</strong> Es una división de polinomios, luego existe en tods los puntos donde el denominador no sea 0. El dominio es toda la recta real excepto los puntos <span class="math inline">\(x = \pm 1\)</span>.</p>
+<p><strong>Continuidad, derivabilidad y extremos:</strong> Al ser una división de polinomios, es continua en todos los puntos donde el denominador no es 0. En <span class="math inline">\(x = \pm 1\)</span> los límites tiende a <span class="math inline">\(+\infty\)</span> por un lado y <span class="math inline">\(-\infty\)</span> por el otro, luego presenta una discontinuidad no evitable en estos puntos. Calculemos las derivadas primera y segunda.</p>
+<p><em>Nota:</em> Quizá es más fácil derivar la función si la escribimos como <span class="math inline">\(y = x(x^2 -1)^{-1/3}\)</span>.</p>
+<p>Las derivadas son
+<span class="math display">\[\begin{align}
+y^\prime &amp;= \frac{x^2 -3}{3\sqrt[3]{(x^2 -1)^4}}\\
+y^{\prime\prime} &amp;= -\frac{2x(x^2 -9)}{9\sqrt[3]{(x^2 -1)^7}}
+\end{align}\]</span></p>
+<p>Ambas derivadas existen en todos los puntos excepto <span class="math inline">\(x = \pm 1\)</span>.</p>
+<p>Es inmediato ver que el límite cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(\infty\)</span> es <span class="math inline">\(\infty\)</span> y el límite cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(-\infty\)</span> es <span class="math inline">\(-\infty\)</span>.</p>
+<p><strong>Signo:</strong> El numerador es positivo si <span class="math inline">\(x&gt;0\)</span> y negativo si <span class="math inline">\(x &lt; 0\)</span>. El denominador es positivo si <span class="math inline">\(x^2 - 1 &gt;0\)</span>, es decir si <span class="math inline">\(x &gt; |1|\)</span>, y negativo si <span class="math inline">\(x^2 - 1 &lt;0\)</span>, es decir si <span class="math inline">\(x &lt; |1|\)</span>. Juntando todo:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="center"><span class="math inline">\(x &lt; -1\)</span></th>
+<th align="center"><span class="math inline">\(-1 &lt; x &lt; 0\)</span></th>
+<th align="center"><span class="math inline">\(0 &lt; x &lt; 1\)</span></th>
+<th align="center"><span class="math inline">\(x &gt; 1\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">numerador</td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">denominador</td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(y\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cruce con los ejes:</strong> El único lugar donde el numerador es 0 es <span class="math inline">\(x = 0\)</span>. Es el único cruce con ambos ejes.</p>
+<p><strong>Asíntotas:</strong> Ya hemos visto que los límites en el infinito son infinitos, luego no tiene asíntotas horizontales. El denominador se vuelve 0 en <span class="math inline">\(x = \pm 1\)</span>, y en esos puntos el numerador no es cero, luego tenemos asíntotas verticales en <span class="math inline">\(x = \pm 1\)</span>. Estrictamente, deberíamos calcular los límites laterales en esos puntos, pero como ya sabemos el signo, no es necesario: Tiende a <span class="math inline">\(-\infty\)</span> cuando se acerca a <span class="math inline">\(x = -1\)</span> por la izquierda y a <span class="math inline">\(+\infty\)</span> cuando se acerca por la derecha; y tiende a <span class="math inline">\(-\infty\)</span> cuando se acerca a <span class="math inline">\(x = 1\)</span> por la izquierda y a <span class="math inline">\(+\infty\)</span> cuando se acerca por la derecha.</p>
+<p><strong>Crecimiento:</strong> Hemos de analizar el signo de
+<span class="math display">\[y^\prime = \frac{x^2 -3}{3\sqrt[3]{(x^2 -1)^4}}\]</span></p>
+<p>El denominador es siempre positivo, luego basta mirar el signo del numerador, <span class="math inline">\(x^2 - 3\)</span>. Es inmediato ver que es positivo para <span class="math inline">\(x &lt; -\sqrt{3}\)</span>, es negativo para <span class="math inline">\(-\sqrt{3} &lt; x &lt; \sqrt{3}\)</span> y es otra vez positivo para <span class="math inline">\(x &gt; \sqrt{3}\)</span>. Y va a ser 0 para <span class="math inline">\(x = \pm\sqrt{3}\)</span>.</p>
+<p><strong>Concavidad:</strong> Hemos de analizar el signo de
+<span class="math display">\[y^{\prime\prime} = -\frac{2x(x^2 -9)}{9\sqrt[3]{(x^2 -1)^7}}\]</span>
+El denominador en este caso puede ser positivo o negativo. Podemos crear un cuadro similar al que hemos hecho antes. Hemos de tener cuidado con el signo menos que precede a todo. En este caso los puntos de interés son <span class="math inline">\(x = 0\)</span>, <span class="math inline">\(x = \pm 1\)</span> y <span class="math inline">\(x = \pm 3\)</span>.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="center"><span class="math inline">\(x &lt; -3\)</span></th>
+<th align="center"><span class="math inline">\(-3 &lt; x &lt; -1\)</span></th>
+<th align="center"><span class="math inline">\(-1 &lt; x &lt; 0\)</span></th>
+<th align="center"><span class="math inline">\(0 &lt; x &lt; 1\)</span></th>
+<th align="center"><span class="math inline">\(1 &lt; x &gt; 3\)</span></th>
+<th align="center"><span class="math inline">\(x &gt; 3\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">numerador</td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">denominador</td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left"><span class="math inline">\(y^{\prime\prime}\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+<td align="center"><span class="math inline">\(+\)</span></td>
+<td align="center"><span class="math inline">\(-\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Hay puntos de inflexión en los puntos donde el numerador es 0: <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = \pm 3\)</span>. En estos puntos el valor de la función es
+<span class="math display">\[ y(-3) = -1.5; \qquad y(0) = 0; \qquad y(3) = 1.5\]</span></p>
+<p><strong>Máximos y minimos:</strong> Ya hemos visto que la derivada es 0 en <span class="math inline">\(x = \pm\sqrt{3}\)</span>. Del cuadro anterior, vemos que <span class="math inline">\(y^{\prime\prime}(-\sqrt{3}) &lt;0\)</span> y que <span class="math inline">\(y^{\prime\prime}(\sqrt{3}) &gt;0\)</span>. Luego tenemos un máximo en <span class="math inline">\(x = -\sqrt{3}\)</span> y un mínimo en <span class="math inline">\(x = \sqrt{3}\)</span>. El valor de la función en estos puntos es
+<span class="math display">\[y(-\sqrt{3}) = -1.375; \qquad y(\sqrt{3}) = 1.375\]</span></p>
+Y con esta información ya podemos dibujar la función:
+</div>
+
+<p><img src="imagenes/graf1.jpg" /><!-- --></p>
+</div>
+<div id="polinomios-de-taylor" class="section level2">
+<h2><span class="header-section-number">10.6</span> Polinomios de Taylor</h2>
+<p>Los polinomios son funciones muy manejables: son fáciles de integrar y derivar, fáciles de manipular algebraicamente, etc. Hay otras funciones, como por ejemplo las trigonométricas y logarítmicas, que son mucho menos manejables. Es por eso que nos gustaría a menudo poder pasar de una función poco manejable a una aproximación polinómica: si la aproximación es suficientemente buena, perdemos un poco en precisión, pero ganamos mucho en manejabilidad. Los polinomios de Taylor nos permiten encontrar el polinomio del grado que queramos que mejor se aproxima a una función en las inmediaciones de un punto. Veamos cómo se calculan, empezando con dos ejemplos.</p>
+<div id="ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0" class="section level3">
+<h3><span class="header-section-number">10.6.1</span> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></h3>
+<p>La función de nuestro primer ejemplo es <span class="math inline">\(f(x) = \sin(x)\)</span> y queremos el polinomio que mejor se aproxima a esta función en las inmediaciones de <span class="math inline">\(x = 0\)</span>. Cómo no sabemos de qué grado nos interesa el polinomio, vamos a encontrar cuatro aproximaciones con 4 polinomios: uno de grado 0, <span class="math inline">\(P_0(x)\)</span>; uno de grado 1, <span class="math inline">\(P_1(x)\)</span>; uno de grado 2, <span class="math inline">\(P_2(x)\)</span>; y uno de grado 3, <span class="math inline">\(P_3(x)\)</span>.</p>
+<hr />
+<p>Empecemos con <span class="math inline">\(P_0(x) = c_0\)</span>, una constante. La mejor aproximación que podemos hacer es que esa constante <span class="math inline">\(c_0\)</span> sea el valor de la función en <span class="math inline">\(x = 0\)</span>, pues si no ni siquiera estamos aqcertanto el valor en el punto. Como <span class="math inline">\(\sin(0) = 0\)</span>, llegamos a la conclusión que el mejor polinomio de grado 0 que mejor aproxima nuestra fución es <span class="math inline">\(P_0(x) = 0\)</span>.</p>
+<hr />
+<p>Sigamos con <span class="math inline">\(P_1(x) = c_0 + c_1 x\)</span>, una recta. Queremos de este polinomio, por los mismos motivos de antes, que en el punto <span class="math inline">\(x = 0\)</span> valga lo mismo que nuestra función <span class="math inline">\(\sin(x)\)</span>, es decir que <span class="math inline">\(P_1(0) = 0\)</span>. También queremos que la recta crezca o decrezca en <span class="math inline">\(x = 0\)</span> al mismo ritmo que <span class="math inline">\(\sin(x)\)</span>, pues si no, el polinomio se alejaría de la función demasiado raápidamente. Luego queremos que <span class="math inline">\(P^\prime_1(0) = \sin^\prime(0) = \cos(0) = 1\)</span>. Esto da lugar a ese sistema de ecuaciones:
+<span class="math display">\[\begin{align}
+P_1(0) &amp;= c_0 + c_1\cdot 0 = c_0 = 0\\
+P^\prime_1(0) &amp;= c_1 = 1
+\end{align}\]</span></p>
+<p>Luego el polinomio de grado 1 que buscamos es <span class="math inline">\(P_1(x) = x\)</span>.</p>
+<hr />
+<p>Vayamos con el polinomio de grado 2, <span class="math inline">\(P_2(x) = c_0 + c_1 x + c_2 x^2\)</span>, que es una parábola. Por los mimos motivos de antes, queremos que <span class="math inline">\(P_2(0) = 0\)</span> y que <span class="math inline">\(P_2^\prime(0) = 1\)</span>. Ahora también queremos que la concavidad o convexidad de <span class="math inline">\(P_2(x)\)</span> en <span class="math inline">\(x = 0\)</span> sea la misma que la de <span class="math inline">\(\sin(x)\)</span>, para que el polinomio no se aleje de <span class="math inline">\(\sin(x)\)</span> más rápidamente de lo necesario. Sabemos que eso es la derivada segunda: <span class="math inline">\(\sin^{\prime\prime}(0) = -\sin(0) = 0\)</span>. Por lo tanto queremos que <span class="math inline">\(P_2^{\prime\prime}(0) = 0\)</span>. Esto da lugar al sistema de ecuaciones
+<span class="math display">\[\begin{align}
+P_2(0) &amp;= c_0 + c_1\cdot 0 + c_2\cdot 0 = c_0 = 0\\
+P^\prime_2(0) &amp;= c_1 + 2c_2 x = c_1 + 2c_2 \cdot 0 = c_1 = 1\\
+P_2^{\prime\prime}(0) &amp;= 2c_2 = 0
+\end{align}\]</span></p>
+<p>Y el polinomio de grado 2 que mejor aproxima <span class="math inline">\(\sin(x)\)</span> en las cercaniás de <span class="math inline">\(x = 0\)</span> es <span class="math inline">\(P_2(x) = x\)</span>.</p>
+<hr />
+<p>Para terminar, estudiemos el polinomio de grado 3, <span class="math inline">\(P_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3\)</span>. Ya sabemos que queremos que <span class="math inline">\(P_3(0) = 0\)</span>, <span class="math inline">\(P^\prime_3(0) = 1\)</span> y P_3^{}(0) = 0$. Ahora también queremos que la derivada tercera de nuestro polinomio sea la misma que la de <span class="math inline">\(\sin(x)\)</span> en <span class="math inline">\(x = 0\)</span>. No tenemos nombre para esto, pero es fácil ver que debe ser así. la derivada tercera de <span class="math inline">\(\sin(x)\)</span> en <span class="math inline">\(x = 0\)</span> es <span class="math inline">\(-1\)</span>. Esto da lugar al sistema de ecuaciones:
+<span class="math display">\[\begin{align}
+P_3(0) &amp;= c_0 + c_1\cdot 0 + c_2\cdot 0^2 + c_3\cdot 0^3= c_0 = 0\\
+P^\prime_3(0) &amp;= c_1 + 2c_2 0 + 3c_3 0^2=  c_1 = 1\\
+P_3^{\prime\prime}(0) &amp;= 2c_2 + 6c_3\cdot 0 = 2c_2 =0\\
+P_3^{\prime\prime\prime}(0) &amp;=  6c_3  = -1
+\end{align}\]</span></p>
+<p>Y el polinomio de tercer grado que mejor se aproxima a <span class="math inline">\(\sin(x)\)</span> en las cercanías de <span class="math inline">\(x = 0\)</span> es <span class="math inline">\(P_3(x) = x - \frac{1}{6}x^3\)</span>.</p>
+<p><img src="imagenes/ptaylor1.jpg" /><!-- --></p>
+<hr />
+<p>Conviene notar que al calcular un polinomio de grado superior, se conservan los coeficientes que ya teníamos: los coeficientes <span class="math inline">\(c_0, c_1\)</span> y <span class="math inline">\(c_2\)</span> de <span class="math inline">\(P_2(x)\)</span> son los mismos que en <span class="math inline">\(P_3(x)\)</span>. No es casualidad. Si nos fijamos en el proceso seguido, vemos que tiene que ser así. Luego si ahora quisiéramos calcular <span class="math inline">\(P_4(x)\)</span>, no tenemos que calcular todos los coeficientes, sino sólo <span class="math inline">\(c_4\)</span>, igualando <span class="math inline">\(P^{\prime\prime\prime\prime}(0)\)</span> con <span class="math inline">\(\sin^{\prime\prime\prime\prime}(0)\)</span>.</p>
+<p>Vayamos con otro ejemplo.</p>
+</div>
+<div id="ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1" class="section level3">
+<h3><span class="header-section-number">10.6.2</span> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></h3>
+<p>Empecemos con <span class="math inline">\(P_0(x) = c_0\)</span>, una constante. Sabemos que la mejor aproximación que podemos hacer es que esa constante <span class="math inline">\(c_0\)</span> sea el valor de <span class="math inline">\(\log(x)\)</span> en <span class="math inline">\(x = 1\)</span>. Como <span class="math inline">\(\log(1) = 0\)</span>, llegamos a la conclusión que el mejor polinomio de grado 0 que mejor aproxima nuestra fución es <span class="math inline">\(P_0(x) = 0\)</span>.</p>
+<hr />
+<p>Sigamos con <span class="math inline">\(P_1(x) = c_0 + c_1 x\)</span>. Queremos que <span class="math inline">\(P(1) = 0\)</span> y que <span class="math inline">\(P^\prime(1) = \log^\prime(1) = 1\)</span>. El sistema de ecuaciones que nos queda es:</p>
+<p><span class="math display">\[\begin{align}
+P_1(0) &amp;= c_0 + c_1\cdot 1 = c_0 + c_1 = 0\\
+P^\prime_1(0) &amp;= c_1 = 1
+\end{align}\]</span></p>
+<p>Resolviendo nos queda que <span class="math inline">\(c_1 = 1\)</span> y <span class="math inline">\(c_0 = -1\)</span>.</p>
+<p>Pero ahora el coeficiente <span class="math inline">\(c_0\)</span> no es el mismo que el de <span class="math inline">\(P_0(x)\)</span>. Esto es un enorme fastidio, pues significa que aunque conozca <span class="math inline">\(P_n(x)\)</span>, si quiero <span class="math inline">\(P_{n+1}(x)\)</span> tengo que volver a empezar desde el principio.</p>
+<p>Si me fijo en por qué esto pasa ahora y no pasaba en el ejemplo anterior, vemos que es porque, al evaluar en <span class="math inline">\(x=0\)</span> sólo uno de los coeficientes permanecía en cada ecuación, pues los demás al multiplicar por 0, desaparecían. Pero ahora, al evaluar en <span class="math inline">\(x = 1\)</span>, no desaparecen.</p>
+<p>Por suerte, esto lo podemos arreglar fácilmente. Ya que estamos aproximando la función alrededor de <span class="math inline">\(x = 1\)</span>, “centramos” nuestro polinomio en <span class="math inline">\(x = 1\)</span>: <span class="math inline">\(P_1(x) = c_0 + c_1(x-1)\)</span>, y así sólo uno de los coeficientes permanecerá en cada ecuación:</p>
+<p><span class="math display">\[\begin{align}
+P_1(0) &amp;= c_0 + c_1\cdot (1 -1) = c_0 = 0\\
+P^\prime_1(0) &amp;= c_1 = 1
+\end{align}\]</span></p>
+<p>Y el polinomio que mejor aproxima <span class="math inline">\(\log(x)\)</span> en los alrededores de <span class="math inline">\(x = 1\)</span> es <span class="math inline">\(P_1(x) = x-1\)</span>.</p>
+<p>Nótese que es el mismo polinomio de antes, pero al escribirlo de esta manera, facilita el cálculo de los coeficientes.</p>
+<hr />
+<p>Calculemos ahora <span class="math inline">\(P_2(x) = c_0 + c_1(x-1) + c_2(x-1)^2\)</span>. Sabemos que <span class="math inline">\(c_0 = 0\)</span> y <span class="math inline">\(c_1 = 1\)</span>. Hemos de calcular <span class="math inline">\(c_2\)</span>. Hemos de igualar las derivadas segundas. La derivada segunda del logaritmo es <span class="math inline">\(\frac{-1}{x^2}\)</span>, y la del polinomio es <span class="math inline">\(P_2(x)\)</span> es <span class="math inline">\(2c_2\)</span>. Evaluando en <span class="math inline">\(x = 1\)</span>:</p>
+<p><span class="math display">\[\frac{-1}{1^2} = -1 = 2c_2.\]</span></p>
+<p>El polinomio queda <span class="math inline">\(P_2(x) = (x-1) - \frac{1}{2}(x-1)^2\)</span>.</p>
+<hr />
+<p>Calculemos ahora <span class="math inline">\(P_3(x) = c_0 + c_1(x-1) + c_2(x-1)^2 + c_3(x-1)^3\)</span>. Sólo hemos de calcular <span class="math inline">\(c_3\)</span>. La derivada tercera del logaritmo es <span class="math inline">\(\frac{2}{x^3}\)</span> y la del polinomio es <span class="math inline">\(6 c_3\)</span>. Evaluando en <span class="math inline">\(x = 1\)</span>:
+<span class="math display">\[\frac{2}{1^3} = 2 = 6c_3.\]</span></p>
+<p>El polinomio queda
+<span class="math display">\[P_3(x) = (x-1) - \frac{1}{2}(x-1)^2 + \frac{1}{3}(x-1)^3.\]</span></p>
+<p><img src="imagenes/ptaylor2.jpg" /><!-- --></p>
+</div>
+<div id="forma-general-de-los-polinomios-de-taylor" class="section level3">
+<h3><span class="header-section-number">10.6.3</span> Forma general de los polinomios de Taylor</h3>
+<p>Con lo que hemos aprendido de los ejemplos tenemos casi todo lo necesario para obtener la forma general del polinomio de Taylor de cualquier función.</p>
+<p>Sea <span class="math inline">\(f(x)\)</span> y queremos hallar el polinomio de grado <span class="math inline">\(n\)</span> que mejor aproxima a <span class="math inline">\(f(x)\)</span> en las inmediaciones de <span class="math inline">\(x = a\)</span>. Hemos visto que nos conviene que el polinomio tenga la forma
+<span class="math display">\[ P_n(x) = c_0 + c_1(x-a) + c_2 (x-a)^2 + \cdots + c_n (x-a)^n.\]</span></p>
+<p>También hemos visto que para obtener los valores de los coeficientes hemos de igualar <span class="math inline">\(P_n(a)\)</span> a <span class="math inline">\(f(a)\)</span>; <span class="math inline">\(P^\prime_n(a)\)</span> a <span class="math inline">\(f^\prime(a)\)</span>; <span class="math inline">\(P^{\prime\prime}_n(a)\)</span> a <span class="math inline">\(f^{\prime\prime}(a)\)</span>; y así hasta la derivada <span class="math inline">\(n\)</span>-sima, <span class="math inline">\(P^{(n)}_n(a) = f^{(n)}(a)\)</span>.</p>
+<p>Además, de la primera ecuación, <span class="math inline">\(P_n(a) = f(a)\)</span>, obtendremos el valor de <span class="math inline">\(c_0\)</span>, de la ecuación <span class="math inline">\(P^\prime_n(a) = f^\prime(a)\)</span>, obtendremos el valor de <span class="math inline">\(c_1\)</span> y así sucesivamente.</p>
+<p>El último detalle que nos falta es el siguiente:
+<span class="math display">\[\frac{d^n}{dx^n}c_n(x-a)^n = n!\,c_n \]</span></p>
+<p>Sabiendo esto, es inmediato ver que la igualdad
+<span class="math display">\[P^{(n)}_n(a) =  f^{(n)}(a)\]</span>
+se convierte en
+<span class="math display">\[n!\,c_n =  f^{(n)}(a).\]</span>
+De donde podemos obtener el valor de <span class="math inline">\(c_n\)</span>:
+<span class="math display">\[c_n =  \frac{1}{n!}f^{(n)}(a).\]</span></p>
+<p>Y ya podemos obtener la forma general del polinomio de Taylor:</p>
+<p><span class="math display">\[P_n(x) = f(a) + f^\prime(a)(x-a) + \frac{1}{2}f^{\prime\prime}(a) (x-a)^2 + \cdots + \frac{1}{n!}f^{(n)}(a) (x-a)^n.\]</span></p>
+</div>
+<div id="hasta-dónde-llegar-series-de-taylor" class="section level3">
+<h3><span class="header-section-number">10.6.4</span> Hasta dónde llegar: Series de Taylor</h3>
+<p>Si nos fijamos en las gráficas de los polinomios de Taylor de la función <span class="math inline">\(\sin(x)\)</span> en las cercanías de <span class="math inline">\(x = 0\)</span>, podemos observar que <span class="math inline">\(P_1(x) = x\)</span> nos da una buena aproximación si estamos muy cerca de <span class="math inline">\(x = 0\)</span>, mientras que <span class="math inline">\(P_3(x) = x - \frac{1}{6}x^3\)</span> nos da una buana aproximación incluso si nos alejamos algo de <span class="math inline">\(x = 0\)</span>. Esto nos da la idea que, si cogemos suficientes términos, podemos obtener una buena aproximación incluso si estamos muy lejos de <span class="math inline">\(x = 0\)</span>. Y eso es cierto… a veces.</p>
+<p>Si cogemos infinitos términos el polinomio de Taylor se convierte en la <em>serie de Taylor.</em> Por ejemplo, la serie de Taylor de <span class="math inline">\(\sin(x)\)</span> cogiendo los valores en <span class="math inline">\(x = 0\)</span> es
+<span class="math display">\[x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7 + \cdots\]</span>
+Esta serie converge para todo <span class="math inline">\(x\)</span>, y por lo tanto, puedo aproximar adecuadamente el <span class="math inline">\(\sin(x)\)</span> para cualquier valor de <span class="math inline">\(x\)</span>, por grande que sea, mediante un polinomio de Tylor de grado suficiente.</p>
+<p>Lo mismo pasa con el polinomio de Taylor de <span class="math inline">\(e^x\)</span>, tomado en <span class="math inline">\(x = 0\)</span>. Es
+<span class="math display">\[1 + \frac{x}{1!} + \frac{x^2}{2!} + \cdots + \frac{x^n}{n!} + \cdots\]</span>
+También converge para todo valor de <span class="math inline">\(x\)</span> y podemos aproximar con precisión suficiente la función <span class="math inline">\(e^x\)</span>, por grande que sea <span class="math inline">\(x\)</span>, si cojo una cantidad suficiente de términos.</p>
+<p>Pero eso no pasa para todas las series de Taylor. Si cogemos la serie del logaritmo, centrado en <span class="math inline">\(x = 1\)</span>:
+<span class="math display">\[(x-1) - \frac{1}{2}(x-1)^2 + \frac{1}{3}(x-1)^3- \frac{1}{3}(x-1)^3\ + \cdots\]</span>
+Esta serie sólo converge para <span class="math inline">\(0 &lt; x &lt; 2\)</span>. Para <span class="math inline">\(x &gt; 2\)</span>, diverge (oscila). Luego puedo calcular <span class="math inline">\(\log(1.9)\)</span> con toda la precisión que yo quiera si cojo un número suficiente de términos, pero no puedo calcular con este polinomio el valor de <span class="math inline">\(\log(2.1)\)</span> por muchos términos que coja.</p>
+<p>Cada serie de Taylor tiene su <em>radio de convergencia</em>. Puedo calcular el valor de una función usando su polinomio de Taylor con tanta precisión como yo quiera, siempre que esté dentro del radio de convergencia. Si no, no puedo.</p>
+<p>No vamos a profundizar más en esta cuestión. Simplemente recordar que no simpre puedo aproximar un valor alejado del centro con un polinomio de Taylor a base de coger muchos términos.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="derivación.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cálculo-de-primitivas.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/09_utilidad.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
