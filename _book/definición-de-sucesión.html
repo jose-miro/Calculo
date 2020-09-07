@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 4 Definición de sucesión | Apuntes de Matemáticas II – Cálculo</title>
+  <meta name="description" content="Capítulo 4 Definición de sucesión | Apuntes de Matemáticas II – Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 4 Definición de sucesión | Apuntes de Matemáticas II – Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 4 Definición de sucesión | Apuntes de Matemáticas II – Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sucesiones.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II -- Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="definición-de-sucesión.html"><a href="definición-de-sucesión.html"><i class="fa fa-check"></i><b>4</b> Definición de sucesión</a><ul>
+<li class="chapter" data-level="4.1" data-path="definición-de-sucesión.html"><a href="definición-de-sucesión.html#fórmula-de-recurrencia"><i class="fa fa-check"></i><b>4.1</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="4.2" data-path="definición-de-sucesión.html"><a href="definición-de-sucesión.html#definiciones"><i class="fa fa-check"></i><b>4.2</b> Definiciones</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="definición-de-sucesión.html"><a href="definición-de-sucesión.html#ejemplos-1"><i class="fa fa-check"></i><b>4.2.1</b> Ejemplos</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II – Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="definición-de-sucesión" class="section level1">
+<h1><span class="header-section-number">Capítulo 4</span> Definición de sucesión</h1>
+<p>Informalmente, una sucesión es una lista infinita de numeros que siguen un orden determinado. El orden es importante: la sucesión <span class="math inline">\(1, 2, 3, 4, 5, 6, \ldots\)</span> es distinta de la sucesión <span class="math inline">\(3, 2, 1, 4, 5, 6, \ldots\)</span>. No tiene por qué seguir un patrón determinado. Por ejemplo, las temperaturas máximas diarias obtenidas en la estación meteorológica del aeropuerto de Palma es una lista (potencialmente) infinita de números que no siguen un patrón definido: no tenemos ninguna manera de saber el valor de la sucesión de dentro de mil días. En general nos interesan las sucesiones que tienen un patrón que podemos describir y representamos estas sucesiones indicando este patrón. Así, la primera sucesión de nuestros ejemplos es la sucesión <span class="math inline">\(\{a_n = 10\cdot n\}\)</span>, la segunda es <span class="math inline">\(\{a_n = 10/n\}\)</span> y la tercera es <span class="math inline">\(\{a_n = 1/2^n\}\)</span>.</p>
+<p>Seamos más formales. Una sucesión es una función que a cada número natural <span class="math inline">\(n\)</span> le asigna un número real <span class="math inline">\(a_n\)</span>. El número <span class="math inline">\(a_1\)</span> sería el primer término de la sucesión, <span class="math inline">\(a_2\)</span> sería el segundo término de la sucesión y <span class="math inline">\(a_n\)</span> sería el <span class="math inline">\(n\)</span>-simo término de la sucesión. Algunas veces nos interesa empezar por <span class="math inline">\(a_0\)</span> y a este le llamaríamos el cero-ésimo término de la sucesión. En general representamos la sucesión indicando la expresión del término <span class="math inline">\(n\)</span>-simo. Por ejemplo la sucesión <span class="math inline">\(\{n^2\}\)</span> sería la sucesión <span class="math inline">\(1, 4, 9, \ldots,n^2,\ldots\)</span>.</p>
+<p>Es necesario siempre dar una descripción de la sucesión. No basta con dar los primeros términos. Por ejemplo, si me dicen “sea la sucesión {1, 2, 3, …}” lo más normal es pensar que es la sucesión de los números naturales: {1, 2, 3, …, <span class="math inline">\(n\)</span>…}. Pero podría ser la sucesión de Fibonacci sin el primer 1: {1, 2, 3, 5, 8…} u otra cosa más complicada: {1, 2, 3, 7, 22, … , } (cada uno es el producto de los dos anteriores más uno). Y con la edad uno aprende qeu una cosa es lo que uno tiene en la cabeza y otra diferente lo que le viene en la cabeza al que lo lee. Siempre hay que dar una descripcion, aunque sea informal, de toda la sucesión.</p>
+<div id="fórmula-de-recurrencia" class="section level2">
+<h2><span class="header-section-number">4.1</span> Fórmula de recurrencia</h2>
+<p>Hay una segunda manera de describir una sucesión: en vez de relacionar el valor del término <span class="math inline">\(n\)</span>-simo con <span class="math inline">\(n\)</span> mediante una expresión matemática, lo hacemos relacionando el valor del término <span class="math inline">\(n\)</span>-simo con los valores de los términos anteriores. A esto se llama una fórmula de recurrencia.</p>
+<p>El caso más conocido es el de la sucesión de Fibonacci:
+<span class="math display">\[1, 1, 2, 3, 5, 8, 13\ldots\]</span>
+Los dos primeros términos son 1 (<span class="math inline">\(a_1 = a_2 = 1\)</span>) y a partir de ahí, cada término es la suma de los dos anteriores, es decir <span class="math inline">\(a_n = a_{n-1} + a_{n-2}\)</span>.</p>
+<p>Hay otras dos sucesiones que a menudo se describen mediante una fórmula de recurrencia. Una es la sucesión en la que cada término es el término anterior más un cierto valor: <span class="math inline">\(a_n = a_{n-1} + d\)</span>. La otra es similar: cada término es el término anterio multiplicado por un factor: <span class="math inline">\(a_n = r\cdot a_{n-1}\)</span>. Estas ds sucesiones tienen nombre propio y se llaman la progresión aritmética y la preogresion geométrica respectivamente.</p>
+<p>Un motivo por el que se usa la fórmula de recurrencia es que puede ser mucho más sencillo describir la sucesión así que de la forma tradicional. Este es el caso de la sucesión de Fibonacci. Otro motivo es porque muestra de forma más intuitiva la esencia de la sucesión. La progresión aritmética se puede describir como <span class="math inline">\(\{a_n = a_1 + (n-1)d\}\)</span> y la progresión geométrica como <span class="math inline">\(\{a_n = a_1\cdot r^{n-1}\}\)</span>, pero estas dos expresiones no muestran de forma tan obvia como varía la sucesión.</p>
+</div>
+<div id="definiciones" class="section level2">
+<h2><span class="header-section-number">4.2</span> Definiciones</h2>
+<p>Paul Halmos es un conocido matemático americano. En su autobiografía comenta que cuando estudiaba la carrera de matemáticas descubrió que sabiéndose bien las definiciones y con un poco de sentido común y técnica, tenía prácticamente garantizado el notable. Además, s mucho más fácil seguir una explicación, sea del profesor o de un libro, si tienes interiorizadas las defeniciones: si una frase comienza con “Sea una sucesión acotada…” y no sabes qué es una sucesión acotada, todo lo que sigue no tiene significado para ti.</p>
+<p>Yo creo que buena parte de las dificultades que la gente tiene en entender las matemáticas proviene de no esforzarse por entender primero las definiciones. Empecemos por ellas</p>
+<ul>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>monótona creciente</em> si para todo <span class="math inline">\(n\)</span> <span class="math inline">\(a_n ≤ a_{n+1}\)</span>. Es decir, cada término es mayor o igual que el anterior.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>monótona decreciente</em> si para todo <span class="math inline">\(n\)</span> <span class="math inline">\(a_n ≥ a_{n+1}\)</span>. Es decir, que cada término es menor o igual que el anterior.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>monótona</em> si es o monótona creciente o monótona decreciente.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>estrictamente creciente</em> si para todo <span class="math inline">\(n\)</span> <span class="math inline">\(a_n &lt; a_{n+1}\)</span>.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>estrictamente decreciente</em> si para todo <span class="math inline">\(n\)</span> <span class="math inline">\(a_n &gt; a_{n+1}\)</span>.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada superiormente</em> si existe un numero <span class="math inline">\(M\)</span> tal que <span class="math inline">\(a_n ≤ M\)</span> para todo <span class="math inline">\(n\)</span>. Se dice que <span class="math inline">\(M\)</span> es una <em>cota superior</em> de la sucesión.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada inferiormente</em> si existe un numero <span class="math inline">\(M\)</span> tal que <span class="math inline">\(a_n ≥ M\)</span> para todo <span class="math inline">\(n\)</span>. Se dice que <span class="math inline">\(M\)</span> es una <em>cota inferior</em> de la sucesión.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada</em> si está acotada superiormente e inferiormente.</p></li>
+</ul>
+<div id="ejemplos-1" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Ejemplos</h3>
+
+<div class="example">
+<span id="exm:unnamed-chunk-1" class="example"><strong>Example 4.1  </strong></span>Veamos que la sucesión de los números naturales <span class="math inline">\(\{n\}\)</span> es monótona creciente. Aplicamos la definición: Es monótona creciente si para todo <span class="math inline">\(n\)</span> <span class="math inline">\(a_n ≤ a_{n+1}\)</span> que se traduce en <span class="math inline">\(n ≤ n+1\)</span> para todo <span class="math inline">\(n\)</span>. Aunque esto es obviamente cierto, seamos formales: restemos <span class="math inline">\(n\)</span> a cada lado y tenemos <span class="math inline">\(0 ≤ 1\)</span>, y esto es siempre cierto. Es más, como <span class="math inline">\(0 &lt; 1\)</span> es estrictamente creciente.
+</div>
+
+
+<div class="example">
+<span id="exm:unnamed-chunk-2" class="example"><strong>Example 4.2  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n = n^2 - n\}\)</span>, con <span class="math inline">\(n = 0, 1, 2…\)</span>. Veamos que es monótona creciente. Aplicamos la definición: <span class="math inline">\(a_n ≤ a_{n+1}\)</span> se traduce en
+<span class="math display">\[(n+1)^2 - (n+1) ≤ n^2 - n\]</span>
+Desarrollamos:
+<span class="math display">\[n^2 + 2n + 1 - n - 1 ≤ n^2 - n\]</span>
+y nos queda
+<span class="math display">\[n^2 + n ≥ n^2 - n\]</span>
+lo que significa que
+<span class="math display">\[n ≥ -n\]</span>
+Como <span class="math inline">\(n ≥ 0\)</span>, esto se cumple siempre. Nótese que la sucesión no es estrictamente creciente, pues para <span class="math inline">\(n = 0\)</span> tenemos que <span class="math inline">\(n = -n\)</span>.
+</div>
+
+<p>Si los términos son todos positivos, la definición de monótona creciente <span class="math inline">\(a_{n+1} ≥ a_n\)</span> es equivalente a decir que <span class="math inline">\(a_{n+1}/a_n ≥ 1\)</span> (o <span class="math inline">\(a_{n+1}/a_n ≤ 1\)</span> para las monótoas decrecientes). Y esta segunda definición puede ser más conveniente a veces.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-3" class="example"><strong>Example 4.3  </strong></span>Determine si la sucesión <span class="math inline">\(\{a_n = 1/(n - 5.1)^2\}\)</span> es monótona.</p>
+<p>Veamos si es monótona creciente. Entonces:
+<span class="math display">\[\frac{a_{n+1}}{a_{n}} = 
+\frac{\frac{1}{(n+1-5.1)^{2}}}{\frac{1}{(n-5.1)^{2}}} = 
+\frac{(n-5.1)^{2}}{(n-4.1)^{2}} =
+\frac{n^{2} + 26,01 - 10,2 n}{n^{2} + 16,81 - 8,2 n}\]</span></p>
+<p>Y lo podemos reescribir como
+<span class="math display">\[\frac{n^{2} + 16,81 - 8,2 n + 9,2 - 2 n}{n^{2} + 16,81 - 8,2 n}
+= 1 + \frac{9,2 - 2 n}{n^{2} + 16,81 - 8,2 n}\]</span></p>
+<p>Y ahora todo se reduce a saber si la fracción es positiva o negativa. Es fácil ver que el numerador es positivo para <span class="math inline">\(n&lt;5\)</span> y negativo para <span class="math inline">\(n ≥ 5\)</span>. Para el denominador podríamos resolver la ecuación de segundo grado. Pero si nos damos cuenta que para valores grandes de <span class="math inline">\(n\)</span> es positivo, podemos probar alguno valores menores y nos damos cuenta de que siempre es positivo. En resumen, la fracción es positiva para <span class="math inline">\(n &lt; 5\)</span> y negativa para <span class="math inline">\(n ≥ 5\)</span>.</p>
+De aquí deducimos que <span class="math inline">\(\frac{a_{n+1}}{a_{n}} &gt; 1\)</span>, y por lo tanto creciente, para <span class="math inline">\(n &lt; 5\)</span> y <span class="math inline">\(\frac{a_{n+1}}{a_{n}} &gt; 1\)</span>, y por lo tanto decreciente, para <span class="math inline">\(n≥5\)</span>. Luego esta sucesión no es monótona.
+</div>
+
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sucesiones.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02_sucesiones.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II -- Cálculo.pdf", "Matemáticas II -- Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

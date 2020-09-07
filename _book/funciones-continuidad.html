@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 7 Funciones: continuidad | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 7 Funciones: continuidad | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 7 Funciones: continuidad | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 7 Funciones: continuidad | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="aplim.html"/>
+<link rel="next" href="derivadas-e-integrales.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="funciones-continuidad" class="section level1">
+<h1><span class="header-section-number">Capítulo 7</span> Funciones: continuidad</h1>
+<p>Como vimos en el apartado <a href="aplim.html#aplim">6</a>, casi siempre vamos a tener que <span class="math inline">\(\lim_{x \to a}f(x) = f(a)\)</span>. Pero a veces esto no pasa. Por ejemplo, tenemos la función
+<span class="math display">\[\frac{\sin \pi x}{x^2 - 1}\]</span>
+Vimos que el límite existe:
+<span class="math display">\[\lim_{x \to 1}\frac{\sin \pi x}{x^2 - 1} = -\frac{\pi}{2}\]</span>
+pero como <span class="math inline">\(f(1)\)</span> no está definido, <span class="math inline">\(\lim_{x \to 1} f(x) ≠ f(1)\)</span>.</p>
+<p>También estudiamos la función
+<span class="math display">\[f(x) = \frac{1}{(x-1)^2}.\]</span>
+En este caso el límite no existe, o algo incorrectamente decimos que es infinito, luego tampoco pasa en este caso que <span class="math inline">\(\lim_{x \to 1} f(x) = f(1)\)</span>.</p>
+<p>Un tercer caso es la función escalón
+<span class="math display">\[ f(x) = \left\{\begin{array}{rl} 0 &amp; \mbox{si } x &lt; 0\\
+                                1 &amp; \mbox{si } x ≥ 0\end{array}\right.\]</span>
+La función está bien definida en 0, pero como los límites laterales son distintos, el límite no existe. En este tercer caso tampoco sucede que <span class="math inline">\(\lim_{x \to 0} f(x) = f(0)\)</span>.</p>
+<p>Es natural considerar como “anormal” estos comportamientos y como “normal” cuando <span class="math inline">\(\lim_{x \to a}f(x) = f(a)\)</span>. Y nos gustaría dar un nombre a estas funciones que tiene este comportamiento normal. Las llamamos <em>funciones continuas</em>.</p>
+<div id="definiciones-1" class="section level2">
+<h2><span class="header-section-number">7.1</span> Definiciones</h2>
+<p>Como es casi siempre el caso en matemáticas, vamos a empezar por dar definiciones rigurosas a los conceptos que aparecen.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-60" class="definition"><strong>Definición 7.1  </strong></span>Decimos que la función <span class="math inline">\(f(x)\)</span> es continua en el punto <span class="math inline">\(a\)</span> si
+<span class="math display">\[\lim_{x \to a}f(x) = f(a)\]</span>
+</div>
+
+<p>Esta definición nos da la continuidad en un punto. Nuestra idea intuitiva gráfica de continuidad es una función que no se “rompe”, que podemos trazar en un solo trazo. Pero nuestra definición de continuidad es de continuidad en <em>un punto</em>. Para conjuntar nuestra idea intuitiva con nuestra definición, hemos de definir continuidad en un intervalo. Empecemos por definir dos tipos de intervalos:</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-61" class="definition"><strong>Definición 7.2  </strong></span>Definimos el intervalo <em>abierto</em> <span class="math inline">\((a, b)\)</span> como todos los puntos entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, pero sin contar con los extremos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, es decir, todos los puntos <span class="math inline">\(x\)</span> tal que <span class="math inline">\(a &lt; x &lt; b\)</span>.
+</div>
+
+
+<div class="definition">
+<span id="def:unnamed-chunk-62" class="definition"><strong>Definición 7.3  </strong></span>Definimos el intervalo <em>cerrado</em> <span class="math inline">\([a, b]\)</span> como todos los puntos entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, incluyendo los extremos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, es decir, todos los puntos <span class="math inline">\(x\)</span> tal que <span class="math inline">\(a ≤ x ≤ b\)</span>.
+</div>
+
+<p>Ahora podemos definir continuidad en ambos tipos de intervalo:</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-63" class="definition"><strong>Definición 7.4  </strong></span>Decimos que una función <span class="math inline">\(f(x)\)</span> es continua en el intervalo abierto <span class="math inline">\((a, b)\)</span> si es continua en todos los puntos de <span class="math inline">\((a, b)\)</span>.
+</div>
+
+
+<div class="definition">
+<span id="def:unnamed-chunk-64" class="definition"><strong>Definición 7.5  </strong></span>Decimos que una función <span class="math inline">\(f(x)\)</span> es continua en el intervalo cerrado <span class="math inline">\([a, b]\)</span> si es continua en el intervalo abierto <span class="math inline">\((a, b)\)</span> y se cumple que
+<span class="math display">\[\lim_{x\to a^+}f(x) = f(a) \quad \mbox{y} \lim_{x\to b^-}f(x) = f(b).\]</span>
+</div>
+
+<p>En esta última definición hemos de usar los límites laterales ya que no queremos exigir nada fuera del intervalo.</p>
+<hr />
+<div id="ejemplos-de-funciones-continuas" class="section level3">
+<h3><span class="header-section-number">7.1.1</span> Ejemplos de funciones continuas</h3>
+<p>Casi todas las funciones que usamos habitualmente son continuas en todos o casi todos los puntos. En particular son continuas:</p>
+<ul>
+<li>Las funciones polinómicas <span class="math inline">\(f(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0\)</span>;</li>
+<li>Las funciones racionales <span class="math inline">\(f(x) = \frac{p(x)}{q(x)}\)</span>, donde <span class="math inline">\(p(x)\)</span> y <span class="math inline">\(q(x)\)</span> son funciones polinómicas, excepto en los puntos donde <span class="math inline">\(q(x) = 0\)</span>;</li>
+<li>Las funciones de potencias <span class="math inline">\(f(x) = \sqrt[n]{x}\)</span>;</li>
+<li>Las funciones exponenciales <span class="math inline">\(f(x) = e^x\)</span> y logarítmicas <span class="math inline">\(f(x) = \log(x)\)</span>. En el caso de la logarítmica, es continua en su dominio: <span class="math inline">\(x &gt; 0\)</span>;</li>
+<li>Las funciones trigonométricas <span class="math inline">\(\sin x\)</span> y <span class="math inline">\(\cos x\)</span>. La función <span class="math inline">\(\tan x\)</span> es continua en todos los puntos excepto <span class="math inline">\(x = (2n + 1)\frac{\pi}{2}\)</span>.</li>
+</ul>
+</div>
+</div>
+<div id="discevit" class="section level2">
+<h2><span class="header-section-number">7.2</span> Discontinuidad evitable</h2>
+<p>Hemos visto que una función puede no ser continua en <span class="math inline">\(a\)</span> por tres motivos. Una es porque no hay límite en <span class="math inline">\(a\)</span>, pues los límites laterales son diferentes. El ejemplo que vimos es la función escalón. Otra, como por ejemplo la función <span class="math inline">\(f(x) = \frac{1}{(x-1)^2}\)</span>, es porque el límite en <span class="math inline">\(a\)</span> es infinito.El tercer motivo es porque, aunque el límite en <span class="math inline">\(a\)</span> existe, no coincide con el valor de <span class="math inline">\(f(a)\)</span>, normalmente porque no está definida en ese punto. El ejemplo que hemos visto de este tercer motivo es la función
+<span class="math display">\[f(x) = \frac{\sin \pi x}{x^2 - 1}.\]</span></p>
+<p>Si la discontinuidad es por alguno de los dos primeros motivos, no hay nada que hacer. Pero si es por el tercero, podemos “arreglarlo” y decimos que la discontinuidad es <em>evitable</em>. Dado que el problema es que <span class="math inline">\(\lim_{x \to a} f(x) ≠ f(a)\)</span> lo arreglamos creando otra función en la que <span class="math inline">\(\lim_{x \to a} f(x) = f(a)\)</span>. Para nuestro ejemplo:
+<span class="math display">\[ g(x) = \left\{ \begin{array}{rl} 
+                 \frac{\sin \pi x}{x^2 - 1} &amp; \mbox{si } x ≠ 1\\
+                 -\frac{\pi}{2} &amp; \mbox{si } x = 1 \end{array}\right.\]</span></p>
+<p>La función <span class="math inline">\(g(x)\)</span> es continua en <span class="math inline">\(x = 1\)</span>. Sigue teniendo un problema en <span class="math inline">\(x = -1\)</span>, donde tampoco está definida. Pero como el límite existe, se puede arreglar de la misma manera.</p>
+</div>
+<div id="continuidad-con-operaciones-de-funciones" class="section level2">
+<h2><span class="header-section-number">7.3</span> Continuidad con operaciones de funciones</h2>
+<p>Si <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> son continuas en un cierto intervalo, entonces también son continuas en ese intervalo</p>
+<ul>
+<li><span class="math inline">\((f+g)(x)\)</span></li>
+<li><span class="math inline">\((f-g)(x)\)</span></li>
+<li><span class="math inline">\((f \cdot g)(x)\)</span></li>
+<li><span class="math inline">\((f/g)(x)\)</span> excepto en los puntos donde <span class="math inline">\(g(x) = 0\)</span></li>
+<li><span class="math inline">\((f^g)(x)\)</span></li>
+</ul>
+<p>El caso de la composición de funciones es lo que es de esperar, pero un poco más complicado de expresar: <span class="math inline">\((g \circ f)(x)\)</span> es continua en <span class="math inline">\(a\)</span> si <span class="math inline">\(f(x)\)</span> es continua en <span class="math inline">\(a\)</span> y <span class="math inline">\(g(x)\)</span> es continua en <span class="math inline">\(f(a)\)</span>.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-65" class="example"><strong>Ejemplo 7.1  </strong></span>Estudia la continuidad de <span class="math inline">\(\tan x^2\)</span> en el intervalo <span class="math inline">\([0, 5]\)</span>.</p>
+En este caso <span class="math inline">\(f(x) = x^2\)</span> y <span class="math inline">\(g(x) = \tan x\)</span>. La función <span class="math inline">\(f(x)\)</span> no nos da problemas: es continua en todo <span class="math inline">\([0, 5]\)</span>. Ahora bien, <span class="math inline">\(\tan x\)</span> es continua si <span class="math inline">\(x ≠ (2n + 1)\frac{\pi}{2}\)</span>. Luego <span class="math inline">\(\tan x^2\)</span> tiene discontinuidades en los puntos <span class="math inline">\(x^2 = (2n + 1)\frac{\pi}{2}\)</span>: Es decir, la función <span class="math inline">\(\tan x^2\)</span> es continua en todo el intervalo <span class="math inline">\([0, 5]\)</span> excepto en los puntos
+<span class="math display">\[x = \sqrt{(2n + 1)\frac{\pi}{2}}.\]</span>
+</div>
+
+</div>
+<div id="impcont" class="section level2">
+<h2><span class="header-section-number">7.4</span> Importancia de la continuidad</h2>
+<p>Las funciones continuas son importantes porque hay muchas funciones interesantes que lo son y porque las funciones continuas tienen unas características que las hacen muy útiles en la ciencia e ingeniería.</p>
+<p>Veamos dos teoremas importantes.</p>
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-66" class="theorem"><strong>Teorema 7.1  (Teorema de Bolzano)  </strong></span>Sea f(x) una función continua en <span class="math inline">\([a, b]\)</span> y <span class="math inline">\(f(a)\)</span> y <span class="math inline">\(f(b)\)</span> toman valores de signo diferente, entonces existe al menos un punto <span class="math inline">\(c\)</span> del intervalo abierto, <span class="math inline">\((a, b)\)</span> tal que <span class="math inline">\(f(c) = 0\)</span>. En otras palabras, existe al menos un cero de <span class="math inline">\(f(x)\)</span> en <span class="math inline">\((a, b)\)</span>.
+</div>
+
+<p>Este teorema nos permite identificar lugares en donde una función continua tiene un cero. Y también nos da un método para calcular los ceros de una función continua.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-67" class="example"><strong>Ejemplo 7.2  </strong></span>La función <span class="math inline">\(f(x) = \sin \sqrt{x} - \log x^2\)</span> tiene un cero en el intervalo <span class="math inline">\([1, 2]\)</span>. Calcúlalo con una precisión de dos decimales.</p>
+<p>Empecemos por asegurarnos que tiene un 0 en el intervalo. Efectivamente
+<span class="math inline">\(f(1) = 0.84\)</span> y <span class="math inline">\(f(2) = -0.40.\)</span> Hay un cambio de signo, por lo tanto el teorema de Bolzano nos asegura que hay al menos un 0 en el intervalo.</p>
+Cojamos el punto medio, <span class="math inline">\(x = 1.5\)</span> y evaluemos la función en ese punto. Tenemos que <span class="math inline">\(f(1.5) = 0.13\)</span>. Es positivo, luego el cambio de signo, y por lo tanto el 0, está entre 1,5 y 2. Cojamos el punto medio, <span class="math inline">\(x = 1.75\)</span>. Tenemos que <span class="math inline">\(f(1.75) = - 0.15\)</span>. Luego el cambio de signo está entre <span class="math inline">\(1.5\)</span> y <span class="math inline">\(1.75\)</span>. Cogemos el punto medio, <span class="math inline">\(x = 1.625\)</span>… Vamos repitiendo este proceso hasta conseguir dos decimales exactos. Al cabo de unas cuantas iteraciones llegamos a que el cambio de signo, y por lo tanto el 0, está entre <span class="math inline">\(1.611\)</span> y <span class="math inline">\(1.613\)</span>. Por lo tanto, con dos decimales de precisión, sabemos que el cero es <span class="math inline">\(1.61\)</span>.
+</div>
+
+<p>Aunque hay procedimientos mejores, este procedimiento es muy simple y fácil de programar en un ordenador.</p>
+<hr />
+Pasemos al segundo teorema.
+
+<div class="theorem">
+<span id="thm:unnamed-chunk-68" class="theorem"><strong>Teorema 7.2  (teorema de Weierstrass)  </strong></span>Toda función continua en un intervalo cerrado [a, b] tiene un máximo y un mínimo absolutos en ese intervalo. Es decir, existen dos puntos <span class="math inline">\(x_M\)</span> y <span class="math inline">\(x_m\)</span> tales que para todo <span class="math inline">\(x\)</span> en <span class="math inline">\([a, b]\)</span> podemos asegurar que <span class="math inline">\(f(x_m)≤ f(x) ≤ f(x_M)\)</span>.
+</div>
+
+<p>A menudo vamos a quere calcular los valores másximos o mínimos de un función en un intervalo. Si la función es continua, el teorema de Weierstrass nos asegura que estos máximos y mínimos existen. Si no es continua, podrían no existir. Más adelante veremos cómo se calculan estos máximos y mínimos.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="aplim.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="derivadas-e-integrales.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/06_continuidad.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Derivación | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 2 Derivación | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Derivación | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Derivación | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="utilidad-del-concepto-de-derivada.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>2</b> Derivación</a><ul>
+<li class="chapter" data-level="2.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>2.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>2.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>2.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="2.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>2.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="2.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>2.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>3</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="3.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>3.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>3.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="3.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>3.1.2</b> Levas</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="derivación" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Derivación</h1>
+<p>Una vez explicado el concepto de derivada, y vista la definición formal, pasemos al cálculo de las funciones derivadas. A esto se le conoce con el nombre de <em>derivación</em>. Se pueden deducir las funciones derivadas por métodos algebraicos y geométricos. Por su naturaleza, los métodos geométricos son visuales y las gráficas y animaciones son muy útiles. Recomiendo los videos del <A HREF = "https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target = _blank>canal de YouTube de 3 Blue 1 Brown</A> de su serie de <A HREF = "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" target = _blank>Esencia del Cálculo</A>. Especialmente los capítulos <A HREF ="https://www.youtube.com/watch?v=S0_qX4VJhMQ&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=4&t=0s" target = _blank>3</A> y <A HREF = "https://www.youtube.com/watch?v=YG15m2VwSjA&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=4" target = _blank>4</A>. Aquí nos centraremos en el método algebraico.</p>
+<div id="algunas-derivadas-elementales" class="section level2">
+<h2><span class="header-section-number">2.1</span> Algunas derivadas elementales</h2>
+<p>En el apartado <a href="#defder"><strong>??</strong></a>, definimos derivada tanto en un punto como en un intervalo, sea abierto o cerrado. Vamos a usar esta definición para calcular las funciones derivadas de algunas funciones simples.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-1" class="example"><strong>Ejemplo 2.1  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = ax\)</span>.</p>
+Hemos de aplicar la definición. En este priemr ejemplo, lo vamos a desarrollar con mucho detalle:
+<span class="math display">\[\begin{align}
+      f^{\prime}(ax) &amp;=  \lim_{dx \to 0}\frac{f(x+dx) - f(x)}{dx}\\
+          &amp;= \lim_{dx \to 0}\frac{a(x+dx) - ax}{dx}\\
+          &amp;=  \lim_{dx \to 0}\frac{ax + a\, dx - ax}{dx}\\
+          &amp;=  \lim_{dx \to 0}\frac{a\, dx}{dx}\\
+          &amp;=  \lim_{dx \to 0}a\\
+          &amp;= a
+  \end{align}\]</span>
+</div>
+
+<hr />
+Ahora uno sólo ligeramente más complicado:
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-2" class="example"><strong>Ejemplo 2.2  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = x^n\)</span>.</p>
+<p>Aplicamos la definción:
+<span class="math display">\[f^{\prime}(x^n) =  \lim_{dx \to 0}\frac{f(x+dx) - f(x)}{dx}  = \lim_{dx \to 0}\frac{(x+dx)^n - x^n}{dx}\]</span>
+Desarrollamos <span class="math inline">\((x+dx)^n\)</span> por el binomio de Newton. No nos va a hacer falta desarrollarlo todo en detalle pues sabemos que a partir del tercer término tenemos al menos un factor <span class="math inline">\(dx^2\)</span> y lo sacamos factor común:
+<span class="math display">\[\lim_{dx \to 0}\frac{(x+dx)^n - x^n}{dx} = \lim_{dx \to 0}\frac{(x^n +nx^{n-1}dx + dx^2(\dots)) - x^n}{dx}\]</span>
+Y ahora los <span class="math inline">\(x^n\)</span> se cancelan. Como además el límite de una suma es la suma de los límtes, no queda:</p>
+<span class="math display">\[\lim_{dx \to 0}\frac{nx^{n-1} dx}{dx} + \lim_{dx \to 0}\frac{dx^2(\dots)}{dx}\]</span>
+Cancelando los <span class="math inline">\(dx\)</span>:
+<span class="math display">\[\lim_{dx \to 0}nx^{n-1} + \lim_{dx \to 0}dx(\dots)\]</span>
+El primer límite es <span class="math inline">\(nx^{n-1}\)</span> y en el segundo, como lo que hay en el parentesis no es infinito, el límite es 0. Por lo que nos queda que
+<span class="math display">\[f^{\prime}(x^n) = \lim_{dx \to 0}\frac{(x+dx)^n - x^n}{dx} = nx^{n-1}\]</span>
+</div>
+
+<hr />
+<p>Ahora hagamos uno muy importante, pero con un límite que no es simple:</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-3" class="example"><strong>Ejemplo 2.3  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = e^x\)</span>.</p>
+<p>Como siempre, empezamos por aplicar la definción:
+<span class="math display">\[f^{\prime}(e^x) =  \lim_{dx \to 0}\frac{e^{x+dx} - e^x}{dx}\]</span>
+Desarrollamos el primer término y sacamos factor común:
+<span class="math display">\[\lim_{dx \to 0}\frac{e^x\cdot e^{dx} - e^x}{dx} = 
+\lim_{dx \to 0}\frac{e^x(e^{dx} - 1)}{dx}\]</span>
+Como <span class="math inline">\(e^x\)</span> no depende de <span class="math inline">\(dx\)</span> lo podemos sacar fuera del límite:
+<span class="math display">\[e^x\lim_{dx \to 0}\frac{(e^{dx} - 1)}{dx}\]</span>
+Es un límite de tipo <span class="math inline">\(\frac{0}{0}\)</span>. Nuestro primer impulso sería aplicar L’Hôpital, pero no podemos, pues sería <em>utilizar</em> la derivada de <span class="math inline">\(e^x\)</span> para <em>determinar cuál es</em> la derivada de <span class="math inline">\(e^x\)</span>. Es un error de razonamiento circular: hemos de saber cuál es la derivada de <span class="math inline">\(e^x\)</span> para saber cuál es la derivada de <span class="math inline">\(e^x\)</span>. Tenemos que usar un camino más largo.</p>
+<p>Hacemos un cambio de variable: <span class="math inline">\(y = e^{dx} -1\)</span>. Entonces <span class="math inline">\(dx = \log(y+1)\)</span>. Es fácil ver que si <span class="math inline">\(dx \to 0\)</span> entonces <span class="math inline">\(y \to 0\)</span>. Luego:
+<span class="math display">\[\lim_{dx \to 0}\frac{(e^{dx} - 1)}{dx}= \lim_{y \to 0}\frac{y}{\log(y+1)}\]</span>
+Pasamos el <span class="math inline">\(y\)</span> del numerador al denominador:
+<span class="math display">\[\lim_{y \to 0}\frac{1}{\frac{1}{y}\log(y+1)} = \frac{1}{\lim_{y \to 0}{\frac{1}{y}\log(y+1)}}\]</span>
+o lo que es lo mismo
+<span class="math display">\[\frac{1}{\lim_{y \to 0} \log(y+1)^{(1/y)}}\]</span>
+Como el límite de unlogaritmo es lo mismo que el logaritmo del límite:
+<span class="math display">\[\frac{1}{\log(\lim_{y \to 0} (y+1)^{(1/y)})}\]</span>
+Y el límite es nuestro qeurido número <span class="math inline">\(e\)</span>:
+<span class="math display">\[\frac{1}{\log(e)} = \frac{1}{1} = 1\]</span></p>
+<p>Ahora que ya sabemos el límite, reacapitulamos:</p>
+<span class="math display">\[f^{\prime}(e^x) =e^x\lim_{dx \to 0}\frac{(e^{dx} - 1)}{dx} = e^x \cdot 1 = e^x\]</span>
+</div>
+
+<hr />
+<p>El procedimiento de calcular la función derivada a veces es fácil y a veces muy complicado. Por suerte es algo que ya han hecho para nosostros y simplemente nos aprendemos de memoria las más habituales (y buscamos en tablas las que no nos sabemos).</p>
+<div id="cuadro-de-derivadas-elementales" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Cuadro de derivadas elementales</h3>
+<p>En el cuadro siguiente están algunas de las derivadas elementales más habituales, y que conviene saber de memoria. En el cuadro <span class="math inline">\(a\)</span> es una constante y <span class="math inline">\(x\)</span> es la variable sobre la que derivamos.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right"><span class="math inline">\(f(x)\)</span></th>
+<th align="left"><span class="math inline">\(f^{\prime}(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><span class="math inline">\(a\)</span></td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(x\)</span></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(x^n\)</span></td>
+<td align="left"><span class="math inline">\(nx^{n-1}\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\sqrt{x}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1}{2\sqrt{x}}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(a^x\)</span></td>
+<td align="left"><span class="math inline">\(a^x \log(a)\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(e^x\)</span></td>
+<td align="left"><span class="math inline">\(e^x\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\log(x)\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1}{x}\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\sin(x)\)</span></td>
+<td align="left"><span class="math inline">\(\cos(x)\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\cos(x)\)</span></td>
+<td align="left"><span class="math inline">\(-\sin(x)\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\tan(x)\)</span></td>
+<td align="left"><span class="math inline">\(\frac{1}{\cos^2(x)}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="derivadas-de-operaciones" class="section level2">
+<h2><span class="header-section-number">2.2</span> Derivadas de operaciones</h2>
+<p>Sean dos funciones <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span>. Las derivadas de las operaciones aritméticas de estas funciones son las siguientes:</p>
+<p><span class="math display">\[\begin{array}{l}
+(a\cdot f)^{\prime}(x) = a \cdot f^{\prime}(x)\\
+    (f+g)^{\prime}(x) = f^{\prime}(x) + g^{\prime}(x)\\
+    (f-g)^{\prime}(x) = f^{\prime}(x) - g^{\prime}(x)\\
+    (f\cdot g)^{\prime}(x) = f^{\prime}(x)\cdot g(x) + f(x)\cdot g^{\prime}(x)\\
+    (f/g)^{\prime}(x) = \frac{f^{\prime}(x)\cdot g(x) - f(x)\cdot g^{\prime}(x)}{g^2(x)}\end{array}
+    \]</span></p>
+<p>Un error habitual, sobre todo en novatos, es aplicar reglas de derivación de la multiplicación y de la división cuando no es necesario, convirtiendo una derivada simple y elemental en algo innecesariamente complicado. Veamos un ejemplo.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-4" class="example"><strong>Ejemplo 2.4  </strong></span>Calcula la derivada de <span class="math display">\[f(x) = \frac{x^2}{5}.\]</span></p>
+<p>Como hay un numerador y un denominador, a primera vista parece que es la derivada de una división:
+<span class="math display">\[\left(\frac{x^2}{5}\right)^{\prime} = \frac{2x\cdot 5 - x^2\cdot 0}{25} = \frac{2x}{5}\]</span></p>
+Pero el denominador es una constante, luego podemos reescribir la función como <span class="math inline">\(f(x) = \frac{1}{5} x^2\)</span> y entonces:
+<span class="math display">\[\left(\frac{1}{5} x^2\right)^{\prime} = \frac{1}{5} (x^2)^{\prime} 
+     = \frac{2x}{5}\]</span>
+</div>
+
+</div>
+<div id="derivada-de-composición-de-funciones-regla-de-la-cadena" class="section level2">
+<h2><span class="header-section-number">2.3</span> Derivada de composición de funciones: regla de la cadena</h2>
+<p>Sean dos funciones <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> y sea la función compuesta <span class="math inline">\((g\circ f)(x)\)</span>. La derivada de esta función compuesta es:
+<span class="math display">\[(g\circ f)^{\prime}(x) = g^{\prime}(f(x))\cdot g^{\prime}(x)\]</span></p>
+<p>A esta expresión se le llama la <em>regla de la cadena</em>.</p>
+<p>Recordar esta expresión y, sobre todo, aplicarla, puede ser un tanto farragoso. Es más fácil acordarse de las derivadas elementales con la regla de la cadena “incorporada”. Si llamamos <span class="math inline">\(u\)</span> a una expresión, y <span class="math inline">\(u^{\prime}\)</span> a su derivada, entonces el cuadro de derivadas elementales se convierte en:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right"><span class="math inline">\(f(x)\)</span></th>
+<th align="left"><span class="math inline">\(f^{\prime}(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><span class="math inline">\(a\)</span></td>
+<td align="left">0</td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(x\)</span></td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(u^n\)</span></td>
+<td align="left"><span class="math inline">\(u^{\prime}nu^{n-1}\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\sqrt{u}\)</span></td>
+<td align="left"><span class="math inline">\(\frac{u^{\prime}}{2\sqrt{u}}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(a^u\)</span></td>
+<td align="left"><span class="math inline">\(u^{\prime}a^u \log(a)\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(e^u\)</span></td>
+<td align="left"><span class="math inline">\(u^{\prime}e^u\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\log(u)\)</span></td>
+<td align="left"><span class="math inline">\(\frac{u^{\prime}}{u}\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\sin(u)\)</span></td>
+<td align="left"><span class="math inline">\(u^{\prime}\cos(u)\)</span></td>
+</tr>
+<tr class="odd">
+<td align="right"><span class="math inline">\(\cos(u)\)</span></td>
+<td align="left"><span class="math inline">\(-u^{\prime}\sin(u)\)</span></td>
+</tr>
+<tr class="even">
+<td align="right"><span class="math inline">\(\tan(u)\)</span></td>
+<td align="left"><span class="math inline">\(\frac{u^{\prime}}{\cos^2(u)}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Veamos algún ejemplo de aplicación de esta regla.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-5" class="example"><strong>Ejemplo 2.5  </strong></span>¿Cuál es la derivada de <span class="math inline">\(\cos(x^3)\)</span>?</p>
+En este caso <span class="math inline">\(u = x^3\)</span> y del cuadro anterior sacamos que <span class="math inline">\((\cos(u))^{\prime} = -u^{\prime}\sin(u)\)</span>. Como <span class="math inline">\(u^{\prime} = 3x^2\)</span> nos queda que
+<span class="math display">\[(\cos(x^3))^{\prime} = -3x^2 \sin(x^3)\]</span>
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-6" class="example"><strong>Ejemplo 2.6  </strong></span>¿Cuál es la derivada de <span class="math inline">\(\cos^3(\sqrt{x})\)</span>?</p>
+<p>Hemos de aplicar la regla de la cadena varias veces. Para la primera, tenemos que <span class="math inline">\(u = \cos(\sqrt{x})\)</span> y tenemos una función de la forma <span class="math inline">\(u^n\)</span>. Luego
+<span class="math display">\[(\cos^3(\sqrt{x}))^{\prime} = (\cos(\sqrt{x}))^{\prime} 3 \cos^2 (\sqrt{x}) \]</span>
+Ahora debemos volver a palicar la regla de la cadena para hallar la derivada de <span class="math inline">\(\cos(\sqrt{x})\)</span>. Ahora <span class="math inline">\(u = \sqrt{x}\)</span> y tenemos una función de la forma <span class="math inline">\(\cos(u)\)</span>. La derivada es:
+<span class="math display">\[(\cos(\sqrt{x}))^{\prime} = -\frac{1}{2\sqrt{x}}\sin(\sqrt{x})\]</span></p>
+Juntándolo todo queda:
+<span class="math display">\[(\cos^3(\sqrt{x}))^{\prime} = -\frac{1}{2\sqrt{x}}\sin(\sqrt{x}) 3 \cos^2 (\sqrt{x}) = -\frac{3 \sin(\sqrt{x}) \cos^2 (\sqrt{x})}{2\sqrt{x}} \]</span>
+</div>
+
+</div>
+<div id="derivadas-sucesivas" class="section level2">
+<h2><span class="header-section-number">2.4</span> Derivadas sucesivas</h2>
+<p>Hemos visto que dada una función <span class="math inline">\(f(x)\)</span>, si es derivable, podemos calcular la función derivada <span class="math inline">\(f^{\prime}(x)\)</span>. Ahora bien, como es una <em>función</em> derivada, la podemos derivar otra vez. A esto le llmamos la derivada segunda, y la escribimos como
+<span class="math display">\[\frac{d^2f}{dx^2} (x) = f^{\prime\prime}(x)\]</span></p>
+<p>Y naturalmente podemos derivar esta derivada segunda y obtener la derivada tercera:
+<span class="math display">\[\frac{d^3f}{dx^3} (x) = f^{\prime\prime\prime}(x)\]</span></p>
+<p>Y repetirlo tantas veces como la función lo permita. A esto se le llama las derivadas sucesivas de <span class="math inline">\(f(x)\)</span>. Muchas funciones, por ejemplo los polinomios, las exponenciales o las funciones trigonométricas, son infinitamente derivables.</p>
+<p>A veces las derivadas sucesivas tienen una interpretación física. Ya vimos que la velocidad es al derivada de la posición: <span class="math inline">\(v(t) = s^{\prime}(t)\)</span>. Como la aceleración es la derivada de la velocidad, entonces es la derivada segunda de la posición: <span class="math inline">\(a(t) = s^{\prime\prime}(t)\)</span>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="utilidad-del-concepto-de-derivada.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/08_Derivacion.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 12 Ecuaciones diferenciales | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 12 Ecuaciones diferenciales | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 12 Ecuaciones diferenciales | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 12 Ecuaciones diferenciales | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="cálculo-de-primitivas.html"/>
+<link rel="next" href="funciones-de-varias-variables.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ecuaciones-diferenciales" class="section level1">
+<h1><span class="header-section-number">Capítulo 12</span> Ecuaciones diferenciales</h1>
+<div id="introducción" class="section level2">
+<h2><span class="header-section-number">12.1</span> Introducción</h2>
+<p>Al mirar la interpretación física de las derivadas, partíamos de una función, por ejemplo la velocidad de un objeto, y derivando la velocidad podíamos obtener la aceleración del objeto. Pero casi siempre el problema que tenemos es el contrario: sabemos las fuerzas sobre el objeto, que gracias a la segunda ley de Newton nos da la aceleración, y a partir de aquí queremos obtener su velocidad y posición. Es el problema inverso al que hemos visto hasta ahora. Estudiémoslo.</p>
+<p>Empecemos con un caso muy simple. Supongamos que la aceleración <span class="math inline">\(a(t)\)</span> es constante. Entonces</p>
+<p><span class="math display">\[\frac{dv(t)}{dt} = a\]</span></p>
+<p>No hemos de derivar la función, sino que tenemos que encontrar una función cuya derivada es la constante <span class="math inline">\(a\)</span>. Es un caso muy simple, casi obvio:
+<span class="math display">\[v(t) = at + C\]</span>
+Ahora no estamos calculando un área o sumando, sino hallando una función, luego la constante de integración es necesaria. Para obtener el valor de esta constante hemos de conocer la velocidad en algún momento Típicamente, sabemos la velocidad en el instante inicial: <span class="math inline">\(v(0) = v_0\)</span>. Luego nos queda la función
+<span class="math display">\[v(t) = v_0 + at.\]</span></p>
+<p>Si ahora queremos saber la función de la posición del objeto, <span class="math inline">\(s(t)\)</span>, hemos de encontrar una función que al derivarla nos dé la velocidad:
+<span class="math display">\[\frac{ds(t)}{dt} = v_0 + at\]</span>
+Otra vez, es un caso muy simple:
+<span class="math display">\[s(t) = v_0t + \frac{1}{2}at^2 + C.\]</span>
+Para hallar el valor de la constante necesitamos saber la posición en algún instante concreto. Típicamente, la sabemos en el instante inicial, <span class="math inline">\(s(0) = s_0\)</span> y obtenemos así:
+<span class="math display">\[s(t) = s_0 + v_0t + \frac{1}{2}at^2.\]</span></p>
+<p>Hemos deducido las ecuaciones del movimiento uniformemente acelerado.</p>
+<p>Seguramente casi todos se han dado cuenta que lo que hemos hecho es integrar dos veces. Este es un problema tan simple que hemos podido encontrar las funciones simplemente integrando. Pero normalmente las situaciones son más complicadas.</p>
+<p>Supongamos que dejamos caer una pelota. Sabemos que la gravedad actúa sobre ella, con una fuerza constante <span class="math inline">\(F = -mg\)</span> (seguimos la convención que hacia arriba es positivo y hacia abajo, negativo). Hay también un rozamiento aerodinámico, que se opone al movimiento, que es proporcional al cuadrado de la velocidad. La suma de ambas fuerzas es
+<span class="math display">\[F = -mg - kv(t)^2.\]</span>
+Aplicando la ley de Newton tenemos
+<span class="math display">\[ma(t) = -mg - kv(t)^2.\]</span>
+Dada que la posición es vertical, la llamaremos <span class="math inline">\(y(t)\)</span>. La velocidad es la primera derivada de la posición, y la aceleración es la segunda derivada de la posición. La ecuación queda:
+<span class="math display">\[m\frac{d^2y(t)}{dt^2} = -mg - k\left(\frac{dy(t)}{dt}\right)^2.\]</span>
+Para saber cómo se mueve muestra pelota, hemos de encontrar una función <span class="math inline">\(y(t)\)</span> que cumpla esta ecuación. Ahora ya no basta con integrar.</p>
+<p>En estas ecuaciones aparece no sólo la función, sino también una o más <em>derivadas</em> de la función. Por eso reciben el nombre de <em>ecuaciones diferenciales</em>.</p>
+
+<div class="definition">
+<span id="def:unnamed-chunk-137" class="definition"><strong>Definición 12.1  </strong></span>Una <em>ecuación diferencial</em> es una ecuación en la que aparece no sólo la función <span class="math inline">\(f\)</span>, sino también sus derivadas.
+</div>
+
+<hr />
+<p>Las leyes físicas, como la segunda ley de Newton, dan lugar de forma natural a ecuaciones diferenciales. Plantear un problema de mecánica, electricidad o termodinámica se convierte en encontar la ecuación diferencial asociada. Resolver el problema se convierte así en resolver la ecuación diferencial. Plantear ecuaciones diferenciales es relativamente sencillo. Resolverlas es, en general, enormemente complicado. Se saben resolver muy pocas.</p>
+<p>Por eso, aparte de la resolución de ecuaciones diferenciales, hay métodos para <em>entender</em> las características de las ecuaciones sin tener que resolverlas. Podemos saber bajo qué condiciones un sistema se estable o inestable, si oscila o no, si tiende a ciertos valores o no. Muchas de estas características se pueden deducir de las ecuaciones diferenciales sin necesidad de resolver la ecuación.</p>
+<p>Y si es necesario resolverla, hay métodos numéricos que nos pueden ayudar. Son métodos mucho más complicados que los que vimos para el cálculo de integrales, y con resultados más inciertos.</p>
+<p>El mundo de las ecuaciones diferenciales es muy complicado, pero es la base de la física y la química, y por lo tanto de la ingeniería. Hemos de adentrarnos en él. En esta breve introducción vamos a conocer las características de una ecuación diferencial y vamos a aprender a resolver algunas especialmente sencillas.</p>
+<div id="notación" class="section level3">
+<h3><span class="header-section-number">12.1.1</span> Notación</h3>
+<p>Ya vimos que podemos escribir una derivada como <span class="math inline">\(\frac{dy}{dx}\)</span> o como <span class="math inline">\(y^\prime(x)\)</span>. Esto da lugar a que se pueda escribir una ecuación diferencial de varias maneras. Como las ecuaciones diferenciales se usan mayoritariamente para saber cçomo evoluciona un sistema en el tiempo, a menos que especifiquemos otra cosa, vamos a suponer que la variable es el tiempo <span class="math inline">\(t\)</span>. A la función la denotaremos con <span class="math inline">\(x(t)\)</span>. Sabiendo esto, para simplificar la notación, no escribiremos la variable de la función: usaremos <span class="math inline">\(x\)</span> o <span class="math inline">\(x^\prime\)</span> y no <span class="math inline">\(x(t)\)</span> o <span class="math inline">\(x^\prime(t)\)</span>.</p>
+<p>Hay 3 notaciones ampliamente usadas para escribir una ecuación diferencial. Una es la <em>notación de Leibniz</em>. Es la que hemos usado arriba. Una ecuación diferencial en esta notación tiene la forma</p>
+<p><span class="math display">\[m\frac{d^2 x}{dt^2} + b\frac{dx}{dt} + kx = 0.\]</span></p>
+<p>La segunda notación es la <em>notación primada</em>:</p>
+<p><span class="math display">\[mx^{\prime\prime} + b x^{\prime} + kx = \sin(t)\]</span></p>
+<p>La tercera notación habitual es la <em>notación de Newton</em> que, por motivos históricos, se usa en mecánica. Un punto sobre la variable significa su derivada, dos puntos la derivada segunda, etc.:</p>
+<p><span class="math display">\[m\ddot{x} + b\dot{x} + kx = \cos(\omega t + \phi)\]</span></p>
+<p>También es costumbre poner a la izquierda todos los téminos que tienen que ver con <span class="math inline">\(x(t)\)</span> y su derivada, y a la derecha los que son constantes o dependen sólo de <span class="math inline">\(t\)</span>. A esto se llama la <em>forma general</em> de la ecuación.</p>
+</div>
+</div>
+<div id="clasificación-de-las-ecuaciones-diferenciales" class="section level2">
+<h2><span class="header-section-number">12.2</span> Clasificación de las ecuaciones diferenciales</h2>
+<p>Podemos clasificar las ecuaciones diferenciales según algunas características.</p>
+<ul>
+<li><strong>Orden:</strong> El orden de una ecuación diferencial es el orden mayor de las derivadas involucradas en la ecuación.</li>
+</ul>
+<p>Por ejemplo
+<span class="math display">\[m\frac{d^2 x}{dt^2} + b\frac{dx}{dt} + kx = 0\]</span>
+es una ecuación de segundo orden, ya que hay una derivada segunda, mientras que
+<span class="math display">\[m\frac{dv}{dt} + k v^2 = -mg\]</span>
+es una ecuación diferencial de primer orden, pues sólo hayuna derivada primera.</p>
+<ul>
+<li><strong>Grado:</strong> El grado de una ecuación diferencial es la potencia a la que está elevada la derivada de mayor orden.</li>
+</ul>
+<p>Por ejemplo
+<span class="math display">\[m\frac{d^2x}{dt^2} + k\left(\frac{dx}{dt}\right)^2= -mg\]</span>
+es una ecuación de primer grado, mientras que
+<span class="math display">\[(x^\prime x t)^3 -7x = t\]</span>
+es una ecuación diferencial de tercer grado.</p>
+<ul>
+<li><strong>Linealidad:</strong> Un ecuación diferencial de orden <span class="math inline">\(n\)</span> es lineal si es lineal en <span class="math inline">\(x, x^\prime, x^{\prime\prime}, \dots, x^{(n)}\)</span>. Es decir, toma la forma
+<span class="math display">\[a_n(t)x^{(n)} + a_{n-1}(t)x^{(n-1)} + \cdots + a_1(t)x^\prime + a_0(t)x = g(t).\]</span>
+Nótese que las <span class="math inline">\(a_i(t)\)</span> pueden depender de <span class="math inline">\(t\)</span> pero no pueden depender de <span class="math inline">\(x\)</span>. Si alguno dependiera de <span class="math inline">\(x\)</span> ya no sería lineal.</li>
+</ul>
+<p>Si <em>todos</em> los coeficientes <span class="math inline">\(a_i\)</span> son constantes (no dependen ni de <span class="math inline">\(x\)</span> ni de <span class="math inline">\(t\)</span>), se dice que es una ecuación diferencial lineal de coeficientes constantes.</p>
+<ul>
+<li><strong>Homogeneidad:</strong> Una ecuación lineal es homogénea si <span class="math inline">\(g(t) = 0\)</span>, es decir, si no hay “nada” en el lado derecho de la ecuación. Por ejemplo
+<span class="math display">\[m\frac{d^2 x}{dt^2} + b\frac{dx}{dt} + kx = 0\]</span>
+es una ecuación diferencial lineal de coeficientes constantes y homogénea, mientras que
+<span class="math display">\[x^{\prime\prime} + t x^{\prime} + kx = \sin(t)\]</span>
+es una ecuación diferencial lineal, pero ni tiene coeficientes constantes, ni es homogénea.</li>
+</ul>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-138" class="example"><strong>Ejemplo 12.1  </strong></span>La ecuación diferencial
+<span class="math display">\[ml \frac{d\theta^2}{dt^2} + kl\frac{d\theta}{dt} + mg\sin(\theta) = 0\]</span>
+es una ecuación de segundo orden y de primer grado, pero no es lineal porque tenemos <span class="math inline">\(\sin(\theta)\)</span>. Es una ecuación diferencial muy difícil de resolver.</p>
+Si nos limitamos a valores pequeños de <span class="math inline">\(\theta\)</span> podemos aproximar <span class="math inline">\(\sin(\theta)\)</span> por su polinomio de Taylor: <span class="math inline">\(\sin(\theta) \approx \theta\)</span>. La ecuación resultante es
+<span class="math display">\[ml \frac{d\theta^2}{dt^2} + kl\frac{d\theta}{dt} + mg\theta = 0.\]</span>
+Esta ecuación diferencial es lineal, de coeficientes constantes y homogénea y es mucho más fácil de resolver.
+</div>
+
+<p>Como hemos dicho varias veces, resolver ecuaciones diferenciales es en general muy difícil. Vamos a aprender a resolver dos casos, posiblemente los dos más simples. Ecuaciones diferenciales de primer orden de variables separables y ecuaciones diferenciales de primer orden lineales.</p>
+</div>
+<div id="ecuaciones-diferenciales-de-variables-separables" class="section level2">
+<h2><span class="header-section-number">12.3</span> Ecuaciones diferenciales de variables separables</h2>
+<p>Tenemos una ecuación diferencial de primer orden que tiene la forma
+<span class="math display">\[\frac{dx}{dt} = g(x)h(t).\]</span>
+Decimos que esta ecuación deiferencial es de <em>variables separables</em>.</p>
+<p>Para resolverla pasamos todo lo que tiene <span class="math inline">\(x\)</span> a un lado y todo lo que tiene <span class="math inline">\(t\)</span> al otro:
+<span class="math display">\[\frac{dx}{g(x)} = h(t)\,dt.\]</span>
+Y ahora podemos integrar cada lado:
+<span class="math display">\[\int\frac{dx}{g(x)} = \int h(t)\,dt.\]</span></p>
+<p>La posibilidad de resolver esta ecuación deferencial depende de la posibilidad de encontrar las primitivas de ambas integrales.</p>
+<hr />
+<p>Las ecuaciones que hemos deducido del movimiento uniformemente acelerado partían de ecuaciones diferenciales de variables separables. La primera era:
+<span class="math display">\[\frac{dv}{dt} = a\]</span>
+que resolvimos separando las variables:
+<span class="math display">\[\int dv  = \int a\, {dt}.\]</span>
+Y la segunda ecuación era
+<span class="math display">\[\frac{dx}{dt} = v_0 + at\]</span>
+que también resolvimos separando las variables:
+<span class="math display">\[\int dx = \int (v_0 + at)\,dt\]</span></p>
+Este caso era muy fácil. Otros no lo son tanto.
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-139" class="example"><strong>Ejemplo 12.2  </strong></span>Tenemos un controlador de velocidad, para mantener una velocidad constante especificada <span class="math inline">\(v_e\)</span>. Este controlador ejerce una fuerza sobre el objeto proporcional a la diferencia de velocidad entre la que lleva y la especificada:
+<span class="math display">\[F = k(v_e - v).\]</span>
+Nótese que si la velocidad es inferior a <span class="math inline">\(v_e\)</span> la fuerza es positiva (acelera), mientras que si es mayor que la especificada, la fuerza es negativa (decelera).</p>
+<p>Queremos saber cómo varía la velocidad si inicialmente es <span class="math inline">\(v_0\)</span>.</p>
+<p>Aplicando la segunda ley de Newton tenemos la ecuación diferencial
+<span class="math display">\[m\frac{dv}{dt} = k(v_e - v)\]</span></p>
+<p>Tal y como está, no es una ecuación diferencial de variables separadas, pues en el lado derecho tenemos <span class="math inline">\(kv_e - kv\)</span>, que es una resta de funciones, no un producto, que es lo que nos gustaría. Lo podemos resolver haciendo un cambio de variable, usando la diferencia de velocidad respecto a <span class="math inline">\(v_e\)</span> en vez del valor absoluto de la velocidad. Es decir, el cambio es <span class="math inline">\(v_d(t) = v_e - v(t)\)</span>. Derivando vemos que <span class="math inline">\(\frac{dv_d}{dt} = - \frac{dv}{dt}\)</span>. Nos queda la ecuación diferencial
+<span class="math display">\[\frac{dv_d}{dt} = -\frac{k}{m}v_d\]</span>
+Y esta sí que es de variables separables:
+<span class="math display">\[\frac{dv_d}{v_d} = -\frac{k}{m}dt\]</span>
+Integramos
+<span class="math display">\[\log(|v_d|) = -\frac{k}{m}t + C\]</span>
+que lo podemos escribir como
+<span class="math display">\[v_d = e^{-\frac{k}{m}t + C}.\]</span>
+Deshacemos el cambio:
+<span class="math display">\[v_e - v(t) = e^{-\frac{k}{m}t + C}\]</span>
+Es decir,
+<span class="math display">\[v(t) = v_e - e^{-\frac{k}{m}t + C}\]</span>
+Para hallar el valor de <span class="math inline">\(C\)</span> imponemos la condición inicial:
+<span class="math display">\[v(0) = v_0 = v_e - e^{-\frac{k}{m}0 + C} = v_e - e^C\]</span>
+Es decir:
+<span class="math display">\[v_e - v_0 = e^C\]</span>
+Recordando que <span class="math inline">\(e^{a+b} = e^a e^b\)</span> nos queda
+<span class="math display">\[v(t) = v_e - (v_e - v_0)e^{-\frac{k}{m}t}\]</span>
+Lo arreglamos un poco para sumar en vez de restar:
+<span class="math display">\[v(t) = v_e + (v_0 - v_e)e^{-\frac{k}{m}t}\]</span></p>
+<p>Derivando esta función e introduciéndola en la ecuación diferencial vemos que es una solución a la ecuación de partida.</p>
+<p>Hagamos algunas gráficas. Supongamos que <span class="math inline">\(v_e = 5\)</span>. Cogemos dos velocidades iniciales, <span class="math inline">\(v_0 = 1\)</span> y <span class="math inline">\(v_0 = 6\)</span>. Podemos ver que siempre tiende la velocidad hacia este valor especificado. También se observa que cuánto más lejos estamos de <span class="math inline">\(v_e\)</span> más rápidamente cambia la velocidad (más fuerza hace el regulador), y que al acercarnos cambia de forma más lenta.</p>
+</div>
+
+<p><img src="imagenes/varsep1.jpg" /><!-- --></p>
+<p>De esta ecuación podemos ver que cuánto mayor es <span class="math inline">\(k\)</span>, es decir mayor es la fuerza que puede aplicar el regulador, más rápidamente se acerca a <span class="math inline">\(v_e\)</span>.
+<img src="imagenes/varsep2.jpg" /><!-- --></p>
+<p>Finalmente obervamos que cuanta mayor es la masa, al tener mayor inercia, se acerca más lentamente a <span class="math inline">\(v_e\)</span>.
+<img src="imagenes/varsep3.jpg" /><!-- --></p>
+</div>
+<div id="ecuaciones-diferenciales-lineales-de-primer-orden" class="section level2">
+<h2><span class="header-section-number">12.4</span> Ecuaciones diferenciales lineales de primer orden</h2>
+<p>Tras haber aprendido a integrar las ecuaciones diferenciales de variables separables, vamos a aprender a integrar las lineales de primer orden:</p>
+<p><span class="math display">\[a_1(t)\frac{dx}{dt} + a_0(t) x = g(t).\]</span></p>
+<p>Se puede deducir paso a paso cómo obtener una solución a este tipo de ecuaciones diferenciales, pero aquí se va a dar como un procedimiento y comprobaremos que la solución obtenida es solución de la ecuación.</p>
+<p>Lo primero que vamos a hacer es dividir todo por <span class="math inline">\(a_1(t)\)</span>:
+<span class="math display">\[\frac{dx}{dt} + \frac{a_0(t)}{a_1(t)} x = \frac{g(t)}{a_1(t)}.\]</span>
+Para no tener fracciones, vamos a cambiar los nombres de los parámetros y de la función:
+<span class="math display">\[\frac{dx}{dt} + P(t) x = f(t).\]</span>
+A esto se le llama la <em>forma estándar</em> de la ecuación diferencial.</p>
+<p>El primer paso es calcular
+<span class="math display">\[e^{\int P(t)dt}.\]</span>
+A esto se le llama el <em>factor integrante</em>.</p>
+<p>Mutiplicamos ambos lados de la ecuación por este factor integrante:
+<span class="math display">\[\frac{dx}{dt}e^{\int P(t)dt} +  P(t) e^{\int P(t)dt} x = e^{\int P(t)dt}f(t).\]</span></p>
+<p>Lo que tenemos al lado izquierdo es la derivada del producto <span class="math inline">\(xe^{\int P(t)dt}\)</span>. Luego podemos reescribir la ecuación como
+<span class="math display">\[\frac{d}{dt}\left(xe^{\int P(t)dt}\right) = e^{\int P(t)dt}f(t).\]</span>
+Integramos ambos lados y tenemos
+<span class="math display">\[x e^{\int P(t)dt} = \int e^{\int P(t)dt}f(t) \, dt.\]</span>
+Y ahora despejando <span class="math inline">\(x(t)\)</span> tenemos la solución a nuestra ecuación.</p>
+<p>El método es simple. Lo fácil o difícil que es resolver esta ecuación diferencial depende de lo fácil o difícil que sea resolver las integrales que aparecen.</p>
+Veamos un ejemplo.
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-143" class="example"><strong>Ejemplo 12.3  </strong></span>Resuelve la ecuación diferencial
+<span class="math display">\[m\frac{dv}{dt} = k(v_e - v).\]</span></p>
+<p>Antes la resolvimos por el método de separación de variables. Pero la podemos escribir como una ecuación diferencial lineal. La reescribimos en forma estándar:
+<span class="math display">\[\frac{dv}{dt} + \frac{k}{m}v =  \frac{k}{m}v_e.\]</span>
+Entonces <span class="math inline">\(P(t) = k/m\)</span> y <span class="math inline">\(f(t) = \frac{k}{m}v_e.\)</span> Vemos que es una ecuación diferencial lineal de coeficientes constantes.</p>
+<p>Obtenemos el factor integrante:
+<span class="math display">\[e^{\int\frac{k}{m} \,dt} = e^{\frac{k}{m} t}\]</span>
+Multiplicamos ambos lados de la ecuación por el factor integrante:
+<span class="math display">\[ \frac{dv}{dt} e^{\frac{k}{m} t}  + \frac{k}{m}e^{\frac{k}{m} t}v =  e^{\frac{k}{m} t}\frac{k}{m}v_e\]</span>
+o lo que es lo mismo
+<span class="math display">\[  \frac{d}{dt} \left(v e^{\frac{k}{m} t}\right) =  e^{\frac{k}{m} t}\frac{k}{m}v_e.\]</span></p>
+<p>De donde, integrando:
+<span class="math display">\[v e^{\frac{k}{m} t} = \int v_e \frac{k}{m} e^{\frac{k}{m} t} \,dt= v_e e^{\frac{k}{m} t} + C\]</span>
+Imponemos la condición inicial <span class="math inline">\(v(0) = v_0\)</span> para obtener <span class="math inline">\(C\)</span>:
+<span class="math display">\[v_0 e^{\frac{k}{m} 0} = v_0 = v_e e^{\frac{k}{m} 0} + C = v_e + C\]</span>
+De donde <span class="math inline">\(C = v_0-v_e\)</span>.</p>
+<p>Introducimos el valor de <span class="math inline">\(C\)</span> y despejamos <span class="math inline">\(v(t)\)</span>. El resultado es:
+<span class="math display">\[v(t)  =v_e +  (v_0-v_e) e^{-\frac{k}{m} t}. \]</span></p>
+Es, efectivamente, el mismo resultado que el obtenido anteriormente.
+</div>
+
+<p>Sucede con cierta frecuencia que una ecuación diferencial se pueda resolver de varias maneras. El método a escoger depende del gusto de cada uno.</p>
+Veamos otro ejemplo.
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-144" class="example"><strong>Ejemplo 12.4  </strong></span>Resuelve la ecuación diferencial <span class="math inline">\(x^\prime t = 2x + t^3 \cos(t)\)</span>.
+Sabemos que en <span class="math inline">\(t = 1\)</span> el valor de <span class="math inline">\(x\)</span> es 0.</p>
+<p>A primera vista no parece una ecuación diferencial lineal, pero sí que lo es. La reescribimos en forma estándar para asegurarnos:</p>
+<p><span class="math display">\[x^\prime - \frac{2}{t} x  = t^2 \cos(t)\]</span>
+Es una ecuación diferencial lineal, con <span class="math inline">\(P(t) = - \frac{2}{t}\)</span> y <span class="math inline">\(f(t) = t^2 \cos(t)\)</span>.</p>
+<p>Calculamos el factor integrante:
+<span class="math display">\[e^{\int -\frac{2}{t} \,dt} = e^{-2 \log(t)} = e^{\log\left(\frac{1}{t^2}\right)} = \frac{1}{t^2}\]</span></p>
+<p>Multiplicamos ambos lados de la ecuación por el factor integrante:
+<span class="math display">\[\frac{x^\prime}{t^2} - \frac{2}{t^3} x  =  \cos(t)\]</span>
+Ya sabemos que la segunda parte es la derivada del producto <span class="math inline">\(x(1/t^2)\)</span>, por lo que integrando ambos lados queda:
+<span class="math display">\[\frac{x}{t^2}  =  \int \cos(t)\, dt = \sin(t) + C\]</span>
+Despejamos <span class="math inline">\(x(t)\)</span>:
+<span class="math display">\[x(t)  =  t^2 \sin(t) + C t^2\]</span>
+Aplicamos la condición (que en este caso no es inicial) para hallar <span class="math inline">\(C\)</span>:
+<span class="math display">\[ 0 = \sin(1) + C\]</span>
+Y nos queda que <span class="math inline">\(C = -\sin(1) = - 0.841\)</span> (el ángulo está en radianes).</p>
+<p>Y la función queda:
+<span class="math display">\[x(t)  =  t^2 (\sin(t) - \sin(1))\]</span></p>
+</div>
+
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="cálculo-de-primitivas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="funciones-de-varias-variables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/11_ED.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

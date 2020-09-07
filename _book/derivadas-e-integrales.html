@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 8 Derivadas e integrales | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 8 Derivadas e integrales | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 8 Derivadas e integrales | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 8 Derivadas e integrales | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="funciones-continuidad.html"/>
+<link rel="next" href="derivación.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="derivadas-e-integrales" class="section level1">
+<h1><span class="header-section-number">Capítulo 8</span> Derivadas e integrales</h1>
+<p>Podemos decir que el cálculo nació cuando nacieron los conceptos de derivada y de integral, en el S. XVII. Nacieron al mismo tiempo, y desarrollado por los mismos matemáticos: Fermat, Leibniz, Newton, los hermanos Bernoulli, Euler… Hoy los vemos como dos partes de un todo, dos operaciones inversas. Pero la derivada y la integral nacieron para resolver dos problemas muy diferentes y fue después, y supongo que con mucha sorpresa, que se descubrió su relación.</p>
+<p>Antes de entrar, en detalle y por separado, en cada una de estas dos operaciones, vamos a ver su interpretación geométrica y física, y mostrar la relacion que tienen.</p>
+<div id="interpretación-geométrica-de-la-derivada-tangentes" class="section level2">
+<h2><span class="header-section-number">8.1</span> Interpretación geométrica de la derivada: tangentes</h2>
+<p>Una tangente a una curva es una recta que toca a la curva en un solo punto, pero no la atraviesa. La idea de tangente es tan antigua como la geometría y ya la desarrollaron los matemáticos griegos. Pero en el S. XVI Descartes convirtió a la geometría en un problema algebraico y numérico, mostrando cómo se puede describir una curva con una ecuación. Encontrar una tangente a una curva dejaba de ser un problema de dibujo y se convertía en un problema algebraico: ¿cuál es la ecuación de la recta que es tangente a una determinada curva en un punto?</p>
+<p>El concepto de límite nos permite plantear este problema de forma adecuada. Sea una curva cualquiera y cogemos un punto <span class="math inline">\(A\)</span> sobre la curva, de coordenadas <span class="math inline">\((A_x, A_y)\)</span> y otro punto <span class="math inline">\(B\)</span>, también sobre la curva, pero que está a una distancia de 1 sobre el eje X. Es decir, las coordenadas de <span class="math inline">\(B\)</span> son <span class="math inline">\((A_x + 1, B_y)\)</span>. Trazamos la recta que pasa por esos dos puntos:</p>
+<p><img src="imagenes/Tan1.jpg" /><!-- --></p>
+<p>Describir algebraicamente esa recta es fácil: es la recta que pasa por el punto <span class="math inline">\(A\)</span> y cuya pendiente es <span class="math inline">\(m = (B_y - A_y)/(A_x + 1 - A_x) = (B_y - A_y)/1\)</span>.</p>
+<p>Seguimos con <span class="math inline">\(A\)</span> y cogemos ahora un punto <span class="math inline">\(C\)</span> que está más cerca de <span class="math inline">\(A\)</span>, a una distancia de 0,5 sobre el eje X: <span class="math inline">\(C = (A_x + 0.5, C_y)\)</span> y trazamos la recta que pasa por estos dos puntos. La ecuación de la recta es la de aquella que pasa por el punto <span class="math inline">\(A\)</span> y cuya pendiente es <span class="math inline">\(m = (C_y - A_y)/0.5\)</span>.</p>
+<p><img src="imagenes/Tan2.jpg" /><!-- --></p>
+<p>Y repetimos con un punto <span class="math inline">\(D\)</span> que ahora está a distancia 0.25 de <span class="math inline">\(A\)</span> sobre el eje X. La recta que pasa por estos dos puntos es aquella que pasa por <span class="math inline">\(A\)</span> y tiene pendiente <span class="math inline">\(m = (D_y - A_y)/0.25\)</span>.</p>
+<p><img src="imagenes/Tan3.jpg" /><!-- --></p>
+<p>Podemos repetir este proceso tantas veces como queramos, siempre y cuando no lleguemos a <span class="math inline">\(A\)</span>. Si llegamos a <span class="math inline">\(A\)</span> no tenemos la recta que pasa por 2 puntos, sino la que pasa por 1 punto, y ahí nos perdemos. Pero mientras nos vayamos acercando, por pequeña que sea la distancia entre <span class="math inline">\(A\)</span> y el punto, mientras no sea 0, podemos calcular la pendiente de la recta. Pues definimos como pendiente de la recta tangente a la curva en <span class="math inline">\(A\)</span> como el límite de las pendientes de las rectas que hemos trazado.</p>
+<p>El problema se parece al de las discontinuidades evitables que vimos en el apartado <a href="funciones-continuidad.html#discevit">7.2</a>. La función no existe en un punto, pero sí existe el límite cundo nos acercamos al punto. Aquí pasa lo mismo: este método no nos da la pendiente en el punto <span class="math inline">\(A\)</span>, pero sí que podemos calcular el límite cuando nos acercamos al punto <span class="math inline">\(A\)</span>.</p>
+<p>A esta pendiente que hemos encontrado de esta forma, la llamamos la <em>derivada</em> de la función en el punto <span class="math inline">\(A\)</span>.</p>
+<p>Esta es la interpretación geométrica de la derivada.</p>
+</div>
+<div id="fisder" class="section level2">
+<h2><span class="header-section-number">8.2</span> Interpretación física de la derivada: velocidad</h2>
+<p>Tenemos un coche desplazándose en linea recta. Y tenemos en el coche un GPS ideal que nos da en todo momento la posición del coche con precisión absoluta tanto de la posición como del tiempo. Queremos saber cuál es la velocidad del coche en un instante dado. Vamos a utilizar la letra <span class="math inline">\(s\)</span> para las posiciones y la letra <span class="math inline">\(t\)</span> para los tiempos. Para no ir arrastrando <span class="math inline">\(s_0\)</span> y <span class="math inline">\(t_0\)</span> por todo el texto, ponemos el origen de espacio y tiempo en el punto que nos interesa y en el instante que nos interesa: es decir, <span class="math inline">\(s_0 = 0\)</span> y <span class="math inline">\(t_0 = 0\)</span>.</p>
+<p>Si preguntamos al GPS dónde estaba el coche en el instante <span class="math inline">\(t = 0\)</span> nos responderá que en <span class="math inline">\(s = 0\)</span>. Si le preguntamos cuánto se ha movido en ese instante exacto, nos dirá que nada. Es lógico: en 0 segundos se ha movido 0 metros. Pero eso no quiere decir que el coche estaba quieto: sabemos que se movía. A estas alturas ya sabemos qué tenemos que hacer. Preguntamos al GPS dónde estaba el coche en el instante <span class="math inline">\(t = 1\mbox{ s}\)</span> y nos dice que en <span class="math inline">\(s = s_1\mbox{ m}\)</span>. Luego la velocidad media en ese segundo era de <span class="math inline">\(\frac{s_1}{1}\mbox{ m/s}\)</span>. Ahora preguntamos al GPS dónde estaba el coche en el instante <span class="math inline">\(t = 0.5\mbox{ s}\)</span> y nos dice que en <span class="math inline">\(s = s_{0.5}\mbox{ m}\)</span>. Luego la velocidad media en ese medio segundo era de <span class="math inline">\(\frac{s_{0.5}}{0.5}\mbox{ m/s}\)</span>. Y ahora le preguntamos al GPS donde estaba en el instante <span class="math inline">\(t = 0.25\mbox{ s}\)</span>, y en el instante <span class="math inline">\(t = 0.125\mbox{ s}\)</span>, etc. y podemos ir calculando las velocidades medias de intervalos de tiempo cada vez más pequeños. Esas velocidades van a tener un límite, luego ahora definimos la velocidad en el instante <span class="math inline">\(t = 0\)</span> como el límite de esas velocidades medias a medida que <span class="math inline">\(t\)</span> tiende a 0. Definimos la velocidad como la derivada de la posición respecto del tiempo.</p>
+<p>Hemos cogido un caso concreto, posición y velocidad de un objeto. Pero cada vez que en física aparece una derivada, podemos hacer una interpretación análoga. Si por ejemplo estamos considerando la evaporación de agua en un estanque y queremos saber cuánto se evapora en un instante, medimos cuánto se evapora de media en 1 segundo, 0.5 segundos, etc. y podemos tener la evaporación instantánea.</p>
+</div>
+<div id="equivalencia-de-las-dos-interpretaciones" class="section level2">
+<h2><span class="header-section-number">8.3</span> Equivalencia de las dos interpretaciones</h2>
+<p>Hemos dado dos definiciones de derivada. Supongo que no sorprenderá a nadie saber que ambas definiciones son equivalentes (si no lo fueran, tendríamos un problema grave). Veámoslo.</p>
+<p>Vamos a convertir la interpretación física a la geométrica. Para ello dibujamos la curva del espacio en función del tiempo, es decir, <span class="math inline">\(s(t)\)</span>. Para calcular la velocidad media en 1 segundo, cogimos <span class="math inline">\(s(1)\)</span>, que llamamos <span class="math inline">\(s_1\)</span> y <span class="math inline">\(s(0)\)</span>, que era 0, y calculamos <span class="math inline">\((s(1) - s(0))/1\)</span>. Pero eso es precisamente la expresión de la pendiente de la recta que pasa por esos dos puntos. Es decir, lo mismo que hicimos en la interpretación geométrica. Y el coger intervalos de tiempo cada vez más cortos, es coger puntos cada vez más cercanos al punto de partida. Que es lo mismo que hicimos con la interpretación geométrica. Y llegamos a la concusión que la velocidad en el instante <span class="math inline">\(t = 0\)</span> la podemos interpretar como la pendiente de la tangente a la curva de posición en el punto <span class="math inline">\((s_0, t_0)\)</span>. Las dos interpretaciones son equivalentes.</p>
+</div>
+<div id="defder" class="section level2">
+<h2><span class="header-section-number">8.4</span> Definición de derivada</h2>
+<p>Después de considerar estas dos interpretaciones, vamos a dar una definición matemática de lo que es una derivada. Nos basaremos en la interpretación geométrica. Tenemos una función <span class="math inline">\(f(x)\)</span> que es continua en un intervalo <span class="math inline">\([u, v]\)</span>. Dibujamos la gráfica de la función y tenemos una curva. Cogemos un punto <span class="math inline">\(A\)</span> de esta curva, cuyas coordenadas son <span class="math inline">\((a, f(a))\)</span>. Vamos a dar un “empujoncito” de tamaño 1 al punto <span class="math inline">\(x = a\)</span> y veamos qué hace la función. Cogemos, pues, un punto <span class="math inline">\(B\)</span> sobre al curva, que está a una distancia de 1 sobre el eje X. Las coordenadas de <span class="math inline">\(B\)</span> son <span class="math inline">\((a + 1, f(b)) = (a+1, f(a+1))\)</span>. Podemos saber cómo varía la función tras este empujoncito mirando la pendiente de la recta que pasa por los dos puntos:
+<span class="math display">\[m_1 = \frac{f(a+1) - f(a)}{(a+1) - a} = \frac{f(a+1) - f(a)}{1}.\]</span></p>
+<p>Vamos a dar un empujoncito más pequeño, de tamaño 0.5. Esto nos da un punto <span class="math inline">\(C\)</span>, sobre la curva, que está a distancia 0.5 de <span class="math inline">\(A\)</span> sobre el eje X. Podemos saber cómo varía la función tras este empujoncito mirando la pendiente de la recta que pasa por los dos puntos:
+<span class="math display">\[m_{0.5} = \frac{f(a+0.5) - f(a)}{(a+0.5) - a} = \frac{f(a+0.5) - f(a)}{0.5}.\]</span></p>
+<p>En general, damos un empujoncito pequeño de tamaño <span class="math inline">\(dx\)</span> y miramos cómo varía la función calculando la pendiente que pasa por los dos puntos. Es facil calcular que es
+<span class="math display">\[m = \frac{f(a+dx) - f(a)}{dx}.\]</span></p>
+<p>La pendiente de la tangente en <span class="math inline">\(A\)</span>, es decir, la derivada de la función <span class="math inline">\(f(x)\)</span> en <span class="math inline">\(x = a\)</span>, es el límite cuando los puntos tienden a <span class="math inline">\(A\)</span>, o lo que es lo mismo, el límite cuando el empujoncito <span class="math inline">\(dx\)</span> tiende a 0:</p>
+<p><span class="math display">\[\frac{df}{dx}(a) = f^{\prime}(a) = \lim_{dx \to 0}\frac{f(a+dx) - f(a)}{dx}\]</span></p>
+<p>Por lo tanto vemos que la derivada nos dice cómo varía la función <span class="math inline">\(f(x)\)</span> cuando le damos un “empujoncito” cada vez más pequeño, que tiende a 0, a la variable <span class="math inline">\(x\)</span>.</p>
+<p>A veces a <span class="math inline">\(dx\)</span> se le llama un <em>infinitesimal</em> o una cantidad <em>infinítamente pequeña</em>. Ese es un error que a veces causa confución. Es mejor pensar en <span class="math inline">\(dx\)</span> como una cantidad pequeña, pero existente, pero entendiendo que lo que nos interesa es lo que pasa cuando <span class="math inline">\(dx\)</span> tiende a 0.</p>
+<p>Hemos definido la derivada para un punto concreto de la curva <span class="math inline">\(A = (a, f(a))\)</span>. Podemos definir ahora la derivada en un intervalo abierto <span class="math inline">\((u, v)\)</span>. Sea <span class="math inline">\(x\)</span> en <span class="math inline">\((u, v)\)</span>, su derivada es
+<span class="math display">\[\frac{df}{dx}(x) = f^{\prime}(x) = \lim_{dx \to 0}\frac{f(x+dx) - f(x)}{dx}\]</span></p>
+<p>Vemos también que hay dos notaciones, <span class="math inline">\(\frac{df}{dx} (x)\)</span> y <span class="math inline">\(f^{\prime}(x)\)</span>. Hay quien defiende la primera, llamada notación de Leibniz, y hay quien defiende la segunda. Hay que conocerlas ambas. Aquí usaremos las dos, según convenga.</p>
+<p>Lo hemos definido en un intervalo abierto <span class="math inline">\((u, v)\)</span>, puesto que tenemos problemas para definir las derivadas en los extremos <span class="math inline">\(u\)</span> y <span class="math inline">\(v\)</span> del intervalo, pues no podemos decir nada de loq ue pasa fuera del intervalo (ni siquiera sabemos si la función está definida). Es el mismo problema con el que nos encontramos al definir continuidad en un intervalo. Y se resuelve de la mima manera.</p>
+<div id="derivadas-laterales" class="section level3">
+<h3><span class="header-section-number">8.4.1</span> Derivadas laterales</h3>
+<p>Como existen límites laterales, y la derivada se define a partir del límite, es una extensión natural definir <em>derivadas laterales</em>: definimos derivada por la derecha de una función <span class="math inline">\(f(x)\)</span> en un punto <span class="math inline">\(a\)</span> como</p>
+<p><span class="math display">\[f^{\prime}(a^+) = \lim_{dx \to 0^+}\frac{f(a+dx) - f(a)}{dx}\]</span></p>
+<p>y derivada por la izquierda:
+<span class="math display">\[f^{\prime}(a^-) = \lim_{dx \to 0^-}\frac{f(a+dx) - f(a)}{dx}\]</span></p>
+<p>Como en el caso de los límites, para que exista derivada en <span class="math inline">\(x = a\)</span>, si existen, ambas derivadas laterales deben iguales: <span class="math inline">\(f^{\prime}(a^+) = f^{\prime}(a^-) = f^{\prime}(a)\)</span>. Si no son iguales, entonces no hay derivada en <span class="math inline">\(x = a\)</span>.</p>
+</div>
+<div id="existencia-de-derivadas" class="section level3">
+<h3><span class="header-section-number">8.4.2</span> Existencia de derivadas</h3>
+<p>Hemos definido las derivada a partir del concepto de límite. Sabemos que un límite puedo o no existir. Por lo tanto la derivada en un punto también puede o no existir. Si en un punto <span class="math inline">\(a\)</span> el límite, y por lo tanto la derivada, existe, decimos que la función <span class="math inline">\(f(x)\)</span> es derivable en el punto <span class="math inline">\(a\)</span>. Si no existe, entonces decimos que la función <span class="math inline">\(f(x)\)</span> no es derivable en el punto <span class="math inline">\(a\)</span>.</p>
+<p>Y ahora podemos extender la idea de derivable en un punto a derivable en un intervalo: decimos que una función es derivable en un intervalo <span class="math inline">\((u, v)\)</span>, si es derivable en todos los puntos del intervalo. Y una vez definidas las derivadas laterales, podemos definir derivada de una función en un intervalo cerrado: Una función es derivable en un intervalo cerrado <span class="math inline">\([u, v]\)</span> si es derivable en el intervalo abierto <span class="math inline">\((u, v)\)</span> y tiene derivada por la derecha en <span class="math inline">\(u\)</span> y derivada por la izquierda en <span class="math inline">\(v\)</span>.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-72" class="example"><strong>Ejemplo 8.1  </strong></span>La función <span class="math inline">\(f(x) = x\)</span> es derivable en todo su dominio <span class="math inline">\((-\infty, \infty)\)</span>. Al ser una recta, su pendiente es constante en todos los puntos, en este caso, la pendiente vale 1. Sin necesidad de hacer los cálculos formales, sabemos entonces que la derivada de <span class="math inline">\(f(x) = x\)</span> es <span class="math inline">\(f^{\prime}(x) = 1\)</span> en todos los puntos del dominio.
+</div>
+
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-73" class="example"><strong>Ejemplo 8.2  </strong></span>La función <span class="math inline">\(f(x) = |x|\)</span> es derivable en todo su dominio <span class="math inline">\((-\infty, \infty)\)</span> excepto en el punto <span class="math inline">\(x = 0\)</span>. Al estar formado por dos rectas, por el mismo argumento que en el ejemplo anterior, sabemos que su derivada es 1 si <span class="math inline">\(x &gt; 0\)</span> y que su derivada es <span class="math inline">\(-1\)</span> si <span class="math inline">\(x &lt; 0\)</span>.</p>
+Esto quiere decir que en el punto <span class="math inline">\(x = 0\)</span> la derivada por la izquierda es <span class="math inline">\(f^{\prime}(0^-) = -1\)</span> y la derivada por la derecha es <span class="math inline">\(f^{\prime}(0^+) = 1\)</span>. Como las derivadas laterales son distintas, <span class="math inline">\(f(x) = |x|\)</span> no es derivable en <span class="math inline">\(x = 0\)</span>.
+</div>
+
+<hr />
+<p>Una vez vistas las derivadas, pasemos a las integrales.</p>
+</div>
+</div>
+<div id="geomInte" class="section level2">
+<h2><span class="header-section-number">8.5</span> Interpretación geométrica de la integral: área bajo una curva</h2>
+<p>Tenemos una cierta curva y queremos calcular el área entre la curva y el eje X entre <span class="math inline">\(x = 0\)</span>y <span class="math inline">\(x = 2\)</span>.</p>
+<p><img src="imagenes/Integ0.jpg" /><!-- --></p>
+<p>No sabemos hacerlo de forma exacta, pero lo que podemos hacer es crear rectángulos. Sabemos calcular el área de un rectángulo y podemos entonces sumar estas áreas para tener un valor aproximado del área. Llamemos <span class="math inline">\(dx\)</span> a la longitud de la base del rectángulo. Si hacemos rectángulos de base <span class="math inline">\(dx = 0.2\)</span> tenemos:</p>
+<p><img src="imagenes/Integ1.jpg" /><!-- --></p>
+<p>Parece una aproximación un poco cruda. Podemos crear rectángulos más estrechos y la aproximación será mejor. Por ejemplo con rectángulos de base <span class="math inline">\(dx = 0.1\)</span> nos queda:</p>
+<p><img src="imagenes/Integ2.jpg" /><!-- --></p>
+<p>Intuitivamente entendemos que cuanto más estrechos sean los rectángulos, mejor aproximará la suma de rectángulos al área bajo la curva. El área bajo la curva será el límite de la suma de los rectángulos cuando la base <span class="math inline">\(dx\)</span> tienda a cero. A esto se le llama la <em>integral</em> de esta curva entre 0 y 2.</p>
+<p>El símbolo de la integral, <span class="math inline">\(\int\)</span>, lo diseñó Leibniz. Es una “S” estilizada. S de suma. La palabra “integral” nos debe evocar la idea de suma.</p>
+</div>
+<div id="interpretación-física-de-la-integral-espacio-recorrido-por-un-coche" class="section level2">
+<h2><span class="header-section-number">8.6</span> Interpretación física de la integral: espacio recorrido por un coche</h2>
+<p>Para la interpretación física, volvamos a nuestro coche del apartado <a href="derivadas-e-integrales.html#fisder">8.2</a>. La diferencia es que ahora, en vez de un GPS que nos da la posición, tenemos un velocímetro ideal, que nos da la velocidad del coche con absoluta precisión, tanto de la velocidad como del tiempo. Así, sabemos la velocidad en cada momento, pero no sabemos cuánto ha recorrido el coche, y queremos calcularlo a partir de los datos de este velocímetro. Otra vez, para no ir arrastrando <span class="math inline">\(s_0\)</span> y <span class="math inline">\(t_0\)</span>, suponemos que en el instante <span class="math inline">\(t = 0\)</span> estamos en el origen, es decir, <span class="math inline">\(s(0) = 0\)</span>.</p>
+<p>Vamos a preguntar a nuestro velocímetro la velocidad a la que íbamos a cada intervalo que vamos a llamar <span class="math inline">\(dt\)</span> segundos. Empezamos preguntando a cada segundo, es decir, <span class="math inline">\(dt = 1\)</span>. Preguntamos cuál era la velocidad en el tiempo <span class="math inline">\(t = 0\)</span> y nos responde que era <span class="math inline">\(v_0\mbox{ m/s}\)</span>. Vamos a suponer que la velocidad era constante en ese primer segundo. Esto quiere decir que en el primer segundo hemos avanzado <span class="math inline">\(v_0\cdot 1 = v_0\mbox{ m}\)</span>. Ahora preguntamos al velocímetro cuál era la velocidad en el tiempo <span class="math inline">\(t = 1\)</span>. Nos responde que era <span class="math inline">\(v_1\mbox{ m/s}\)</span>. Suponemos, otra vez, que la velocidad era constante en ese segundo y calculamos que hemos avanzado <span class="math inline">\(v_1\cdot 1 = v_1\mbox{ m}\)</span> en ese segundo, y que en el total de los 2 segundos hemos avanzado <span class="math inline">\(v_0 + v_1\mbox{ m}\)</span>. Seguimos preguntando a cada segundo y, por ejemplo al cabo de 20 segundos estimamos que hemos avanzado <span class="math inline">\(v_0 + v_1 + \cdots +v_{19}\mbox{ m}\)</span>.</p>
+<p>Si queremos mejorar nuestra estima, podemos reducir <span class="math inline">\(dt\)</span> y preguntar cada menos tiempo, por ejemplo cada <span class="math inline">\(dt = 0.5\)</span> segundos. En <span class="math inline">\(t=0\)</span> la velocidad es <span class="math inline">\(v_0\)</span> y en el primer medio segundo hemos avanzado <span class="math inline">\(v_0\cdot 0.5 = 0.5 v_0\mbox{ m}\)</span>. En <span class="math inline">\(t = 0.5\)</span> la velocidad es <span class="math inline">\(v_{0.5}\)</span> y calculamos que hemos avanzado <span class="math inline">\(0.5 v_0 + 0.5 v_0.5 = 0.5(v_0 + v_{0.5})\mbox{ m}\)</span>. Y al cabo de 20 segundos nuestra estima es <span class="math inline">\(0.5 (v_0 + v_{0.5} + v_1 + \cdots + v_{19} +v_{19.5})\mbox{ m}\)</span>. Otra vez vemos intuitivamente que cuanto más a menudo preguntemos la velocidad, mejor estimaremos lo que hemos avanzado. Y la posicion exacta será el límite cuando <span class="math inline">\(dt\)</span> tienda a 0. Hemos encontrado la posición como la <em>integral</em> de la velocidad.</p>
+<hr />
+<p>Este método que hemos descrito se ha usado durante siglos en la navegación de barcos. Cada cierto tiempo se medía la velocidad del barco y se suponía que el barco avanzaba a velocidad constante hasta la siguiente medida. Para medir la velocidad tiraban una cuerda al agua con un flotador en un extremo. En la cuerda había nudos a intervalos regulares y contaban cuantos nudos caían al agua en un cierto tiempo. Por eso la unidad de velocidad de los barcos se llama nudos.</p>
+</div>
+<div id="equivalencia-de-las-dos-interpretaciones-1" class="section level2">
+<h2><span class="header-section-number">8.7</span> Equivalencia de las dos interpretaciones</h2>
+<p>Como en el caso de la derivada, vamos a convertir la interpretación física a la geométrica. Consideremos la función <span class="math inline">\(v(t)\)</span>, con la velocidad del coche en cada instante <span class="math inline">\(t\)</span>. En el caso en el que hicimos <span class="math inline">\(dt = 0.5\)</span> segundos, cogíamos los instantes <span class="math inline">\(t = 0, t = 0.5, t = 1, \dots\)</span> y al considerar que la velocidad era constante, multiplicábamos <span class="math inline">\(v(t) \cdot dt\)</span> para estimar cuánto se había desplazado en ese intervalo. Por ejemplo para el intervalo entre <span class="math inline">\(t = 1\)</span> y <span class="math inline">\(t = 1.5\)</span> obteníamos <span class="math inline">\(0.5 v(1)\)</span>. Y después sumábamos todo. Pero esa expresión <span class="math inline">\(0.5 v(1)\)</span> es precisamente el área de un rectángulo de altura <span class="math inline">\(v(1)\)</span> y anchura <span class="math inline">\(dt = 0.5\)</span>, que es precisamente lo que hacemos en la interpretación geométrica. Y sumar todos los desplazamientos es, por lo tanto, sumar todos los rectángulos. Luego ambas interpretaciones dan lugar a la misma expresión y son equivalentes.</p>
+</div>
+<div id="defint" class="section level2">
+<h2><span class="header-section-number">8.8</span> Definición de integral</h2>
+<p>La integral es inherentemente más difícil que la derivada y así como pudimos dar una definicion rigurosa de la derivada a partir de las ideas básicas, no es posible hacerlo con la integral. La definción que vamos a dar aquí de la integral no es rigurosa y tiene muchos agujeros, pero nos servirá para concretar las ideas intuitivas que hemos visto.</p>
+<p>Sea una función <span class="math inline">\(f(x)\)</span> continua en el intervalo <span class="math inline">\([a, b]\)</span>. Dividimos este intervalo en <span class="math inline">\(N\)</span> subintervalos iguales. La longitud de cada subintervalo es <span class="math inline">\(dx = (b-a)/N\)</span>. Cogemos los puntos de inicio de cada subintervalo: <span class="math inline">\(a, a +dx, a+2dx, \dots, a + (N-1)dx\)</span>. Creamos <span class="math inline">\(N\)</span> rectángulos cuya base es cada uno de los subintervalos y cuya altura es la altura de la función al inicio del subintervalo. Las áreas de estos rectángulos son <span class="math inline">\(dx\cdot f(a), dx\cdot f(a+dx), dx\cdot f(a+2dx), \dots\)</span> y la suma <span class="math inline">\(A_N\)</span> de estas áreas es
+<span class="math display">\[\begin{align}
+  A_N &amp;= dx\cdot f(a) + dx\cdot f(a+dx)+ dx\cdot f(a+2dx)+ \cdots\\
+      &amp;= dx(f(a) + f(a+dx) + f(a+2dx)+ \cdots)\\
+      &amp;= dx\sum_{k = 1}^N f(a+(k-1)dx)
+\end{align}\]</span>
+Definimos (de forma no rigurosa) como integral de <span class="math inline">\(f(x)\)</span> entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> al límite de la sucesión de estos valores <span class="math inline">\(A_N\)</span> cuando <span class="math inline">\(N\)</span> tiende a infinito:</p>
+<p><span class="math display">\[\int_a^b f(x)dx = \lim_{N\to \infty} A_N = \lim_{N\to \infty}dx\sum_{k = 1}^N f(a+(k-1)dx)\]</span></p>
+<p>Nótese que cuando <span class="math inline">\(N\)</span> tiende a infinito, <span class="math inline">\(dx\)</span> tiende a 0 y podríamos igualmente haber definido la integral como el límite cuando <span class="math inline">\(dx\)</span> tiende a 0 de esa expresión.</p>
+<p>Nótese también que tenemos un <span class="math inline">\(dx\)</span> multiplicando el sumatorio. Es por eso que la expresión correcta es <span class="math inline">\(\int_a^b f(x)dx\)</span> y no <span class="math inline">\(\int_a^b f(x)\)</span>. Olvidarse del <span class="math inline">\(dx\)</span> es un error grave.</p>
+<p>Y una tercera nota. Hemos cogido el valor de <span class="math inline">\(f(x)\)</span> al inicio de cada intervalo. Igual podíamos haber cogido el valor de <span class="math inline">\(f(x)\)</span> al final de cada intervalo (o en el punto medio de cada intervalo, o en…). Aunque los valores de las sumas parciales van a ser diferentes, en el límite van a llegar al mismo valor.</p>
+<div id="integrales-negativas" class="section level3">
+<h3><span class="header-section-number">8.8.1</span> Integrales negativas</h3>
+<p>Si miramos la expresión que acabamos de escribir en el apartado anterior, vemos que es perfectamente posible tener integrales negativas: el signo depende de la suma de los valores de <span class="math inline">\(f(a+(k-1)dx)\)</span> y, como <span class="math inline">\(f(x)\)</span> puede ser negativa, la suma, y por lo tanto la integral, también pueden serlo.</p>
+<p>Pero la idea de un área negativa nos chirría: un área siempre es positiva. ¿no es esto un sinsentido? Vamos a ver que, mirando la interpretación física de la integral, el hablar de integrales negativas tiene todo el sentido del mundo.</p>
+<p>Seguimos con nuestro ejemplo del coche. En mecánica, la disciplina de la física que se ocupa del movimiento de los objetos, se da un signo a los desplazamientos. La costumbre es que un signo positivo significa que estamos a la derecha del origen y un signo negativo indica que estamos a la izquierda del origen. Por lo tanto <span class="math inline">\(s = 1.2\)</span> quiere decir que estamos 1.2 metros a la derecha del punto que hemos establecido como origen y <span class="math inline">\(s = -0.78\)</span> quiere decir que estamos a 0.78 metros a la izquierda de este punto.</p>
+<p>Y lo mismo pasa con las velocidades: uan velocidad positiva quiere decir que nos estamos desplazando hacia la derecha del origen y una velocidad negativa quiere decir que nos estamos desplazando hacia la izquierda del origen.</p>
+<p>Consideremos ahora que la velocidad de nuestro coche es la función <span class="math inline">\(5\sin ((\pi/10)t)\)</span>:</p>
+<p><img src="imagenes/sin.jpg" /><!-- --></p>
+<p>Vemos que el coche avanza hacia la derecha (velocidades positivas) hasta <span class="math inline">\(t = 10\)</span>, y después avanza hacia la izquierda (retrocede) hasta <span class="math inline">\(t = 20\)</span>, donde se para. Y lo que queremos saber es dónde se para.</p>
+<p>Recordemos que la superficie bajo la curva nos da el desplazamiento. Vamos a considerar sólo la superficie (es decir, el desplazamiento) entre <span class="math inline">\(0\)</span> y un valor <span class="math inline">\(t &lt; 10\)</span>. Por ejemplo, si tenemos <span class="math inline">\(t = 6\)</span> el área es</p>
+<p><img src="imagenes/sin_area1.jpg" /><!-- --></p>
+<p>Es fácil ver que a medida que <span class="math inline">\(t\)</span> crece el area es mayor y por lo tanto el coche está más alejado hacia la derecha del origen. El máximo se obtiene cuando <span class="math inline">\(t = 10\)</span>. Esto coincide con nuestro conocimiento de lo que hace el coche: hasta <span class="math inline">\(t = 10\)</span> no para de avanzar. ¿Que pasa a partir de <span class="math inline">\(t = 10\)</span>?</p>
+<p>Vamos a mirar la posición, es decir el área bajo la curva en <span class="math inline">\(t = 12.8\)</span>:</p>
+<p><img src="imagenes/sin_area2.jpg" /><!-- --></p>
+<p>Tenemos ahora un área “positiva” en azul y un área “negativa” en rojo. Esto quiere decir que pasado <span class="math inline">\(t = 10\)</span> el área total, y por lo tanto la posición, va disminuyendo al ir aumentando <span class="math inline">\(t\)</span>. Es decir, el objeto se va acercando al origen. Otra vez, esto coincide con nuestro conocimiento de lo que hace el coche: a partir de <span class="math inline">\(t = 10\)</span> el coche retrocede.</p>
+<p>¿Y qué pasa en <span class="math inline">\(t = 20\)</span>? Por simetría vemos que el área por encima del eje X es igual al área por debajo, por lo tanto el área total es 0: el coche ha vuelto al origen.</p>
+<p>El tener integrales negativas va a resultar muy útil para calcular este tipo de fenómenos.</p>
+</div>
+</div>
+<div id="TFC" class="section level2">
+<h2><span class="header-section-number">8.9</span> Teorema fundamental del cálculo</h2>
+<p>En la interpretación geométrica de las derivada hemos visto que sirve para calcular la pendiente de la tangente a una curva. En la interpretacon geométrica de la integral, hemos visto que sirve para calcular el área bajo una curva. Son dos cálculos diferentes y no parece que tengan mucho que ver la una con la otra. Resulta sorprendente que estén, como sabemos, tan ligadas.</p>
+<p>Pero si miramos las interpretaciones físicas, ya no es tan sorprendente: si tenemos la función de la posición de un objeto en cada instante de tiempo, hemos visto que la derivada nos da su velocidad. Pero si lo que tenemos es la velocidad del objeto en cada instante de tiempo, la integral de esa función nos da la posición. De forma natural hemos encontrado una relación estrecha entre derivada e integral.</p>
+<p>El teorema fundamental del cálculo nos dice que la derivada de la integral de una función es esa misma función. Más formalmente, sea una función <span class="math inline">\(f(x)\)</span> que tiene una integral entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>. Sea un punto <span class="math inline">\(x ≤ b\)</span>. Sea <span class="math inline">\(F(x)\)</span> el área bajo la curva entre <span class="math inline">\(a\)</span> y <span class="math inline">\(x\)</span> Sabemos que esto es
+<span class="math display">\[ F(x) = \int_a^x f(x)dx.\]</span>
+Entonces la derivada de <span class="math inline">\(F(x)\)</span> es <span class="math inline">\(f(x)\)</span>:
+<span class="math display">\[\frac{dF}{dx}(x) = f(x).\]</span></p>
+<p>Hemos vislumbrado con las interpretaciones físicas que esto es así. Vamos a verlo ahora geométricamente.</p>
+<p>Al definir la derivada en el apartado <a href="derivadas-e-integrales.html#defder">8.4</a> dijimos que la derivada nos indica cuánto cambia una función al darle un empujoncito a la variable <span class="math inline">\(x\)</span>, de tamaño <span class="math inline">\(dx\)</span>. En concreto, la derivada es el cambio que calculamos cuando el empujoncito tiende a 0:
+<span class="math display">\[\frac{df}{dx}(a) = f^{\prime}(a) = \lim_{dx \to 0}\frac{f(a+dx) - f(a)}{dx}\]</span></p>
+<p>Tenemos una función cualquiera <span class="math inline">\(f(x)\)</span>.
+<img src="imagenes/TFC1.jpg" /><!-- --></p>
+<p>Sea <span class="math inline">\(F(x)\)</span> la integral de <span class="math inline">\(f(x)\)</span>, es decir su área entre un punto determinado y un punto genérico <span class="math inline">\(x\)</span>. En el dibujo siguiente <span class="math inline">\(F(x)\)</span> es el área de la zona verde:</p>
+<p><img src="imagenes/TFC2.jpg" /><!-- --></p>
+<p>¿Qué pasa si le damos un empujoncito de tamaño <span class="math inline">\(dx\)</span> a <span class="math inline">\(F(x)\)</span>? Es decir, qué pasa con el área si pasamos de <span class="math inline">\(x\)</span> a <span class="math inline">\(x + dx\)</span>? Lo que hacemos es añadir un pequeño rectángulo al área que ya tenemos:</p>
+<p><img src="imagenes/TFC3.jpg" /><!-- --></p>
+<p>Este pequeño rectángulo azul tiene de base <span class="math inline">\(dx\)</span> y de altura <span class="math inline">\(f(x)\)</span>, luego su área es <span class="math inline">\(f(x)\cdot dx\)</span>. El área tras el empujoncito es el área que teniamos más el área del rectángulo:
+<span class="math display">\[F(x+dx) = F(x) + f(x)\cdot dx\]</span></p>
+<p>Para obtener la derivada hemos de hacer el límite cuando <span class="math inline">\(dx\)</span> tiende a 0:
+<span class="math display">\[\begin{align}
+\frac{dF}{dx}(x) &amp;=  \lim_{dx \to 0}\frac{F(x+dx) - F(x)}{dx}\\
+   &amp;= \lim_{dx \to 0}\frac{F(x) + f(x)\cdot dx - F(x)}{dx} = \lim_{dx \to 0}\frac{f(x)\cdot dx}{dx}\\
+    &amp;= f(x)
+\end{align}\]</span></p>
+<p>Como habíamos dicho, la derivada de la integral de <span class="math inline">\(f(x)\)</span> es <span class="math inline">\(f(x)\)</span>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="funciones-continuidad.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="derivación.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07_derivadas_Integrales.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
