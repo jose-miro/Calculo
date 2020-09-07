@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 3 Sucesiones | Apuntes de Matemáticas II; Cálculo</title>
+  <meta name="description" content="Capítulo 3 Sucesiones | Apuntes de Matemáticas II; Cálculo" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 3 Sucesiones | Apuntes de Matemáticas II; Cálculo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 3 Sucesiones | Apuntes de Matemáticas II; Cálculo" />
+  
+  
+  
+
+<meta name="author" content="Jose Miró Julià" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="el-infinito-no-existe.html"/>
+<link rel="next" href="inducción-matemática.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas II; Cálculo</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html"><i class="fa fa-check"></i><b>2</b> El infinito no existe</a><ul>
+<li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
+<li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.2</b> El uso de las matemáticas</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
+<li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
+<li class="chapter" data-level="3.2" data-path="sucesiones.html"><a href="sucesiones.html#definición-de-sucesión"><i class="fa fa-check"></i><b>3.2</b> Definición de sucesión</a></li>
+<li class="chapter" data-level="3.3" data-path="sucesiones.html"><a href="sucesiones.html#rec"><i class="fa fa-check"></i><b>3.3</b> Fórmula de recurrencia</a></li>
+<li class="chapter" data-level="3.4" data-path="sucesiones.html"><a href="sucesiones.html#definiciones"><i class="fa fa-check"></i><b>3.4</b> Definiciones</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-1"><i class="fa fa-check"></i><b>3.4.1</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sucesiones.html"><a href="sucesiones.html#representación-gráfica-de-una-sucesión"><i class="fa fa-check"></i><b>3.5</b> Representación gráfica de una sucesión</a></li>
+<li class="chapter" data-level="3.6" data-path="sucesiones.html"><a href="sucesiones.html#limsuc"><i class="fa fa-check"></i><b>3.6</b> Límites de sucesiones</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="sucesiones.html"><a href="sucesiones.html#definición-formal-de-limite-de-una-sucesión"><i class="fa fa-check"></i><b>3.6.1</b> Definición formal de limite de una sucesión</a></li>
+<li class="chapter" data-level="3.6.2" data-path="sucesiones.html"><a href="sucesiones.html#un-teorema-importante"><i class="fa fa-check"></i><b>3.6.2</b> Un teorema importante</a></li>
+<li class="chapter" data-level="3.6.3" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos-2"><i class="fa fa-check"></i><b>3.6.3</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="sucesiones.html"><a href="sucesiones.html#oplimsuc"><i class="fa fa-check"></i><b>3.7</b> Operaciones con sucesiones</a></li>
+<li class="chapter" data-level="3.8" data-path="sucesiones.html"><a href="sucesiones.html#ceros-e-infinitos"><i class="fa fa-check"></i><b>3.8</b> Ceros e infinitos</a></li>
+<li class="chapter" data-level="3.9" data-path="sucesiones.html"><a href="sucesiones.html#indetsuc"><i class="fa fa-check"></i><b>3.9</b> Indeterminaciones</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-fracinftyinfty"><i class="fa fa-check"></i><b>3.9.1</b> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></a></li>
+<li class="chapter" data-level="3.9.2" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-infty---infty"><i class="fa fa-check"></i><b>3.9.2</b> Indeterminación <span class="math inline">\(\infty - \infty\)</span></a></li>
+<li class="chapter" data-level="3.9.3" data-path="sucesiones.html"><a href="sucesiones.html#indeterminación-1infty"><i class="fa fa-check"></i><b>3.9.3</b> Indeterminación <span class="math inline">\(1^\infty\)</span></a></li>
+</ul></li>
+<li class="chapter" data-level="3.10" data-path="sucesiones.html"><a href="sucesiones.html#más-sobre-el-cálculo-de-limites-de-sucesiones"><i class="fa fa-check"></i><b>3.10</b> Más sobre el cálculo de limites de sucesiones</a><ul>
+<li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
+<li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
+<li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
+<li class="chapter" data-level="4.2" data-path="inducción-matemática.html"><a href="inducción-matemática.html#induccion-matemática"><i class="fa fa-check"></i><b>4.2</b> Induccion matemática</a></li>
+<li class="chapter" data-level="4.3" data-path="inducción-matemática.html"><a href="inducción-matemática.html#aplicación-a-sucesiones"><i class="fa fa-check"></i><b>4.3</b> Aplicación a sucesiones</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="series.html"><a href="series.html"><i class="fa fa-check"></i><b>5</b> Series</a><ul>
+<li class="chapter" data-level="5.1" data-path="series.html"><a href="series.html#definición"><i class="fa fa-check"></i><b>5.1</b> Definición</a></li>
+<li class="chapter" data-level="5.2" data-path="series.html"><a href="series.html#criterios-de-convergencia-de-una-serie"><i class="fa fa-check"></i><b>5.2</b> Criterios de convergencia de una serie</a></li>
+<li class="chapter" data-level="5.3" data-path="series.html"><a href="series.html#operaciones-con-series"><i class="fa fa-check"></i><b>5.3</b> Operaciones con series</a></li>
+<li class="chapter" data-level="5.4" data-path="series.html"><a href="series.html#progresiones-geométricas"><i class="fa fa-check"></i><b>5.4</b> Progresiones geométricas</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="aplim.html"><a href="aplim.html"><i class="fa fa-check"></i><b>6</b> Funciones: definición y límites</a><ul>
+<li class="chapter" data-level="6.1" data-path="aplim.html"><a href="aplim.html#definición-de-función"><i class="fa fa-check"></i><b>6.1</b> Definición de función</a></li>
+<li class="chapter" data-level="6.2" data-path="aplim.html"><a href="aplim.html#operaciones-con-funciones"><i class="fa fa-check"></i><b>6.2</b> Operaciones con funciones</a></li>
+<li class="chapter" data-level="6.3" data-path="aplim.html"><a href="aplim.html#límites-de-funciones"><i class="fa fa-check"></i><b>6.3</b> Límites de funciones</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="aplim.html"><a href="aplim.html#límites-cuando-x-to-infty"><i class="fa fa-check"></i><b>6.3.1</b> Límites cuando <span class="math inline">\(x \to \infty\)</span></a></li>
+<li class="chapter" data-level="6.3.2" data-path="aplim.html"><a href="aplim.html#exlimfun"><i class="fa fa-check"></i><b>6.3.2</b> Existencia de límites</a></li>
+<li class="chapter" data-level="6.3.3" data-path="aplim.html"><a href="aplim.html#operaciones-con-límites"><i class="fa fa-check"></i><b>6.3.3</b> Operaciones con límites</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="aplim.html"><a href="aplim.html#cálculo-de-límites"><i class="fa fa-check"></i><b>6.4</b> Cálculo de límites</a><ul>
+<li class="chapter" data-level="6.4.1" data-path="aplim.html"><a href="aplim.html#indeterminación-frac00"><i class="fa fa-check"></i><b>6.4.1</b> Indeterminación <span class="math inline">\(\frac{0}{0}\)</span></a></li>
+<li class="chapter" data-level="6.4.2" data-path="aplim.html"><a href="aplim.html#regla-de-lhôpital"><i class="fa fa-check"></i><b>6.4.2</b> Regla de l’Hôpital</a></li>
+<li class="chapter" data-level="6.4.3" data-path="aplim.html"><a href="aplim.html#otras-indeterminaciones"><i class="fa fa-check"></i><b>6.4.3</b> Otras indeterminaciones</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="aplim.html"><a href="aplim.html#límites-laterales"><i class="fa fa-check"></i><b>6.5</b> Límites laterales</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html"><i class="fa fa-check"></i><b>7</b> Funciones: continuidad</a><ul>
+<li class="chapter" data-level="7.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#definiciones-1"><i class="fa fa-check"></i><b>7.1</b> Definiciones</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#ejemplos-de-funciones-continuas"><i class="fa fa-check"></i><b>7.1.1</b> Ejemplos de funciones continuas</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#discevit"><i class="fa fa-check"></i><b>7.2</b> Discontinuidad evitable</a></li>
+<li class="chapter" data-level="7.3" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#continuidad-con-operaciones-de-funciones"><i class="fa fa-check"></i><b>7.3</b> Continuidad con operaciones de funciones</a></li>
+<li class="chapter" data-level="7.4" data-path="funciones-continuidad.html"><a href="funciones-continuidad.html#impcont"><i class="fa fa-check"></i><b>7.4</b> Importancia de la continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html"><i class="fa fa-check"></i><b>8</b> Derivadas e integrales</a><ul>
+<li class="chapter" data-level="8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-geométrica-de-la-derivada-tangentes"><i class="fa fa-check"></i><b>8.1</b> Interpretación geométrica de la derivada: tangentes</a></li>
+<li class="chapter" data-level="8.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#fisder"><i class="fa fa-check"></i><b>8.2</b> Interpretación física de la derivada: velocidad</a></li>
+<li class="chapter" data-level="8.3" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones"><i class="fa fa-check"></i><b>8.3</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.4" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defder"><i class="fa fa-check"></i><b>8.4</b> Definición de derivada</a><ul>
+<li class="chapter" data-level="8.4.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#derivadas-laterales"><i class="fa fa-check"></i><b>8.4.1</b> Derivadas laterales</a></li>
+<li class="chapter" data-level="8.4.2" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#existencia-de-derivadas"><i class="fa fa-check"></i><b>8.4.2</b> Existencia de derivadas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.5" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#geomInte"><i class="fa fa-check"></i><b>8.5</b> Interpretación geométrica de la integral: área bajo una curva</a></li>
+<li class="chapter" data-level="8.6" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#interpretación-física-de-la-integral-espacio-recorrido-por-un-coche"><i class="fa fa-check"></i><b>8.6</b> Interpretación física de la integral: espacio recorrido por un coche</a></li>
+<li class="chapter" data-level="8.7" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#equivalencia-de-las-dos-interpretaciones-1"><i class="fa fa-check"></i><b>8.7</b> Equivalencia de las dos interpretaciones</a></li>
+<li class="chapter" data-level="8.8" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#defint"><i class="fa fa-check"></i><b>8.8</b> Definición de integral</a><ul>
+<li class="chapter" data-level="8.8.1" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#integrales-negativas"><i class="fa fa-check"></i><b>8.8.1</b> Integrales negativas</a></li>
+</ul></li>
+<li class="chapter" data-level="8.9" data-path="derivadas-e-integrales.html"><a href="derivadas-e-integrales.html#TFC"><i class="fa fa-check"></i><b>8.9</b> Teorema fundamental del cálculo</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="derivación.html"><a href="derivación.html"><i class="fa fa-check"></i><b>9</b> Derivación</a><ul>
+<li class="chapter" data-level="9.1" data-path="derivación.html"><a href="derivación.html#algunas-derivadas-elementales"><i class="fa fa-check"></i><b>9.1</b> Algunas derivadas elementales</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="derivación.html"><a href="derivación.html#cuadro-de-derivadas-elementales"><i class="fa fa-check"></i><b>9.1.1</b> Cuadro de derivadas elementales</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="derivación.html"><a href="derivación.html#derivadas-de-operaciones"><i class="fa fa-check"></i><b>9.2</b> Derivadas de operaciones</a></li>
+<li class="chapter" data-level="9.3" data-path="derivación.html"><a href="derivación.html#derivada-de-composición-de-funciones-regla-de-la-cadena"><i class="fa fa-check"></i><b>9.3</b> Derivada de composición de funciones: regla de la cadena</a></li>
+<li class="chapter" data-level="9.4" data-path="derivación.html"><a href="derivación.html#derivadas-sucesivas"><i class="fa fa-check"></i><b>9.4</b> Derivadas sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html"><i class="fa fa-check"></i><b>10</b> Utilidad del concepto de derivada</a><ul>
+<li class="chapter" data-level="10.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-infinitamente-derivables"><i class="fa fa-check"></i><b>10.1</b> Curvas infinitamente derivables</a><ul>
+<li class="chapter" data-level="10.1.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#curvas-de-carretera"><i class="fa fa-check"></i><b>10.1.1</b> Curvas de carretera</a></li>
+<li class="chapter" data-level="10.1.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#levas"><i class="fa fa-check"></i><b>10.1.2</b> Levas</a></li>
+</ul></li>
+<li class="chapter" data-level="10.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#crecimiento"><i class="fa fa-check"></i><b>10.2</b> Crecimiento</a></li>
+<li class="chapter" data-level="10.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#concavidad-y-convexidad"><i class="fa fa-check"></i><b>10.3</b> Concavidad y convexidad</a></li>
+<li class="chapter" data-level="10.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4</b> Máximos y mínimos</a><ul>
+<li class="chapter" data-level="10.4.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#cálculo-de-máximos-y-mínimos"><i class="fa fa-check"></i><b>10.4.1</b> Cálculo de máximos y mínimos</a></li>
+<li class="chapter" data-level="10.4.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#un-ejemplo"><i class="fa fa-check"></i><b>10.4.2</b> Un ejemplo</a></li>
+<li class="chapter" data-level="10.4.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#otro-ejemplo"><i class="fa fa-check"></i><b>10.4.3</b> Otro ejemplo</a></li>
+</ul></li>
+<li class="chapter" data-level="10.5" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#dibujo-de-gráficas"><i class="fa fa-check"></i><b>10.5</b> Dibujo de gráficas</a></li>
+<li class="chapter" data-level="10.6" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6</b> Polinomios de Taylor</a><ul>
+<li class="chapter" data-level="10.6.1" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-1-fx-sinx-en-las-inmediaciones-de-x-0"><i class="fa fa-check"></i><b>10.6.1</b> Ejemplo 1: <span class="math inline">\(f(x) = \sin(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 0\)</span></a></li>
+<li class="chapter" data-level="10.6.2" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#ejemplo-2-fx-logx-en-las-inmediaciones-de-x-1"><i class="fa fa-check"></i><b>10.6.2</b> Ejemplo 2: <span class="math inline">\(f(x) = \log(x)\)</span>, en las inmediaciones de <span class="math inline">\(x = 1\)</span></a></li>
+<li class="chapter" data-level="10.6.3" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#forma-general-de-los-polinomios-de-taylor"><i class="fa fa-check"></i><b>10.6.3</b> Forma general de los polinomios de Taylor</a></li>
+<li class="chapter" data-level="10.6.4" data-path="utilidad-del-concepto-de-derivada.html"><a href="utilidad-del-concepto-de-derivada.html#hasta-dónde-llegar-series-de-taylor"><i class="fa fa-check"></i><b>10.6.4</b> Hasta dónde llegar: Series de Taylor</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html"><i class="fa fa-check"></i><b>11</b> Cálculo de primitivas</a><ul>
+<li class="chapter" data-level="11.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#regla-de-barrow"><i class="fa fa-check"></i><b>11.1</b> Regla de Barrow</a></li>
+<li class="chapter" data-level="11.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-1-cuadro-de-primitivas-elementales"><i class="fa fa-check"></i><b>11.2</b> Técnica 1: Cuadro de primitivas elementales</a></li>
+<li class="chapter" data-level="11.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-2-tres-teoremas-básicos"><i class="fa fa-check"></i><b>11.3</b> Técnica 2: Tres teoremas básicos</a></li>
+<li class="chapter" data-level="11.4" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-3-cambio-de-variable"><i class="fa fa-check"></i><b>11.4</b> Técnica 3: Cambio de variable</a></li>
+<li class="chapter" data-level="11.5" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-4-integración-por-partes"><i class="fa fa-check"></i><b>11.5</b> Técnica 4: Integración por partes</a></li>
+<li class="chapter" data-level="11.6" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#técnica-5-integración-de-funciones-racionales"><i class="fa fa-check"></i><b>11.6</b> Técnica 5: Integración de funciones racionales</a><ul>
+<li class="chapter" data-level="11.6.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#descomposición-en-fracciones-simples"><i class="fa fa-check"></i><b>11.6.1</b> Descomposición en fracciones simples</a></li>
+<li class="chapter" data-level="11.6.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-de-las-fracciones-simples"><i class="fa fa-check"></i><b>11.6.2</b> Integración de las fracciones simples</a></li>
+</ul></li>
+<li class="chapter" data-level="11.7" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integrales-impropias"><i class="fa fa-check"></i><b>11.7</b> Integrales impropias</a></li>
+<li class="chapter" data-level="11.8" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#integración-numérica"><i class="fa fa-check"></i><b>11.8</b> Integración numérica</a><ul>
+<li class="chapter" data-level="11.8.1" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-rectángulos"><i class="fa fa-check"></i><b>11.8.1</b> Aproximación por rectángulos</a></li>
+<li class="chapter" data-level="11.8.2" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#aproximación-por-trapecios"><i class="fa fa-check"></i><b>11.8.2</b> Aproximación por trapecios</a></li>
+<li class="chapter" data-level="11.8.3" data-path="cálculo-de-primitivas.html"><a href="cálculo-de-primitivas.html#método-de-simpson"><i class="fa fa-check"></i><b>11.8.3</b> Método de Simpson</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html"><i class="fa fa-check"></i><b>12</b> Ecuaciones diferenciales</a><ul>
+<li class="chapter" data-level="12.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#introducción"><i class="fa fa-check"></i><b>12.1</b> Introducción</a><ul>
+<li class="chapter" data-level="12.1.1" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#notación"><i class="fa fa-check"></i><b>12.1.1</b> Notación</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#clasificación-de-las-ecuaciones-diferenciales"><i class="fa fa-check"></i><b>12.2</b> Clasificación de las ecuaciones diferenciales</a></li>
+<li class="chapter" data-level="12.3" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-de-variables-separables"><i class="fa fa-check"></i><b>12.3</b> Ecuaciones diferenciales de variables separables</a></li>
+<li class="chapter" data-level="12.4" data-path="ecuaciones-diferenciales.html"><a href="ecuaciones-diferenciales.html#ecuaciones-diferenciales-lineales-de-primer-orden"><i class="fa fa-check"></i><b>12.4</b> Ecuaciones diferenciales lineales de primer orden</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html"><i class="fa fa-check"></i><b>13</b> Funciones de varias variables</a><ul>
+<li class="chapter" data-level="13.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-de-variable-real"><i class="fa fa-check"></i><b>13.1</b> Funciones vectoriales de variable real</a></li>
+<li class="chapter" data-level="13.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-reales-multivariable"><i class="fa fa-check"></i><b>13.2</b> Funciones reales multivariable</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-polinómicas-y-racionales-multivariables"><i class="fa fa-check"></i><b>13.2.1</b> Funciones polinómicas y racionales multivariables</a></li>
+<li class="chapter" data-level="13.2.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#límites"><i class="fa fa-check"></i><b>13.2.2</b> Límites</a></li>
+<li class="chapter" data-level="13.2.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#continuidad"><i class="fa fa-check"></i><b>13.2.3</b> Continuidad</a></li>
+</ul></li>
+<li class="chapter" data-level="13.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales"><i class="fa fa-check"></i><b>13.3</b> Derivadas parciales</a><ul>
+<li class="chapter" data-level="13.3.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica"><i class="fa fa-check"></i><b>13.3.1</b> Interpretación geométrica</a></li>
+<li class="chapter" data-level="13.3.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#definición-formal"><i class="fa fa-check"></i><b>13.3.2</b> Definición formal</a></li>
+<li class="chapter" data-level="13.3.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivadas-parciales-sucesivas"><i class="fa fa-check"></i><b>13.3.3</b> Derivadas parciales sucesivas</a></li>
+</ul></li>
+<li class="chapter" data-level="13.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#derivdirec"><i class="fa fa-check"></i><b>13.4</b> Derivadas direccionales</a><ul>
+<li class="chapter" data-level="13.4.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#gradientes-y-derivadas-direccionales"><i class="fa fa-check"></i><b>13.4.1</b> Gradientes y derivadas direccionales</a></li>
+<li class="chapter" data-level="13.4.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#máximos-mínimos-puntos-de-silla"><i class="fa fa-check"></i><b>13.4.2</b> Máximos, mínimos, puntos de silla</a></li>
+</ul></li>
+<li class="chapter" data-level="13.5" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#integrales-múltiples"><i class="fa fa-check"></i><b>13.5</b> Integrales múltiples</a><ul>
+<li class="chapter" data-level="13.5.1" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#interpretación-geométrica-de-la-integral-doble"><i class="fa fa-check"></i><b>13.5.1</b> Interpretación geométrica de la integral doble</a></li>
+<li class="chapter" data-level="13.5.2" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#primitivas-de-integrales-múltiples"><i class="fa fa-check"></i><b>13.5.2</b> Primitivas de integrales múltiples</a></li>
+<li class="chapter" data-level="13.5.3" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#orden-de-integración"><i class="fa fa-check"></i><b>13.5.3</b> Orden de integración</a></li>
+<li class="chapter" data-level="13.5.4" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#ejemplos-3"><i class="fa fa-check"></i><b>13.5.4</b> Ejemplos</a></li>
+</ul></li>
+<li class="chapter" data-level="13.6" data-path="funciones-de-varias-variables.html"><a href="funciones-de-varias-variables.html#funciones-vectoriales-multivariable"><i class="fa fa-check"></i><b>13.6</b> Funciones vectoriales multivariable</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Apuntes de Matemáticas II; Cálculo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sucesiones" class="section level1">
+<h1><span class="header-section-number">Capítulo 3</span> Sucesiones</h1>
+<div id="ejemplos" class="section level2">
+<h2><span class="header-section-number">3.1</span> Ejemplos</h2>
+<p>Supongamos que tienes resistencias de <span class="math inline">\(10 \Omega\)</span> y los vas poniendo en serie. Si sólo tienes una resistencia, la resistencia total es de <span class="math inline">\(10 \Omega\)</span>, si tienes dos, es de <span class="math inline">\(2 \cdot 10 \Omega\)</span>, si tienes 3, <span class="math inline">\(3 \cdot 10 \Omega\)</span> y en general, si pones <span class="math inline">\(n\)</span> resistencias en serie, la resistencia total es de <span class="math inline">\(10n \Omega\)</span>.</p>
+<p>Supongamos ahora que los pones en paralelo. Si sólo tienes una resistencia, la resistencia total es de <span class="math inline">\(10 \Omega\)</span>, si tienes dos, es de <span class="math inline">\(\frac{10}{2} \Omega\)</span>, si tienes 3, <span class="math inline">\(\frac{10}{3}\Omega\)</span> y en general, si pones <span class="math inline">\(n\)</span> resistencias en serie, la resistencia total es de <span class="math inline">\(\frac{10}{n} \Omega\)</span>.</p>
+<p>Tienes una moneda y la tiras al aire repetidamente. La probabilidad de que la primera tirada salga cara es <span class="math inline">\(\frac{1}{2}\)</span>. La probabilidad de que las dos primeras salgan cara es de <span class="math inline">\(\frac{1}{4}\)</span>, la probabilidad de que las 3 primeras salgan cara es de <span class="math inline">\(\frac{1}{8}\)</span> y en general, la probabilidad de que las <span class="math inline">\(n\)</span> primeras salgan cara es de <span class="math inline">\(\frac{1}{2^n}\)</span>.</p>
+<p>Como esto son matemáticas, olvidémonos de los ejemplos concretos y concentrémonos en los números que nos han salido. En el primer caso tenemos una sucesión de números que es
+<span class="math display">\[10, 10\cdot2, 10\cdot 3, \ldots, 10n, \ldots\]</span></p>
+<p>En el segundo caso la sucesión es
+<span class="math display">\[10, \frac{10}{2}, \frac{10}{3}, \ldots, \frac{10}{n}, \ldots\]</span></p>
+<p>Y en el tercero es
+<span class="math display">\[\frac{1}{2}, \frac{1}{4}, \frac{1}{8}, \ldots, \frac{1}{2^n},\ldots\]</span></p>
+<p>Estos son tres ejemplos de <em>sucesiones</em>.</p>
+</div>
+<div id="definición-de-sucesión" class="section level2">
+<h2><span class="header-section-number">3.2</span> Definición de sucesión</h2>
+<p>Informalmente, una sucesión es una lista infinita de numeros que siguen un orden determinado. El orden es importante: la sucesión <span class="math inline">\(1, 2, 3, 4, 5, 6, \ldots\)</span> es distinta de la sucesión <span class="math inline">\(3, 2, 1, 4, 5, 6, \ldots\)</span>. No tiene por qué seguir un patrón determinado. Por ejemplo, las temperaturas máximas diarias obtenidas en la estación meteorológica del aeropuerto de Palma es una lista (potencialmente) infinita de números que no siguen un patrón definido: no tenemos ninguna manera de saber el valor de la sucesión de dentro de mil días. En general nos interesan las sucesiones que tienen un patrón que podemos describir y representamos estas sucesiones indicando este patrón. Así, la primera sucesión de nuestros ejemplos es la sucesión <span class="math inline">\(\{a_n = 10\cdot n\}\)</span>, la segunda es <span class="math inline">\(\{a_n = 10/n\}\)</span> y la tercera es <span class="math inline">\(\{a_n = 1/2^n\}\)</span>.</p>
+<p>Seamos más formales. Una sucesión es una función que a cada número natural <span class="math inline">\(n\)</span> le asigna un número real <span class="math inline">\(a_n\)</span>. El número <span class="math inline">\(a_1\)</span> sería el primer término de la sucesión, <span class="math inline">\(a_2\)</span> sería el segundo término de la sucesión y <span class="math inline">\(a_n\)</span> sería el <span class="math inline">\(n\)</span>-simo término de la sucesión. Algunas veces nos interesa empezar por <span class="math inline">\(a_0\)</span> y a este le llamaríamos el cero-ésimo término de la sucesión, pero a menos que lo digamos explícitamente, nuestras sucesiones empezarán en 1. En general representamos la sucesión indicando la expresión del término <span class="math inline">\(n\)</span>-simo. Por ejemplo la sucesión <span class="math inline">\(\{n^2\}\)</span> sería la sucesión <span class="math inline">\(1, 4, 9, \ldots,n^2,\ldots\)</span>.</p>
+<p>Es necesario siempre dar una descripción de la sucesión. No basta con dar los primeros términos. Por ejemplo, si me dicen “sea la sucesión {1, 2, 3, …}” lo más normal es pensar que es la sucesión de los números naturales: {1, 2, 3, …, <span class="math inline">\(n\)</span>…}. Pero podría ser la sucesión de Fibonacci sin el primer 1: {1, 2, 3, 5, 8…} u otra cosa más complicada: {1, 2, 3, 7, 22, … , } (cada uno es el producto de los dos anteriores más uno). Y con la edad uno aprende que una cosa es lo que uno tiene en la cabeza y otra diferente lo que le viene en la cabeza al que lo lee. Siempre hay que dar una descripcion, aunque sea informal, de toda la sucesión.</p>
+</div>
+<div id="rec" class="section level2">
+<h2><span class="header-section-number">3.3</span> Fórmula de recurrencia</h2>
+<p>Hay una segunda manera de describir una sucesión: en vez de relacionar el valor del término <span class="math inline">\(n\)</span>-simo con <span class="math inline">\(n\)</span> mediante una expresión matemática, lo hacemos relacionando el valor del término <span class="math inline">\(n\)</span>-simo con los valores de los términos anteriores. A esto se llama una fórmula de recurrencia.</p>
+<p>El caso más conocido es el de la sucesión de Fibonacci:
+<span class="math display">\[1, 1, 2, 3, 5, 8, 13\ldots\]</span>
+Los dos primeros términos son 1 (<span class="math inline">\(a_1 = a_2 = 1\)</span>) y a partir de ahí, cada término es la suma de los dos anteriores, es decir <span class="math inline">\(a_n = a_{n-1} + a_{n-2}\)</span>.</p>
+<p>Hay otras dos sucesiones que a menudo se describen mediante una fórmula de recurrencia. Una es la sucesión en la que cada término es el término anterior más un cierto valor: <span class="math inline">\(a_n = a_{n-1} + d\)</span>. La otra es similar: cada término es el término anterio multiplicado por un factor: <span class="math inline">\(a_n = r\cdot a_{n-1}\)</span>. Estas dos sucesiones tienen nombre propio y se llaman la progresión aritmética y la progresión geométrica respectivamente.</p>
+<p>Un motivo por el que se usa la fórmula de recurrencia es que puede ser mucho más sencillo describir la sucesión así que de la forma tradicional. Este es el caso de la sucesión de Fibonacci. Otro motivo es porque muestra de forma más intuitiva la esencia de la sucesión. La progresión aritmética se puede describir como <span class="math inline">\(\{a_n = a_1 + (n-1)d\}\)</span> y la progresión geométrica como <span class="math inline">\(\{a_n = a_1\cdot r^{n-1}\}\)</span>, pero estas dos expresiones no muestran de forma tan obvia como varía la sucesión.</p>
+</div>
+<div id="definiciones" class="section level2">
+<h2><span class="header-section-number">3.4</span> Definiciones</h2>
+<p>Paul Halmos es un conocido matemático americano. En su autobiografía comenta que cuando estudiaba la carrera de matemáticas descubrió que sabiéndose bien las definiciones y con un poco de sentido común y técnica, tenía prácticamente garantizado el notable. Además, es mucho más fácil seguir una explicación, sea del profesor o de un libro, si tienes interiorizadas las defeniciones: si una frase comienza con “Sea una sucesión acotada…” y no sabes qué es una sucesión acotada, todo lo que sigue no tiene significado para ti.</p>
+<p>Yo creo que buena parte de las dificultades que la gente tiene en entender las matemáticas proviene de no esforzarse por conocer primero las definiciones. Empecemos por ellas</p>
+<ul>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>monótona creciente</em> si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n ≤ a_{n+1}\)</span>. Es decir, cada término es mayor o igual que el anterior.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>monótona decreciente</em> si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n ≥ a_{n+1}\)</span>. Es decir, que cada término es menor o igual que el anterior.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>monótona</em> si es o monótona creciente o monótona decreciente.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>estrictamente creciente</em> si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n &lt; a_{n+1}\)</span>. Es decir, que cada término es estrictamente mayor que el anterior.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>estrictamente decreciente</em> si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n &gt; a_{n+1}\)</span>. Es decir, que cada término es estrictamente menor que el anterior.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada superiormente</em> si existe un número <span class="math inline">\(M\)</span> tal que <span class="math inline">\(a_n ≤ M\)</span> para todo <span class="math inline">\(n\)</span>. Es decir, que hay un valor <span class="math inline">\(M\)</span> que es mayor o igual que cualquier término de la sucesión. Se dice que <span class="math inline">\(M\)</span> es una <em>cota superior</em> de la sucesión.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada inferiormente</em> si existe un numero <span class="math inline">\(M\)</span> tal que <span class="math inline">\(a_n ≥ M\)</span> para todo <span class="math inline">\(n\)</span>. Es decir, que hay un valor <span class="math inline">\(M\)</span> que es menor o igual que cualquier término de la sucesión. Se dice que <span class="math inline">\(M\)</span> es una <em>cota inferior</em> de la sucesión.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada</em> si está acotada superiormente e inferiormente.</p></li>
+</ul>
+<hr />
+<p>En resumen, la palabra <em>monótona</em> nos indica que siempre va en la misma dirección, aunque permite que se mantenga constante. La palabra <em>estricta</em> indica que va siempre en la misma dirección y no puede manetenerse constante: estrictamente crece o decrece. La palabra <em>acotada</em> nos indica que hay una cota: una valor que nunca se traspasa, ya sea superiormente o inferiormente. Veamos algunos ejemplos.</p>
+<div id="ejemplos-1" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Ejemplos</h3>
+
+<div class="example">
+<span id="exm:unnamed-chunk-1" class="example"><strong>Ejemplo 3.1  </strong></span>Veamos que la sucesión de los números naturales <span class="math inline">\(\{n\}\)</span> es monótona creciente. Aplicamos la definición: Es monótona creciente si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n ≤ a_{n+1}\)</span> que se traduce en <span class="math inline">\(n ≤ n+1\)</span> para todo <span class="math inline">\(n\)</span>. Aunque esto es obviamente cierto, seamos formales: restemos <span class="math inline">\(n\)</span> a cada lado y tenemos <span class="math inline">\(0 ≤ 1\)</span>, y esto es siempre cierto. Es más, como <span class="math inline">\(0 &lt; 1\)</span> es estrictamente creciente.
+</div>
+
+<hr />
+
+<div class="example">
+<span id="exm:unnamed-chunk-2" class="example"><strong>Ejemplo 3.2  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n = n^2 - n\}\)</span>, con <span class="math inline">\(n = 0, 1, 2…\)</span>. Veamos que es monótona creciente. Aplicamos la definición: <span class="math inline">\(a_{n+1} ≥ a_{n}\)</span> se traduce en
+<span class="math display">\[(n+1)^2 - (n+1) ≥ n^2 - n\]</span>
+Desarrollamos:
+<span class="math display">\[n^2 + 2n + 1 - n - 1 ≥ n^2 - n\]</span>
+y nos queda
+<span class="math display">\[n^2 + n ≥ n^2 - n\]</span>
+lo que significa que
+<span class="math display">\[n ≥ -n\]</span>
+Como <span class="math inline">\(n ≥ 0\)</span>, esto se cumple siempre. Nótese que la sucesión no es estrictamente creciente, pues para <span class="math inline">\(n = 0\)</span> tenemos que <span class="math inline">\(n = -n\)</span>.
+</div>
+
+<hr />
+<p>Si los términos son todos positivos, la definición de monótona creciente, <span class="math inline">\(a_{n+1} ≥ a_n\)</span>, es equivalente a decir que <span class="math inline">\(a_{n+1}/a_n ≥ 1\)</span> (o <span class="math inline">\(a_{n+1}/a_n ≤ 1\)</span> para las monótonas decrecientes). Y esta segunda definición puede ser más conveniente a veces.</p>
+<hr />
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-3" class="example"><strong>Ejemplo 3.3  </strong></span>Determine si la sucesión <span class="math inline">\(\{a_n = 1/(n - 5.1)^2\}\)</span> es monótona.</p>
+<p>Veamos si es monótona creciente. Entonces:
+<span class="math display">\[\frac{a_{n+1}}{a_{n}} = 
+\frac{\frac{1}{(n+1-5.1)^{2}}}{\frac{1}{(n-5.1)^{2}}} = 
+\frac{(n-5.1)^{2}}{(n-4.1)^{2}} =
+\frac{n^{2} + 26.01 - 10.2 n}{n^{2} + 16.81 - 8.2 n}\]</span></p>
+<p>Teniendo en cuenta que <span class="math inline">\(26.01 = 16.82 +9.2\)</span> y que <span class="math inline">\(10.2n = 8.2n + 2n\)</span> podemos reescribir el numerador como
+<span class="math display">\[\frac{(n^{2} + 16.81 - 8.2 n) + (9.2 - 2 n)}{n^{2} + 16.81 - 8.2 n}
+= 1 + \frac{9.2 - 2 n}{n^{2} + 16.81 - 8.2 n}\]</span></p>
+<p>Y ahora todo se reduce a saber si la fracción es positiva o negativa. Es fácil ver que el numerador es positivo para <span class="math inline">\(n&lt;5\)</span> y negativo para <span class="math inline">\(n ≥ 5\)</span>. Para el denominador podríamos resolver la ecuación de segundo grado. Pero si nos damos cuenta que para valores grandes de <span class="math inline">\(n\)</span> es positivo, podemos probar alguno valores menores y nos damos cuenta de que siempre es positivo. En resumen, la fracción es positiva para <span class="math inline">\(n &lt; 5\)</span> y negativa para <span class="math inline">\(n ≥ 5\)</span>.</p>
+<p>De aquí deducimos que <span class="math inline">\(\frac{a_{n+1}}{a_{n}} &gt; 1\)</span>, y por lo tanto la sucesión es creciente, para <span class="math inline">\(n &lt; 5\)</span> y <span class="math inline">\(\frac{a_{n+1}}{a_{n}} &gt; 1\)</span>, y por lo tanto lo tanto la sucesión es decreciente, para <span class="math inline">\(n≥5\)</span>. Como para ciertos valores de <span class="math inline">\(n\)</span> es creciente y para otros es decreciente, esta sucesión no es monótona.</p>
+</div>
+
+<hr />
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-4" class="example"><strong>Ejemplo 3.4  </strong></span>Determine si la sucesión <span class="math inline">\(\{a_n = 1/(n - 5.1)^2\}\)</span> está acotada.</p>
+<p>Sabemos por el ejemplo anterior que esta sucesión es creciente hasta <span class="math inline">\(n = 5\)</span> y decreciente después, luego la sucesión está acotada superiormente. El valor <span class="math inline">\(a_5 = 100\)</span> es una cota superior. Naturalmente, 105 o 200 o 578,3 o cualquier valor mayor que 100 será también una cota superior.</p>
+<p>El numerador del término general es 1 y el denominador es siempre positivo, luego todos los términos son estrictamente positivos. Esto hace que 0 sea una cota inferior. Cualquier número negativo también será una cota inferior.</p>
+Como la sucesión tiene cota superior y cota inferior, la sucesión está acotada.
+</div>
+
+</div>
+</div>
+<div id="representación-gráfica-de-una-sucesión" class="section level2">
+<h2><span class="header-section-number">3.5</span> Representación gráfica de una sucesión</h2>
+<p>Nuestros ojos son muy poderosos y visualizar una sucesión nos puede resultar muy útil para coger una idea de cómmo se comporta. Hay dos maneras habituales de respresentar gráficamente una sucesión: la recta real y el plano cartesiano.</p>
+<p>Usemos como primer ejemplo la sucesion <span class="math inline">\(\{a_n = n/(n+1)\}\)</span>. Sus primeros términos son 1/2, 2/3, 3/4, 4/5, 5/6… La primera forma de representación es simplemente coger la recta real y marcar todos los términos de la sucesión:</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Esta representación nos permite ver los infinitos términos de una sucesión acotada, pero perdemos la información de qué punto corresponde a qué término.</p>
+<p>La segunda forma de representación es el plano cartesiano: en el eje X tenemos <span class="math inline">\(n\)</span> y en el eje Y tenemos <span class="math inline">\(a_n\)</span>:
+<img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Con esta gráfica podemos ver la “evolución” de la sucesión al aumentar <span class="math inline">\(n\)</span>, pero nunca podremos ver más allá de unos pocos términos. Qué representación es mejor depende de cada caso.</p>
+<p>Veamos otro ejemplo: <span class="math inline">\(a_n = \sin(n)/n\)</span>. La primera representación sería</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Y la segunda</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>En la primera representación vemos que hay muchos puntos aglomerados alrededor del 0, lo que nos permite suponer que tiende a 0. En la segunda, los términos que vemos tienden a 0, o que también nos permite suponer que tiende a 0 al tender <span class="math inline">\(n\)</span> a infinito.</p>
+</div>
+<div id="limsuc" class="section level2">
+<h2><span class="header-section-number">3.6</span> Límites de sucesiones</h2>
+<p>La sucesión <span class="math inline">\(\{a_n = n\}\)</span> crece y crece y no tiende a ningún valor. En cambio las dos sucesiones que hemos visto en el apartado anterior, <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> y <span class="math inline">\(\{a_n = \sin(n)/n\}\)</span> sí que parece que tienden a algún valor: la primera se va acercando a 1 y la segunda se va acercando a 0. Pero qué queremos decir con “tiende a”. Informalmente queremos decir que se va acercando más y más al valor en cuestión y llega un momento en el que nunca se aleja, que acaban estando tan cerca como queramos no sólo para un valor de <span class="math inline">\(n\)</span>, sino para todos los valores de <span class="math inline">\(n\)</span> a partir de un cierto momento.</p>
+<p>Cuando esto sucede, decimos que el límite de la sucesión es este valor y que la sucesión <em>converge</em>. Si en cambio nunca se acerca definitivamente a un valor decimos que no tiene límite y que la sucesión <em>diverge</em>.</p>
+<p>Ya hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiene límite 1, o que converge hacia 1. También hemos dicho, y es fácil de ver, que la sucesión <span class="math inline">\(\{a_n = n\}\)</span> crece sin límite, y por lo tanto diverge. Hay otro caso que conviene considerar. Sea la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… que sube y baja sin cesar en forma de sierra:</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Esta sucesión no tiende a ningún valor y no se acerca definitivamente a ningún valor, nunca se acaba de decidir. Esta sucesión no se hace infinitamente grande, pero no tiene límite y también diverge.</p>
+<div id="definición-formal-de-limite-de-una-sucesión" class="section level3">
+<h3><span class="header-section-number">3.6.1</span> Definición formal de limite de una sucesión</h3>
+<p>Sea una sucesión <span class="math inline">\(\{a_n\}\)</span>. Decimos que esta sucesión tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(n\)</span> tiende a infinito si para cualquier distancia <span class="math inline">\(\varepsilon\)</span> que nosotros queramos, tan pequeña como queramos, existe un cierto término de la sucesión <span class="math inline">\(N\)</span>, tal que a partir de este término, todos los términos de la sucesión están más cerca de <span class="math inline">\(L\)</span> que <span class="math inline">\(\varepsilon\)</span>. De forma más “matemática”, más rigurosa y abstracta:</p>
+
+<div class="definition">
+<span id="def:deflimsuc" class="definition"><strong>Definición 3.1  </strong></span>Sea una sucesión <span class="math inline">\(\{a_n\}\)</span>. Decimos que esta sucesión tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(n\)</span> tiende a infinito, y lo escribimos como
+<span class="math display">\[\lim_{n \to \infty} a_n = L\]</span>
+si para cualquier número positivo <span class="math inline">\(\varepsilon\)</span>, podemos encontrar un entero positivo <span class="math inline">\(N\)</span>, dependiente de <span class="math inline">\(\varepsilon\)</span>, tal que <span class="math inline">\(|a_n – L| &lt; \varepsilon\)</span> para todos los enteros <span class="math inline">\(n &gt; N\)</span>.
+</div>
+
+<p>Esto lo podemos representar gráficamente. Si lo hacemos con la primera representación, tenemos para cualquier <span class="math inline">\(\varepsilon\)</span> que escojamos, un intervalo <span class="math inline">\((L-\varepsilon, L+\varepsilon)\)</span> tal que a partir de un cierto término <span class="math inline">\(N\)</span>, <em>todos</em> los puntos de la sucesión están dentro del intervalo.</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Si lo hacemos con la segunda forma de representación, hay una banda entre <span class="math inline">\((L-\varepsilon\)</span> y <span class="math inline">\(L+\varepsilon)\)</span> tal que todos los puntos de la sucesión están dentro de esta banda.</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+</div>
+<div id="un-teorema-importante" class="section level3">
+<h3><span class="header-section-number">3.6.2</span> Un teorema importante</h3>
+<p>En cuanto tenemos un poco de experiencia en la mayoría de los casos podemos establecer si una sucesión tiene límite (es convergente) o no. Pero incluso para una persona experimentada hay algunas sucesiones para las que no es obvio saber si tienen límite o no. Hay una serie de teoremas que nos ayudan para establecer la convergencia de sucesiones. El más importante es el siguiente:</p>
+
+<div class="theorem">
+<span id="thm:monac" class="theorem"><strong>Teorema 3.1  </strong></span>Una sucesión monótona y acotada es convergente.
+</div>
+
+<p>No vamos a demostrar este teorema, pero si lo pensamos un poco es bastante lógico. Consideremos el caso monótona creciente y acotada superiormente. El caso decreciente es análogo. Si la sucesión es monótona creciente, cada término es al menos tan grande como el anterior. Al ser acotada, no puede crecer sin límite, pues no puede pasar la cota. Luego tiene que tender hacia algún valor sin pasarlo, acercándose a este valor más y más. Luego tiene límite.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-12" class="example"><strong>Ejemplo 3.5  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{a_n = \frac{1}{n}\}\)</span> tiene límite.</p>
+<p>vamos a empezar por demostrar que es monótona decreciente. Para ello calculamos <span class="math inline">\(a_{n+1}/a_n\)</span> y demostramos que es menor que 1:
+<span class="math display">\[ \frac{a_{n+1}}{a_n} = \frac{\frac{1}{n+1}}{\frac{1}{n}} = \frac{n}{n+1} &lt; 1\]</span></p>
+<p>Una vez demostrado que la sucesión es monótona decreciente, vamos a demostrar que tiene una cota inferior. Es inmediato: todos los términos son estrictamente positivos, luego 0 es una cota inferior.</p>
+Como la sucesión <span class="math inline">\(\{a_n = \frac{1}{n}\}\)</span> es monótona y acotada, es convergente.
+</div>
+
+</div>
+<div id="ejemplos-2" class="section level3">
+<h3><span class="header-section-number">3.6.3</span> Ejemplos</h3>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-13" class="example"><strong>Ejemplo 3.6  </strong></span>Hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiende al valor 1. Vamos a demostrar que el límite de esta sucesión es efectivamente 1.</p>
+<p>Como la sucesión es siempre menor que 1, podemos escribir <span class="math inline">\(|a_n – L| &lt; \varepsilon\)</span> como <span class="math inline">\((1 - \frac{n}{n+1}) &lt; \varepsilon\)</span> sin el valor absoluto y entonces tenemos</p>
+<p><span class="math display">\[1 - \frac{n}{n+1}  = \frac{n+1-n}{n} = \frac{1}{n+1} &lt; \varepsilon\]</span></p>
+<p>que podemos reescribir como
+<span class="math display">\[ \frac{1}{\varepsilon} &lt; n+1\]</span>
+y despejando la <span class="math inline">\(n\)</span> nos queda
+<span class="math display">\[n &gt; \frac{1}{\varepsilon} - 1. \]</span></p>
+Y ahora para cualquier valor de <span class="math inline">\(\varepsilon\)</span> que queramos podemos calcular el término a partir del cual la sucesión está siempre más cerca del valor del límite que <span class="math inline">\(\varepsilon\)</span>. Por ejemplo, para <span class="math inline">\(\varepsilon = 0,01\)</span> sabemos que para <span class="math inline">\(n &gt; (1/0,01) - 1 = 99\)</span> la sucesión siempre estará a menos de 0,01 de 1. Para <span class="math inline">\(\varepsilon = 0,0005\)</span> sabemos que para <span class="math inline">\(n &gt; (1/0,0005) - 1 = 1999\)</span> la sucesión siempre estará a menos de 0,0005 de 1.
+</div>
+
+<hr />
+<p>La otra sucesion para la que hicimos las representaciones gráficas fue <span class="math inline">\(\{sen(n)/n\}\)</span> y vimos que tiende a 0. Podríamos pensar que ese <span class="math inline">\(\sin(n)\)</span> nos iba hacer muy complicado demostrar que tiene límite. Pero en estos casos hay un truco simple y útil: buscamos una sucesión que está más alejada y que de todas formas tiende a 0. Para simplificar la explicación vamos a considerar sólo los casos positivos (se haría igual con los negativos). Como <span class="math inline">\(\sin(n) ≤ 1\)</span>, en vez de <span class="math inline">\(\{\sin(n)/n\}\)</span> consideramos la sucesión <span class="math inline">\(\{1/n\}\)</span>. Si para cualquier <span class="math inline">\(\varepsilon\)</span> puedo encontrar un valor de <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n&gt;N\)</span> <span class="math inline">\(|(1/n) - 0| &lt; \varepsilon\)</span>, con más razón <span class="math inline">\(|(\sin(n)/n) - 0|\)</span>, que es menor, va a estar más cerca del 0.</p>
+<p>Es un buen ejercicio en estos momentos demostrar que efectivamente <span class="math inline">\(lim_{n \to \infty} (1/n) = 0\)</span>.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-14" class="example"><strong>Ejemplo 3.7  </strong></span>Vamos a demostrar que la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… no tiene límite.</p>
+Escojamos un valor de <span class="math inline">\(\varepsilon\)</span> menor que 1. Por ejemplo <span class="math inline">\(\varepsilon = 0,7\)</span>. Entonces no hay ningún valor <span class="math inline">\(L\)</span> tal que el intervalo <span class="math inline">\((L - 0.7, L + 0.7)\)</span> cubra el 0, el 1 y el 2. Como hemos encontrado un valor de <span class="math inline">\(\varepsilon\)</span> que hace que no se cumpla la condición, la sucesión no tiene límite.
+</div>
+
+<hr />
+<p>Nótese que para que haya límite debo poder encontrar el valor de <span class="math inline">\(N\)</span> para cualquier valor de <span class="math inline">\(\varepsilon\)</span>. Pero para que no la haya, basta encontrar un valor de <span class="math inline">\(\varepsilon\)</span> para el que no haya ningún valor de <span class="math inline">\(N\)</span>.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-15" class="example"><strong>Ejemplo 3.8  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{n^2 - n \}\)</span> no tiene límite.</p>
+<p>Es fácil ver que esta sucesión crece sin límite. Vamos a demostrar que la sucesión no se acerca a ningún valor, sino que se <em>aleja</em> de cualquier valor <span class="math inline">\(L\)</span>. Es decir, para cualquier valor <span class="math inline">\(L\)</span> hay un <span class="math inline">\(N\)</span> tal que para valores <span class="math inline">\(n &gt; N\)</span> la sucesión es siempre mayor que <span class="math inline">\(L\)</span>.</p>
+<p>Si <span class="math inline">\(a_n &gt; L\)</span> entonces <span class="math inline">\(a_n - L &gt; 0\)</span>. Esto queda como:
+<span class="math display">\[n^2 - n - L &gt;0\]</span>
+Podemos resolver la ecuación de segundo grado y quedarnos sólo con el valor positivo de <span class="math inline">\(n\)</span> y nos queda
+<span class="math display">\[n &gt; \frac{1 + \sqrt{1 + 4L}}{2} = \frac{1}{2} + \sqrt{\frac{1}{4} + L}\]</span></p>
+Luego para cualquier <span class="math inline">\(L\)</span>, por grande que lo hagamos, tenemos un valor de <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(N &gt; n\)</span>, <span class="math inline">\(a_n &gt; L\)</span>. No tiene límite.
+</div>
+
+</div>
+</div>
+<div id="oplimsuc" class="section level2">
+<h2><span class="header-section-number">3.7</span> Operaciones con sucesiones</h2>
+<p>Supongamos que tenemos una sucesión <span class="math inline">\(a_n = 1, 2, 3, 4,…\)</span> y otra sucesión <span class="math inline">\(b_n = -1, -3, -5, -7, …\)</span> Podemos definir la suma de estas sucesiones como la suma término a término: <span class="math inline">\(1-1, 2-3, 3-5, 4-7,… = 0, -1, -2, -3,…\)</span>. Formalmente, sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y una operación <span class="math inline">\(\circ\)</span>. Definimos la sucesión <span class="math inline">\(\{c_n\} = \{a_n\} \circ \{b_n\}\)</span> como la sucesión <span class="math inline">\(a_1 \circ b_1, a_2 \circ b_2, a_3 \circ b_3,…\)</span>. El término general de la sucesión <span class="math inline">\(\{c_n\}\)</span> es <span class="math inline">\(a_n \circ b_n\)</span>. Por ejemplo para el caso de la suma esto se resume en la frase “el límite de la suma es la suma de los límites”. Y lo mismo para las demás operaciones.</p>
+<p>Las operaciones más habituales son las aritméticas: <span class="math inline">\(\{a_n + b_n\}\)</span>, <span class="math inline">\(\{a_n - b_n\}\)</span>, <span class="math inline">\(\{a_n \cdot b_n\}\)</span>, <span class="math inline">\(\{a_n / b_n\}\)</span>. Pero también se usa la potenciación <span class="math inline">\(a_n^{b_n}\)</span>.</p>
+<p>Las operaciones con sucesiones son muy interesantes pues facilita el cálculo de límites Tenemos las sucesiones <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> y <span class="math inline">\(\{c_n\} = \{a_n\} \circ \{b_n\}\)</span> y tenemos que los límites de <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> existen y son <span class="math inline">\(\lim_{n \to \infty}a_n = A\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = B\)</span>. Entonces, en general, <span class="math inline">\(\lim_{n \to \infty}c_n = A\circ B\)</span>. Hay excepciones que veremos un poco más adelante.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-16" class="example"><strong>Ejemplo 3.9  </strong></span>Sea <span class="math inline">\(\{a_n = 3 + (1/n)\}\)</span> y <span class="math inline">\(\{ b_n = 2 - (1/n^2)\}\)</span>. Es fácil ver y demostrar que <span class="math inline">\(\lim_{n \to \infty}a_n = 3\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = 2\)</span>. Entonces</p>
+<span class="math display">\[\begin{align}
+lim_{n \to \infty} (a_n + b_n) &amp;= \lim_{n \to \infty}a_n + \lim_{n \to \infty}b_n = 3 + 2 = 5\\
+lim_{n \to \infty} (a_n - b_n) &amp;= \lim_{n \to \infty}a_n - \lim_{n \to \infty}b_n = 3 - 2 = 1\\
+lim_{n \to \infty} (a_n \cdot b_n) &amp;= \lim_{n \to \infty}a_n \cdot \lim_{n \to \infty}b_n = 3 \cdot 2 = 6\\
+lim_{n \to \infty} \frac{a_n}{b_n} &amp;= \frac{\lim_{n \to \infty}a_n}{\lim_{n \to \infty}b_n} = \frac{3}{2} = 1,5\\
+lim_{n \to \infty} a_n^{b_n} &amp;= \lim_{n \to \infty}a_n^{\lim_{n \to \infty}b_n} = 3^2 = 9
+\end{align}\]</span>
+</div>
+
+<hr />
+</div>
+<div id="ceros-e-infinitos" class="section level2">
+<h2><span class="header-section-number">3.8</span> Ceros e infinitos</h2>
+<p><em>Nota previa:</em> A partir de aquí vamos a hablar de sucesiones cuyo límite es infinito (o menos infinito) y escribiremos cosas como <span class="math inline">\(\lim_{n \to \infty}a_n = \infty\)</span>. Esto es incorrecto. Lo correcto es decir que el límite no existe. Pero expresarnos con absoluta corrección matemática es farragoso y dificulta tanto escribir el texto como leerlo y entenderlo. Es costumbre en todos los libros que conozco usar esta incorrección para facilitar la comprensión.</p>
+<hr />
+<p>Sea la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span>. Sabemos que <span class="math inline">\(\lim_{n \to \infty}a_n = 1\)</span>. Sea la sucesión <span class="math inline">\(\{b_n = n^2\}\)</span>. Es fácil ver que <span class="math inline">\(\lim_{n \to \infty}b_n = \infty\)</span>. Consideremos la suma de estas sucesiones, <span class="math inline">\(\{ c_n\} = \{a_n\} + \{b_n\}\)</span>. Si la primera se acerca a 1 todo lo que queramos al crecer <span class="math inline">\(n\)</span> y la otra crece sin límite, es de razón ver que la suma de ambas crece sin límite: <span class="math inline">\(\lim_{n \to \infty} c_n = \infty\)</span>.</p>
+<p>Si en vez de sumar las sucesiones, las dividimos, <span class="math inline">\(\{ c_n\} = \{a_n\}/\{b_n\}\)</span>, entonces tenemos unos términos que se aproximan a 1 que están divididos por términos cada vez mayores. Es de razón ver que la división de ambas se hace cada vez más pequeño: <span class="math inline">\(\lim_{n \to \infty} c_n = 0\)</span>.</p>
+<p>No vamos a entrar en más detalles, pero es fácil comprobar la siguiente aritmética de los límites de sucesiones:</p>
+<p><span class="math display">\[ A + \infty = \infty \qquad A - \infty = -\infty \qquad \infty - A = \infty \qquad \infty + \infty = \infty\]</span>
+<span class="math display">\[ A \cdot \infty = \infty \qquad A \cdot -\infty = -\infty \qquad \infty \cdot \infty = \infty\]</span>
+<span class="math display">\[ A/ \infty = 0 \qquad \infty/A = \infty \qquad A/0 = \infty\; (A ≠ 0) \qquad \]</span></p>
+<p>Debe notarse que lo que representamos arriba no son números, sino límites de sucesiones. No estamos diciendo, por ejemplo, que el número <span class="math inline">\(A\)</span> dividido por el número 0 es el número <span class="math inline">\(\infty\)</span>, sino que si tenemos una sucesión cuyo límite es <span class="math inline">\(A\)</span> y otra sucesión cuyo límite es 0, el límite de la sucesión resultante de dividir estas dos sucesiones tiene por límite <span class="math inline">\(\infty\)</span>.</p>
+<p>No todos los casos posibles están representados arriba. Uno se podría preguntar, ¿qué pasa si restamos dos sucesiones cuyos límites son ambos <span class="math inline">\(\infty\)</span>? En este caso tenemos una <em>indeterminación</em> y es lo que estudiaremos en el próximo apartado.</p>
+</div>
+<div id="indetsuc" class="section level2">
+<h2><span class="header-section-number">3.9</span> Indeterminaciones</h2>
+<p>Sea la sucesión <span class="math inline">\(\{a_n = n\}\)</span> y la sucesión <span class="math inline">\(\{b_n = n-1\}\)</span>. Sabemos que <span class="math inline">\(\lim_{n \to \infty}a_n = \infty\)</span> y que <span class="math inline">\(\lim_{n \to \infty}b_n = \infty\)</span>. Consideremos ahora la sucesión <span class="math inline">\(\{c_n\} = \{a_n\} - \{b_n\}\)</span>. Esta sucesión es <span class="math inline">\(\{c_n = n - (n-1) = 1\}\)</span> y su límite es, obviamente, 1. Luego tenemos dos sucesiones que tienden a <span class="math inline">\(\infty\)</span>, que cuando las restamos dan lugar a una sucesión de límite 1.</p>
+<p>Pero no es siempre así. Consideremos las sucesiones <span class="math inline">\(\{a_n = n^2\}\)</span> y <span class="math inline">\(\{b_n = n\}\)</span>. Ambas tienen límite infinito. La sucesión resultante de la resta es <span class="math inline">\(\{c_n = n^2 - n\}\)</span> y más arriba demostramos que <span class="math inline">\(\lim_{n \to \infty} n^2 - n = \infty\)</span>.</p>
+<p>Luego si tenemos dos sucesiones con límite infinito, no sabemos qué valor tendrá el límite de la sucesión obtenida restándolas. Decimos que el límite es <em>indeterminado</em>.</p>
+<p>Hay siete tipos de indeterminaciones. Son:</p>
+<p><span class="math display">\[\infty - \infty \qquad  \frac{\infty}{\infty} \qquad 1^\infty \qquad 0\cdot \infty \qquad \infty^0 \qquad \frac{0}{0} \qquad 0^0\]</span></p>
+<p>Repito otra vez que no quiere decir esto que el número 0 multiplicado por el “número” <span class="math inline">\(\infty\)</span> sea indeterminado, sino que si tengo una sucesión cuyo límite es cero y otra sucesión cuyo límite es <span class="math inline">\(\infty\)</span>, el límite de la sucesión producto de estas dos sucesiones es indeterminado.</p>
+<p>Si tenemos una indeterminación, no sabemos <em>a priori</em> qué pasa con el límite de la sucesión: puede ser convergente, puede ser divergente, puede tender a cualquier número. Hay que resolver la indeterminación caso por caso para poder calcular el límite. Veamos algunos casos.</p>
+<div id="indeterminación-fracinftyinfty" class="section level3">
+<h3><span class="header-section-number">3.9.1</span> Indeterminación <span class="math inline">\(\frac{\infty}{\infty}\)</span></h3>
+<p>Sea la sucesión
+<span class="math display">\[c_n = \frac{3n^2  + n + 6}{2n^2 -5}\]</span>
+Es fácil ver que el límite tanto del numerador como del denominador es <span class="math inline">\(\infty\)</span>, luego tenemos una indeterminación del tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span>.</p>
+<p>En casos como este lo que hemos de hacer es dividir tanto el numerador como el denominador por el término de mayor exponente:
+<span class="math display">\[\lim_{n \to \infty}\frac{3n^2  + n + 6}{2n^2 -5} = 
+\lim_{n \to \infty}\frac{\frac{3n^2  + n + 6}{n^2}}{\frac{2n^2 -5}{n^2}}
+= \lim_{n \to \infty}\frac{3 + 1/n + 6/n^2}{2 - 5/n^2}\]</span>
+Difundimos los límites:
+<span class="math display">\[\frac{\lim_{n \to \infty} (3 + 1/n + 6/n^2)}{\lim_{n \to \infty}(2 - 5/n^2)} =
+\frac{\lim_{n \to \infty} 3 + \lim_{n \to \infty}(1/n) + \lim_{n \to \infty}(6/n^2)}{\lim_{n \to \infty}2 - \lim_{n \to \infty}(5/n^2)}\]</span>
+Todos los límites son fáciles de calcular y nos queda
+<span class="math display">\[\lim_{n \to \infty} c_n = \frac{3 + 0 + 0}{2 - 0} = \frac{3}{2}\]</span></p>
+<hr />
+<p>Veamos otro ejemplo.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-17" class="example"><strong>Ejemplo 3.10  </strong></span>Encuentre el límite de la sucesión
+<span class="math display">\[c_n = \frac{n - 6}{n^2 + 4}\]</span>
+Es otra vez de tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span>. Dividimos numerador y denominador por el <span class="math inline">\(n\)</span> con mayor exponente y tenemos
+<span class="math display">\[\lim_{n \to \infty} c_n = \lim_{n \to \infty} \frac{\frac{n-6}{n^2}}{\frac{n^2 + 4}{n^2}} = 
+\lim_{n \to \infty} \frac{1/n - 6/n^2}{1 + 4/n^2}\]</span>
+Difundimos los límites y nos queda:
+<span class="math display">\[\lim_{n \to \infty} c_n = \frac{0 - 0}{1 + 0} = 0\]</span>
+</div>
+
+</div>
+<div id="indeterminación-infty---infty" class="section level3">
+<h3><span class="header-section-number">3.9.2</span> Indeterminación <span class="math inline">\(\infty - \infty\)</span></h3>
+<p>Sea la sucesión <span class="math inline">\(\{c_n = 3n^2 - 8n\}\)</span>. Este es un claro caso de indeterminación del tipo <span class="math inline">\(\infty - \infty\)</span>. En casos como este multiplicamos y dividimos por el conjugado de la expresión, es decir, <span class="math inline">\(3n^2 + 8n\)</span>:</p>
+<p><span class="math display">\[\lim_{n \to \infty} 3n^2 - 8n = \lim_{n \to \infty} \frac{(3n^2 - 8n)(3n^2 + 8n)}{3n^2 + 8n}\]</span>
+Como “suma por diferencia es la diferencia de cuadrados” nos queda:
+<span class="math display">\[\lim_{n \to \infty} \frac{3n^4 - 8n^2}{3n^2 + 8n}\]</span>
+Y hemos convertido la indeterminación de tipo <span class="math inline">\(\infty - \infty\)</span> a una de tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span> que ya sabemos resolver. Dejo los detalles, pero el resultado final es
+<span class="math display">\[\lim_{n \to \infty} c_n = \frac{3 - 0}{0 + 0} = \infty\]</span></p>
+<hr />
+Veamos otro ejemplo.
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-18" class="example"><strong>Ejemplo 3.11  </strong></span>Encuentre el límite de la sucesión
+<span class="math display">\[c_n = \sqrt{n^2 - n + 1} - 2n\]</span></p>
+Multiplicamos y dividimos por el conjugado:
+<span class="math display">\[\lim_{n \to \infty} c_n = \frac{(\sqrt{n^2 - n + 1} - 2n)(\sqrt{n^2 - n + 1} + 2n)}{\sqrt{n^2 - n + 1} + 2n}\]</span>
+Esto se convierte en
+<span class="math display">\[\lim_{n \to \infty}\frac{(n^2 - n + 1) - 4n^2}{\sqrt{n^2 - n + 1} + 2n} = 
+     \frac{-3n^2 - n + 1}{\sqrt{n^2 - n + 1} + 2n}\]</span>
+Ya es una indeterminación del tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span>. Dividimos numerador y denominador por <span class="math inline">\(n^2\)</span>:
+<span class="math display">\[\lim_{n \to \infty}\frac{-3 - 1/n + 1/n^2}{\sqrt{1/n^2 - 1/n^3 + 1/n^4} + 2/n}\]</span>
+Difundimos los límites y queda:
+<span class="math display">\[\lim_{n \to \infty} c_n = \frac{-3}{0} = -\infty\]</span>
+</div>
+
+</div>
+<div id="indeterminación-1infty" class="section level3">
+<h3><span class="header-section-number">3.9.3</span> Indeterminación <span class="math inline">\(1^\infty\)</span></h3>
+<p>Sea la sucesión <span class="math inline">\(\{c_n = (1 + \frac{1}{n})^n\}\)</span>. Tenemos la sucesión <span class="math inline">\(\{a_n = (1 + \frac{1}{n})\}\)</span> que tiene límite 1, elevada a la sucesión <span class="math inline">\(\{b_n = n\}\)</span> que tiene límite , luego en una indeterminación del tipo <span class="math inline">\(1^\infty\)</span>. Se puede demostrar que esta sucesión tiene límite y que este límite es el número <span class="math inline">\(e\)</span>.</p>
+<p>Este resultado lo podemos generalizar. Dada cualquier sucesión <span class="math inline">\(\{a_n\}\)</span> tal que <span class="math inline">\(\lim_{n \to \infty} a_n = \pm\infty\)</span>, la sucesión <span class="math inline">\(\{c_n = (1 + \frac{1}{a_n})^{a_n}\}\)</span> tiene por límite el número <span class="math inline">\(e\)</span>.</p>
+<p>Una de las maneras de resolver este tipo de indeterminaciones es manipular la sucesión para que tenga una parte central de la forma <span class="math inline">\((1 + \frac{1}{a_n})^{a_n}\)</span>. Sea la sucesión
+<span class="math display">\[\{c_n = (1 + \frac{1}{n^2})^n\}\]</span>
+Queremos manipular el exponente de manera que aparezca un <span class="math inline">\(n^2\)</span>. No es difícil:
+<span class="math display">\[(1 + \frac{1}{n^2})^{n^2 \frac{1}{n}}\]</span>
+Y ahora:
+<span class="math display">\[\lim_{n \to \infty} (1 + \frac{1}{n^2})^{n^2 \frac{1}{n}} =
+\lim_{n \to \infty} ((1 + \frac{1}{n^2})^{n^2})^\frac{1}{n} =
+(\lim_{n \to \infty} (1 + \frac{1}{n^2})^{n^2})^{\lim_{n \to \infty} 1/n}
+= e^0 = 1\]</span></p>
+<p>A veces la manipulación es un poco más complicada, como en el siguiente ejemplo.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-19" class="example"><strong>Ejemplo 3.12  </strong></span>Calcule el límite de la sucesión
+<span class="math display">\[\{c_n = \left(\frac{2n + 3}{2n -4}\right)^{n-3}\}\]</span>
+Como <span class="math inline">\(2n+3 = (2n-4) + 7\)</span>, podemos reescribir la fracción como
+<span class="math display">\[\left(\frac{2n -4 + 7}{2n -4}\right)^{n-3} = \left(1 + \frac{7}{2n -4}\right)^{n-3}\]</span>
+Queremos <span class="math inline">\((1 + \frac{1}{n})\)</span>, luego pasamos el 7 al denominador:
+<span class="math display">\[ \left(1 + \frac{1}{\frac{2n -4}{7}}\right)^{n-3}\]</span>
+Queremos la sucesión <span class="math inline">\(\{\frac{2n -4}{7}\}\)</span> en el exponente, luego reescribimos el exponente:
+<span class="math display">\[ \left(1 + \frac{1}{\frac{2n -4}{7}}\right)^{\frac{2n-4}{7}\cdot \frac{7(n-3)}{2n - 4}}\]</span>
+Y ya podemos calcular el límite:
+<span class="math display">\[\lim_{n \to \infty}c_n =\lim_{n \to \infty} \left(1 + \frac{1}{\frac{2n -4}{7}}\right)^{\frac{2n-4}{7}\cdot \frac{7(n-3)}{2n - 4}} =
+ \left(\lim_{n \to \infty} \left(1 + \frac{1}{\frac{2n -4}{7}}\right)^{\frac{2n-4}{7}}\right)^{\lim_{n \to \infty}\frac{7(n-3)}{2n - 4}} 
+ = e^{\frac{7}{2}}\]</span>
+</div>
+
+</div>
+</div>
+<div id="más-sobre-el-cálculo-de-limites-de-sucesiones" class="section level2">
+<h2><span class="header-section-number">3.10</span> Más sobre el cálculo de limites de sucesiones</h2>
+<div id="regla-del-encaje" class="section level3">
+<h3><span class="header-section-number">3.10.1</span> Regla del encaje</h3>
+<p>Tenemos tres sucesiones <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> y <span class="math inline">\(\{c_n\}\)</span> y a partir de algún <span class="math inline">\(N\)</span>, no importa lo grande que sea, <span class="math inline">\(\{c_n\}\)</span> está siempre entre <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span>. Entonces, si existen los tres límites, el límite de <span class="math inline">\(\{c_n\}\)</span> también está entre los de <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span>. Formalmente, si para todo <span class="math inline">\(n &gt; N\)</span>, <span class="math inline">\(b_n ≤ c_n ≤ a_n\)</span>, entonces <span class="math inline">\(\lim_{n \to \infty} \{b_n\} ≤ \lim_{n \to \infty} \{c_n\} ≤ \lim_{n \to \infty} \{a_n\}\)</span>. A esto se le llama la regla del encaje: si <span class="math inline">\(\{c_n\}\)</span> está “encajada” entre <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span>, su límite también lo está. No es difícil demostrar este resultado a partir de la definición de límite.</p>
+<p>El caso más interesante es cuando <span class="math inline">\(\lim_{n \to \infty} \{b_n\} = \lim_{n \to \infty} \{a_n\}\)</span>, porque entonces los tres límites han de ser iguales: <span class="math inline">\(\lim_{n \to \infty} \{b_n\} = \lim_{n \to \infty} \{c_n\} = \lim_{n \to \infty} \{a_n\}\)</span>. Esta regla del encaje nos es muy útil en algunos casos, por ejemplo si tenemos funciones trigonométricas.</p>
+
+<div class="example">
+<p><span id="exm:unnamed-chunk-20" class="example"><strong>Ejemplo 3.13  </strong></span>Calcule el límite de la sucesión de término general
+<span class="math display">\[\frac{n - \cos(nπ)}{3n}\]</span></p>
+Como el valor del coseno está siempre entre <span class="math inline">\(-1\)</span> y <span class="math inline">\(1\)</span>, podemos crear con facilidad dos sucesiones encajadas:
+<span class="math display">\[\frac{n - 1}{3n} ≤ \frac{n - \cos(nπ)}{3n} ≤ \frac{n +1}{3n}\]</span>
+Ahora aplicamos límites:
+<span class="math display">\[\lim_{n \to \infty}\frac{n - 1}{3n} ≤ \lim_{n \to \infty}\frac{n - \cos(nπ)}{3n} ≤ \lim_{n \to \infty}\frac{n +1}{3n}\]</span>
+y tenemos que
+<span class="math display">\[\frac{1}{3} ≤ \lim_{n \to \infty}\frac{n - \cos(nπ)}{3n} ≤ \frac{1}{3}\]</span>
+Y ya tenemos nuestro límite:
+<span class="math display">\[\lim_{n \to \infty}\frac{n - \cos(nπ)}{3n} = \frac{1}{3}\]</span>
+</div>
+
+</div>
+<div id="jerinf" class="section level3">
+<h3><span class="header-section-number">3.10.2</span> Jerarquía de infinitos</h3>
+<p>No todos los infinitos son iguales. Unos infinitos son “más infinitos” que otros. Consideremos la sucesión <span class="math inline">\(\{n^2 - 10n\}\)</span>. Para valores pequeños de <span class="math inline">\(n\)</span> el segundo término es de mayor magnitud que el primero y los términos son negativos, pero a medida que <span class="math inline">\(n\)</span> crece, el <span class="math inline">\(n^2\)</span> domina sobre el <span class="math inline">\(10n\)</span> y éste acaba siendo un pequeño apéndice sin importancia del total. Esto nos simplifica mucho el cálculo de límites: en las sumas o restas sólo los infinitos dominantes importan y nos podemos olvidar del resto.</p>
+<p>Formalmente: Dadas dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> tales que <span class="math inline">\(\lim_{n \to \infty} \{a_n\} = \infty\)</span> y <span class="math inline">\(\lim_{n \to \infty} \{b_n\} = \infty\)</span>, se dice que <span class="math inline">\(\{b_n\}\)</span> es un <em>infinito de orden superior</em>, o que <span class="math inline">\(\{b_n\}\)</span> <em>domina</em> sobre <span class="math inline">\(\{a_n\}\)</span> si
+<span class="math display">\[\lim_{n \to \infty} \frac{\{b_n\}}{\{a_n\}} = 0\]</span>
+Esto se representa como <span class="math inline">\(\{a_n\} \ll \{b_n\}\)</span>.</p>
+<p>Podemos crear con este concepto una jerarquía de infinitos. Dadas dos constantes <span class="math inline">\(a &gt;1\)</span> y <span class="math inline">\(p &gt; 0\)</span>:
+<span class="math display">\[\log(n) \ll n^p \ll a^n \ll n! \ll n^n \]</span>
+y dentro de las potencias <span class="math inline">\(n^{p} \ll n^q\)</span> si <span class="math inline">\(0 &lt; p &lt; q\)</span>.</p>
+<p>Para calcular un límite, de las sumas o restas de sucesiones buscamos cuál es el infinito de orden superior y eliminamos el resto.</p>
+
+<div class="example">
+<span id="exm:unnamed-chunk-21" class="example"><strong>Ejemplo 3.14  </strong></span>Calcule el límite de la sucesión de término general
+<span class="math display">\[\frac{n^2 - \sqrt{n^2 - 5n} + \log(n^2)}{3n + 1,2^n}\]</span>
+En el numerador el infinito de orden superior es <span class="math inline">\(n^2\)</span> y en el denominador es <span class="math inline">\(1,2^n\)</span>, luego
+<span class="math display">\[\lim_{n \to \infty}\frac{n^2 - \sqrt{n^2 - 5n} + \log(n^2)}{3n + 1.2^n} = \lim_{n \to \infty} \frac{n^2}{1.2^n} = 0\]</span>
+</div>
+
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="el-infinito-no-existe.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="inducción-matemática.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02_sucesiones.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Matemáticas II; Cálculo.pdf", "Matemáticas II; Cálculo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
