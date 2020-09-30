@@ -264,7 +264,7 @@
 </div>
 <div id="definición-de-sucesión" class="section level2">
 <h2><span class="header-section-number">3.2</span> Definición de sucesión</h2>
-<p>Informalmente, una sucesión es una lista infinita de numeros que siguen un orden determinado. El orden es importante: la sucesión <span class="math inline">\(1, 2, 3, 4, 5, 6, \ldots\)</span> es distinta de la sucesión <span class="math inline">\(3, 2, 1, 4, 5, 6, \ldots\)</span>. No tiene por qué seguir un patrón determinado. Por ejemplo, las temperaturas máximas diarias obtenidas en la estación meteorológica del aeropuerto de Palma es una lista (potencialmente) infinita de números que no siguen un patrón definido: no tenemos ninguna manera de saber el valor de la sucesión de dentro de mil días. En general nos interesan las sucesiones que tienen un patrón que podemos describir y representamos estas sucesiones indicando este patrón. Así, la primera sucesión de nuestros ejemplos es la sucesión <span class="math inline">\(\{a_n = 10\cdot n\}\)</span>, la segunda es <span class="math inline">\(\{a_n = 10/n\}\)</span> y la tercera es <span class="math inline">\(\{a_n = 1/2^n\}\)</span>.</p>
+<p>Informalmente, una sucesión es una lista infinita de números que siguen un orden determinado. El orden es importante: la sucesión <span class="math inline">\(1, 2, 3, 4, 5, 6, \ldots\)</span> es distinta de la sucesión <span class="math inline">\(3, 2, 1, 4, 5, 6, \ldots\)</span>. No tiene por qué seguir un patrón determinado. Por ejemplo, las temperaturas máximas diarias obtenidas en la estación meteorológica del aeropuerto de Palma es una lista (potencialmente) infinita de números que no siguen un patrón definido: no tenemos ninguna manera de saber el valor de la sucesión de dentro de mil días. En general nos interesan las sucesiones que tienen un patrón que podemos describir y representamos estas sucesiones indicando este patrón. Así, la primera sucesión de nuestros ejemplos es la sucesión <span class="math inline">\(\{a_n = 10\cdot n\}\)</span>, la segunda es <span class="math inline">\(\{a_n = 10/n\}\)</span> y la tercera es <span class="math inline">\(\{a_n = 1/2^n\}\)</span>.</p>
 <p>Seamos más formales. Una sucesión es una función que a cada número natural <span class="math inline">\(n\)</span> le asigna un número real <span class="math inline">\(a_n\)</span>. El número <span class="math inline">\(a_1\)</span> sería el primer término de la sucesión, <span class="math inline">\(a_2\)</span> sería el segundo término de la sucesión y <span class="math inline">\(a_n\)</span> sería el <span class="math inline">\(n\)</span>-simo término de la sucesión. Algunas veces nos interesa empezar por <span class="math inline">\(a_0\)</span> y a este le llamaríamos el cero-ésimo término de la sucesión, pero a menos que lo digamos explícitamente, nuestras sucesiones empezarán en 1. En general representamos la sucesión indicando la expresión del término <span class="math inline">\(n\)</span>-simo. Por ejemplo la sucesión <span class="math inline">\(\{n^2\}\)</span> sería la sucesión <span class="math inline">\(1, 4, 9, \ldots,n^2,\ldots\)</span>.</p>
 <p>Es necesario siempre dar una descripción de la sucesión. No basta con dar los primeros términos. Por ejemplo, si me dicen “sea la sucesión {1, 2, 3, …}” lo más normal es pensar que es la sucesión de los números naturales: {1, 2, 3, …, <span class="math inline">\(n\)</span>…}. Pero podría ser la sucesión de Fibonacci sin el primer 1: {1, 2, 3, 5, 8…} u otra cosa más complicada: {1, 2, 3, 7, 22, … , } (cada uno es el producto de los dos anteriores más uno). Y con la edad uno aprende que una cosa es lo que uno tiene en la cabeza y otra diferente lo que le viene en la cabeza al que lo lee. Siempre hay que dar una descripcion, aunque sea informal, de toda la sucesión.</p>
 </div>
@@ -274,12 +274,12 @@
 <p>El caso más conocido es el de la sucesión de Fibonacci:
 <span class="math display">\[1, 1, 2, 3, 5, 8, 13\ldots\]</span>
 Los dos primeros términos son 1 (<span class="math inline">\(a_1 = a_2 = 1\)</span>) y a partir de ahí, cada término es la suma de los dos anteriores, es decir <span class="math inline">\(a_n = a_{n-1} + a_{n-2}\)</span>.</p>
-<p>Hay otras dos sucesiones que a menudo se describen mediante una fórmula de recurrencia. Una es la sucesión en la que cada término es el término anterior más un cierto valor: <span class="math inline">\(a_n = a_{n-1} + d\)</span>. La otra es similar: cada término es el término anterio multiplicado por un factor: <span class="math inline">\(a_n = r\cdot a_{n-1}\)</span>. Estas dos sucesiones tienen nombre propio y se llaman la progresión aritmética y la progresión geométrica respectivamente.</p>
+<p>Hay otras dos sucesiones que a menudo se describen mediante una fórmula de recurrencia. Una es la sucesión en la que cada término es el término anterior más un cierto valor: <span class="math inline">\(a_n = a_{n-1} + d\)</span>. La otra es similar: cada término es el término anterior multiplicado por un factor: <span class="math inline">\(a_n = r\cdot a_{n-1}\)</span>. Estas dos sucesiones tienen nombre propio y se llaman la progresión aritmética y la progresión geométrica respectivamente.</p>
 <p>Un motivo por el que se usa la fórmula de recurrencia es que puede ser mucho más sencillo describir la sucesión así que de la forma tradicional. Este es el caso de la sucesión de Fibonacci. Otro motivo es porque muestra de forma más intuitiva la esencia de la sucesión. La progresión aritmética se puede describir como <span class="math inline">\(\{a_n = a_1 + (n-1)d\}\)</span> y la progresión geométrica como <span class="math inline">\(\{a_n = a_1\cdot r^{n-1}\}\)</span>, pero estas dos expresiones no muestran de forma tan obvia como varía la sucesión.</p>
 </div>
 <div id="definiciones" class="section level2">
 <h2><span class="header-section-number">3.4</span> Definiciones</h2>
-<p>Paul Halmos es un conocido matemático americano. En su autobiografía comenta que cuando estudiaba la carrera de matemáticas descubrió que sabiéndose bien las definiciones y con un poco de sentido común y técnica, tenía prácticamente garantizado el notable. Además, es mucho más fácil seguir una explicación, sea del profesor o de un libro, si tienes interiorizadas las defeniciones: si una frase comienza con “Sea una sucesión acotada…” y no sabes qué es una sucesión acotada, todo lo que sigue no tiene significado para ti.</p>
+<p>Paul Halmos es un conocido matemático americano. En su autobiografía comenta que cuando estudiaba la carrera de matemáticas descubrió que sabiéndose bien las definiciones y con un poco de sentido común y técnica, tenía prácticamente garantizado el notable. Además, es mucho más fácil seguir una explicación, sea del profesor o de un libro, si tienes interiorizadas las definiciones: si una frase comienza con “Sea una sucesión acotada…” y no sabes qué es una sucesión acotada, todo lo que sigue no tiene significado para ti.</p>
 <p>Yo creo que buena parte de las dificultades que la gente tiene en entender las matemáticas proviene de no esforzarse por conocer primero las definiciones. Empecemos por ellas</p>
 <ul>
 <li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>monótona creciente</em> si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n ≤ a_{n+1}\)</span>. Es decir, cada término es mayor o igual que el anterior.</p></li>
@@ -288,7 +288,7 @@ Los dos primeros términos son 1 (<span class="math inline">\(a_1 = a_2 = 1\)</s
 <li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>estrictamente creciente</em> si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n &lt; a_{n+1}\)</span>. Es decir, que cada término es estrictamente mayor que el anterior.</p></li>
 <li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> es <em>estrictamente decreciente</em> si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n &gt; a_{n+1}\)</span>. Es decir, que cada término es estrictamente menor que el anterior.</p></li>
 <li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada superiormente</em> si existe un número <span class="math inline">\(M\)</span> tal que <span class="math inline">\(a_n ≤ M\)</span> para todo <span class="math inline">\(n\)</span>. Es decir, que hay un valor <span class="math inline">\(M\)</span> que es mayor o igual que cualquier término de la sucesión. Se dice que <span class="math inline">\(M\)</span> es una <em>cota superior</em> de la sucesión.</p></li>
-<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada inferiormente</em> si existe un numero <span class="math inline">\(M\)</span> tal que <span class="math inline">\(a_n ≥ M\)</span> para todo <span class="math inline">\(n\)</span>. Es decir, que hay un valor <span class="math inline">\(M\)</span> que es menor o igual que cualquier término de la sucesión. Se dice que <span class="math inline">\(M\)</span> es una <em>cota inferior</em> de la sucesión.</p></li>
+<li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada inferiormente</em> si existe un número <span class="math inline">\(M\)</span> tal que <span class="math inline">\(a_n ≥ M\)</span> para todo <span class="math inline">\(n\)</span>. Es decir, que hay un valor <span class="math inline">\(M\)</span> que es menor o igual que cualquier término de la sucesión. Se dice que <span class="math inline">\(M\)</span> es una <em>cota inferior</em> de la sucesión.</p></li>
 <li><p>Decimos que una sucesión <span class="math inline">\(\{a_n\}\)</span> está <em>acotada</em> si está acotada superiormente e inferiormente.</p></li>
 </ul>
 <hr />
@@ -328,7 +328,7 @@ Como <span class="math inline">\(n ≥ 0\)</span>, esto se cumple siempre. Nóte
 <p>Teniendo en cuenta que <span class="math inline">\(26.01 = 16.82 +9.2\)</span> y que <span class="math inline">\(10.2n = 8.2n + 2n\)</span> podemos reescribir el numerador como
 <span class="math display">\[\frac{(n^{2} + 16.81 - 8.2 n) + (9.2 - 2 n)}{n^{2} + 16.81 - 8.2 n}
 = 1 + \frac{9.2 - 2 n}{n^{2} + 16.81 - 8.2 n}\]</span></p>
-<p>Y ahora todo se reduce a saber si la fracción es positiva o negativa. Es fácil ver que el numerador es positivo para <span class="math inline">\(n&lt;5\)</span> y negativo para <span class="math inline">\(n ≥ 5\)</span>. Para el denominador podríamos resolver la ecuación de segundo grado. Pero si nos damos cuenta que para valores grandes de <span class="math inline">\(n\)</span> es positivo, podemos probar alguno valores menores y nos damos cuenta de que siempre es positivo. En resumen, la fracción es positiva para <span class="math inline">\(n &lt; 5\)</span> y negativa para <span class="math inline">\(n ≥ 5\)</span>.</p>
+<p>Y ahora todo se reduce a saber si la fracción es positiva o negativa. Es fácil ver que el numerador es positivo para <span class="math inline">\(n&lt;5\)</span> y negativo para <span class="math inline">\(n ≥ 5\)</span>. Para el denominador podríamos resolver la ecuación de segundo grado. Pero si nos damos cuenta que para valores grandes de <span class="math inline">\(n\)</span> es positivo, podemos probar algunos valores menores y nos damos cuenta de que siempre es positivo. En resumen, la fracción es positiva para <span class="math inline">\(n &lt; 5\)</span> y negativa para <span class="math inline">\(n ≥ 5\)</span>.</p>
 <p>De aquí deducimos que <span class="math inline">\(\frac{a_{n+1}}{a_{n}} &gt; 1\)</span>, y por lo tanto la sucesión es creciente, para <span class="math inline">\(n &lt; 5\)</span> y <span class="math inline">\(\frac{a_{n+1}}{a_{n}} &gt; 1\)</span>, y por lo tanto lo tanto la sucesión es decreciente, para <span class="math inline">\(n≥5\)</span>. Como para ciertos valores de <span class="math inline">\(n\)</span> es creciente y para otros es decreciente, esta sucesión no es monótona.</p>
 </div>
 
@@ -345,12 +345,12 @@ Como la sucesión tiene cota superior y cota inferior, la sucesión está acotad
 </div>
 <div id="representación-gráfica-de-una-sucesión" class="section level2">
 <h2><span class="header-section-number">3.5</span> Representación gráfica de una sucesión</h2>
-<p>Nuestros ojos son muy poderosos y visualizar una sucesión nos puede resultar muy útil para coger una idea de cómmo se comporta. Hay dos maneras habituales de respresentar gráficamente una sucesión: la recta real y el plano cartesiano.</p>
+<p>Nuestros ojos son muy poderosos y visualizar una sucesión nos puede resultar muy útil para coger una idea de cómo se comporta. Hay dos maneras habituales de representar gráficamente una sucesión: la recta real y el plano cartesiano.</p>
 <p>Usemos como primer ejemplo la sucesion <span class="math inline">\(\{a_n = n/(n+1)\}\)</span>. Sus primeros términos son 1/2, 2/3, 3/4, 4/5, 5/6… La primera forma de representación es simplemente coger la recta real y marcar todos los términos de la sucesión:</p>
 <p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>Esta representación nos permite ver los infinitos términos de una sucesión acotada, pero perdemos la información de qué punto corresponde a qué término.</p>
-<p>La segunda forma de representación es el plano cartesiano: en el eje X tenemos <span class="math inline">\(n\)</span> y en el eje Y tenemos <span class="math inline">\(a_n\)</span>:
-<img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>La segunda forma de representación es el plano cartesiano: en el eje X tenemos <span class="math inline">\(n\)</span> y en el eje Y tenemos <span class="math inline">\(a_n\)</span>:</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>Con esta gráfica podemos ver la “evolución” de la sucesión al aumentar <span class="math inline">\(n\)</span>, pero nunca podremos ver más allá de unos pocos términos. Qué representación es mejor depende de cada caso.</p>
 <p>Veamos otro ejemplo: <span class="math inline">\(a_n = \sin(n)/n\)</span>. La primera representación sería</p>
 <p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
@@ -360,11 +360,11 @@ Como la sucesión tiene cota superior y cota inferior, la sucesión está acotad
 </div>
 <div id="limsuc" class="section level2">
 <h2><span class="header-section-number">3.6</span> Límites de sucesiones</h2>
-<p>La sucesión <span class="math inline">\(\{a_n = n\}\)</span> crece y crece y no tiende a ningún valor. En cambio las dos sucesiones que hemos visto en el apartado anterior, <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> y <span class="math inline">\(\{a_n = \sin(n)/n\}\)</span> sí que parece que tienden a algún valor: la primera se va acercando a 1 y la segunda se va acercando a 0. Pero qué queremos decir con “tiende a”. Informalmente queremos decir que se va acercando más y más al valor en cuestión y llega un momento en el que nunca se aleja, que acaban estando tan cerca como queramos no sólo para un valor de <span class="math inline">\(n\)</span>, sino para todos los valores de <span class="math inline">\(n\)</span> a partir de un cierto momento.</p>
+<p>La sucesión <span class="math inline">\(\{a_n = n\}\)</span> crece y crece y no tiende a ningún valor. En cambio las dos sucesiones que hemos visto en el apartado anterior, <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> y <span class="math inline">\(\{a_n = \sin(n)/n\}\)</span> sí que parece que tienden a algún valor: la primera se va acercando a 1 y la segunda se va acercando a 0. ¿Pero qué queremos decir con “tiende a”? Informalmente queremos decir que se va acercando más y más al valor en cuestión y llega un momento en el que nunca se aleja, que acaban estando tan cerca como queramos no sólo para un valor de <span class="math inline">\(n\)</span>, sino para todos los valores de <span class="math inline">\(n\)</span> a partir de un cierto momento.</p>
 <p>Cuando esto sucede, decimos que el límite de la sucesión es este valor y que la sucesión <em>converge</em>. Si en cambio nunca se acerca definitivamente a un valor decimos que no tiene límite y que la sucesión <em>diverge</em>.</p>
 <p>Ya hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiene límite 1, o que converge hacia 1. También hemos dicho, y es fácil de ver, que la sucesión <span class="math inline">\(\{a_n = n\}\)</span> crece sin límite, y por lo tanto diverge. Hay otro caso que conviene considerar. Sea la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… que sube y baja sin cesar en forma de sierra:</p>
 <p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
-<p>Esta sucesión no tiende a ningún valor y no se acerca definitivamente a ningún valor, nunca se acaba de decidir. Esta sucesión no se hace infinitamente grande, pero no tiene límite y también diverge.</p>
+<p>Esta sucesión no tiende a ningún valor y no se acerca definitivamente a ningún valor: nunca se acaba de decidir. Esta sucesión no se hace infinitamente grande, pero, al no tender a ningún valor, no tiene límite y también diverge.</p>
 <div id="definición-formal-de-limite-de-una-sucesión" class="section level3">
 <h3><span class="header-section-number">3.6.1</span> Definición formal de limite de una sucesión</h3>
 <p>Sea una sucesión <span class="math inline">\(\{a_n\}\)</span>. Decimos que esta sucesión tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(n\)</span> tiende a infinito si para cualquier distancia <span class="math inline">\(\varepsilon\)</span> que nosotros queramos, tan pequeña como queramos, existe un cierto término de la sucesión <span class="math inline">\(N\)</span>, tal que a partir de este término, todos los términos de la sucesión están más cerca de <span class="math inline">\(L\)</span> que <span class="math inline">\(\varepsilon\)</span>. De forma más “matemática”, más rigurosa y abstracta:</p>
@@ -403,54 +403,54 @@ Como la sucesión <span class="math inline">\(\{a_n = \frac{1}{n}\}\)</span> es 
 <h3><span class="header-section-number">3.6.3</span> Ejemplos</h3>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-13" class="example"><strong>Ejemplo 3.6  </strong></span>Hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiende al valor 1. Vamos a demostrar que el límite de esta sucesión es efectivamente 1.</p>
+<span id="exm:unnamed-chunk-13" class="example"><strong>Ejemplo 3.6  </strong></span>Hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiende al valor 1. Vamos a demostrar que el límite de esta sucesión es efectivamente 1.
+</div>
+
 <p>Como la sucesión es siempre menor que 1, podemos escribir <span class="math inline">\(|a_n – L| &lt; \varepsilon\)</span> como <span class="math inline">\((1 - \frac{n}{n+1}) &lt; \varepsilon\)</span> sin el valor absoluto y entonces tenemos</p>
 <p><span class="math display">\[1 - \frac{n}{n+1}  = \frac{n+1-n}{n} = \frac{1}{n+1} &lt; \varepsilon\]</span></p>
 <p>que podemos reescribir como
 <span class="math display">\[ \frac{1}{\varepsilon} &lt; n+1\]</span>
 y despejando la <span class="math inline">\(n\)</span> nos queda
 <span class="math display">\[n &gt; \frac{1}{\varepsilon} - 1. \]</span></p>
-Y ahora para cualquier valor de <span class="math inline">\(\varepsilon\)</span> que queramos podemos calcular el término a partir del cual la sucesión está siempre más cerca del valor del límite que <span class="math inline">\(\varepsilon\)</span>. Por ejemplo, para <span class="math inline">\(\varepsilon = 0,01\)</span> sabemos que para <span class="math inline">\(n &gt; (1/0,01) - 1 = 99\)</span> la sucesión siempre estará a menos de 0,01 de 1. Para <span class="math inline">\(\varepsilon = 0,0005\)</span> sabemos que para <span class="math inline">\(n &gt; (1/0,0005) - 1 = 1999\)</span> la sucesión siempre estará a menos de 0,0005 de 1.
-</div>
-
+<p>Y ahora para cualquier valor de <span class="math inline">\(\varepsilon\)</span> que queramos podemos calcular el término a partir del cual la sucesión está siempre más cerca del valor del límite que <span class="math inline">\(\varepsilon\)</span>. Por ejemplo, para <span class="math inline">\(\varepsilon = 0,01\)</span> sabemos que para <span class="math inline">\(n &gt; (1/0,01) - 1 = 99\)</span> la sucesión siempre estará a menos de 0,01 de 1. Para <span class="math inline">\(\varepsilon = 0,0005\)</span> sabemos que para <span class="math inline">\(n &gt; (1/0,0005) - 1 = 1999\)</span> la sucesión siempre estará a menos de 0,0005 de 1.</p>
 <hr />
-<p>La otra sucesion para la que hicimos las representaciones gráficas fue <span class="math inline">\(\{sen(n)/n\}\)</span> y vimos que tiende a 0. Podríamos pensar que ese <span class="math inline">\(\sin(n)\)</span> nos iba hacer muy complicado demostrar que tiene límite. Pero en estos casos hay un truco simple y útil: buscamos una sucesión que está más alejada y que de todas formas tiende a 0. Para simplificar la explicación vamos a considerar sólo los casos positivos (se haría igual con los negativos). Como <span class="math inline">\(\sin(n) ≤ 1\)</span>, en vez de <span class="math inline">\(\{\sin(n)/n\}\)</span> consideramos la sucesión <span class="math inline">\(\{1/n\}\)</span>. Si para cualquier <span class="math inline">\(\varepsilon\)</span> puedo encontrar un valor de <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n&gt;N\)</span> <span class="math inline">\(|(1/n) - 0| &lt; \varepsilon\)</span>, con más razón <span class="math inline">\(|(\sin(n)/n) - 0|\)</span>, que es menor, va a estar más cerca del 0.</p>
+<p>La otra sucesion para la que hicimos las representaciones gráficas fue <span class="math inline">\(\{\sin(n)/n\}\)</span> y vimos que tiende a 0. Podríamos pensar que ese <span class="math inline">\(\sin(n)\)</span> nos iba hacer muy complicado demostrar que tiene límite. Pero en estos casos hay un truco simple y útil: buscamos una sucesión que está más alejada y que de todas formas tiende a 0. Para simplificar la explicación vamos a considerar sólo los casos positivos (se haría igual con los negativos). Como <span class="math inline">\(\sin(n) ≤ 1\)</span>, en vez de <span class="math inline">\(\{\sin(n)/n\}\)</span> consideramos la sucesión <span class="math inline">\(\{1/n\}\)</span>. Si para cualquier <span class="math inline">\(\varepsilon\)</span> puedo encontrar un valor de <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n&gt;N\)</span> <span class="math inline">\(|(1/n) - 0| &lt; \varepsilon\)</span>, con más razón <span class="math inline">\(|(\sin(n)/n) - 0|\)</span>, que es menor, va a estar más cerca del 0.</p>
 <p>Es un buen ejercicio en estos momentos demostrar que efectivamente <span class="math inline">\(lim_{n \to \infty} (1/n) = 0\)</span>.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-14" class="example"><strong>Ejemplo 3.7  </strong></span>Vamos a demostrar que la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… no tiene límite.</p>
-Escojamos un valor de <span class="math inline">\(\varepsilon\)</span> menor que 1. Por ejemplo <span class="math inline">\(\varepsilon = 0,7\)</span>. Entonces no hay ningún valor <span class="math inline">\(L\)</span> tal que el intervalo <span class="math inline">\((L - 0.7, L + 0.7)\)</span> cubra el 0, el 1 y el 2. Como hemos encontrado un valor de <span class="math inline">\(\varepsilon\)</span> que hace que no se cumpla la condición, la sucesión no tiene límite.
+<span id="exm:unnamed-chunk-14" class="example"><strong>Ejemplo 3.7  </strong></span>Vamos a demostrar que la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… no tiene límite.
 </div>
 
+<p>Escojamos un valor de <span class="math inline">\(\varepsilon\)</span> menor que 1. Por ejemplo <span class="math inline">\(\varepsilon = 0,7\)</span>. Entonces no hay ningún valor <span class="math inline">\(L\)</span> tal que el intervalo <span class="math inline">\((L - 0.7, L + 0.7)\)</span> cubra el 0, el 1 y el 2. Como hemos encontrado un valor de <span class="math inline">\(\varepsilon\)</span> que hace que no se cumpla la condición, la sucesión no tiene límite.</p>
 <hr />
 <p>Nótese que para que haya límite debo poder encontrar el valor de <span class="math inline">\(N\)</span> para cualquier valor de <span class="math inline">\(\varepsilon\)</span>. Pero para que no la haya, basta encontrar un valor de <span class="math inline">\(\varepsilon\)</span> para el que no haya ningún valor de <span class="math inline">\(N\)</span>.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-15" class="example"><strong>Ejemplo 3.8  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{n^2 - n \}\)</span> no tiene límite.</p>
+<span id="exm:unnamed-chunk-15" class="example"><strong>Ejemplo 3.8  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{n^2 - n \}\)</span> no tiene límite.
+</div>
+
 <p>Es fácil ver que esta sucesión crece sin límite. Vamos a demostrar que la sucesión no se acerca a ningún valor, sino que se <em>aleja</em> de cualquier valor <span class="math inline">\(L\)</span>. Es decir, para cualquier valor <span class="math inline">\(L\)</span> hay un <span class="math inline">\(N\)</span> tal que para valores <span class="math inline">\(n &gt; N\)</span> la sucesión es siempre mayor que <span class="math inline">\(L\)</span>.</p>
 <p>Si <span class="math inline">\(a_n &gt; L\)</span> entonces <span class="math inline">\(a_n - L &gt; 0\)</span>. Esto queda como:
 <span class="math display">\[n^2 - n - L &gt;0\]</span>
 Podemos resolver la ecuación de segundo grado y quedarnos sólo con el valor positivo de <span class="math inline">\(n\)</span> y nos queda
 <span class="math display">\[n &gt; \frac{1 + \sqrt{1 + 4L}}{2} = \frac{1}{2} + \sqrt{\frac{1}{4} + L}\]</span></p>
-Luego para cualquier <span class="math inline">\(L\)</span>, por grande que lo hagamos, tenemos un valor de <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(N &gt; n\)</span>, <span class="math inline">\(a_n &gt; L\)</span>. No tiene límite.
-</div>
-
+<p>Luego para cualquier <span class="math inline">\(L\)</span>, por grande que lo hagamos, tenemos un valor de <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(N &gt; n\)</span>, <span class="math inline">\(a_n &gt; L\)</span>. No tiene límite.</p>
 </div>
 </div>
 <div id="oplimsuc" class="section level2">
 <h2><span class="header-section-number">3.7</span> Operaciones con sucesiones</h2>
-<p>Supongamos que tenemos una sucesión <span class="math inline">\(a_n = 1, 2, 3, 4,…\)</span> y otra sucesión <span class="math inline">\(b_n = -1, -3, -5, -7, …\)</span> Podemos definir la suma de estas sucesiones como la suma término a término: <span class="math inline">\(1-1, 2-3, 3-5, 4-7,… = 0, -1, -2, -3,…\)</span>. Formalmente, sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y una operación <span class="math inline">\(\circ\)</span>. Definimos la sucesión <span class="math inline">\(\{c_n\} = \{a_n\} \circ \{b_n\}\)</span> como la sucesión <span class="math inline">\(a_1 \circ b_1, a_2 \circ b_2, a_3 \circ b_3,…\)</span>. El término general de la sucesión <span class="math inline">\(\{c_n\}\)</span> es <span class="math inline">\(a_n \circ b_n\)</span>. Por ejemplo para el caso de la suma esto se resume en la frase “el límite de la suma es la suma de los límites”. Y lo mismo para las demás operaciones.</p>
+<p>Supongamos que tenemos una sucesión <span class="math inline">\(a_n = 1, 2, 3, 4,…\)</span> y otra sucesión <span class="math inline">\(b_n = -1, -3, -5, -7, …\)</span> Podemos definir la suma de estas sucesiones como la suma término a término: <span class="math inline">\(1-1, 2-3, 3-5, 4-7,… = 0, -1, -2, -3,…\)</span>. Formalmente, sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y una operación <span class="math inline">\(\circ\)</span>. Definimos la sucesión <span class="math inline">\(\{c_n\} = \{a_n\} \circ \{b_n\}\)</span> como la sucesión <span class="math inline">\(a_1 \circ b_1, a_2 \circ b_2, a_3 \circ b_3,…\)</span>. El término general de la sucesión <span class="math inline">\(\{c_n\}\)</span> es <span class="math inline">\(a_n \circ b_n\)</span>. Por ejemplo para el caso de la suma, la sucesión suma es la sucesión en la que se suman los términos uno a uno. Y lo mismo para las demás operaciones.</p>
 <p>Las operaciones más habituales son las aritméticas: <span class="math inline">\(\{a_n + b_n\}\)</span>, <span class="math inline">\(\{a_n - b_n\}\)</span>, <span class="math inline">\(\{a_n \cdot b_n\}\)</span>, <span class="math inline">\(\{a_n / b_n\}\)</span>. Pero también se usa la potenciación <span class="math inline">\(a_n^{b_n}\)</span>.</p>
-<p>Las operaciones con sucesiones son muy interesantes pues facilita el cálculo de límites Tenemos las sucesiones <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> y <span class="math inline">\(\{c_n\} = \{a_n\} \circ \{b_n\}\)</span> y tenemos que los límites de <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> existen y son <span class="math inline">\(\lim_{n \to \infty}a_n = A\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = B\)</span>. Entonces, en general, <span class="math inline">\(\lim_{n \to \infty}c_n = A\circ B\)</span>. Hay excepciones que veremos un poco más adelante.</p>
+<p>Las operaciones con sucesiones son muy interesantes pues facilita el cálculo de límites Tenemos las sucesiones <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> y <span class="math inline">\(\{c_n\} = \{a_n\} \circ \{b_n\}\)</span> y tenemos que los límites de <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> existen y son <span class="math inline">\(\lim_{n \to \infty}a_n = A\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = B\)</span>. Entonces, en general, <span class="math inline">\(\lim_{n \to \infty}c_n = A\circ B\)</span>. En el caso de la suma esto se resume en la frase “el límite de la suma es la suma de los límites”. Y lo mismo con las demás operaciones, aunque hay excepciones que veremos un poco más adelante.</p>
 
 <div class="example">
 <p><span id="exm:unnamed-chunk-16" class="example"><strong>Ejemplo 3.9  </strong></span>Sea <span class="math inline">\(\{a_n = 3 + (1/n)\}\)</span> y <span class="math inline">\(\{ b_n = 2 - (1/n^2)\}\)</span>. Es fácil ver y demostrar que <span class="math inline">\(\lim_{n \to \infty}a_n = 3\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = 2\)</span>. Entonces</p>
 <span class="math display">\[\begin{align}
-lim_{n \to \infty} (a_n + b_n) &amp;= \lim_{n \to \infty}a_n + \lim_{n \to \infty}b_n = 3 + 2 = 5\\
-lim_{n \to \infty} (a_n - b_n) &amp;= \lim_{n \to \infty}a_n - \lim_{n \to \infty}b_n = 3 - 2 = 1\\
-lim_{n \to \infty} (a_n \cdot b_n) &amp;= \lim_{n \to \infty}a_n \cdot \lim_{n \to \infty}b_n = 3 \cdot 2 = 6\\
-lim_{n \to \infty} \frac{a_n}{b_n} &amp;= \frac{\lim_{n \to \infty}a_n}{\lim_{n \to \infty}b_n} = \frac{3}{2} = 1,5\\
-lim_{n \to \infty} a_n^{b_n} &amp;= \lim_{n \to \infty}a_n^{\lim_{n \to \infty}b_n} = 3^2 = 9
+\lim_{n \to \infty} (a_n + b_n) &amp;= \lim_{n \to \infty}a_n + \lim_{n \to \infty}b_n = 3 + 2 = 5\\
+\lim_{n \to \infty} (a_n - b_n) &amp;= \lim_{n \to \infty}a_n - \lim_{n \to \infty}b_n = 3 - 2 = 1\\
+\lim_{n \to \infty} (a_n \cdot b_n) &amp;= \lim_{n \to \infty}a_n \cdot \lim_{n \to \infty}b_n = 3 \cdot 2 = 6\\
+\lim_{n \to \infty} \frac{a_n}{b_n} &amp;= \frac{\lim_{n \to \infty}a_n}{\lim_{n \to \infty}b_n} = \frac{3}{2} = 1,5\\
+\lim_{n \to \infty} a_n^{b_n} &amp;= \lim_{n \to \infty}a_n^{\lim_{n \to \infty}b_n} = 3^2 = 9
 \end{align}\]</span>
 </div>
 
@@ -534,16 +534,16 @@ Difundimos los límites y queda:
 </div>
 <div id="indeterminación-1infty" class="section level3">
 <h3><span class="header-section-number">3.9.3</span> Indeterminación <span class="math inline">\(1^\infty\)</span></h3>
-<p>Sea la sucesión <span class="math inline">\(\{c_n = (1 + \frac{1}{n})^n\}\)</span>. Tenemos la sucesión <span class="math inline">\(\{a_n = (1 + \frac{1}{n})\}\)</span> que tiene límite 1, elevada a la sucesión <span class="math inline">\(\{b_n = n\}\)</span> que tiene límite , luego en una indeterminación del tipo <span class="math inline">\(1^\infty\)</span>. Se puede demostrar que esta sucesión tiene límite y que este límite es el número <span class="math inline">\(e\)</span>.</p>
+<p>Sea la sucesión <span class="math inline">\(\{c_n = (1 + \frac{1}{n})^n\}\)</span>. Tenemos la sucesión <span class="math inline">\(\{a_n = (1 + \frac{1}{n})\}\)</span> que tiene límite 1, elevada a la sucesión <span class="math inline">\(\{b_n = n\}\)</span> que tiene límite <span class="math inline">\(\infty\)</span>, luego en una indeterminación del tipo <span class="math inline">\(1^\infty\)</span>. Se puede demostrar que esta sucesión tiene límite y que este límite es el número <span class="math inline">\(e\)</span>.</p>
 <p>Este resultado lo podemos generalizar. Dada cualquier sucesión <span class="math inline">\(\{a_n\}\)</span> tal que <span class="math inline">\(\lim_{n \to \infty} a_n = \pm\infty\)</span>, la sucesión <span class="math inline">\(\{c_n = (1 + \frac{1}{a_n})^{a_n}\}\)</span> tiene por límite el número <span class="math inline">\(e\)</span>.</p>
 <p>Una de las maneras de resolver este tipo de indeterminaciones es manipular la sucesión para que tenga una parte central de la forma <span class="math inline">\((1 + \frac{1}{a_n})^{a_n}\)</span>. Sea la sucesión
-<span class="math display">\[\{c_n = (1 + \frac{1}{n^2})^n\}\]</span>
+<span class="math display">\[\{c_n = \left(1 + \frac{1}{n^2}\right)^n\}\]</span>
 Queremos manipular el exponente de manera que aparezca un <span class="math inline">\(n^2\)</span>. No es difícil:
-<span class="math display">\[(1 + \frac{1}{n^2})^{n^2 \frac{1}{n}}\]</span>
+<span class="math display">\[\left(1 + \frac{1}{n^2}\right)^{n^2 \frac{1}{n}}\]</span>
 Y ahora:
-<span class="math display">\[\lim_{n \to \infty} (1 + \frac{1}{n^2})^{n^2 \frac{1}{n}} =
-\lim_{n \to \infty} ((1 + \frac{1}{n^2})^{n^2})^\frac{1}{n} =
-(\lim_{n \to \infty} (1 + \frac{1}{n^2})^{n^2})^{\lim_{n \to \infty} 1/n}
+<span class="math display">\[\lim_{n \to \infty} \left(1 + \frac{1}{n^2}\right)^{n^2 \frac{1}{n}} =
+\lim_{n \to \infty} \left((1 + \frac{1}{n^2})^{n^2}\right)^\frac{1}{n} =
+\left(\lim_{n \to \infty} \left(1 + \frac{1}{n^2}\right)^{n^2}\right)^{\lim_{n \to \infty} 1/n}
 = e^0 = 1\]</span></p>
 <p>A veces la manipulación es un poco más complicada, como en el siguiente ejemplo.</p>
 
@@ -572,18 +572,18 @@ Y ya podemos calcular el límite:
 <p>El caso más interesante es cuando <span class="math inline">\(\lim_{n \to \infty} \{b_n\} = \lim_{n \to \infty} \{a_n\}\)</span>, porque entonces los tres límites han de ser iguales: <span class="math inline">\(\lim_{n \to \infty} \{b_n\} = \lim_{n \to \infty} \{c_n\} = \lim_{n \to \infty} \{a_n\}\)</span>. Esta regla del encaje nos es muy útil en algunos casos, por ejemplo si tenemos funciones trigonométricas.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-20" class="example"><strong>Ejemplo 3.13  </strong></span>Calcule el límite de la sucesión de término general
-<span class="math display">\[\frac{n - \cos(nπ)}{3n}\]</span></p>
-Como el valor del coseno está siempre entre <span class="math inline">\(-1\)</span> y <span class="math inline">\(1\)</span>, podemos crear con facilidad dos sucesiones encajadas:
+<span id="exm:unnamed-chunk-20" class="example"><strong>Ejemplo 3.13  </strong></span>Calcule el límite de la sucesión de término general
+<span class="math display">\[\frac{n - \cos(nπ)}{3n}\]</span>
+</div>
+
+<p>Como el valor del coseno está siempre entre <span class="math inline">\(-1\)</span> y <span class="math inline">\(1\)</span>, podemos crear con facilidad dos sucesiones encajadas:
 <span class="math display">\[\frac{n - 1}{3n} ≤ \frac{n - \cos(nπ)}{3n} ≤ \frac{n +1}{3n}\]</span>
 Ahora aplicamos límites:
 <span class="math display">\[\lim_{n \to \infty}\frac{n - 1}{3n} ≤ \lim_{n \to \infty}\frac{n - \cos(nπ)}{3n} ≤ \lim_{n \to \infty}\frac{n +1}{3n}\]</span>
 y tenemos que
 <span class="math display">\[\frac{1}{3} ≤ \lim_{n \to \infty}\frac{n - \cos(nπ)}{3n} ≤ \frac{1}{3}\]</span>
 Y ya tenemos nuestro límite:
-<span class="math display">\[\lim_{n \to \infty}\frac{n - \cos(nπ)}{3n} = \frac{1}{3}\]</span>
-</div>
-
+<span class="math display">\[\lim_{n \to \infty}\frac{n - \cos(nπ)}{3n} = \frac{1}{3}\]</span></p>
 </div>
 <div id="jerinf" class="section level3">
 <h3><span class="header-section-number">3.10.2</span> Jerarquía de infinitos</h3>
