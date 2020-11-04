@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -351,19 +353,19 @@ recibe el nombre de integral <em>definida</em> y el resultado es, en general, un
 <p>Muy a menudo las funciones a integrar no tienen exactamente la forma del cuadro de primitivas elementales y hay que manipularlas un poco. Para esto tenemos estos tres teoremas. Si recordamos que una integral es la supericie bajo la curva, son casi evidentes y no vamos a demostrar su veracidad. Sólo demostraremos su uso.</p>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-110" class="theorem"><strong>Teorema 11.1  </strong></span><span class="math display">\[\int cf(x) dx = c \int f(x) dx\]</span>
+<span id="thm:unnamed-chunk-113" class="theorem"><strong>Teorema 11.1  </strong></span><span class="math display">\[\int cf(x) dx = c \int f(x) dx\]</span>
 </div>
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-111" class="example"><strong>Ejemplo 11.1  </strong></span>Calcula <span class="math inline">\(\int 3 \cos (x) dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-114" class="example"><strong>Ejemplo 11.1  </strong></span>Calcula <span class="math inline">\(\int 3 \cos (x) dx\)</span>.</p>
 La solución en este caso es muy simple:
 <span class="math display">\[\int 3 \cos (x) dx = 3\int  \cos (x) dx = 3 \sin(x)\]</span>
 </div>
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-112" class="example"><strong>Ejemplo 11.2  </strong></span>Calcula <span class="math inline">\(\int \frac{dx}{\sqrt{6x}}\)</span>.</p>
+<p><span id="exm:unnamed-chunk-115" class="example"><strong>Ejemplo 11.2  </strong></span>Calcula <span class="math inline">\(\int \frac{dx}{\sqrt{6x}}\)</span>.</p>
 La solución en este caso es un poco menos obvia:
 <span class="math display">\[\int \frac{dx}{\sqrt{6x}} = \int \frac{dx}{\sqrt{6}\sqrt{x}} = \int \frac{1}{\sqrt{6}}\frac{dx}{\sqrt{x}} =  \frac{1}{\sqrt{6}} \int\frac{dx}{\sqrt{x}} = \frac{1}{\sqrt{6}}\, 2\sqrt{x}\]</span>
 </div>
@@ -372,12 +374,12 @@ La solución en este caso es un poco menos obvia:
 El segundo teorema nos permite tratar la suma y resta de funciones.
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-113" class="theorem"><strong>Teorema 11.2  </strong></span><span class="math display">\[\int (f(x) \pm g(x)) dx = \int f(x) dx \pm \int g(x) dx\]</span>
+<span id="thm:unnamed-chunk-116" class="theorem"><strong>Teorema 11.2  </strong></span><span class="math display">\[\int (f(x) \pm g(x)) dx = \int f(x) dx \pm \int g(x) dx\]</span>
 </div>
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-114" class="example"><strong>Ejemplo 11.3  </strong></span>Calcula <span class="math inline">\(\int (\frac{1}{x} + 3e^x) dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-117" class="example"><strong>Ejemplo 11.3  </strong></span>Calcula <span class="math inline">\(\int (\frac{1}{x} + 3e^x) dx\)</span>.</p>
 Este ejemplo es otra vez muy simple:
 <span class="math display">\[\int (\frac{1}{x} + 3e^x) dx = \int \frac{1}{x}dx + \int 3e^x dx =
 \log(|x|) + 3 e^x \]</span>
@@ -385,7 +387,7 @@ Este ejemplo es otra vez muy simple:
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-115" class="example"><strong>Ejemplo 11.4  </strong></span>Calcula <span class="math inline">\(\int \frac{x+5}{x^2} dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-118" class="example"><strong>Ejemplo 11.4  </strong></span>Calcula <span class="math inline">\(\int \frac{x+5}{x^2} dx\)</span>.</p>
 Necesitamos una simple manipulación algebraica:
 <span class="math display">\[\int \frac{x+5}{x^2} dx = \int (\frac{x}{x^2} + \frac{5}{x^2}) dx =
 \int (\frac{1}{x} + \frac{5}{x^2}) dx = \log(|x|) + 5 \frac{x^3}{3}\]</span>
@@ -395,13 +397,13 @@ Necesitamos una simple manipulación algebraica:
 <p>Este tercer teorema no es realmente de cálculo de primitivas, sino de cálculo de integrales definidas. Debe aplicarse cuando la función está definida a trozos, o cuando en algún punto tenemos una discontinuidad o la función no es derivable.</p>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-116" class="theorem"><strong>Teorema 11.3  </strong></span>Dado un valor <span class="math inline">\(c\)</span> tal que <span class="math inline">\(a &lt; c &lt; b\)</span>, entonces
+<span id="thm:unnamed-chunk-119" class="theorem"><strong>Teorema 11.3  </strong></span>Dado un valor <span class="math inline">\(c\)</span> tal que <span class="math inline">\(a &lt; c &lt; b\)</span>, entonces
 <span class="math display">\[\int_a^b f(x) dx = \int_a^c f(x) dx + \int_c^b f(x) dx\]</span>
 </div>
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-117" class="example"><strong>Ejemplo 11.5  </strong></span>Calcula <span class="math inline">\(\int_{-3}^1 |x| dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-120" class="example"><strong>Ejemplo 11.5  </strong></span>Calcula <span class="math inline">\(\int_{-3}^1 |x| dx\)</span>.</p>
 <p>En el punto <span class="math inline">\(x=0\)</span> la función no es derivable, y debemos dividir nuestra integral en dos:</p>
 <span class="math display">\[\int_{-3}^1 |x| dx = \int_{-3}^0 -x\, dx \int_0^1 x\, dx = \left.\frac{-x^2}{2}\right|_{-3}^0 + \left.\frac{x^2}{2}\right|_0^1 = 
      \left(0 - \frac{-9}{2}\right) + \left(\frac{1}{2} - 0\right) = 5\]</span>
@@ -424,7 +426,7 @@ Y ahora hemos de deshacer el cambio:
 <p>Veamos algunos ejemplos más.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-118" class="example"><strong>Ejemplo 11.6  </strong></span>Calcula <span class="math inline">\(\int e^{-x/3} dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-121" class="example"><strong>Ejemplo 11.6  </strong></span>Calcula <span class="math inline">\(\int e^{-x/3} dx\)</span>.</p>
 <p>Este es un caso muy similar al del coseno hecho antes. El cambio de variable es <span class="math inline">\(-x/3 = u\)</span> lo que implica que <span class="math inline">\(dx = -3 du\)</span>. Y entonces nos queda</p>
 <span class="math display">\[\int e^{-x/3} dx = \int -3 e^u du = -3 e^u \]</span>
 Deshacemos el cambio de variable:
@@ -436,7 +438,7 @@ Deshacemos el cambio de variable:
 <p>Veamos algún caso un poco más complejo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-119" class="example"><strong>Ejemplo 11.7  </strong></span>Calcula <span class="math inline">\(\int \frac{3}{(x/2) - 1} dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-122" class="example"><strong>Ejemplo 11.7  </strong></span>Calcula <span class="math inline">\(\int \frac{3}{(x/2) - 1} dx\)</span>.</p>
 El 3 del numerador no nos molesta, lo podemos sacar fuera de la integral. Sabemos que <span class="math inline">\(\int \frac{dx}{x}\)</span> es el logaritmo, luego hacemos el cambio de variable <span class="math inline">\(\frac{x}{2} - 1 = u\)</span>, lo que implica que <span class="math inline">\(dx = 2\,du\)</span>. Entonces nos queda
 <span class="math display">\[\int \frac{3}{\frac{x}{2} - 1} dx = \int \frac{3}{u} 2\,du = 6\log(|u|). \]</span>
 Deshaciendo el cambio de variable nos queda:
@@ -445,7 +447,7 @@ Deshaciendo el cambio de variable nos queda:
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-120" class="example"><strong>Ejemplo 11.8  </strong></span>Calcula <span class="math inline">\(\int x\sqrt{3x^2 -5}\, dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-123" class="example"><strong>Ejemplo 11.8  </strong></span>Calcula <span class="math inline">\(\int x\sqrt{3x^2 -5}\, dx\)</span>.</p>
 Al ver esta integral es muy fácil que un novato se quede parado. No hay que desesperar, sino ir probando cosas. Hay una raíz cuadrada (o <span class="math inline">\(x^{1/2}\)</span>) y nos sabemos la primitiva inmediata de <span class="math inline">\(x^n\)</span> (si no se dominan las primitivas, es mucho más difícil ver esto). Probamos el cambio de variable <span class="math inline">\(u = 3x^2 -5\)</span>, lo que implica que <span class="math inline">\(du = 6x\, dx\)</span>. Tenemos un <span class="math inline">\(x\,dx\)</span>, y a partir de aquí todo es fácil:
 <span class="math display">\[\int x\sqrt{3x^2 -5} \,dx = \int \frac{1}{6} u^{1/2}du = 
        \frac{1}{6} \frac{2}{3}u^{3/2} \]</span>
@@ -457,7 +459,7 @@ Y ahora deshacemos el cambio de variable:
 <p>Vemos en este ejemplo que si en la función a integrar está una cosa y su derivada, el cambio de variable puede ser el camino.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-121" class="example"><strong>Ejemplo 11.9  </strong></span>Calcula <span class="math inline">\(\int \frac{\log(x)}{x}\,dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-124" class="example"><strong>Ejemplo 11.9  </strong></span>Calcula <span class="math inline">\(\int \frac{\log(x)}{x}\,dx\)</span>.</p>
 <p>Si dominamos las derivadas, casi nos salta a la vista que tenemos una cosa (<span class="math inline">\(\log(x)\)</span>) y su derivada (<span class="math inline">\(1/x\)</span>). Esto nos sugiere el cambio de variable <span class="math inline">\(u = \log(x)\)</span>, quedando <span class="math inline">\(du = \frac{dx}{x}\)</span>:</p>
 <span class="math display">\[\int \frac{\log(x)}{x}\,dx = \int u\, du = \frac{u^2}{2} = \frac{log^2(x)}{2} \]</span>
 </div>
@@ -466,7 +468,7 @@ Y ahora deshacemos el cambio de variable:
 <p>La técnica del cambio de variable permite resolver muchas más integrales, pero no todas, como vemos en el siguiente ejemplo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-122" class="example"><strong>Ejemplo 11.10  </strong></span>Calcula <span class="math inline">\(\int x^2 \cos(3x) \,dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-125" class="example"><strong>Ejemplo 11.10  </strong></span>Calcula <span class="math inline">\(\int x^2 \cos(3x) \,dx\)</span>.</p>
 Probamos el cambio de variable <span class="math inline">\(3x = u\)</span> lo que implica que <span class="math inline">\(dx = du\)</span>. Desgraciadamente tenemos un <span class="math inline">\(x^2\)</span> que nos impide continuar. Ese cambio de variable no va a resolver esta integral.
 </div>
 
@@ -517,7 +519,7 @@ las dos diagonales nos dan los dos productos, y la tercera fila es la integral, 
 <p>Vamos a ver 3 ejemplos de integración con el método DI, cada uno con sus características propias.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-123" class="example"><strong>Ejemplo 11.11  </strong></span>Calcula <span class="math inline">\(\int 5 x^2 \sin(3x) dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-126" class="example"><strong>Ejemplo 11.11  </strong></span>Calcula <span class="math inline">\(\int 5 x^2 \sin(3x) dx\)</span>.</p>
 <p>Este es una función similar a la vista. Vamos a derivar <span class="math inline">\(x^2\)</span> y a integrar <span class="math inline">\(\sin(3x)\)</span>. No es una integral inmediata, pero casi. Creamos la tabla DI:</p>
 <span class="math display">\[\begin{array}{ccc}
        &amp; D &amp;   I\\
@@ -534,7 +536,7 @@ Paramos porque hemos obtenido un 0 en la columna <span class="math inline">\(D\)
 <p>En este caso hemos parado cuando hemos obtenido un 0 en la fila <span class="math inline">\(D\)</span>. Esto no pasa siempre. Veamos un caso en el que tenemos otra condición de parada diferente.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-124" class="example"><strong>Ejemplo 11.12  </strong></span>Calcula <span class="math inline">\(\int x^2 \log(x) dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-127" class="example"><strong>Ejemplo 11.12  </strong></span>Calcula <span class="math inline">\(\int x^2 \log(x) dx\)</span>.</p>
 <p>Como no sabemos (todavía) integrar <span class="math inline">\(\log(x)\)</span>, vamos a integrar <span class="math inline">\(x^2\)</span> y derivar <span class="math inline">\(\log(x)\)</span>. Creamos la tabla DI:
 <span class="math display">\[\begin{array}{ccc}
        &amp; D &amp;   I\\
@@ -553,7 +555,7 @@ Recordamos que cada fila representa a una integral. Sabemos integrar la segunda 
 <p>La parada en esta caso la hemos hecho cuando hemos obtenido una fila que sabíamos integrar. Veamos una tercera condición de parada.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-125" class="example"><strong>Ejemplo 11.13  </strong></span>Calcula <span class="math inline">\(\int e^{2x} \cos(x) dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-128" class="example"><strong>Ejemplo 11.13  </strong></span>Calcula <span class="math inline">\(\int e^{2x} \cos(x) dx\)</span>.</p>
 Vamos a integrar <span class="math inline">\(e^{2x}\)</span> y derivar <span class="math inline">\(\cos(x)\)</span> (probad a hacerlo al revés). La tabla DI queda:
 <span class="math display">\[\begin{array}{ccc}
        &amp; D &amp;   I\\
@@ -589,7 +591,7 @@ Despejamos la integral, arreglamos un poco y nos queda:
 <p>Para acabar, vamos a integrar por partes algo que parece que no es un producto de dos funciones.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-126" class="example"><strong>Ejemplo 11.14  </strong></span>Calcula <span class="math inline">\(\int \log(x) dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-129" class="example"><strong>Ejemplo 11.14  </strong></span>Calcula <span class="math inline">\(\int \log(x) dx\)</span>.</p>
 Aunque parece que sólo hay una función, tenemos dos: <span class="math inline">\(\log(x)\)</span> y <span class="math inline">\(1\)</span>. Vamos a derivar <span class="math inline">\(\log(x)\)</span> y a integrar el 1. Nos queda:
 <span class="math display">\[\int \log(x) dx = x \log(x) - \int x \frac{1}{x}\, dx = x \log(x) - x\]</span>
 </div>
@@ -642,14 +644,14 @@ Desarrollamos, igualamos los polinomios de los numeradores y resolvemos el siste
 <p>Una vez hecha la parte algebraica, integrar es fácil. Nos quedan 3 tipos de fracciones que debemos integrar. Dos son inmediatas.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-127" class="example"><strong>Ejemplo 11.15  </strong></span>Calcula <span class="math inline">\(\int \frac{A}{x-a} dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-130" class="example"><strong>Ejemplo 11.15  </strong></span>Calcula <span class="math inline">\(\int \frac{A}{x-a} dx\)</span>.</p>
 Se puede hacer el cambio de variable <span class="math inline">\(u = x-a\)</span>, pero realmente ya deberíamos ver a simple vista que la solución es
 <span class="math display">\[\int \frac{A}{x-a} dx = A \log(|x-a|) \]</span>
 </div>
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-128" class="example"><strong>Ejemplo 11.16  </strong></span>Calcula <span class="math inline">\(\int \frac{A}{(x-a)^n} dx\)</span>.</p>
+<p><span id="exm:unnamed-chunk-131" class="example"><strong>Ejemplo 11.16  </strong></span>Calcula <span class="math inline">\(\int \frac{A}{(x-a)^n} dx\)</span>.</p>
 Quizá se ve mejor si reescribimos la integral como <span class="math inline">\(\int A(x-a)^{-n} dx\)</span>. Se puede hacer el cambio de variable <span class="math inline">\(u = x-a\)</span>, pero, otra vez, deberíamos ver a simple vista que la solución es
 <span class="math display">\[\int \frac{A}{(x-a)^n} dx = \frac{-A}{(n-1)(x-a)^{n-1}}  \]</span>
 </div>
@@ -691,7 +693,7 @@ Deshacemos el cambio de variable:
 <p>Acabemos con un último ejemplo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-129" class="example"><strong>Ejemplo 11.17  </strong></span>Calcula
+<p><span id="exm:unnamed-chunk-132" class="example"><strong>Ejemplo 11.17  </strong></span>Calcula
 <span class="math display">\[\int \frac{3x^3 - 3x^2 + 16x -17}{x^4 - 2x^3 + x^2 + 12x +8} \, dx\]</span></p>
 <p>Probando vemos que tiene una raíz en <span class="math inline">\(x = 1\)</span> (que resulta ser doble), y no tiene más raíces reales. Podemos escribir la función como
 <span class="math display">\[\frac{A_1}{x+1} + \frac{A_1}{(x+1)^2} + \frac{Mx + N}{x^2 - 4x + 8}\]</span></p>
@@ -739,7 +741,7 @@ Y ahora es inmediata
 <p>Uno podría pensar que siempre que la función tiende a <span class="math inline">\(\infty\)</span>, el área también lo va a hacer. Pero no es así.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-131" class="example"><strong>Ejemplo 11.18  </strong></span>Calcula
+<p><span id="exm:unnamed-chunk-134" class="example"><strong>Ejemplo 11.18  </strong></span>Calcula
 <span class="math display">\[\int_0^2 \frac{1}{\sqrt{4-x^2}} \, dx.\]</span></p>
 <p>Tenemos una discontinuidad en <span class="math inline">\(x=2\)</span>, luego escogemos un valor <span class="math inline">\(\varepsilon\)</span> menor que 2, calculamos la integral entre 0 y <span class="math inline">\(\varepsilon\)</span>, y después el límite cuando <span class="math inline">\(\varepsilon\)</span> tiende a 2.</p>
 <p>La integral es, casi, una de nuestra lista de inmediatas.</p>
@@ -783,7 +785,7 @@ Y este es nuestro valor aproximado de la integral.</p>
 <p>Veamos lo bueno que es este método.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-133" class="example"><strong>Ejemplo 11.19  </strong></span>Calcula mediante una aproximación por rectángulos <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
+<p><span id="exm:unnamed-chunk-136" class="example"><strong>Ejemplo 11.19  </strong></span>Calcula mediante una aproximación por rectángulos <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
 <p>Sabemos que el valor exacto de esta integral es <span class="math inline">\(\log(1) - \log(0.25) = 1.386294\)</span>.</p>
 <p>Vamos a coger 3 valores de <span class="math inline">\(N\)</span>: 10, 100 y 1000.</p>
 Para <span class="math inline">\(N = 10\)</span> obtenemos el valor 1.505761, no muy bueno. Para <span class="math inline">\(N = 100\)</span> mejoramos, 1.397615, aunque se desvía ya en el segundo decimal. Para <span class="math inline">\(N = 1000\)</span> el valor obtenido es 1.38742. Hemos mejorado, pero parece poca mejora para tanto esfuerzo.
@@ -813,7 +815,7 @@ Para <span class="math inline">\(N = 10\)</span> obtenemos el valor 1.505761, no
 <p>Veamos si es mejor que el de los rectángulos.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-135" class="example"><strong>Ejemplo 11.20  </strong></span>Calcula mediante una aproximación por trapecios <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
+<p><span id="exm:unnamed-chunk-138" class="example"><strong>Ejemplo 11.20  </strong></span>Calcula mediante una aproximación por trapecios <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
 <p>Sabemos que el valor exacto de esta integral es <span class="math inline">\(\log(1) - \log(0.25) = 1.386294\)</span>.</p>
 <p>Vamos a coger 3 valores de <span class="math inline">\(N\)</span>: 10, 100 y 1000.</p>
 <p>Para <span class="math inline">\(N = 10\)</span> obtenemos el valor 1.393261, que es mucho mejor que con los rectángulos. Para <span class="math inline">\(N = 100\)</span> tenemos 1.386365, que ya tiene 3 decimales exactos. Para <span class="math inline">\(N = 1000\)</span> el valor obtenido es 1.386295, que sólo varía en el sexto decimal.</p>
@@ -852,7 +854,7 @@ y_{i+2} &amp;= ax_{i+2}^2 + bx_{i+2} + c
 <p>El coste computacional del método de Simpson es prácticamente el mismo que el de los trapecios o el de los rectángulos. Veamos si es mejor.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-136" class="example"><strong>Ejemplo 11.21  </strong></span>Calcula mediante una aproximación por trapecios <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
+<p><span id="exm:unnamed-chunk-139" class="example"><strong>Ejemplo 11.21  </strong></span>Calcula mediante una aproximación por trapecios <span class="math inline">\(\int_{0.25}^{1} \frac{dx}{x}\)</span></p>
 <p>Sabemos que el valor exacto de esta integral es <span class="math inline">\(\log(1) - \log(0.25) = 1.386294361119\)</span> (vamos a necesitar todos estos decimales)</p>
 <p>Vamos a coger 3 valores de <span class="math inline">\(N\)</span>: 10, 100 y 1000.</p>
 <p>Para <span class="math inline">\(N = 10\)</span> obtenemos el valor 1.38652, que con tan pocos puntos ya tiene 3 decimales exactos. Para <span class="math inline">\(N = 100\)</span> tenemos 1.38629438, que ya tiene 8 decimales exactos. Para <span class="math inline">\(N = 1000\)</span> el valor obtenido es 1.386294361122, con 12 decimales buenos.</p>

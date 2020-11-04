@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -267,30 +269,30 @@ La función está bien definida en 0, pero como los límites laterales son disti
 <p>Como es casi siempre el caso en matemáticas, vamos a empezar por dar definiciones rigurosas a los conceptos que aparecen.</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-60" class="definition"><strong>Definición 7.1  </strong></span>Decimos que la función <span class="math inline">\(f(x)\)</span> es continua en el punto <span class="math inline">\(a\)</span> si
+<span id="def:unnamed-chunk-63" class="definition"><strong>Definición 7.1  </strong></span>Decimos que la función <span class="math inline">\(f(x)\)</span> es continua en el punto <span class="math inline">\(a\)</span> si
 <span class="math display">\[\lim_{x \to a}f(x) = f(a)\]</span>
 </div>
 
 <p>Esta definición nos da la continuidad en un punto. Nuestra idea intuitiva gráfica de continuidad es una función que no se “rompe”, que podemos trazar en un solo trazo. Pero nuestra definición de continuidad es de continuidad en <em>un punto</em>. Para conjuntar nuestra idea intuitiva con nuestra definición, hemos de definir continuidad en un intervalo. Empecemos por definir dos tipos de intervalos:</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-61" class="definition"><strong>Definición 7.2  </strong></span>Definimos el intervalo <em>abierto</em> <span class="math inline">\((a, b)\)</span> como todos los puntos entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, pero sin contar con los extremos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, es decir, todos los puntos <span class="math inline">\(x\)</span> tal que <span class="math inline">\(a &lt; x &lt; b\)</span>.
+<span id="def:unnamed-chunk-64" class="definition"><strong>Definición 7.2  </strong></span>Definimos el intervalo <em>abierto</em> <span class="math inline">\((a, b)\)</span> como todos los puntos entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, pero sin contar con los extremos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, es decir, todos los puntos <span class="math inline">\(x\)</span> tal que <span class="math inline">\(a &lt; x &lt; b\)</span>.
 </div>
 
 
 <div class="definition">
-<span id="def:unnamed-chunk-62" class="definition"><strong>Definición 7.3  </strong></span>Definimos el intervalo <em>cerrado</em> <span class="math inline">\([a, b]\)</span> como todos los puntos entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, incluyendo los extremos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, es decir, todos los puntos <span class="math inline">\(x\)</span> tal que <span class="math inline">\(a ≤ x ≤ b\)</span>.
+<span id="def:unnamed-chunk-65" class="definition"><strong>Definición 7.3  </strong></span>Definimos el intervalo <em>cerrado</em> <span class="math inline">\([a, b]\)</span> como todos los puntos entre <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, incluyendo los extremos <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span>, es decir, todos los puntos <span class="math inline">\(x\)</span> tal que <span class="math inline">\(a ≤ x ≤ b\)</span>.
 </div>
 
 <p>Ahora podemos definir continuidad en ambos tipos de intervalo:</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-63" class="definition"><strong>Definición 7.4  </strong></span>Decimos que una función <span class="math inline">\(f(x)\)</span> es continua en el intervalo abierto <span class="math inline">\((a, b)\)</span> si es continua en todos los puntos de <span class="math inline">\((a, b)\)</span>.
+<span id="def:unnamed-chunk-66" class="definition"><strong>Definición 7.4  </strong></span>Decimos que una función <span class="math inline">\(f(x)\)</span> es continua en el intervalo abierto <span class="math inline">\((a, b)\)</span> si es continua en todos los puntos de <span class="math inline">\((a, b)\)</span>.
 </div>
 
 
 <div class="definition">
-<span id="def:unnamed-chunk-64" class="definition"><strong>Definición 7.5  </strong></span>Decimos que una función <span class="math inline">\(f(x)\)</span> es continua en el intervalo cerrado <span class="math inline">\([a, b]\)</span> si es continua en el intervalo abierto <span class="math inline">\((a, b)\)</span> y se cumple que
+<span id="def:unnamed-chunk-67" class="definition"><strong>Definición 7.5  </strong></span>Decimos que una función <span class="math inline">\(f(x)\)</span> es continua en el intervalo cerrado <span class="math inline">\([a, b]\)</span> si es continua en el intervalo abierto <span class="math inline">\((a, b)\)</span> y se cumple que
 <span class="math display">\[\lim_{x\to a^+}f(x) = f(a) \quad \mbox{y} \lim_{x\to b^-}f(x) = f(b).\]</span>
 </div>
 
@@ -331,11 +333,11 @@ La función está bien definida en 0, pero como los límites laterales son disti
 <p>El caso de la composición de funciones es lo que es de esperar, pero un poco más complicado de expresar: <span class="math inline">\((g \circ f)(x)\)</span> es continua en <span class="math inline">\(a\)</span> si <span class="math inline">\(f(x)\)</span> es continua en <span class="math inline">\(a\)</span> y <span class="math inline">\(g(x)\)</span> es continua en <span class="math inline">\(f(a)\)</span>.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-65" class="example"><strong>Ejemplo 7.1  </strong></span>Estudia la continuidad de <span class="math inline">\(\tan x^2\)</span> en el intervalo <span class="math inline">\([0, 5]\)</span>.</p>
-En este caso <span class="math inline">\(f(x) = x^2\)</span> y <span class="math inline">\(g(x) = \tan x\)</span>. La función <span class="math inline">\(f(x)\)</span> no nos da problemas: es continua en todo <span class="math inline">\([0, 5]\)</span>. Ahora bien, <span class="math inline">\(\tan x\)</span> es continua si <span class="math inline">\(x ≠ (2n + 1)\frac{\pi}{2}\)</span>. Luego <span class="math inline">\(\tan x^2\)</span> tiene discontinuidades en los puntos <span class="math inline">\(x^2 = (2n + 1)\frac{\pi}{2}\)</span>: Es decir, la función <span class="math inline">\(\tan x^2\)</span> es continua en todo el intervalo <span class="math inline">\([0, 5]\)</span> excepto en los puntos
-<span class="math display">\[x = \sqrt{(2n + 1)\frac{\pi}{2}}.\]</span>
+<span id="exm:unnamed-chunk-68" class="example"><strong>Ejemplo 7.1  </strong></span>Estudia la continuidad de <span class="math inline">\(\tan x^2\)</span> en el intervalo <span class="math inline">\([0, 5]\)</span>.
 </div>
 
+<p>En este caso <span class="math inline">\(f(x) = x^2\)</span> y <span class="math inline">\(g(x) = \tan x\)</span>. La función <span class="math inline">\(f(x)\)</span> no nos da problemas: es continua en todo <span class="math inline">\([0, 5]\)</span>. Ahora bien, <span class="math inline">\(\tan x\)</span> es continua si <span class="math inline">\(x ≠ (2n + 1)\frac{\pi}{2}\)</span>. Luego <span class="math inline">\(\tan x^2\)</span> tiene discontinuidades en los puntos <span class="math inline">\(x^2 = (2n + 1)\frac{\pi}{2}\)</span>: Es decir, la función <span class="math inline">\(\tan x^2\)</span> es continua en todo el intervalo <span class="math inline">\([0, 5]\)</span> excepto en los puntos
+<span class="math display">\[x = \sqrt{(2n + 1)\frac{\pi}{2}}.\]</span></p>
 </div>
 <div id="impcont" class="section level2">
 <h2><span class="header-section-number">7.4</span> Importancia de la continuidad</h2>
@@ -343,27 +345,27 @@ En este caso <span class="math inline">\(f(x) = x^2\)</span> y <span class="math
 <p>Veamos dos teoremas importantes.</p>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-66" class="theorem"><strong>Teorema 7.1  (Teorema de Bolzano)  </strong></span>Sea f(x) una función continua en <span class="math inline">\([a, b]\)</span> y <span class="math inline">\(f(a)\)</span> y <span class="math inline">\(f(b)\)</span> toman valores de signo diferente, entonces existe al menos un punto <span class="math inline">\(c\)</span> del intervalo abierto, <span class="math inline">\((a, b)\)</span> tal que <span class="math inline">\(f(c) = 0\)</span>. En otras palabras, existe al menos un cero de <span class="math inline">\(f(x)\)</span> en <span class="math inline">\((a, b)\)</span>.
+<span id="thm:unnamed-chunk-69" class="theorem"><strong>Teorema 7.1  (Teorema de Bolzano)  </strong></span>Sea f(x) una función continua en <span class="math inline">\([a, b]\)</span> y <span class="math inline">\(f(a)\)</span> y <span class="math inline">\(f(b)\)</span> toman valores de signo diferente. Entonces existe al menos un punto <span class="math inline">\(c\)</span> del intervalo abierto, <span class="math inline">\((a, b)\)</span> tal que <span class="math inline">\(f(c) = 0\)</span>. En otras palabras, existe al menos un cero de <span class="math inline">\(f(x)\)</span> en <span class="math inline">\((a, b)\)</span>.
 </div>
 
 <p>Este teorema nos permite identificar lugares en donde una función continua tiene un cero. Y también nos da un método para calcular los ceros de una función continua.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-67" class="example"><strong>Ejemplo 7.2  </strong></span>La función <span class="math inline">\(f(x) = \sin \sqrt{x} - \log x^2\)</span> tiene un cero en el intervalo <span class="math inline">\([1, 2]\)</span>. Calcúlalo con una precisión de dos decimales.</p>
-<p>Empecemos por asegurarnos que tiene un 0 en el intervalo. Efectivamente
-<span class="math inline">\(f(1) = 0.84\)</span> y <span class="math inline">\(f(2) = -0.40.\)</span> Hay un cambio de signo, por lo tanto el teorema de Bolzano nos asegura que hay al menos un 0 en el intervalo.</p>
-Cojamos el punto medio, <span class="math inline">\(x = 1.5\)</span> y evaluemos la función en ese punto. Tenemos que <span class="math inline">\(f(1.5) = 0.13\)</span>. Es positivo, luego el cambio de signo, y por lo tanto el 0, está entre 1,5 y 2. Cojamos el punto medio, <span class="math inline">\(x = 1.75\)</span>. Tenemos que <span class="math inline">\(f(1.75) = - 0.15\)</span>. Luego el cambio de signo está entre <span class="math inline">\(1.5\)</span> y <span class="math inline">\(1.75\)</span>. Cogemos el punto medio, <span class="math inline">\(x = 1.625\)</span>… Vamos repitiendo este proceso hasta conseguir dos decimales exactos. Al cabo de unas cuantas iteraciones llegamos a que el cambio de signo, y por lo tanto el 0, está entre <span class="math inline">\(1.611\)</span> y <span class="math inline">\(1.613\)</span>. Por lo tanto, con dos decimales de precisión, sabemos que el cero es <span class="math inline">\(1.61\)</span>.
+<span id="exm:unnamed-chunk-70" class="example"><strong>Ejemplo 7.2  </strong></span>La función <span class="math inline">\(f(x) = \sin \sqrt{x} - \log x^2\)</span> tiene un cero en el intervalo <span class="math inline">\([1, 2]\)</span>. Calcúlalo con una precisión de dos decimales.
 </div>
 
+<p>Empecemos por asegurarnos que tiene un 0 en el intervalo. Efectivamente
+<span class="math inline">\(f(1) = 0.84\)</span> y <span class="math inline">\(f(2) = -0.40.\)</span> Hay un cambio de signo, por lo tanto el teorema de Bolzano nos asegura que hay al menos un 0 en el intervalo.</p>
+<p>Cojamos el punto medio, <span class="math inline">\(x = 1.5\)</span> y evaluemos la función en ese punto. Tenemos que <span class="math inline">\(f(1.5) = 0.13\)</span>. Es positivo, luego el cambio de signo, y por lo tanto el 0, está entre 1,5 y 2. Cojamos el punto medio, <span class="math inline">\(x = 1.75\)</span>. Tenemos que <span class="math inline">\(f(1.75) = - 0.15\)</span>. Luego el cambio de signo está entre <span class="math inline">\(1.5\)</span> y <span class="math inline">\(1.75\)</span>. Cogemos el punto medio, <span class="math inline">\(x = 1.625\)</span>… Vamos repitiendo este proceso hasta conseguir dos decimales exactos. Al cabo de unas cuantas iteraciones llegamos a que el cambio de signo, y por lo tanto el 0, está entre <span class="math inline">\(1.611\)</span> y <span class="math inline">\(1.613\)</span>. Por lo tanto, con dos decimales de precisión, sabemos que el cero es <span class="math inline">\(1.61\)</span>.</p>
 <p>Aunque hay procedimientos mejores, este procedimiento es muy simple y fácil de programar en un ordenador.</p>
 <hr />
 Pasemos al segundo teorema.
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-68" class="theorem"><strong>Teorema 7.2  (teorema de Weierstrass)  </strong></span>Toda función continua en un intervalo cerrado [a, b] tiene un máximo y un mínimo absolutos en ese intervalo. Es decir, existen dos puntos <span class="math inline">\(x_M\)</span> y <span class="math inline">\(x_m\)</span> tales que para todo <span class="math inline">\(x\)</span> en <span class="math inline">\([a, b]\)</span> podemos asegurar que <span class="math inline">\(f(x_m)≤ f(x) ≤ f(x_M)\)</span>.
+<span id="thm:unnamed-chunk-71" class="theorem"><strong>Teorema 7.2  (teorema de Weierstrass)  </strong></span>Toda función continua en un intervalo cerrado [a, b] tiene un máximo y un mínimo absolutos en ese intervalo. Es decir, existen dos puntos <span class="math inline">\(x_M\)</span> y <span class="math inline">\(x_m\)</span> tales que para todo <span class="math inline">\(x\)</span> en <span class="math inline">\([a, b]\)</span> podemos asegurar que <span class="math inline">\(f(x_m)≤ f(x) ≤ f(x_M)\)</span>.
 </div>
 
-<p>A menudo vamos a quere calcular los valores másximos o mínimos de un función en un intervalo. Si la función es continua, el teorema de Weierstrass nos asegura que estos máximos y mínimos existen. Si no es continua, podrían no existir. Más adelante veremos cómo se calculan estos máximos y mínimos.</p>
+<p>A menudo vamos a quere calcular los valores máximos o mínimos de una función en un intervalo. Si la función es continua, el teorema de Weierstrass nos asegura que estos máximos y mínimos existen. Si no es continua, podrían no existir. Más adelante veremos cómo se calculan estos máximos y mínimos.</p>
 
 </div>
 </div>

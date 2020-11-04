@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -307,22 +309,22 @@
 <p>Y ahora podemos extender la idea de derivable en un punto a derivable en un intervalo: decimos que una función es derivable en un intervalo <span class="math inline">\((u, v)\)</span>, si es derivable en todos los puntos del intervalo. Y una vez definidas las derivadas laterales, podemos definir derivada de una función en un intervalo cerrado: Una función es derivable en un intervalo cerrado <span class="math inline">\([u, v]\)</span> si es derivable en el intervalo abierto <span class="math inline">\((u, v)\)</span> y tiene derivada por la derecha en <span class="math inline">\(u\)</span> y derivada por la izquierda en <span class="math inline">\(v\)</span>.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-72" class="example"><strong>Ejemplo 8.1  </strong></span>La función <span class="math inline">\(f(x) = x\)</span> es derivable en todo su dominio <span class="math inline">\((-\infty, \infty)\)</span>. Al ser una recta, su pendiente es constante en todos los puntos, en este caso, la pendiente vale 1. Sin necesidad de hacer los cálculos formales, sabemos entonces que la derivada de <span class="math inline">\(f(x) = x\)</span> es <span class="math inline">\(f^{\prime}(x) = 1\)</span> en todos los puntos del dominio.
+<span id="exm:unnamed-chunk-75" class="example"><strong>Ejemplo 8.1  </strong></span>La función <span class="math inline">\(f(x) = x\)</span> es derivable en todo su dominio <span class="math inline">\((-\infty, \infty)\)</span>. Al ser una recta, su pendiente es constante en todos los puntos, en este caso, la pendiente vale 1. Sin necesidad de hacer los cálculos formales, sabemos entonces que la derivada de <span class="math inline">\(f(x) = x\)</span> es <span class="math inline">\(f^{\prime}(x) = 1\)</span> en todos los puntos del dominio.
 </div>
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-73" class="example"><strong>Ejemplo 8.2  </strong></span>La función <span class="math inline">\(f(x) = |x|\)</span> es derivable en todo su dominio <span class="math inline">\((-\infty, \infty)\)</span> excepto en el punto <span class="math inline">\(x = 0\)</span>. Al estar formado por dos rectas, por el mismo argumento que en el ejemplo anterior, sabemos que su derivada es 1 si <span class="math inline">\(x &gt; 0\)</span> y que su derivada es <span class="math inline">\(-1\)</span> si <span class="math inline">\(x &lt; 0\)</span>.</p>
-Esto quiere decir que en el punto <span class="math inline">\(x = 0\)</span> la derivada por la izquierda es <span class="math inline">\(f^{\prime}(0^-) = -1\)</span> y la derivada por la derecha es <span class="math inline">\(f^{\prime}(0^+) = 1\)</span>. Como las derivadas laterales son distintas, <span class="math inline">\(f(x) = |x|\)</span> no es derivable en <span class="math inline">\(x = 0\)</span>.
+<span id="exm:unnamed-chunk-76" class="example"><strong>Ejemplo 8.2  </strong></span>La función <span class="math inline">\(f(x) = |x|\)</span> es derivable en todo su dominio <span class="math inline">\((-\infty, \infty)\)</span> excepto en el punto <span class="math inline">\(x = 0\)</span>. Al estar formado por dos rectas, por el mismo argumento que en el ejemplo anterior, sabemos que su derivada es 1 si <span class="math inline">\(x &gt; 0\)</span> y que su derivada es <span class="math inline">\(-1\)</span> si <span class="math inline">\(x &lt; 0\)</span>.
 </div>
 
+<p>Esto quiere decir que en el punto <span class="math inline">\(x = 0\)</span> la derivada por la izquierda es <span class="math inline">\(f^{\prime}(0^-) = -1\)</span> y la derivada por la derecha es <span class="math inline">\(f^{\prime}(0^+) = 1\)</span>. Como las derivadas laterales son distintas, <span class="math inline">\(f(x) = |x|\)</span> no es derivable en <span class="math inline">\(x = 0\)</span>.</p>
 <hr />
 <p>Una vez vistas las derivadas, pasemos a las integrales.</p>
 </div>
 </div>
 <div id="geomInte" class="section level2">
 <h2><span class="header-section-number">8.5</span> Interpretación geométrica de la integral: área bajo una curva</h2>
-<p>Tenemos una cierta curva y queremos calcular el área entre la curva y el eje X entre <span class="math inline">\(x = 0\)</span>y <span class="math inline">\(x = 2\)</span>.</p>
+<p>Tenemos una cierta curva y queremos calcular el área entre la curva y el eje X entre <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 2\)</span>.</p>
 <p><img src="imagenes/Integ0.jpg" /><!-- --></p>
 <p>No sabemos hacerlo de forma exacta, pero lo que podemos hacer es crear rectángulos. Sabemos calcular el área de un rectángulo y podemos entonces sumar estas áreas para tener un valor aproximado del área. Llamemos <span class="math inline">\(dx\)</span> a la longitud de la base del rectángulo. Si hacemos rectángulos de base <span class="math inline">\(dx = 0.2\)</span> tenemos:</p>
 <p><img src="imagenes/Integ1.jpg" /><!-- --></p>

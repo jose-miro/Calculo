@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -317,7 +319,7 @@ Desde el punto de vista de las derivadas, la aceleración es positiva si la deri
 <p>Vamos a practicar estos conceptos</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-97" class="example"><strong>Ejemplo 10.1  </strong></span>Calcula las regiones de concavidad y convexidad de la función <span class="math inline">\(f(x) = 0.05(x^3 - 21x -20)\)</span>.</p>
+<p><span id="exm:unnamed-chunk-100" class="example"><strong>Ejemplo 10.1  </strong></span>Calcula las regiones de concavidad y convexidad de la función <span class="math inline">\(f(x) = 0.05(x^3 - 21x -20)\)</span>.</p>
 <p>Empezamos por calcular la derivada segunda:</p>
 <p><span class="math display">\[\begin{align}
 f^{\prime}(x) &amp;= 0.05(3x^2 -21)\\
@@ -361,7 +363,7 @@ Vemos que <span class="math inline">\(f^{\prime\prime}(x)\)</span> es positiva p
 <h3><span class="header-section-number">10.4.2</span> Un ejemplo</h3>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-100" class="exercise"><strong>Ejercicio 10.1  </strong></span>Calcula los máximos y mínimos de la función <span class="math inline">\(f(x) = x^3 -5x^2 + x - 4\)</span>.
+<span id="exr:unnamed-chunk-103" class="exercise"><strong>Ejercicio 10.1  </strong></span>Calcula los máximos y mínimos de la función <span class="math inline">\(f(x) = x^3 -5x^2 + x - 4\)</span>.
 </div>
 
 <p>Apliquemos el algoritmo.</p>
@@ -380,7 +382,7 @@ f^{\prime\prime} (x) &amp;= 6x - 10
 <h3><span class="header-section-number">10.4.3</span> Otro ejemplo</h3>
 
 <div class="exercise">
-<span id="exr:unnamed-chunk-101" class="exercise"><strong>Ejercicio 10.2  </strong></span>Supongamos un recipiente, por ejemplo un barril cilíndrico. Inicialmente está vacío y el centro de masas está a media altura. Empezamos a llenarlo de algún líquido. El centro de masas inicialmente irá bajando a medida que añadamos líquido, pero cuando esté lleno, el centro de masas volverá a estar a media altura. Esto quiere decir que en algún momento intermedio el centro de masas está a una altura mínima ¿Cuánto líquido hay que añadir para que el centro de masas esté lo más bajo posible?
+<span id="exr:unnamed-chunk-104" class="exercise"><strong>Ejercicio 10.2  </strong></span>Supongamos un recipiente, por ejemplo un barril cilíndrico. Inicialmente está vacío y el centro de masas está a media altura. Empezamos a llenarlo de algún líquido. El centro de masas inicialmente irá bajando a medida que añadamos líquido, pero cuando esté lleno, el centro de masas volverá a estar a media altura. Esto quiere decir que en algún momento intermedio el centro de masas está a una altura mínima ¿Cuánto líquido hay que añadir para que el centro de masas esté lo más bajo posible?
 </div>
 
 <p>Hay muchos parámetros en este problema: el peso y la altura del barril, la superficie de la base del barril, la densidad del líquido, la altura del líquido en el barril… Si los usamos todos, la manipulación algebraica necesaria para resolver el problema se complica mucho. Vamos a simplificarlo. Para empezar, hacemos que el peso del barril sea 1, es decir, usamos el peso del barril como unidad de peso; hacemos lo mismo con la altura del barril: es también 1; la altura del líquido en el barril es <span class="math inline">\(h\)</span>, donde <span class="math inline">\(h\)</span> toma un valor entre 0 (está vacío) y 1 (está lleno); el peso del líquido cuando el barril está lleno es <span class="math inline">\(p\)</span>: cuando está lleno, el líquido pesa <span class="math inline">\(p\)</span> veces el peso del barril. Este parámetro <span class="math inline">\(p\)</span> es un indicador de la densidad del líquido: cuánto mayor es <span class="math inline">\(p\)</span>, mayor es su densidad. Si <span class="math inline">\(p &lt; 1\)</span> quiere decir que cuando está lleno, el líquido contenido pesa menos que el barril; si <span class="math inline">\(p = 1\)</span>, quiere decir que con el barril lleno, el líquido pesa lo mismo que el barril; si <span class="math inline">\(p &gt; 1\)</span> entonces, cuando lleno, el líquido pesa más que el barril.</p>
@@ -426,7 +428,7 @@ El valor del centro de masas mínimo es
 Hagamos dos ejemplos:
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-102" class="example"><strong>Ejemplo 10.2  </strong></span>Dibuja la gráfica de la función
+<p><span id="exm:unnamed-chunk-105" class="example"><strong>Ejemplo 10.2  </strong></span>Dibuja la gráfica de la función
 <span class="math display">\[y = \frac{\log(x)}{x}\]</span></p>
 <p><strong>Dominio:</strong> El numerador sólo existe si <span class="math inline">\(x&gt;0\)</span> y para el dominio del numerador el denominador siempre es distinto de 0, luego el dominio de <span class="math inline">\(y\)</span> es <span class="math inline">\(x &gt; 0\)</span>.</p>
 <p><strong>Continuidad, derivabilidad y extremos:</strong> Tanto el numerador como el denominador son continuos en todo su dominio, luego la función es continua.</p>
@@ -458,7 +460,7 @@ Y con esta información ya podemos dibujar la función:
 <p>Ahora hagamos un ejemplo con una función algo más compleja.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-104" class="example"><strong>Ejemplo 10.3  </strong></span>Dibuja la gráfica de la función
+<p><span id="exm:unnamed-chunk-107" class="example"><strong>Ejemplo 10.3  </strong></span>Dibuja la gráfica de la función
 <span class="math display">\[y = \frac{x}{\sqrt[3]{x^2 -1}}\]</span></p>
 <p><strong>Dominio:</strong> Es una división de polinomios, luego existe en todos los puntos donde el denominador no sea 0. El dominio es toda la recta real excepto los puntos <span class="math inline">\(x = \pm 1\)</span>.</p>
 <p><strong>Continuidad, derivabilidad y extremos:</strong> Al ser una división de polinomios, es continua en todos los puntos donde el denominador no es 0. En <span class="math inline">\(x = \pm 1\)</span> los límites tiende a <span class="math inline">\(+\infty\)</span> por un lado y <span class="math inline">\(-\infty\)</span> por el otro, luego presenta una discontinuidad no evitable en estos puntos. Calculemos las derivadas primera y segunda.</p>

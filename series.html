@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -253,17 +255,17 @@
 <p>Supongamos que tienes un conjunto (infinito) de ladrillos sobre una mesa. Empiezas con uno y quieres ponerlo en el borde, de manera que sobresalga lo más posible, pero sin caerse:</p>
 <p><img src="imagenes/ladrillo1.jpg" /><!-- --></p>
 <p>Como el centro de gravedad del ladrillo tiene que estar sobre la mesa, y el centro de gravedad está en el centro del ladrillo, esto quiere decir que podemos tener a lo más medio ladrillo sobresaliendo de la mesa.</p>
-<p>Si ponemos dos ladrillos, el ladrillo superior sobresaldrá 1/2 sobre el inferior, pero el par sobresaldrá menos que eso sobre la mesa. Y si ponemos aún más ladrillos, cada uno sobresaldrá menos que el que tiene encima:</p>
+<p>Si ponemos dos ladrillos, el ladrillo superior sobresaldrá 1/2 sobre el inferior, pero el inferior sobresaldrá menos que eso sobre la mesa. Y si ponemos aún más ladrillos, cada uno sobresaldrá menos que el que tiene encima:</p>
 <p><img src="imagenes/ladrillos.jpg" /><!-- --></p>
 <p>Si añadimos más ladrillos el ladrillo superior sobresale cada vez más, pero lo que gana por cada ladrillo adicional es cada vez menos. ¿Hasta dónde podemos conseguir que sobresalga este ladrillo superior?</p>
 <hr />
-<p>Tenemos un cubo grande y una persona le mete 1 litro de agua, después viene una segunda persona y le añade 1/4 litro, una tercera persona le añade 1/9 de litro, y así: la <span class="math inline">\(n\)</span>-sima persona le añade <span class="math inline">\(1/n^2\)</span> litros. ¿Se acabará desbordando el cubo?</p>
+<p>Tenemos un cubo grande y una persona le mete 1 litro de agua, después viene una segunda persona y le añade 1/4 litro, una tercera persona le añade 1/9 de litro, y así: la <span class="math inline">\(n\)</span>-sima persona le añade <span class="math inline">\(1/n^2\)</span> litros. Si hay “infinitas” personas añadiendo agua, ¿se acabará desbordando el cubo?</p>
 <hr />
-<p>En el primer ejemplo tenemos una sucesión <span class="math inline">\(s_1, s_2, s_3, …\)</span> de longitudes de ladrillo que sobresalen sobre el ladrillo inferior. Lo que sobresale el primer ladrillo sobre la mesa es <span class="math inline">\(s_1 + s_2 + s_3 + \cdots\)</span>. En el segundo, tenemos la sucesión <span class="math inline">\(\{a_n = 1/n^2\}\)</span> y la cantidad de agua en el cubo es <span class="math inline">\(1 + 1/4 + 1/9 +\cdots + 1/n^2 + \cdots\)</span>. Las soluciones a estos problemas se obtienen realizando una suma infinita. A esta suma infinita se le llama la <em>serie infinita</em> de la sucesión (o simplemente serie de la sucesión), y es lo que estudiaremos en este capítulo.</p>
+<p>En el primer ejemplo tenemos una sucesión <span class="math inline">\(s_1, s_2, s_3, …\)</span> de longitudes de ladrillo que sobresalen sobre el ladrillo inferior. Lo que sobresale el ladrillo superior desde el borde de la mesa es <span class="math inline">\(s_1 + s_2 + s_3 + \cdots\)</span>. En el segundo, tenemos la sucesión <span class="math inline">\(\{a_n = 1/n^2\}\)</span> y la cantidad de agua en el cubo es <span class="math inline">\(1 + 1/4 + 1/9 +\cdots + 1/n^2 + \cdots\)</span>. Las soluciones a estos problemas se obtienen realizando una suma infinita. A esta suma infinita se le llama la <em>serie infinita</em> de la sucesión (o simplemente serie de la sucesión), y es lo que estudiaremos en este capítulo.</p>
 <div id="definición" class="section level2">
 <h2><span class="header-section-number">5.1</span> Definición</h2>
 <p>La idea intuitiva de serie es que es la suma de los infinitos términos de una sucesión. Lo que uno se pregunta es ¿pódemos sumar infinitos términos? Y la respuesta es: no. El concepto de serie es una <em>extensión</em> del concepto de suma. Sabemos sumar un número finito de términos, por muchos que haya, pero no sabemos sumar infinitos términos. Lo que vamos a hacer es <em>extender</em> esta idea de suma finita a la suma de <em>infinitos</em> términos. Usemos un ejemplo como punto de partida.</p>
-<p>Sea la sucesión <span class="math inline">\(\{a_n = 1/2^n\}\)</span>, cuyos primeros téminos son 1/2, 1/4, 1/8, 1/16,…. Como sabemos sumar un número finito de términos, vamos a ir calculando lo que llamaremos sumas parciales: la suma de un término, de dos, de tres, etc. Llamaremos <span class="math inline">\(S_n\)</span> a la suma parcial de los <span class="math inline">\(n\)</span> primeros términos. Las sumas parciales de esta sucesión son:
+<p>Sea la sucesión <span class="math inline">\(\{a_n = 1/2^n\}\)</span>, cuyos primeros téminos son 1/2, 1/4, 1/8, 1/16,…. Como sabemos sumar un número finito de términos, vamos a ir calculando lo que llamaremos sumas parciales: <span class="math inline">\(S_1\)</span> será la suma de un término, <span class="math inline">\(S_2\)</span> será la suma de dos, <span class="math inline">\(S_3\)</span> la de tres, etc. Llamaremos <span class="math inline">\(S_n\)</span> a la suma parcial de los <span class="math inline">\(n\)</span> primeros términos. Las sumas parciales de esta sucesión son:
 <span class="math display">\[\begin{align}
 S_1 &amp;= \frac{1}{2}\\
 S_2 &amp;= \frac{1}{2} + \frac{1}{4} = \frac{3}{4}\\
@@ -271,26 +273,26 @@ S_3 &amp;= \frac{1}{2} + \frac{1}{4} + \frac{1}{8}= \frac{7}{8}\\
 ...\\
 S_n &amp;= \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \cdots + \frac{1}{2^n} = \frac{2^n -1}{2^n}\\
 \end{align}\]</span></p>
-<p>Vemos que <span class="math inline">\(S_n\)</span> tiende a 1. Esto nos hace pensar que una forma razonable de extender la idea de suma a una suma infinita en este caso es decir que la suma de los infinitos términos de la sucesión <span class="math inline">\(\{a_n = 1/2^n\}\)</span> es 1.</p>
+<p>Vemos que <span class="math inline">\(\lim_{n \to \infty} S_n = 1\)</span>. Esto nos hace pensar que una forma razonable de extender la idea de suma a una suma infinita en este caso es decir que la suma de los infinitos términos de la sucesión <span class="math inline">\(\{a_n = 1/2^n\}\)</span> es 1.</p>
 <p>Vamos a generalizar y formalizar esta idea.</p>
 <hr />
 
 <div class="definition">
-<span id="def:unnamed-chunk-25" class="definition"><strong>Definición 5.1  </strong></span>Dada una sucesión <span class="math inline">\(\{a_n\}\)</span>, llamamos sumas parciales <span class="math inline">\(S_n\)</span> a las sumas de los primeros <span class="math inline">\(n\)</span> términos:
+<span id="def:unnamed-chunk-28" class="definition"><strong>Definición 5.1  </strong></span>Dada una sucesión <span class="math inline">\(\{a_n\}\)</span>, llamamos sumas parciales <span class="math inline">\(S_n\)</span> a las sumas de los primeros <span class="math inline">\(n\)</span> términos:
 <span class="math display">\[S_n = \sum_{i=1}^n a_i.\]</span>
 Estas sumas parciales forman la sucesión <span class="math inline">\(\{S_n\}\)</span>. Definimos como <em>serie infinita</em> de <span class="math inline">\(\{a_n\}\)</span> (o simplemente serie de <span class="math inline">\(\{a_n\}\)</span>), y lo escribimos como <span class="math inline">\(\sum_{i = 1}^\infty a_i\)</span>, al límite de la sucesión <span class="math inline">\(\{S_n\}\)</span>:
 <span class="math display">\[\sum_{i = 1}^\infty a_i = \lim_{n \to \infty} \{S_n\}\]</span>
 </div>
 
 <hr />
-<p>Nota: La palabra <em>serie</em> designa a la suma infinita de los términos de una sucesión. Por lo tanto lo correcto es decir “La serie vale 1.66” o “La serie de la sucesión vale 1.66”. Pero muy a menudo se dice “La suma de la serie vale 1.66” o “La suma de la sucesión es 1,66”. Estrictamente, son incorrecciones, pero no son graves.</p>
+<p>Nota: La palabra <em>serie</em> designa a la suma infinita de los términos de una sucesión. Por lo tanto lo correcto es decir “La serie vale 1,66” o “La serie de la sucesión vale 1,66”. Pero muy a menudo se dice “La suma de la serie vale 1,66” o “La suma de la sucesión es 1,66”. Estrictamente, son incorrecciones, pero no son graves.</p>
 <hr />
 <p>Hemos supuesto que el primer término de la sucesión es <span class="math inline">\(n = 1\)</span>, pero la serie se puede definir de forma análoga si el primer término es el <span class="math inline">\(n=0\)</span>.</p>
 <p>Si el límite existe, decimos que la serie es convergente, si no, decimos que es divergente. Seguiremos siendo un poco incorrectos y si la sucesión <span class="math inline">\(\{S_n\}\)</span> crece (o decrece) de forma ilimitada diremos que la serie es <span class="math inline">\(\infty\)</span> (o <span class="math inline">\(-\infty\)</span>).</p>
 Veamos algunos ejemplos.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-26" class="example"><strong>Ejemplo 5.1  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\ = n\}\)</span>. Las sumas parciales son:
+<span id="exm:unnamed-chunk-29" class="example"><strong>Ejemplo 5.1  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\ = n\}\)</span>. Las sumas parciales son:
 <span class="math display">\[\begin{align}
 S_1 &amp;= 1\\
 S_2 &amp;= 1+2 = 3\\
@@ -298,14 +300,14 @@ S_3 &amp;= 1+2+3= 6\\
 S_3 &amp;= 1+2+3+4 = 10\\
 ...\\
 S_n &amp;= 1+2+3 + \cdots + n = \frac{1+n}{2}n = \frac{n^2+n}{2}\\
-\end{align}\]</span></p>
-El límite de la sucesión es <span class="math inline">\(\infty\)</span> y por lo tanto decimos que la serie de esta sucesión es <span class="math inline">\(\infty\)</span>.
+\end{align}\]</span>
 </div>
 
+<p>El límite de la sucesión es <span class="math inline">\(\infty\)</span> y por lo tanto decimos que la serie de esta sucesión es <span class="math inline">\(\infty\)</span>.</p>
 <hr />
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-27" class="example"><strong>Ejemplo 5.2  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\ = -1^n\}\)</span>. Los primeros términos de la sucesión son -1, 1, -1, 1,…Las sumas parciales son:
+<span id="exm:unnamed-chunk-30" class="example"><strong>Ejemplo 5.2  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\ = -1^n\}\)</span>. Los primeros términos de la sucesión son -1, 1, -1, 1,…Las sumas parciales son:
 <span class="math display">\[\begin{align}
 S_1 &amp;= -1\\
 S_2 &amp;= -1+1 = 0\\
@@ -315,33 +317,33 @@ S_3 &amp;= -1+1-1+1 = 0\\
 S_n &amp;= -1+1-1 + \cdots + -1^n = \left\{\begin{array}{ll}
                      -1 &amp; \mbox{si } n \mbox{ es impar}\\
                       0 &amp; \mbox{si } n \mbox{ es par}\end{array}\right.
-\end{align}\]</span></p>
-Esta sucesión <span class="math inline">\(\{S_n\}\)</span> no tiene límite y por lo tanto la serie no tiene valor. O podemos decir que la sucesion <span class="math inline">\(\{a_n\ = -1^n\}\)</span> no tiene suma.
+\end{align}\]</span>
 </div>
 
+<p>Esta sucesión <span class="math inline">\(\{S_n\}\)</span> no tiene límite y por lo tanto la serie no tiene valor. O podemos decir que la sucesion <span class="math inline">\(\{a_n\ = -1^n\}\)</span> no tiene suma.</p>
 </div>
 <div id="criterios-de-convergencia-de-una-serie" class="section level2">
 <h2><span class="header-section-number">5.2</span> Criterios de convergencia de una serie</h2>
-<p>En general no es fácil determinar cuánto vale una serie. Pero sí sabemos si es convergente o no tenemos mucho ganado: si es divergente ya no nos molestamos y si es convergente, podemos hacernos una idea del valor de la serie sumando unos cuantos miles de términos con la ayuda del ordenador. Luego el primer paso es determinar si la serie es convergente o no y para eso tenemos los criterios de convergencia de las series.</p>
-<p>Enunciemos, pues, algunso criterios de convergencia. No las vamos a demostrar formalmente, pero daremos algunas indicaciones de la plausibilidad de los resultados. En estas indicaciones vamos a suponer que los términos de la sucesión son todos positivos. Si son negativos, o positivos y negativos, las ideas son las mismas, los resultados son casi los mismos, pero la notación y las explicaciones son mucho más largas. Si las ideas se entienden bien para el caso positivo, no es difícil extenderlo a los otros casos.</p>
+<p>En general no es fácil determinar cuánto vale una serie. Pero si sabemos si es convergente o no tenemos mucho ganado: si es divergente ya no nos molestamos y si es convergente podemos hacernos una idea del valor de la serie sumando unos cuantos miles de términos con la ayuda del ordenador. Luego el primer paso es determinar si la serie es convergente o no y para eso tenemos criterios de convergencia de las series.</p>
+<p>Enunciemos, pues, algunos criterios de convergencia. No los vamos a demostrar formalmente, pero daremos algunas indicaciones de la plausibilidad de los resultados. En estas indicaciones vamos a suponer que los términos de la sucesión son todos positivos. Si son negativos, o positivos y negativos, las ideas son las mismas, los resultados son casi los mismos, pero la notación y las explicaciones son mucho más largas. Si las ideas se entienden bien para el caso positivo, no es difícil extenderlo a los otros casos.</p>
 <hr />
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-28" class="theorem"><strong>Teorema 5.1  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\}\)</span>. Si <span class="math inline">\(\lim_{n \to \infty} \{a_n\} ≠ 0\)</span> o no existe, la serie es divergente.
+<span id="thm:unnamed-chunk-31" class="theorem"><strong>Teorema 5.1  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n\}\)</span>. Si <span class="math inline">\(\lim_{n \to \infty} \{a_n\} ≠ 0\)</span> o no existe, la serie es divergente.
 </div>
 
 <p>Si el límite no existe, es obvio que el límite de las sumas parciales tampoco puede existir. Y si existe pero no es cero, esto quiere decir que estamos sumando algo infinitas veces, y por lo tanto la sumas parciales explotarán a <span class="math inline">\(\infty\)</span>.</p>
 <hr />
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-29" class="theorem"><strong>Teorema 5.2  </strong></span>Sea la serie <span class="math inline">\(\{a_n\}\)</span>. Si la serie es convergente, <span class="math inline">\(\lim_{n \to \infty} \{a_n\} = 0\)</span>.
+<span id="thm:unnamed-chunk-32" class="theorem"><strong>Teorema 5.2  </strong></span>Sea la serie <span class="math inline">\(\{a_n\}\)</span>. Si la serie es convergente, <span class="math inline">\(\lim_{n \to \infty} \{a_n\} = 0\)</span>.
 </div>
 
 <p>Esta es la afirmación inversa a la del criterio anterior. Cuidado con un error lógico muy habitual. El criterio dice que si la serie es convergente, entonces el límite de la sucesión es 0. Pero <em>no</em> dice que si el límite de la sucesión es 0, entonces la serie converge. El límite de la sucesión puede ser 0 y la serie ser divergente. Veremos un ejemplo.</p>
 <hr />
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-30" class="theorem"><strong>Teorema 5.3  </strong></span>Sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y la serie de <span class="math inline">\(\{a_n\}\)</span> converge. Si existe un valor <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n ≥ N\)</span>, <span class="math inline">\(b_n ≤ a_n\)</span>, entonces la serie de <span class="math inline">\(\{b_n\}\)</span> también converge.
+<span id="thm:unnamed-chunk-33" class="theorem"><strong>Teorema 5.3  </strong></span>Sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y la serie de <span class="math inline">\(\{a_n\}\)</span> converge. Si existe un valor <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n ≥ N\)</span>, <span class="math inline">\(b_n ≤ a_n\)</span>, entonces la serie de <span class="math inline">\(\{b_n\}\)</span> también converge.
 </div>
 
 <p>Supongamos para empezar que <span class="math inline">\(N = 1\)</span>. Entonces si todos los términos de <span class="math inline">\(\{b_n\}\)</span> son menores que todos los términos de <span class="math inline">\(\{a_n\}\)</span>, entonces las sumas parciales de <span class="math inline">\(\{b_n\}\)</span> van a ser todas menores o iguales que las de <span class="math inline">\(\{a_n\}\)</span>. Y por lo tanto el límite de las sumas parciales de <span class="math inline">\(\{b_n\}\)</span> existirá y será menor o igual al límite de las de <span class="math inline">\(\{a_n\}\)</span>.</p>
@@ -349,7 +351,7 @@ Esta sucesión <span class="math inline">\(\{S_n\}\)</span> no tiene límite y p
 <hr />
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-31" class="theorem"><strong>Teorema 5.4  </strong></span>Sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y la serie de <span class="math inline">\(\{a_n\}\)</span> diverge hacia <span class="math inline">\(\infty\)</span>. Si existe un valor <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n ≥ N\)</span>, <span class="math inline">\(b_n ≥ a_n\)</span>, entonces <span class="math inline">\(\{b_n\}\)</span> también diverge hacia <span class="math inline">\(\infty\)</span>.
+<span id="thm:unnamed-chunk-34" class="theorem"><strong>Teorema 5.4  </strong></span>Sean dos sucesiones <span class="math inline">\(\{a_n\}\)</span> y <span class="math inline">\(\{b_n\}\)</span> y la serie de <span class="math inline">\(\{a_n\}\)</span> diverge hacia <span class="math inline">\(\infty\)</span>. Si existe un valor <span class="math inline">\(N\)</span> tal que para todo <span class="math inline">\(n ≥ N\)</span>, <span class="math inline">\(b_n ≥ a_n\)</span>, entonces <span class="math inline">\(\{b_n\}\)</span> también diverge hacia <span class="math inline">\(\infty\)</span>.
 </div>
 
 <p>El razonamiento es muy parecido al anterior.</p>
@@ -357,7 +359,7 @@ Esta sucesión <span class="math inline">\(\{S_n\}\)</span> no tiene límite y p
 <p>Usemos estos criterios en algunos ejemplos.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-32" class="example"><strong>Ejemplo 5.3  </strong></span>Estudie la convergencia de la serie
+<p><span id="exm:unnamed-chunk-35" class="example"><strong>Ejemplo 5.3  </strong></span>Estudie la convergencia de la serie
 <span class="math display">\[\sum_{n=1}^\infty \frac{n+5}{2n}.\]</span></p>
 Empezamos por calcular el límite se la sucesión:
 <span class="math display">\[\lim_{n \to \infty}  \frac{n+5}{2n}= \frac{1}{2}\]</span>
@@ -366,22 +368,22 @@ La serie es divergente.
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-33" class="example"><strong>Ejemplo 5.4  </strong></span>Estudie la convergencia de la serie <span class="math inline">\(\sum_{n=1}^\infty\{\frac{1}{n}\}\)</span>.</p>
-<p>Empezamos por calcular el límite se la sucesión:
+<p><span id="exm:unnamed-chunk-36" class="example"><strong>Ejemplo 5.4  </strong></span>Estudie la convergencia de la serie <span class="math inline">\(\sum_{n=1}^\infty\{\frac{1}{n}\}\)</span>.</p>
+Empezamos por calcular el límite se la sucesión:
 <span class="math display">\[\lim_{n \to \infty}  \frac{1}{n}= 0\]</span>
 La serie puede ser convergente o no. Hemos de seguir. Los primeros términos de la serie son
 <span class="math display">\[1 + \frac{1}{2} + \frac{1}{3}+ \frac{1}{4}+ \frac{1}{5}+ \frac{1}{6} + \frac{1}{7} + \frac{1}{8}+\cdots\]</span>
 Vamos a crear otra sucesión cuyos terminos son todos menores o iguales a las de esta:
 <span class="math display">\[1 + \frac{1}{2} + \frac{1}{4}+ \frac{1}{4}+ \frac{1}{8}+ \frac{1}{8} + \frac{1}{8} + \frac{1}{8}+\cdots\]</span>
 Hemos cogido dos términos y los hemos cambiado por <span class="math inline">\(1/4\)</span>, los 4 siguientes por <span class="math inline">\(1/8\)</span>, y cogeríamos los 8 siguientes y los sustituiríamos por <span class="math inline">\(1/16\)</span>, los 16 siguientes por <span class="math inline">\(1/32\)</span> y así sucesivamente. Pero los dos téminos <span class="math inline">\(1/4\)</span> suman <span class="math inline">\(1/2\)</span>; los 4 términos <span class="math inline">\(1/8\)</span> suman <span class="math inline">\(1/2\)</span>, los 8 téminos <span class="math inline">\(1/16\)</span> suman <span class="math inline">\(1/2\)</span> y así sucesivamente. Luego la suma de esta serie es
-<span class="math display">\[1 + \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \cdots = \infty\]</span></p>
-Todos los términos de la sucesión <span class="math inline">\(\{\frac{1}{n}\}\)</span> son mayores o iguales a los términos de una sucesión divergente. Luego la serie de <span class="math inline">\(\{\frac{1}{n}\}\)</span> es divergente.
+<span class="math display">\[1 + \frac{1}{2} + \frac{1}{2} + \frac{1}{2} + \cdots = \infty\]</span>
 </div>
 
+<p>Todos los términos de la sucesión <span class="math inline">\(\{\frac{1}{n}\}\)</span> son mayores o iguales a los términos de una sucesión divergente. Luego la serie de <span class="math inline">\(\{\frac{1}{n}\}\)</span> es divergente.</p>
 <p>Esta serie se conoce como la serie armónica. Muchos matemáticos han demostrado de forma independiente que esta serie es divergente.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-34" class="example"><strong>Ejemplo 5.5  </strong></span>Estudie la convergencia de la serie de <span class="math inline">\(\{\frac{1}{n^2}\}\)</span>.</p>
+<p><span id="exm:unnamed-chunk-37" class="example"><strong>Ejemplo 5.5  </strong></span>Estudie la convergencia de la serie de <span class="math inline">\(\{\frac{1}{n^2}\}\)</span>.</p>
 <p>El límite de la sucesión es 0, luego la serie puede ser convergente. Los primeros téminos son:</p>
 <p><span class="math display">\[\frac{1}{2^2} + \frac{1}{3^2}+ \frac{1}{4^2}+ \frac{1}{5^2}+ \frac{1}{6^2} + \frac{1}{7^2} + \frac{1}{8^2}+ \frac{1}{9^2}+\cdots\]</span></p>
 <p>Vamos a hacer una sustitución como en el ejemplo anterior. Sustituimos los dos primeros términos por <span class="math inline">\(\frac{1}{2^2}\)</span>, los cuatro siguientes por <span class="math inline">\(\frac{1}{4^2}\)</span>, los 8 siguientes por <span class="math inline">\(\frac{1}{8^2}\)</span>, etc. Esta segunda sucesión tiene todos sus términos mayores o iguales a los de <span class="math inline">\(\{\frac{1}{n^2}\}\)</span>.</p>
@@ -397,7 +399,7 @@ Luego la serie <span class="math inline">\(\sum_{k=1}^\infty \frac{1}{n^2}\)</sp
 <span class="math display">\[\sum_{k=1}^\infty \frac{1}{n^2}≤ 1\]</span>
 </div>
 
-<p>El valor de la suma de esta serie se conoce. La calculó Leonhard Euler . Bueno, para ser precisos, Euler empezó en <span class="math inline">\(k=0\)</span>: <span class="math inline">\(1 + \frac{1}{4} + \frac{1}{9} + \cdots\)</span>. La suma de la serie que calculó Euler es <span class="math inline">\(\frac{\pi^2}{6}\)</span>, luego la de la serie del ejemplo es <span class="math inline">\(\frac{\pi^2}{6} - 1 = 0.64493\)</span>. Es sorprendente que aparezca <span class="math inline">\(\pi\)</span>, que es un número que tiene que ver con circulos, en una serie donde lo que tenemos son cuadrados. Es uno de los resultados a los que Euler tenía más estima, lo cual es decir mucho, pues Euler es el matemático más prolífico de la historia y tiene cientos de resultados memorables (por ejemplo, el número <span class="math inline">\(e\)</span> se llama <span class="math inline">\(e\)</span> por Euler).</p>
+<p>El valor de la suma de esta serie se conoce. La calculó Leonhard Euler . Bueno, para ser precisos, Euler empezó en <span class="math inline">\(k=0\)</span>: <span class="math inline">\(1 + \frac{1}{4} + \frac{1}{9} + \cdots\)</span>. La suma de la serie que calculó Euler es <span class="math inline">\(\frac{\pi^2}{6}\)</span>, luego la de la serie del ejemplo es <span class="math inline">\(\frac{\pi^2}{6} - 1 = 0.64493\)</span>. Es sorprendente que aparezca <span class="math inline">\(\pi\)</span>, que es un número que tiene que ver con círculos, en una serie donde lo que tenemos son cuadrados. Es uno de los resultados a los que Euler tenía más estima, lo cual es decir mucho, pues Euler es el matemático más prolífico de la historia y tiene cientos de resultados memorables (por ejemplo, el número <span class="math inline">\(e\)</span> se llama <span class="math inline">\(e\)</span> por Euler).</p>
 </div>
 <div id="operaciones-con-series" class="section level2">
 <h2><span class="header-section-number">5.3</span> Operaciones con series</h2>
@@ -439,7 +441,7 @@ Pueden deducir con facilidad lo que vale esta serie.</p>
 <hr />
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-35" class="example"><strong>Ejemplo 5.6  </strong></span>Sea la sucesión <span class="math inline">\(\{\frac{0.9}{10^{n-1}}\}\)</span>. Estudie la convergencia de la serie y, si es convergente, halle su valor.</p>
+<p><span id="exm:unnamed-chunk-38" class="example"><strong>Ejemplo 5.6  </strong></span>Sea la sucesión <span class="math inline">\(\{\frac{0.9}{10^{n-1}}\}\)</span>. Estudie la convergencia de la serie y, si es convergente, halle su valor.</p>
 <p>Los primeros términos de la sucesión son <span class="math inline">\(0.9, 0.09, 0.009,…\)</span> Ya vemos que la serie va a ser <span class="math inline">\(0.999\dots\)</span>, pero vamos a formalizarlo como una serie geométrica. Hemos de ponerla en la forma <span class="math inline">\(ar^{n-1}\)</span>. No es difícil:
 <span class="math display">\[\sum_{n=1}^\infty 0.9 \left(\frac{1}{10}\right)^{n-1}\]</span>
 Esta es una serie geométrica con <span class="math inline">\(a = 0.9\)</span> y <span class="math inline">\(r = 0.1\)</span>. Como <span class="math inline">\(r&lt;1\)</span> es convergente y la serie es
@@ -449,32 +451,33 @@ Esta es otra demostración (hay muchas) de que <span class="math inline">\(0.999
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-36" class="example"><strong>Ejemplo 5.7  </strong></span>Sea la sucesión
+<p><span id="exm:unnamed-chunk-39" class="example"><strong>Ejemplo 5.7  </strong></span>Sea la sucesión
 <span class="math display">\[-1, \frac{1}{2}, -\frac{1}{4}, \frac{1}{8}, -\frac{1}{16}, …, \frac{-1^{n}}{2^{n-1}},…\]</span>
 Estudie la convergencia de la serie y, si es convergente, halle su valor.</p>
-<p>Hemos de ponerla en forma de serie geométrica. No es difícil, pero hay que tener cuidado con los signos. Quizá sea más sencillo empezar con <span class="math inline">\(n = 0\)</span>:
+Hemos de ponerla en forma de serie geométrica. No es difícil, pero hay que tener cuidado con los signos. Quizá sea más sencillo empezar con <span class="math inline">\(n = 0\)</span>:
 <span class="math display">\[\sum_{n = 0}^\infty -1 \left(\frac{-1}{2}\right)^n\]</span>
-(si no lo ven claro, calculen despacio los primeros términos)</p>
-Esta es una serie geométrica con <span class="math inline">\(a = -1\)</span> y <span class="math inline">\(r = -(1/2)\)</span>, luego la serie vale:
-<span class="math display">\[\frac{a}{1-r} = \frac{-1}{1- \frac{-1}{2}} = \frac{-1}{\frac{3}{2}} = -\frac{2}{3}\]</span>
+(si no lo ven claro, calculen despacio los primeros términos)
 </div>
 
+<p>Esta es una serie geométrica con <span class="math inline">\(a = -1\)</span> y <span class="math inline">\(r = -(1/2)\)</span>, luego la serie vale:
+<span class="math display">\[\frac{a}{1-r} = \frac{-1}{1- \frac{-1}{2}} = \frac{-1}{\frac{3}{2}} = -\frac{2}{3}\]</span></p>
+<hr />
 Hay veces que el término general no parece el de una serie geométrica, pero sí lo es.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-37" class="example"><strong>Ejemplo 5.8  </strong></span>Estudie la convergencia de la serie
+<p><span id="exm:unnamed-chunk-40" class="example"><strong>Ejemplo 5.8  </strong></span>Estudie la convergencia de la serie
 <span class="math display">\[\sum_{n = 1}^{\infty} 2^{2n}3^{1-n}\]</span></p>
-<p>Como ambos términos tienen un <span class="math inline">\(n\)</span> en el exponente nos sopechamos que lo podemos escribir como una serie geométrica. Como el exponente del segundo factor tiene un <span class="math inline">\(-n\)</span> lo pasamos al denominador cambiándole de signo:</p>
+Como ambos términos tienen un <span class="math inline">\(n\)</span> en el exponente nos sopechamos que lo podemos escribir como una serie geométrica. Como el exponente del segundo factor tiene un <span class="math inline">\(-n\)</span> lo pasamos al denominador cambiándole de signo:
+</div>
+
 <p><span class="math display">\[\sum_{n = 1}^{\infty} \frac{2^{2n}}{3^{n-1}}\]</span></p>
-Ahora cambiamos el <span class="math inline">\(2^{2n}\)</span> por <span class="math inline">\((2^2)^n = 4^n\)</span>:
+<p>Ahora cambiamos el <span class="math inline">\(2^{2n}\)</span> por <span class="math inline">\((2^2)^n = 4^n\)</span>:
 <span class="math display">\[\sum_{n = 1}^{\infty} \frac{4^n}{3^{n-1}}\]</span>
 Y ahora necesitamos que ambos exponentes sean <span class="math inline">\(n-1\)</span>:
 <span class="math display">\[\sum_{n = 1}^{\infty} \frac{4 \cdot 4^{n-1}}{3^{n-1}}\]</span>
 Y ya está:
 <span class="math display">\[\sum_{n = 1}^{\infty} 4 \cdot\left(\frac{4}{3}\right)^{n-1}\]</span>
-Tenemos una serie geométrica con <span class="math inline">\(a = 4\)</span> y <span class="math inline">\(r = 4/3\)</span>. Como <span class="math inline">\(r&gt;1\)</span> esta serie es divergente.
-</div>
-
+Tenemos una serie geométrica con <span class="math inline">\(a = 4\)</span> y <span class="math inline">\(r = 4/3\)</span>. Como <span class="math inline">\(r&gt;1\)</span> esta serie es divergente.</p>
 
 </div>
 </div>

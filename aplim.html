@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -274,26 +276,26 @@
 <li>todos los números reales menos el 1.</li>
 </ol>
 <p>Hemos visto también que podemos dividir cada regla en subreglas: las reglas (1), (2) y (5) están divididas en dos subreglas. En este caso decimos que la función está <em>definida a trozos</em>. Un ejemplo un poco más complejo de función definida a trozos es:</p>
-<p>Se asigna a todo número <span class="math inline">\(x\)</span>
+<p>Se asigna a todo número <span class="math inline">\(y\)</span>
 <span class="math display">\[\left\{\begin{array}{cl} 
        0 &amp; \mbox{ si } y &lt; 0\\
        y &amp; \mbox{ si } 0 ≤ y &lt; 2\\ 
        -\frac{y}{2} + 3 &amp;  \mbox{ si } 2 ≤ y &lt; 6\\ 
        0 &amp; \mbox{ si } y ≥ 6 \end{array}\right.\]</span></p>
 <p>Su gráfica es:
-<img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-38-1.png" width="672" /></p>
-<p>Hay dos cosas importantes a notar en esta definición. La primera es que la regla asigna el valor 0 a los valores de <span class="math inline">\(y\)</span> que son menores que 0 o mayores que 6. Esto no es lo mismo que asignar valores sólo entre 0 y 6. En nuestra función el dominio va desde <span class="math inline">\(-\infty\)</span> a <span class="math inline">\(\infty\)</span> y todos los números reales tiene asignado un valor. Por ejemplo, el valor asignado a <span class="math inline">\(-1\)</span> es 0. En el segundo caso el dominio sería de 0 a 6 y no se asignaría nungún valor a <span class="math inline">\(y = -1\)</span>.</p>
+<img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
+<p>Hay dos cosas importantes a notar en esta definición. La primera es que la regla asigna el valor 0 a los valores de <span class="math inline">\(y\)</span> que son menores que 0 o mayores que 6. Esto no es lo mismo que asignar valores sólo entre 0 y 6. En nuestra función el dominio va desde <span class="math inline">\(-\infty\)</span> a <span class="math inline">\(\infty\)</span> y todos los números reales tienen asignado un valor. Por ejemplo, el valor asignado a <span class="math inline">\(y = -1\)</span> es 0. En el segundo caso el dominio sería de 0 a 6 y no se asignaría ningún valor a <span class="math inline">\(y = -1\)</span>.</p>
 <p>La segunda es que hemos ido con mucho cuidado en no asignar dos valores a ningún valor del dominio: hemos asignado 0 a los valores <span class="math inline">\(y &lt; 0\)</span> e <span class="math inline">\(y\)</span> a los valores <span class="math inline">\(y ≥ 0\)</span>. Porque una de las características fundamentales de un función es que sólo se asigna un único valor a cada valor del dominio.</p>
 <p>Por ejemplo, una descripción de una curva que <em>no</em> es una función es la del círculo: <span class="math inline">\(x^2 + y^2 = r^2\)</span>, donde <span class="math inline">\(r\)</span> es el radio. Hay dos valores de <span class="math inline">\(y\)</span> posibles para cada valor de <span class="math inline">\(x\)</span>. Por ejemplo, para <span class="math inline">\(x = 0\)</span>, <span class="math inline">\(y\)</span> puede valer <span class="math inline">\(r\)</span> y <span class="math inline">\(-r\)</span>.</p>
 <p>Ahora que tenemos una idea intuitiva de qué es una función, vamos a dar una definición formal de función y de dominio.</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-39" class="definition"><strong>Definición 6.1  </strong></span>Una <strong>función</strong> es una colección de pares de números reales con la siguiente propiedad: Si <span class="math inline">\((a, b)\)</span> y <span class="math inline">\((a, c)\)</span> pertenecen a la colección entonces <span class="math inline">\(b = c\)</span>; es decir, la colección no debe contener dos pares distintos con el mismo primer elemento.
+<span id="def:unnamed-chunk-42" class="definition"><strong>Definición 6.1  </strong></span>Una <strong>función</strong> es una colección de pares de números reales con la siguiente propiedad: Si <span class="math inline">\((a, b)\)</span> y <span class="math inline">\((a, c)\)</span> pertenecen a la colección entonces <span class="math inline">\(b = c\)</span>; es decir, la colección no debe contener dos pares distintos con el mismo primer elemento.
 </div>
 
 
 <div class="definition">
-<span id="def:unnamed-chunk-40" class="definition"><strong>Definición 6.2  </strong></span>Si <span class="math inline">\(f\)</span> es una función, el <strong>dominio</strong> de <span class="math inline">\(f\)</span> es el conjunto de todos los <span class="math inline">\(a\)</span> para los que existe algún <span class="math inline">\(b\)</span> tal que <span class="math inline">\((a, b)\)</span> está en <span class="math inline">\(f\)</span>. Este <span class="math inline">\(b\)</span> debe ser único y se designa por <span class="math inline">\(f(a)\)</span>.
+<span id="def:unnamed-chunk-43" class="definition"><strong>Definición 6.2  </strong></span>Si <span class="math inline">\(f\)</span> es una función, el <strong>dominio</strong> de <span class="math inline">\(f\)</span> es el conjunto de todos los <span class="math inline">\(a\)</span> para los que existe algún <span class="math inline">\(b\)</span> tal que <span class="math inline">\((a, b)\)</span> está en <span class="math inline">\(f\)</span>. Este <span class="math inline">\(b\)</span> debe ser único y se designa por <span class="math inline">\(f(a)\)</span>.
 </div>
 
 <hr />
@@ -304,16 +306,16 @@
 <p>Los valores de <span class="math inline">\(f\)</span> son números, y por lo tanto pueden ser operados. Esto nos permite definir de forma natural operaciones aritméticas entre funciones siguiendo los conceptos de operaciones entre números.</p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-41" class="definition"><strong>Definición 6.3  </strong></span>Sean <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> dos funciones. Definimos las siguientes operaciones entre funciones:</p>
+<p><span id="def:unnamed-chunk-44" class="definition"><strong>Definición 6.3  </strong></span>Sean <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> dos funciones. Definimos las siguientes operaciones entre funciones:</p>
 <ul>
 <li><span class="math inline">\((f + g)(x) = f(x) + g(x)\)</span></li>
 <li><span class="math inline">\((f - g)(x) = f(x) - g(x)\)</span></li>
 <li><span class="math inline">\((f \cdot g)(x) = f(x) \cdot g(x)\)</span></li>
 <li><span class="math inline">\(\frac{f}{g}(x) = \frac{f(x)}{g(x)}\)</span>
-</div>
-Los dominios de estas nuevas funciones están compuestos por los valores de <span class="math inline">\(x\)</span> en donde tiene sentido la expresión aritmética “<span class="math inline">\(f(x)\)</span> operado con <span class="math inline">\(g(x)\)</span>”. Es decir, son los valores <span class="math inline">\(x\)</span> tales que <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span>, ambos, existen. En el caso de la división hay una restricción más: no sólo deben existir <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span>, sino que también debe cumplirse que <span class="math inline">\(g(x) ≠ 0\)</span>.</li>
+</div></li>
 </ul>
-<p>Estamos muy acostumbrados a ver expresiones del estilo <span class="math inline">\(\cos(x^2)\)</span>. La asignación que describe esta expresión es la siguiente: a cada valor <span class="math inline">\(x\)</span> primero se le asigna el valor <span class="math inline">\(x^2\)</span>; y a este valor se le asigna el valor <span class="math inline">\(\cos(x)\)</span>. Si llamamos <span class="math inline">\(f(x)\)</span> a la función <span class="math inline">\(x^2\)</span> y <span class="math inline">\(g(x)\)</span> a la función <span class="math inline">\(\cos(x)\)</span>, lo que hemos calculado es <span class="math inline">\(g(f(x))\)</span>. A esto se llama la <em>composición</em> de <span class="math inline">\(f\)</span> con <span class="math inline">\(g\)</span> y se simboliza con <span class="math inline">\((g \circ f)\)</span>:
+<p>Los dominios de estas nuevas funciones están compuestos por los valores de <span class="math inline">\(x\)</span> en donde tiene sentido la expresión aritmética “<span class="math inline">\(f(x)\)</span> operado con <span class="math inline">\(g(x)\)</span>”. Es decir, son los valores <span class="math inline">\(x\)</span> tales que <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span>, ambos, existen. En el caso de la división hay una restricción más: no sólo deben existir <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span>, sino que también debe cumplirse que <span class="math inline">\(g(x) ≠ 0\)</span>.</p>
+<p>Estamos muy acostumbrados a ver expresiones del estilo <span class="math inline">\(\cos(x^2)\)</span>. La asignación que describe esta expresión es la siguiente: a cada valor <span class="math inline">\(x\)</span> primero se le asigna el valor <span class="math inline">\(x^2\)</span>; y a este valor se le asigna el valor que se obtiene al aplicar la función coseno. Si llamamos <span class="math inline">\(f(x)\)</span> a la función <span class="math inline">\(x^2\)</span> y <span class="math inline">\(g(x)\)</span> a la función <span class="math inline">\(\cos(x)\)</span>, lo que hemos calculado es <span class="math inline">\(g(f(x))\)</span>. A esto se llama la <em>composición</em> de <span class="math inline">\(f\)</span> con <span class="math inline">\(g\)</span> y se simboliza con <span class="math inline">\((g \circ f)\)</span>:
 <span class="math display">\[(g \circ f)(x) = g(f(x))\]</span>
 Una de las particularidades de esta operación es que se lee de “dentro a afuera”: <span class="math inline">\((g \circ f)(x)\)</span> es “<span class="math inline">\(f\)</span> compuesto con <span class="math inline">\(g\)</span>” y no al revés, como con las otras operaciones. Para complicar las cosas un poco más, esta operación no es conmutativa: <span class="math inline">\((g \circ f)(x) ≠ (f \circ g)(x)\)</span>. No es lo mismo <span class="math inline">\(\cos(x^2)\)</span> que <span class="math inline">\(\cos^2(x)\)</span>. Hemos de ir con mucho cuidado al escribir y leer composiciones.</p>
 </div>
@@ -341,7 +343,7 @@ Veamos qué mas cambios hay que hacer.</p>
 <p>Este es el único punto donde el cambio no es obvio. Pero la solución la tenemos en la definición misma. ¿Cómo lo hacíamos para expresar que los términos de la sucesión se acercan a <span class="math inline">\(L\)</span> tanto como queremos? Introducimos un valor que llamamos <span class="math inline">\(\varepsilon\)</span> y exigimos que <span class="math inline">\(|a_n – L| &lt; \varepsilon\)</span>. Pues ahora hacemos lo mismo: introducimos un nuevo valor que llamaremos <span class="math inline">\(\delta\)</span>, positivo, y exigiremos que <span class="math inline">\(0 &lt; |x - a| &lt; \delta\)</span>. El “<span class="math inline">\(&gt; 0\)</span>” es necesario, para impedir la “trampa” <span class="math inline">\(\delta = 0\)</span>. Y con esto podemos escribir la definición formal de límite de una función:</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-42" class="definition"><strong>Definición 6.4  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span>. Decimos que esta función tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span>, y lo escribimos como
+<span id="def:unnamed-chunk-45" class="definition"><strong>Definición 6.4  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span>. Decimos que esta función tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span>, y lo escribimos como
 <span class="math display">\[\lim_{x \to a} f(x) = L\]</span>
 si para cualquier número positivo <span class="math inline">\(\varepsilon &gt; 0\)</span>, podemos encontrar un valor <span class="math inline">\(\delta\)</span> &gt; 0, tal que para todo <span class="math inline">\(x\)</span>, si <span class="math inline">\(0 &lt; |x - a| &lt; \delta\)</span> entonces <span class="math inline">\(|f(x) – L| &lt; \varepsilon\)</span>.
 </div>
@@ -353,7 +355,7 @@ si para cualquier número positivo <span class="math inline">\(\varepsilon &gt; 
 Veamos dos ejemplos de aplicación de esta definición. Primero uno muy sencillo:
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-43" class="example"><strong>Ejemplo 6.1  </strong></span>Sea <span class="math inline">\(f(x) = x\)</span>. Demuestra que <span class="math inline">\(\lim_{x \to 2} f(x) = 2\)</span>.</p>
+<p><span id="exm:unnamed-chunk-46" class="example"><strong>Ejemplo 6.1  </strong></span>Sea <span class="math inline">\(f(x) = x\)</span>. Demuestra que <span class="math inline">\(\lim_{x \to 2} f(x) = 2\)</span>.</p>
 <p>Tenemos que <span class="math inline">\(a = 2\)</span>, <span class="math inline">\(f(x) = x\)</span> y <span class="math inline">\(L = 2\)</span>. Si reescribimos la definición para este caso concreto tenemos que demostrar que para cualquier número positivo <span class="math inline">\(\varepsilon &gt; 0\)</span>, podemos encontrar un valor <span class="math inline">\(\delta\)</span> &gt; 0, tal que para todo <span class="math inline">\(x\)</span>, si <span class="math inline">\(0 &lt; |x - 2| &lt; \delta\)</span> entonces <span class="math inline">\(|x - 2| &lt; \varepsilon\)</span>.</p>
 Evidentemente esto se cumple si <span class="math inline">\(\delta = \varepsilon\)</span>.
 </div>
@@ -362,7 +364,7 @@ Evidentemente esto se cumple si <span class="math inline">\(\delta = \varepsilon
 Ahora vayamos a un caso más complicado.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-44" class="example"><strong>Ejemplo 6.2  </strong></span>Sea <span class="math inline">\(f(x) = x^2\)</span>. Demuestra que <span class="math inline">\(\lim_{x \to 3} f(x) = 9\)</span>.</p>
+<p><span id="exm:unnamed-chunk-47" class="example"><strong>Ejemplo 6.2  </strong></span>Sea <span class="math inline">\(f(x) = x^2\)</span>. Demuestra que <span class="math inline">\(\lim_{x \to 3} f(x) = 9\)</span>.</p>
 <p>Lo que tenemos que hacer ahora es dado el <span class="math inline">\(\varepsilon\)</span> encontrar un <span class="math inline">\(\delta\)</span> tal que si <span class="math inline">\(0 &lt; |x - 3| &lt; \delta\)</span> entonces <span class="math inline">\(|x^2 - 9| &lt; \varepsilon\)</span>.</p>
 <p>Como es más complicado, cojamos un valor concreto de <span class="math inline">\(\varepsilon\)</span>, por ejemplo <span class="math inline">\(\varepsilon = 0.1\)</span>. Entonces queremos que
 <span class="math display">\[|x^2 - 9| &lt; 0.1\]</span>
@@ -372,16 +374,16 @@ y obtenemos que <span class="math inline">\(x^2 &lt; 9.1\)</span>, es decir que 
 <p>Hacemos lo mismo si <span class="math inline">\(x &lt; 3\)</span>. Ahora
 <span class="math display">\[|x^2 - 9| = 9 - x^2 &lt; 0.1\]</span>
 y tenemos que <span class="math inline">\(x &gt; \sqrt{8.9}\)</span>.</p>
-<p>Luego si <span class="math inline">\(\sqrt{8.9} &lt; x &lt; \sqrt{9.1}\)</span>, aseguramos que <span class="math inline">\(|x^2 - 9| &lt; 0.1\)</span>. Hemos de escoger un <span class="math inline">\(\delta\)</span> que nos asegure que <span class="math inline">\(\sqrt{8.9} &lt; x &lt; \sqrt{9.1}\)</span>. Por ejemplo, <span class="math inline">\(\delta = 0.015\)</span> nos va bien.</p>
-<p>Esto que hemos hecho para un <span class="math inline">\(\varepsilon\)</span> concreto, lo podemos generalizar fácilmente. Para que <span class="math inline">\(|x^2 - 9| &lt; 0.1\)</span> tiene que pasar que
+<p>Luego si <span class="math inline">\(\sqrt{8.9} &lt; x &lt; \sqrt{9.1}\)</span>, aseguramos que <span class="math inline">\(|x^2 - 9| &lt; 0.1\)</span>. Recordemos que <span class="math inline">\(x\)</span> va a estar “centrado” en 3. Hemos de escoger un <span class="math inline">\(\delta\)</span> que nos asegure que <span class="math inline">\(x\)</span> esté suficientemente cerca de 3 para que <span class="math inline">\(\sqrt{8.9} &lt; x &lt; \sqrt{9.1}\)</span>. Por ejemplo, si no nos alejamos más de <span class="math inline">\(0.015\)</span> de 3 nos va bien. Luego podemos escoger <span class="math inline">\(\delta = 0.015\)</span>.</p>
+Esto que hemos hecho para un <span class="math inline">\(\varepsilon\)</span> concreto, lo podemos generalizar fácilmente. Para que <span class="math inline">\(|x^2 - 9| &lt; 0.1\)</span> tiene que pasar que
 <span class="math display">\[\sqrt{9 - \varepsilon} &lt; x &lt; \sqrt{9 + \varepsilon}\]</span>
 Restamos 3 a todo y tenemos que:
 <span class="math display">\[\sqrt{9 - \varepsilon} - 3 &lt; x -3 &lt; \sqrt{9 + \varepsilon}- 3\]</span>
 Y a poco que lo piensas ves que el valor de <span class="math inline">\(\delta\)</span> debe ser menor que el más cercano a 3 de los dos valores:
-<span class="math display">\[ \delta ≤ \min(|\sqrt{9 - \varepsilon} - 3| , |\sqrt{9 + \varepsilon}- 3)|\]</span></p>
-Luego para cualquier <span class="math inline">\(\varepsilon\)</span> podemos encontrar un <span class="math inline">\(\delta\)</span> tal que si <span class="math inline">\(0 &lt; |x - 3| &lt; \delta\)</span> entonces <span class="math inline">\(|x^2 – 9| &lt; \varepsilon\)</span>. Queda demostrado.
+<span class="math display">\[ \delta ≤ \min(|\sqrt{9 - \varepsilon} - 3| , |\sqrt{9 + \varepsilon}- 3)|\]</span>
 </div>
 
+<p>Luego para cualquier <span class="math inline">\(\varepsilon\)</span> podemos encontrar un <span class="math inline">\(\delta\)</span> tal que si <span class="math inline">\(0 &lt; |x - 3| &lt; \delta\)</span> entonces <span class="math inline">\(|x^2 – 9| &lt; \varepsilon\)</span>. Queda demostrado.</p>
 <div id="límites-cuando-x-to-infty" class="section level3">
 <h3><span class="header-section-number">6.3.1</span> Límites cuando <span class="math inline">\(x \to \infty\)</span></h3>
 <p>Hemos supuesto hasta ahora que <span class="math inline">\(x\)</span> tiende a un valor finito <span class="math inline">\(a\)</span>. Pero también podemos tener un límite cuando <span class="math inline">\(x \to \infty\)</span>. Esto es mucho más parecido al caso de las sucesiones: ya no necesitamos el parámetro <span class="math inline">\(\delta\)</span>, sino un valor <span class="math inline">\(X\)</span> tal que si <span class="math inline">\(x &gt; X\)</span>, <span class="math inline">\(|f(x) - L| &lt; \varepsilon\)</span>. No diremos más.</p>
@@ -422,7 +424,7 @@ Al igual que pasaba en el caso de las sucesiones, en el caso de la división y p
 <p>Todo lo que se vio de cálculo de límites entonces, es aplicable ahora, en particular la jerarquía de infinitos que se explicaron en el apartado <a href="sucesiones.html#jerinf">3.10.2</a>. Veamos cómo se aplica al caso de funciones con agunos ejemplos.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-46" class="example"><strong>Ejemplo 6.3  </strong></span>¿Cuál es el límite de <span class="math inline">\(\frac{x^3 + 3}{e^{x/1000}}\)</span> cuando <span class="math inline">\(x\)</span> tiende a infinito?</p>
+<p><span id="exm:unnamed-chunk-49" class="example"><strong>Ejemplo 6.3  </strong></span>¿Cuál es el límite de <span class="math inline">\(\frac{x^3 + 3}{e^{x/1000}}\)</span> cuando <span class="math inline">\(x\)</span> tiende a infinito?</p>
 <p>Tenemos aquí una indeterminación del tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span>. La exponencial es un infinito de orden superior, luego</p>
 <span class="math display">\[\lim_{x \to \infty} \frac{x^3 + 3}{e^{x/1000}} = \lim_{x \to \infty} \frac{1}{e^{x/1000}} = 0\]</span>
 </div>
@@ -430,7 +432,7 @@ Al igual que pasaba en el caso de las sucesiones, en el caso de la división y p
 <hr />
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-47" class="example"><strong>Ejemplo 6.4  </strong></span>¿Cuál es el límite de <span class="math inline">\(f(x) = \frac{1}{x} - \frac{1}{x^2}\)</span> cuando <span class="math inline">\(x\)</span> tiende a 0?</p>
+<p><span id="exm:unnamed-chunk-50" class="example"><strong>Ejemplo 6.4  </strong></span>¿Cuál es el límite de <span class="math inline">\(f(x) = \frac{1}{x} - \frac{1}{x^2}\)</span> cuando <span class="math inline">\(x\)</span> tiende a 0?</p>
 <p>Tenemos aquí una indeterminación del tipo <span class="math inline">\(\infty - \infty\)</span>. El término <span class="math inline">\(\frac{1}{x^2}\)</span> es un infinito de orden superior, luego</p>
 <span class="math display">\[\lim_{x \to 0} \frac{1}{x} - \frac{1}{x^2} = \lim_{x \to 0}  - \frac{1}{x^2} = -\infty\]</span>
 </div>
@@ -442,7 +444,7 @@ Al igual que pasaba en el caso de las sucesiones, en el caso de la división y p
 Usemos este resultado.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-48" class="example"><strong>Ejemplo 6.5  </strong></span>¿Cuál es el límite cuando de <span class="math inline">\((1 + 2x)^{(1/x)}\)</span> cuando <span class="math inline">\(x\)</span> tiende a 0?</p>
+<p><span id="exm:unnamed-chunk-51" class="example"><strong>Ejemplo 6.5  </strong></span>¿Cuál es el límite cuando de <span class="math inline">\((1 + 2x)^{(1/x)}\)</span> cuando <span class="math inline">\(x\)</span> tiende a 0?</p>
 Esta expresión la podemos escribir como
 <span class="math display">\[\left(1 + \frac{1}{1/2x}\right)^{1/x}\]</span>
 Y esta expresión es fácil transformarla a la forma que queremos:
@@ -457,14 +459,14 @@ Aplicamos el límite:
 <p>Si tenemos un indeterminación de tipo <span class="math inline">\(\frac{0}{0}\)</span> y <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> son ambos polinomios, podemos descomponer los polinomios en factores y simplificar.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-49" class="example"><strong>Ejemplo 6.6  </strong></span>Calcula
-<span class="math display">\[\lim_{x\to 0}\frac{x^3 - 8}{x-2}\]</span></p>
-Descomponemos <span class="math inline">\(x^3 - 8\)</span>. Sabemos que <span class="math inline">\(x=2\)</span> es una raíz (si no, no tendríamos la indeterminación), luego
-<span class="math display">\[x^3 - 8 = (x-2)(ax^2 + bx + c)\]</span>
-Desarrollamos el lado izquierdo e igualamos los componentes de cada potencia y tenemos que <span class="math inline">\(a = 1\)</span>, <span class="math inline">\(b = 2\)</span> y <span class="math inline">\(c = 4\)</span>. Luego nos queda
-<span class="math display">\[\lim_{x\to 0}\frac{x^3 - 8}{x-2} = \lim_{x\to 0}\frac{(x-2)(x^2 + 2x + 4)}{x-2} = \lim_{x\to 0} x^2 + 2x + 4 = 0\]</span>
+<span id="exm:unnamed-chunk-52" class="example"><strong>Ejemplo 6.6  </strong></span>Calcula
+<span class="math display">\[\lim_{x\to 2}\frac{x^3 - 8}{x-2}\]</span>
 </div>
 
+<p>Descomponemos <span class="math inline">\(x^3 - 8\)</span>. Sabemos que <span class="math inline">\(x=2\)</span> es una raíz (si no, no tendríamos la indeterminación), luego
+<span class="math display">\[x^3 - 8 = (x-2)(ax^2 + bx + c)\]</span>
+Desarrollamos el lado izquierdo e igualamos los componentes de cada potencia y tenemos que <span class="math inline">\(a = 1\)</span>, <span class="math inline">\(b = 2\)</span> y <span class="math inline">\(c = 4\)</span>. Luego nos queda
+<span class="math display">\[\lim_{x\to 2}\frac{x^3 - 8}{x-2} = \lim_{x\to 2}\frac{(x-2)(x^2 + 2x + 4)}{x-2} = \lim_{x\to 2} x^2 + 2x + 4 = 0\]</span></p>
 <p>Si no son polinomios, podemos usar la regla de L’Hôpital.</p>
 </div>
 <div id="regla-de-lhôpital" class="section level3">
@@ -473,7 +475,7 @@ Desarrollamos el lado izquierdo e igualamos los componentes de cada potencia y t
 <p>Esta regla es muy útil para resolver indeterminaciones del tipo <span class="math inline">\(\frac{0}{0}\)</span>.</p>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-50" class="theorem"><strong>Teorema 6.1  </strong></span>Sean las funciones <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> y sean sus derivadas <span class="math inline">\(f^{\prime}(x)\)</span> y <span class="math inline">\(g^{\prime}(x)\)</span>. Supongamos que
+<span id="thm:unnamed-chunk-53" class="theorem"><strong>Teorema 6.1  </strong></span>Sean las funciones <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> y sean sus derivadas <span class="math inline">\(f^{\prime}(x)\)</span> y <span class="math inline">\(g^{\prime}(x)\)</span>. Supongamos que
 <span class="math display">\[\lim_{x \to a} f(x) = 0 \quad \mbox{y} \quad \lim_{x \to a} g(x) = 0\]</span>
 y supongamos también que existe <span class="math inline">\(\lim_{x \to a} f^{\prime}(x)/g^{\prime}(x)\)</span>. Entonces, existe <span class="math inline">\(\lim_{x \to a} f(x)/g(x)\)</span> y
 <span class="math display">\[\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f^{\prime}(x)}{g^{\prime}(x)}\]</span>
@@ -482,7 +484,7 @@ y supongamos también que existe <span class="math inline">\(\lim_{x \to a} f^{\
 <p>Veamos cómo esta regla nos resuelve el límite calculado anteriormente, sin necesidad de descomponer el polinomio.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-51" class="example"><strong>Ejemplo 6.7  </strong></span>Calcula
+<p><span id="exm:unnamed-chunk-54" class="example"><strong>Ejemplo 6.7  </strong></span>Calcula
 <span class="math display">\[\lim_{x\to 0}\frac{x^3 - 8}{x-2}\]</span></p>
 <p>Aplicamos la regla de L’Hôpital, derivando numerador y denominador:</p>
 <span class="math display">\[\lim_{x\to 0}\frac{x^3 - 8}{x-2} = \lim_{x\to 0} \frac{3x^2}{1} = 0\]</span>
@@ -491,7 +493,7 @@ y supongamos también que existe <span class="math inline">\(\lim_{x \to a} f^{\
 <p>Y también nos sirve si no tenemos polinomios:</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-52" class="example"><strong>Ejemplo 6.8  </strong></span>Calcula
+<p><span id="exm:unnamed-chunk-55" class="example"><strong>Ejemplo 6.8  </strong></span>Calcula
 <span class="math display">\[\lim_{x \to 1} \frac{\sin \pi x}{x^2 - 1}\]</span></p>
 Es una indeterminación del tipo <span class="math inline">\(\frac{0}{0}\)</span>. Aplicamos la regla de L’Hôpital:
 <span class="math display">\[\lim_{x \to 1} \frac{\pi \cos \pi x}{2x} = \frac{\pi\cdot (-1)}{2} = -\frac{\pi}{2} \]</span>
@@ -506,17 +508,17 @@ cambiando la indeterminación por una del tipo <span class="math inline">\(\frac
 <p>Otra manera de transformar tipos de indeterminación es aplicar logaritmos y recordar que <span class="math inline">\(\log x^y = y\log x\)</span>. Veamos un ejemplo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-53" class="example"><strong>Ejemplo 6.9  </strong></span>Calcula <span class="math inline">\(\lim_{x \to \infty} (1/x)^{(1/x)}\)</span>.</p>
-Esta es una indeterminación del tipo <span class="math inline">\(0^0\)</span>. Vamos a transformarla aplicando logaritmos. Supongamos que
+<span id="exm:unnamed-chunk-56" class="example"><strong>Ejemplo 6.9  </strong></span>Calcula <span class="math inline">\(\lim_{x \to \infty} (1/x)^{(1/x)}\)</span>.
+</div>
+
+<p>Esta es una indeterminación del tipo <span class="math inline">\(0^0\)</span>. Vamos a transformarla aplicando logaritmos. Supongamos que
 <span class="math display">\[ L = \lim_{x \to \infty} (1/x)^{(1/x)}\]</span>
 aplicando logaritmos a ambos lados tenemos que
 <span class="math display">\[ \log L = \lim_{x \to \infty}(\log ((1/x)^{(1/x)})\]</span>
 Y ahora
 <span class="math display">\[\log L= \lim_{x \to \infty} (1/x) \log (1/x) = \lim_{x \to \infty} \frac{\log(1/x)}{x} = 
 \lim_{x \to \infty} \frac{\log(1) - \log x}{x} =  \lim_{x \to \infty} \frac{- \log x}{x}\]</span>
-Esto es ahora una indeterminación del tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span>. Como el denominador tiene un infinito de orden superior, entonces el límite es 0. Y nos queda <span class="math inline">\(\log L = 0\)</span> lo que significa que <span class="math inline">\(L = 1\)</span>.
-</div>
-
+Esto es ahora una indeterminación del tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span>. Como el denominador tiene un infinito de orden superior, entonces el límite es 0. Y nos queda <span class="math inline">\(\log L = 0\)</span> lo que significa que <span class="math inline">\(L = 1\)</span>.</p>
 </div>
 </div>
 <div id="límites-laterales" class="section level2">
@@ -525,27 +527,28 @@ Esto es ahora una indeterminación del tipo <span class="math inline">\(\frac{\i
 <span class="math display">\[ V(t) = \left\{\begin{array}{rl} 0 &amp; \mbox{si } t &lt; 0\\
                                 1 &amp; \mbox{si } t ≥ 0\end{array}\right.\]</span></p>
 <p><img src="imagenes/step.gif" /><!-- --></p>
-<p>Si nos acercamos a <span class="math inline">\(t = 0\)</span> desde valores negativos, desde la izquierda, la función tiende a 0, y si no miramos lo que pasa para tiempos positivos, parece que el límite es 0. Pero si nos acercamos a <span class="math inline">\(t = 0\)</span> desde valores positivos, desde la derecha, la función tiende a 1, y si no miramos lo que pasa para tiempos negativos, parece que el límite es 1. Separece un poco a la idea de valores oscilantes y nuestra intuición nos dice, correctamente, que esta función no tiene límite cuando <span class="math inline">\(t\)</span> tiende a 0. Este es el tercer caso de inexistencia de límites que mencionábamos en el apartado <a href="aplim.html#exlimfun">6.3.2</a>.</p>
+<p>Si nos acercamos a <span class="math inline">\(t = 0\)</span> desde valores negativos, desde la izquierda, la función tiende a 0, y si no miramos lo que pasa para tiempos positivos, parece que el límite es 0. Pero si nos acercamos a <span class="math inline">\(t = 0\)</span> desde valores positivos, desde la derecha, la función tiende a 1, y si no miramos lo que pasa para tiempos negativos, parece que el límite es 1. Se parece un poco a la idea de valores oscilantes y nuestra intuición nos dice, correctamente, que esta función no tiene límite cuando <span class="math inline">\(t\)</span> tiende a 0. Este es el tercer caso de inexistencia de límites que mencionábamos en el apartado <a href="aplim.html#exlimfun">6.3.2</a>.</p>
 <p>Pero este concepto de <em>límites laterales</em> es útil y necesaria, y por lo tanto vamos a definirlas con precisión.</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-55" class="definition"><strong>Definición 6.5  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span>. Decimos que esta función tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span> por la izquierda, y lo escribimos como
+<span id="def:unnamed-chunk-58" class="definition"><strong>Definición 6.5  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span>. Decimos que esta función tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span> por la izquierda, y lo escribimos como
 <span class="math display">\[\lim_{x \to a^-} f(x) = L\]</span>
 si para cualquier número positivo <span class="math inline">\(\varepsilon &gt; 0\)</span>, podemos encontrar un valor <span class="math inline">\(\delta\)</span> &gt; 0, tal que para todo <span class="math inline">\(x\)</span>, si <span class="math inline">\(0 &lt; a - x &lt; \delta\)</span> entonces <span class="math inline">\(|f(x) – L| &lt; \varepsilon\)</span>.
 </div>
 
 
 <div class="definition">
-<span id="def:unnamed-chunk-56" class="definition"><strong>Definición 6.6  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span>. Decimos que esta función tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span> por la derecha, y lo escribimos como
+<span id="def:unnamed-chunk-59" class="definition"><strong>Definición 6.6  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span>. Decimos que esta función tiene límite <span class="math inline">\(L\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span> por la derecha, y lo escribimos como
 <span class="math display">\[\lim_{x \to a^+} f(x) = L\]</span>
 si para cualquier número positivo <span class="math inline">\(\varepsilon &gt; 0\)</span>, podemos encontrar un valor <span class="math inline">\(\delta\)</span> &gt; 0, tal que para todo <span class="math inline">\(x\)</span>, si <span class="math inline">\(0 &lt; x - a &lt; \delta\)</span> entonces <span class="math inline">\(|f(x) – L| &lt; \varepsilon\)</span>.
 </div>
 
+<hr />
 <p>Como vemos, es casi la misma definición del límite comun, sólo que quitamos el valor absoluto a <span class="math inline">\(x-a\)</span> para describir que estamos sólo considerando valores menores que <span class="math inline">\(a\)</span> si es por la izquierda, o valores mayores que <span class="math inline">\(a\)</span> si es por la derecha.</p>
 <p>Estos límites laterales pueden no existir por ir hacia infinito u oscilar. Pero si ambos existen y tienden al mismo valor <span class="math inline">\(L\)</span>, este valor tiene que ser el del límite “normal”. Esto lo enunciamos con el siguiente teorema.</p>
 
 <div class="theorem">
-<span id="thm:unnamed-chunk-57" class="theorem"><strong>Teorema 6.2  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span> y sean <span class="math inline">\(L\)</span> y <span class="math inline">\(a\)</span> números reales. El límite de <span class="math inline">\(f(x)\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span> es <span class="math inline">\(L\)</span> si y solo si
+<span id="thm:unnamed-chunk-60" class="theorem"><strong>Teorema 6.2  </strong></span>Sea una función <span class="math inline">\(f(x)\)</span> y sean <span class="math inline">\(L\)</span> y <span class="math inline">\(a\)</span> números reales. El límite de <span class="math inline">\(f(x)\)</span> cuando <span class="math inline">\(x\)</span> tiende a <span class="math inline">\(a\)</span> es <span class="math inline">\(L\)</span> si y solo si
 <span class="math display">\[ \lim_{x \to a^-} f(x) = \lim_{x \to a^+} f(x) = L\]</span>
 </div>
 

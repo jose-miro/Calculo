@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -289,7 +291,7 @@ que vemos que depende de tres valores: las dos cargas y la distancia entre ellas
 A las <span class="math inline">\(n\)</span> variables de entrada se le llaman <em>variables independientes</em> y a la variable de salida se le llama <em>variable dependiente</em>.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-145" class="example"><strong>Ejemplo 13.1  </strong></span>El volumen de un cono se calcula con la expresión
+<span id="exm:unnamed-chunk-148" class="example"><strong>Ejemplo 13.1  </strong></span>El volumen de un cono se calcula con la expresión
 <span class="math display">\[V = \frac{1}{3}π R^2 h.\]</span>
 Vemos que es una función de dos variables independientes: el radio <span class="math inline">\(R\)</span> y la altura <span class="math inline">\(h\)</span>.
 </div>
@@ -321,7 +323,7 @@ Tenemos varios términos y cada uno de ellos o es una constante o aparecen <span
 <p>Demostrar la existencia de un límite se ha convertido en algo mucho más complicado, pero no hace falta asustarse: casi siempre es lo que nos podríamos suponer.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-148" class="example"><strong>Ejemplo 13.2  </strong></span>Sea
+<p><span id="exm:unnamed-chunk-151" class="example"><strong>Ejemplo 13.2  </strong></span>Sea
 <span class="math display">\[f(x_1, x_2, x_3) = \frac{x_1 - x_2^2}{1 - x_3}.\]</span></p>
 <p>Esta función tiene limite en todos los puntos en los que <span class="math inline">\(x_3 ≠ 1\)</span>.</p>
 <p>Calculemos algunos valores:
@@ -360,7 +362,7 @@ Como ahora la función que queda sólo tiene una variable: aquella respecto a la
 Veamos un ejemplo algo mas complicado.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-149" class="example"><strong>Ejemplo 13.3  </strong></span>Sea <span class="math inline">\(f(x,y,z) = 3xyz\sin(x^2y^2 + z)\)</span>. Calcula
+<p><span id="exm:unnamed-chunk-152" class="example"><strong>Ejemplo 13.3  </strong></span>Sea <span class="math inline">\(f(x,y,z) = 3xyz\sin(x^2y^2 + z)\)</span>. Calcula
 <span class="math display">\[\frac{\partial f(x,y,z)}{\partial y}.\]</span></p>
 Esto es el producto de <span class="math inline">\(3xyz\)</span> y de <span class="math inline">\(\sin(x^2y^2 + z)\)</span>. Vamos a ir despacio. Empezamos derivando cada parte por separado:
 <span class="math display">\[\frac{\partial}{\partial y} (3xyz) = 3xz\]</span>
@@ -387,7 +389,7 @@ Esto lo podemos arreglar un poco y queda
 <p>Después de explicar la idea general de lo que es una derivada parcial y ver su interpretacion geométrica en el caso de dos variables, definamos formalmente lo que es una derivada parcial. Es la misma idea que con la derivada ordinaria: el cálculo del límite cuando damos un “empujoncito” a la función. Solamente que en este caso lo empujamos según una de las variables, dejando el resto fijas.</p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-151" class="definition"><strong>Definición 13.1  </strong></span>Sea la función <span class="math inline">\(f(x_1, x_2, … , x_n)\)</span>. Definimos como derivada parcial de <span class="math inline">\(f\)</span> respecto a <span class="math inline">\(x_i\)</span> al límite</p>
+<p><span id="def:unnamed-chunk-154" class="definition"><strong>Definición 13.1  </strong></span>Sea la función <span class="math inline">\(f(x_1, x_2, … , x_n)\)</span>. Definimos como derivada parcial de <span class="math inline">\(f\)</span> respecto a <span class="math inline">\(x_i\)</span> al límite</p>
 <span class="math display">\[\frac{\partial f}{\partial x_i} = \lim_{h \to 0} 
    \frac{f(x_1, …, x_i + h, …, x_n) - f(x_1, …, x_i, …, x_n)}{h}\]</span>
 </div>
@@ -407,7 +409,7 @@ quiere decir que <em>primero</em> derivamos respecto de <span class="math inline
 <p>Veamos un ejemplo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-152" class="example"><strong>Ejemplo 13.4  </strong></span>Halla las cuatro derivadas segundas de la función <span class="math inline">\(f(x,y) = x\sqrt{y^2 + 1}\)</span>.</p>
+<p><span id="exm:unnamed-chunk-155" class="example"><strong>Ejemplo 13.4  </strong></span>Halla las cuatro derivadas segundas de la función <span class="math inline">\(f(x,y) = x\sqrt{y^2 + 1}\)</span>.</p>
 <p>Empezamos por hallar las dos derivadas primeras:
 <span class="math display">\[\begin{align}
 \frac{\partial f}{\partial x} &amp;= \sqrt{y^2 + 1}\\
@@ -439,7 +441,7 @@ Vemos que en este caso se cumple que
 <span class="math display">\[\frac{\partial f}{\partial x}\frac{-1}{\sqrt{2}} + \frac{\partial f}{\partial y}\frac{1}{\sqrt{2}}.\]</span></p>
 
 <div class="definition">
-<p><span id="def:unnamed-chunk-154" class="definition"><strong>Definición 13.2  </strong></span>Definimos derivada direccional de la funcion <span class="math inline">\(f(x_1, …,x_n)\)</span> según el vector unitario <span class="math inline">\(\vec{u} = (u_x, u_y)\)</span> y lo escribimos como <span class="math inline">\(D_\vec{u}f(x_1, …,x_n)\)</span>, como el límite
+<p><span id="def:unnamed-chunk-157" class="definition"><strong>Definición 13.2  </strong></span>Definimos derivada direccional de la funcion <span class="math inline">\(f(x_1, …,x_n)\)</span> según el vector unitario <span class="math inline">\(\vec{u} = (u_x, u_y)\)</span> y lo escribimos como <span class="math inline">\(D_\vec{u}f(x_1, …,x_n)\)</span>, como el límite
 <span class="math display">\[\lim_{h \to 0}\frac{f(x_1 + u_{x_1} h + \cdots + x_n + u_{x_n} h) - f(x_1, …,x_n)}{h}\]</span></p>
 <p>Esta derivada direccional se puede calcular a partir de las derivadas parciales:</p>
 <span class="math display">\[D_\vec{u}f(x_1, …,x_n) = \frac{\partial f}{\partial x_1}u_{x_1} + \cdots +\frac{\partial f}{\partial x_n}u_{x_n}\]</span>
@@ -448,7 +450,7 @@ Vemos que en este caso se cumple que
 <hr />
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-155" class="example"><strong>Ejemplo 13.5  </strong></span>Sea <span class="math inline">\(f(x,y) = \sqrt{36 - x^2 - 3y^2}\)</span>. Calcule sus derivadas parciales y su derivada direccional según la dirección dada por el vector <span class="math inline">\(\vec{v} = (1, 3)\)</span>. Evalúa las derivadas en el punto <span class="math inline">\(P = (-2,1)\)</span>.</p>
+<p><span id="exm:unnamed-chunk-158" class="example"><strong>Ejemplo 13.5  </strong></span>Sea <span class="math inline">\(f(x,y) = \sqrt{36 - x^2 - 3y^2}\)</span>. Calcule sus derivadas parciales y su derivada direccional según la dirección dada por el vector <span class="math inline">\(\vec{v} = (1, 3)\)</span>. Evalúa las derivadas en el punto <span class="math inline">\(P = (-2,1)\)</span>.</p>
 <p>Empecemos calculando las derivadas parciales:
 <span class="math display">\[\begin{align}
 \frac{\partial f}{\partial x} &amp;= \frac{-x}{\sqrt{36 - x^2 - 3y^2}}\\
@@ -470,13 +472,13 @@ D_\vec{u}f(x, y) &amp;=  -\frac{-2 + 9}{\sqrt{10\,(36 - 4 - 3)}} = -0.411
 <p>Con las derivadas parciales podemos saber cuánto cambia el valor de algo en las direcciones de los ejes. Con las derivadas direccionales podemos saber cuánto cambia el valor en cualquier dirección que queramos. Pero a menudo lo que queremos saber es cuánto es el máximo cambio y en qué dirección se produce. En nuestro ejemplo de la montaña, queremos saber cuál es la pendiente máxima y en qué dirección es. El <em>gradiente</em> nos va a dar esta información. Como el gradiente nos da tanto la magnitud como la dirección, va a ser un vector.</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-156" class="definition"><strong>Definición 13.3  </strong></span>Dada una función <span class="math inline">\(f(x_1, …,x_n)\)</span> definimos <em>vector gradiente</em> (o simplemente gradiente) de esta función, y lo representamos por <span class="math inline">\(\vec{\nabla}f\)</span> al vector
+<span id="def:unnamed-chunk-159" class="definition"><strong>Definición 13.3  </strong></span>Dada una función <span class="math inline">\(f(x_1, …,x_n)\)</span> definimos <em>vector gradiente</em> (o simplemente gradiente) de esta función, y lo representamos por <span class="math inline">\(\vec{\nabla}f\)</span> al vector
 <span class="math display">\[\vec{\nabla}f(x_1, …,x_n) = \left(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, … , \frac{\partial f}{\partial x_n}\right)\]</span>
 </div>
 
 
 <div class="example">
-<span id="exm:unnamed-chunk-157" class="example"><strong>Ejemplo 13.6  </strong></span>Sea <span class="math inline">\(f(x,y) = \sqrt{36 - x^2 - 3y^2}\)</span>. Su gradiente es:
+<span id="exm:unnamed-chunk-160" class="example"><strong>Ejemplo 13.6  </strong></span>Sea <span class="math inline">\(f(x,y) = \sqrt{36 - x^2 - 3y^2}\)</span>. Su gradiente es:
 <span class="math display">\[\vec{\nabla}f(x, y) = \left(\frac{-x}{\sqrt{36 - x^2 - 3y^2}}, \frac{-3y}{\sqrt{36 - x^2 - 3y^2}}\right)\]</span>
 </div>
 
@@ -554,7 +556,7 @@ o cualquier otra combinación que hagamos.</p>
 <p>Las integrales múltiples son muy útiles para calcular superficies y volúmenes de figuras geométricas. Sabemos que la superficie del círculo de radio <span class="math inline">\(R\)</span> es <span class="math inline">\(S = πR^2\)</span>. Vamos a usar una integral doble para deducirlo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-165" class="example"><strong>Ejemplo 13.7  </strong></span>Calcula con integrales la superfice de un círculo de radio R.</p>
+<p><span id="exm:unnamed-chunk-168" class="example"><strong>Ejemplo 13.7  </strong></span>Calcula con integrales la superfice de un círculo de radio R.</p>
 <p>Para calcular la superficie sumaremos pequños rectángulos de lados <span class="math inline">\(dx\)</span> y <span class="math inline">\(dy\)</span>:</p>
 </div>
 
@@ -585,7 +587,7 @@ y esta integral es de resolución inmediata:
 <p>Vamos a resolver otro problema, esta vez aplicando coordenadas rectangulares a un rectángulo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-168" class="example"><strong>Ejemplo 13.8  </strong></span>Tenemos una plancha rectangular de un material que no tiene densidad constante: es más pesada a la derecha y arriba que a la izquierda y abajo. Suponiendo el origen de coordenadas en el ángulo inferior izquierdo de la plancha, la densidad <span class="math inline">\(\sigma\)</span> en el punto de coordenadas <span class="math inline">\((x, y)\)</span> viene dada por la expresión <span class="math inline">\(\sigma(x, y) = 1 + 0.3 x + 0.7 y\)</span>. La plancha tiene anchura <span class="math inline">\(a\)</span> y altura <span class="math inline">\(b\)</span>. ¿Cuál es su masa?</p>
+<p><span id="exm:unnamed-chunk-171" class="example"><strong>Ejemplo 13.8  </strong></span>Tenemos una plancha rectangular de un material que no tiene densidad constante: es más pesada a la derecha y arriba que a la izquierda y abajo. Suponiendo el origen de coordenadas en el ángulo inferior izquierdo de la plancha, la densidad <span class="math inline">\(\sigma\)</span> en el punto de coordenadas <span class="math inline">\((x, y)\)</span> viene dada por la expresión <span class="math inline">\(\sigma(x, y) = 1 + 0.3 x + 0.7 y\)</span>. La plancha tiene anchura <span class="math inline">\(a\)</span> y altura <span class="math inline">\(b\)</span>. ¿Cuál es su masa?</p>
 <p>Para calcular la masa de la plancha, hemos de sumar la masa de todos los pequeños rectángulos de tamaño <span class="math inline">\(dx\)</span>, <span class="math inline">\(dy\)</span>. Como los rectángulos son muy pequeños, podemos considerar que en ellos la densidad es constante. Si el rectángulo está en el punto <span class="math inline">\((x, y)\)</span>, la masa de este pequeño rectángulo será <span class="math inline">\(\sigma\, dx\, dy = (1 + 0.3 x + 0.7 y) \, dx\, dy\)</span>. Sumamos las masas de todos estos rectángulos:</p>
 <span class="math display">\[\int_0^b\int_0^a (1 + 0.3 x + 0.7 y) \, dx\, dy = \left.\left. xy + 0.7x\frac{y^2}{2} + 0.3\frac{x^2}{2}y \right|_{x=0}^{x = a}\right|_{y = 0}^{y = b} = ab + 0.35 ab^2 + 0.15a^2b\]</span>
 </div>
@@ -594,7 +596,7 @@ y esta integral es de resolución inmediata:
 Acabemos este apartado calculando un volumen con una integral triple:
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-169" class="example"><strong>Ejemplo 13.9  </strong></span>Calcula el volumen de un cono de radio <span class="math inline">\(R\)</span> y altura <span class="math inline">\(h\)</span>.</p>
+<p><span id="exm:unnamed-chunk-172" class="example"><strong>Ejemplo 13.9  </strong></span>Calcula el volumen de un cono de radio <span class="math inline">\(R\)</span> y altura <span class="math inline">\(h\)</span>.</p>
 <p>Dividiremos el cono en una serie de discos apilados verticalmente. Como los discos son círculos, usaremos coordenadas polares, <span class="math inline">\(r\)</span> y <span class="math inline">\(\theta\)</span>, como en el ejemplo del círculo, y para la altura usaremos una variable que llamaremos <span class="math inline">\(z\)</span>.</p>
 <p>Dividimos el cono en pequeños cubos de lados <span class="math inline">\(dr\)</span>, <span class="math inline">\(rd\theta\)</span> y <span class="math inline">\(dz\)</span>. El volumen de un disco se calcula casi igual que el del círculo, ya hecho:</p>
 <p><span class="math display">\[\int_0^{2π}\int_0^? r\,dr \,d\theta\, dz\]</span></p>
@@ -626,7 +628,7 @@ Y nos queda la conocida fórmula del volumen de uncono:
 <hr />
 
 <div class="example">
-<span id="exm:unnamed-chunk-170" class="example"><strong>Ejemplo 13.10  </strong></span>Tenemos una plancha rectangular de un material que no tiene densidad constante: es más pesada a la derecha y arriba que a la izquierda y abajo. Suponiendo el origen de coordenadas en el ángulo inferior izquierdo, la densidad <span class="math inline">\(\sigma\)</span> en el punto de coordenadas <span class="math inline">\((x, y)\)</span> viene dada por la expresión <span class="math inline">\(\sigma(x, y) = 1 + 0.3 x + 0.7 y\)</span>. La plancha tiene anchura <span class="math inline">\(a\)</span> y altura <span class="math inline">\(b\)</span>. ¿Dónde está su centro de masas?
+<span id="exm:unnamed-chunk-173" class="example"><strong>Ejemplo 13.10  </strong></span>Tenemos una plancha rectangular de un material que no tiene densidad constante: es más pesada a la derecha y arriba que a la izquierda y abajo. Suponiendo el origen de coordenadas en el ángulo inferior izquierdo, la densidad <span class="math inline">\(\sigma\)</span> en el punto de coordenadas <span class="math inline">\((x, y)\)</span> viene dada por la expresión <span class="math inline">\(\sigma(x, y) = 1 + 0.3 x + 0.7 y\)</span>. La plancha tiene anchura <span class="math inline">\(a\)</span> y altura <span class="math inline">\(b\)</span>. ¿Dónde está su centro de masas?
 </div>
 
 <p>La expresión para encontrar el centro de masas de un objeto continuo es

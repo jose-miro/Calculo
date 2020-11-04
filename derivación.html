@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -255,7 +257,7 @@
 <p>En el apartado <a href="derivadas-e-integrales.html#defder">8.4</a>, definimos derivada tanto en un punto como en un intervalo, sea abierto o cerrado. Vamos a usar esta definición para calcular las funciones derivadas de algunas funciones simples.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-83" class="example"><strong>Ejemplo 9.1  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = ax\)</span>.</p>
+<p><span id="exm:unnamed-chunk-86" class="example"><strong>Ejemplo 9.1  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = ax\)</span>.</p>
 Hemos de aplicar la definición. En este primer ejemplo, lo vamos a desarrollar con mucho detalle:
 <span class="math display">\[\begin{align}
       f^{\prime}(ax) &amp;=  \lim_{dx \to 0}\frac{f(x+dx) - f(x)}{dx}\\
@@ -271,24 +273,26 @@ Hemos de aplicar la definición. En este primer ejemplo, lo vamos a desarrollar 
 Ahora uno sólo ligeramente más complicado:
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-84" class="example"><strong>Ejemplo 9.2  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = x^n\)</span>.</p>
+<span id="exm:unnamed-chunk-87" class="example"><strong>Ejemplo 9.2  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = x^n\)</span>.
+</div>
+
 <p>Aplicamos la definción:
 <span class="math display">\[f^{\prime}(x^n) =  \lim_{dx \to 0}\frac{f(x+dx) - f(x)}{dx}  = \lim_{dx \to 0}\frac{(x+dx)^n - x^n}{dx}\]</span>
 Desarrollamos <span class="math inline">\((x+dx)^n\)</span> por el binomio de Newton. No nos va a hacer falta desarrollarlo todo en detalle pues sabemos que a partir del tercer término tenemos al menos un factor <span class="math inline">\(dx^2\)</span> y lo sacamos factor común:
 <span class="math display">\[\lim_{dx \to 0}\frac{(x+dx)^n - x^n}{dx} = \lim_{dx \to 0}\frac{(x^n +nx^{n-1}dx + dx^2(\dots)) - x^n}{dx}\]</span>
 Y ahora los <span class="math inline">\(x^n\)</span> se cancelan. Como además el límite de una suma es la suma de los límites, nos queda:</p>
-<span class="math display">\[\lim_{dx \to 0}\frac{nx^{n-1} dx}{dx} + \lim_{dx \to 0}\frac{dx^2(\dots)}{dx}\]</span>
+<p><span class="math display">\[\lim_{dx \to 0}\frac{nx^{n-1} dx}{dx} + \lim_{dx \to 0}\frac{dx^2(\dots)}{dx}\]</span>
 Cancelando los <span class="math inline">\(dx\)</span>:
 <span class="math display">\[\lim_{dx \to 0}nx^{n-1} + \lim_{dx \to 0}dx(\dots)\]</span>
 El primer límite es <span class="math inline">\(nx^{n-1}\)</span> y en el segundo, como lo que hay en el parentesis no es infinito, el límite es 0. Por lo que nos queda que
-<span class="math display">\[f^{\prime}(x^n) = \lim_{dx \to 0}\frac{(x+dx)^n - x^n}{dx} = nx^{n-1}\]</span>
-</div>
-
+<span class="math display">\[f^{\prime}(x^n) = \lim_{dx \to 0}\frac{(x+dx)^n - x^n}{dx} = nx^{n-1}\]</span></p>
 <hr />
 <p>Ahora hagamos uno muy importante, pero con un límite que no es simple:</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-85" class="example"><strong>Ejemplo 9.3  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = e^x\)</span>.</p>
+<span id="exm:unnamed-chunk-88" class="example"><strong>Ejemplo 9.3  </strong></span>Hállese la derivada de <span class="math inline">\(f(x) = e^x\)</span>.
+</div>
+
 <p>Como siempre, empezamos por aplicar la definción:
 <span class="math display">\[f^{\prime}(e^x) =  \lim_{dx \to 0}\frac{e^{x+dx} - e^x}{dx}\]</span>
 Desarrollamos el primer término y sacamos factor común:
@@ -308,11 +312,9 @@ Como el límite de un logaritmo es lo mismo que el logaritmo del límite:
 Y el límite es nuestro querido número <span class="math inline">\(e\)</span>:
 <span class="math display">\[\frac{1}{\log(e)} = \frac{1}{1} = 1\]</span></p>
 <p>Ahora que ya sabemos el límite, reacapitulamos:</p>
-<span class="math display">\[f^{\prime}(e^x) =e^x\lim_{dx \to 0}\frac{(e^{dx} - 1)}{dx} = e^x \cdot 1 = e^x\]</span>
-</div>
-
+<p><span class="math display">\[f^{\prime}(e^x) =e^x\lim_{dx \to 0}\frac{(e^{dx} - 1)}{dx} = e^x \cdot 1 = e^x\]</span></p>
 <hr />
-<p>El procedimiento de calcular la función derivada a veces es fácil y a veces muy complicado. Por suerte es algo que ya han hecho para nosostros y simplemente nos aprendemos de memoria las más habituales (y buscamos en tablas las que no nos sabemos).</p>
+<p>El procedimiento de calcular la función derivada a veces es fácil y a veces muy complicado. Por suerte es algo que ya han hecho para nosotros y simplemente nos aprendemos de memoria las más habituales (y buscamos en tablas las que no nos sabemos).</p>
 <div id="cuadro-de-derivadas-elementales" class="section level3">
 <h3><span class="header-section-number">9.1.1</span> Cuadro de derivadas elementales</h3>
 <p>En el cuadro siguiente están algunas de las derivadas elementales más habituales, y que conviene saber de memoria. En el cuadro <span class="math inline">\(a\)</span> es una constante y <span class="math inline">\(x\)</span> es la variable sobre la que derivamos.</p>
@@ -385,7 +387,7 @@ Y el límite es nuestro querido número <span class="math inline">\(e\)</span>:
 <p>Un error habitual, sobre todo en novatos, es aplicar reglas de derivación de la multiplicación y de la división cuando no es necesario, convirtiendo una derivada simple y elemental en algo innecesariamente complicado. Veamos un ejemplo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-86" class="example"><strong>Ejemplo 9.4  </strong></span>Calcula la derivada de <span class="math display">\[f(x) = \frac{x^2}{5}.\]</span></p>
+<p><span id="exm:unnamed-chunk-89" class="example"><strong>Ejemplo 9.4  </strong></span>Calcula la derivada de <span class="math display">\[f(x) = \frac{x^2}{5}.\]</span></p>
 <p>Como hay un numerador y un denominador, a primera vista parece que es la derivada de una división:
 <span class="math display">\[\left(\frac{x^2}{5}\right)^{\prime} = \frac{2x\cdot 5 - x^2\cdot 0}{25} = \frac{2x}{5}\]</span></p>
 Pero el denominador es una constante, luego podemos reescribir la función como <span class="math inline">\(f(x) = \frac{1}{5} x^2\)</span> y entonces:
@@ -397,7 +399,7 @@ Pero el denominador es una constante, luego podemos reescribir la función como 
 <div id="derivada-de-composición-de-funciones-regla-de-la-cadena" class="section level2">
 <h2><span class="header-section-number">9.3</span> Derivada de composición de funciones: regla de la cadena</h2>
 <p>Sean dos funciones <span class="math inline">\(f(x)\)</span> y <span class="math inline">\(g(x)\)</span> y sea la función compuesta <span class="math inline">\((g\circ f)(x)\)</span>. La derivada de esta función compuesta es:
-<span class="math display">\[(g\circ f)^{\prime}(x) = g^{\prime}(f(x))\cdot g^{\prime}(x)\]</span></p>
+<span class="math display">\[(g\circ f)^{\prime}(x) = g^{\prime}(f(x))\cdot f^{\prime}(x)\]</span></p>
 <p>A esta expresión se le llama la <em>regla de la cadena</em>.</p>
 <p>Recordar esta expresión y, sobre todo, aplicarla, puede ser un tanto farragoso. Es más fácil acordarse de las derivadas elementales con la regla de la cadena “incorporada”. Si llamamos <span class="math inline">\(u\)</span> a una expresión, y <span class="math inline">\(u^{\prime}\)</span> a su derivada, entonces el cuadro de derivadas elementales se convierte en:</p>
 <table>
@@ -453,22 +455,22 @@ Pero el denominador es una constante, luego podemos reescribir la función como 
 <p>Veamos algún ejemplo de aplicación de esta regla.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-87" class="example"><strong>Ejemplo 9.5  </strong></span>¿Cuál es la derivada de <span class="math inline">\(\cos(x^3)\)</span>?</p>
-En este caso <span class="math inline">\(u = x^3\)</span> y del cuadro anterior sacamos que <span class="math inline">\((\cos(u))^{\prime} = -u^{\prime}\sin(u)\)</span>. Como <span class="math inline">\(u^{\prime} = 3x^2\)</span> nos queda que
-<span class="math display">\[(\cos(x^3))^{\prime} = -3x^2 \sin(x^3)\]</span>
+<span id="exm:unnamed-chunk-90" class="example"><strong>Ejemplo 9.5  </strong></span>¿Cuál es la derivada de <span class="math inline">\(\cos(x^3)\)</span>?
 </div>
 
+<p>En este caso <span class="math inline">\(u = x^3\)</span> y del cuadro anterior sacamos que <span class="math inline">\((\cos(u))^{\prime} = -u^{\prime}\sin(u)\)</span>. Como <span class="math inline">\(u^{\prime} = 3x^2\)</span> nos queda que
+<span class="math display">\[(\cos(x^3))^{\prime} = -3x^2 \sin(x^3)\]</span></p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-88" class="example"><strong>Ejemplo 9.6  </strong></span>¿Cuál es la derivada de <span class="math inline">\(\cos^3(\sqrt{x})\)</span>?</p>
+<span id="exm:unnamed-chunk-91" class="example"><strong>Ejemplo 9.6  </strong></span>¿Cuál es la derivada de <span class="math inline">\(\cos^3(\sqrt{x})\)</span>?
+</div>
+
 <p>Hemos de aplicar la regla de la cadena varias veces. Para la primera, tenemos que <span class="math inline">\(u = \cos(\sqrt{x})\)</span> y tenemos una función de la forma <span class="math inline">\(u^n\)</span>. Luego
 <span class="math display">\[(\cos^3(\sqrt{x}))^{\prime} = (\cos(\sqrt{x}))^{\prime} 3 \cos^2 (\sqrt{x}) \]</span>
 Ahora debemos volver a palicar la regla de la cadena para hallar la derivada de <span class="math inline">\(\cos(\sqrt{x})\)</span>. Ahora <span class="math inline">\(u = \sqrt{x}\)</span> y tenemos una función de la forma <span class="math inline">\(\cos(u)\)</span>. La derivada es:
 <span class="math display">\[(\cos(\sqrt{x}))^{\prime} = -\frac{1}{2\sqrt{x}}\sin(\sqrt{x})\]</span></p>
-Juntándolo todo queda:
-<span class="math display">\[(\cos^3(\sqrt{x}))^{\prime} = -\frac{1}{2\sqrt{x}}\sin(\sqrt{x}) 3 \cos^2 (\sqrt{x}) = -\frac{3 \sin(\sqrt{x}) \cos^2 (\sqrt{x})}{2\sqrt{x}} \]</span>
-</div>
-
+<p>Juntándolo todo queda:
+<span class="math display">\[(\cos^3(\sqrt{x}))^{\prime} = -\frac{1}{2\sqrt{x}}\sin(\sqrt{x}) 3 \cos^2 (\sqrt{x}) = -\frac{3 \sin(\sqrt{x}) \cos^2 (\sqrt{x})}{2\sqrt{x}} \]</span></p>
 </div>
 <div id="derivadas-sucesivas" class="section level2">
 <h2><span class="header-section-number">9.4</span> Derivadas sucesivas</h2>

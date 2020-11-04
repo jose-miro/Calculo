@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -297,13 +299,13 @@ Los dos primeros términos son 1 (<span class="math inline">\(a_1 = a_2 = 1\)</s
 <h3><span class="header-section-number">3.4.1</span> Ejemplos</h3>
 
 <div class="example">
-<span id="exm:unnamed-chunk-1" class="example"><strong>Ejemplo 3.1  </strong></span>Veamos que la sucesión de los números naturales <span class="math inline">\(\{n\}\)</span> es monótona creciente. Aplicamos la definición: Es monótona creciente si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n ≤ a_{n+1}\)</span> que se traduce en <span class="math inline">\(n ≤ n+1\)</span> para todo <span class="math inline">\(n\)</span>. Aunque esto es obviamente cierto, seamos formales: restemos <span class="math inline">\(n\)</span> a cada lado y tenemos <span class="math inline">\(0 ≤ 1\)</span>, y esto es siempre cierto. Es más, como <span class="math inline">\(0 &lt; 1\)</span> es estrictamente creciente.
+<span id="exm:unnamed-chunk-2" class="example"><strong>Ejemplo 3.1  </strong></span>Veamos que la sucesión de los números naturales <span class="math inline">\(\{n\}\)</span> es monótona creciente. Aplicamos la definición: Es monótona creciente si para todo <span class="math inline">\(n\)</span>, <span class="math inline">\(a_n ≤ a_{n+1}\)</span> que se traduce en <span class="math inline">\(n ≤ n+1\)</span> para todo <span class="math inline">\(n\)</span>. Aunque esto es obviamente cierto, seamos formales: restemos <span class="math inline">\(n\)</span> a cada lado y tenemos <span class="math inline">\(0 ≤ 1\)</span>, y esto es siempre cierto. Es más, como <span class="math inline">\(0 &lt; 1\)</span> es estrictamente creciente.
 </div>
 
 <hr />
 
 <div class="example">
-<span id="exm:unnamed-chunk-2" class="example"><strong>Ejemplo 3.2  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n = n^2 - n\}\)</span>, con <span class="math inline">\(n = 0, 1, 2…\)</span>. Veamos que es monótona creciente. Aplicamos la definición: <span class="math inline">\(a_{n+1} ≥ a_{n}\)</span> se traduce en
+<span id="exm:unnamed-chunk-3" class="example"><strong>Ejemplo 3.2  </strong></span>Sea la sucesión <span class="math inline">\(\{a_n = n^2 - n\}\)</span>, con <span class="math inline">\(n = 0, 1, 2…\)</span>. Veamos que es monótona creciente. Aplicamos la definición: <span class="math inline">\(a_{n+1} ≥ a_{n}\)</span> se traduce en
 <span class="math display">\[(n+1)^2 - (n+1) ≥ n^2 - n\]</span>
 Desarrollamos:
 <span class="math display">\[n^2 + 2n + 1 - n - 1 ≥ n^2 - n\]</span>
@@ -319,7 +321,7 @@ Como <span class="math inline">\(n ≥ 0\)</span>, esto se cumple siempre. Nóte
 <hr />
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-3" class="example"><strong>Ejemplo 3.3  </strong></span>Determine si la sucesión <span class="math inline">\(\{a_n = 1/(n - 5.1)^2\}\)</span> es monótona.</p>
+<p><span id="exm:unnamed-chunk-4" class="example"><strong>Ejemplo 3.3  </strong></span>Determine si la sucesión <span class="math inline">\(\{a_n = 1/(n - 5.1)^2\}\)</span> es monótona.</p>
 <p>Veamos si es monótona creciente. Entonces:
 <span class="math display">\[\frac{a_{n+1}}{a_{n}} = 
 \frac{\frac{1}{(n+1-5.1)^{2}}}{\frac{1}{(n-5.1)^{2}}} = 
@@ -335,7 +337,7 @@ Como <span class="math inline">\(n ≥ 0\)</span>, esto se cumple siempre. Nóte
 <hr />
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-4" class="example"><strong>Ejemplo 3.4  </strong></span>Determine si la sucesión <span class="math inline">\(\{a_n = 1/(n - 5.1)^2\}\)</span> está acotada.</p>
+<p><span id="exm:unnamed-chunk-5" class="example"><strong>Ejemplo 3.4  </strong></span>Determine si la sucesión <span class="math inline">\(\{a_n = 1/(n - 5.1)^2\}\)</span> está acotada.</p>
 <p>Sabemos por el ejemplo anterior que esta sucesión es creciente hasta <span class="math inline">\(n = 5\)</span> y decreciente después, luego la sucesión está acotada superiormente. El valor <span class="math inline">\(a_5 = 100\)</span> es una cota superior. Naturalmente, 105 o 200 o 578,3 o cualquier valor mayor que 100 será también una cota superior.</p>
 <p>El numerador del término general es 1 y el denominador es siempre positivo, luego todos los términos son estrictamente positivos. Esto hace que 0 sea una cota inferior. Cualquier número negativo también será una cota inferior.</p>
 Como la sucesión tiene cota superior y cota inferior, la sucesión está acotada.
@@ -347,15 +349,15 @@ Como la sucesión tiene cota superior y cota inferior, la sucesión está acotad
 <h2><span class="header-section-number">3.5</span> Representación gráfica de una sucesión</h2>
 <p>Nuestros ojos son muy poderosos y visualizar una sucesión nos puede resultar muy útil para coger una idea de cómo se comporta. Hay dos maneras habituales de representar gráficamente una sucesión: la recta real y el plano cartesiano.</p>
 <p>Usemos como primer ejemplo la sucesion <span class="math inline">\(\{a_n = n/(n+1)\}\)</span>. Sus primeros términos son 1/2, 2/3, 3/4, 4/5, 5/6… La primera forma de representación es simplemente coger la recta real y marcar todos los términos de la sucesión:</p>
-<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>Esta representación nos permite ver los infinitos términos de una sucesión acotada, pero perdemos la información de qué punto corresponde a qué término.</p>
 <p>La segunda forma de representación es el plano cartesiano: en el eje X tenemos <span class="math inline">\(n\)</span> y en el eje Y tenemos <span class="math inline">\(a_n\)</span>:</p>
-<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>Con esta gráfica podemos ver la “evolución” de la sucesión al aumentar <span class="math inline">\(n\)</span>, pero nunca podremos ver más allá de unos pocos términos. Qué representación es mejor depende de cada caso.</p>
 <p>Veamos otro ejemplo: <span class="math inline">\(a_n = \sin(n)/n\)</span>. La primera representación sería</p>
-<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>Y la segunda</p>
 <p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Y la segunda</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>En la primera representación vemos que hay muchos puntos aglomerados alrededor del 0, lo que nos permite suponer que tiende a 0. En la segunda, los términos que vemos tienden a 0, o que también nos permite suponer que tiende a 0 al tender <span class="math inline">\(n\)</span> a infinito.</p>
 </div>
 <div id="limsuc" class="section level2">
@@ -363,7 +365,7 @@ Como la sucesión tiene cota superior y cota inferior, la sucesión está acotad
 <p>La sucesión <span class="math inline">\(\{a_n = n\}\)</span> crece y crece y no tiende a ningún valor. En cambio las dos sucesiones que hemos visto en el apartado anterior, <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> y <span class="math inline">\(\{a_n = \sin(n)/n\}\)</span> sí que parece que tienden a algún valor: la primera se va acercando a 1 y la segunda se va acercando a 0. ¿Pero qué queremos decir con “tiende a”? Informalmente queremos decir que se va acercando más y más al valor en cuestión y llega un momento en el que nunca se aleja, que acaban estando tan cerca como queramos no sólo para un valor de <span class="math inline">\(n\)</span>, sino para todos los valores de <span class="math inline">\(n\)</span> a partir de un cierto momento.</p>
 <p>Cuando esto sucede, decimos que el límite de la sucesión es este valor y que la sucesión <em>converge</em>. Si en cambio nunca se acerca definitivamente a un valor decimos que no tiene límite y que la sucesión <em>diverge</em>.</p>
 <p>Ya hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiene límite 1, o que converge hacia 1. También hemos dicho, y es fácil de ver, que la sucesión <span class="math inline">\(\{a_n = n\}\)</span> crece sin límite, y por lo tanto diverge. Hay otro caso que conviene considerar. Sea la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… que sube y baja sin cesar en forma de sierra:</p>
-<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>Esta sucesión no tiende a ningún valor y no se acerca definitivamente a ningún valor: nunca se acaba de decidir. Esta sucesión no se hace infinitamente grande, pero, al no tender a ningún valor, no tiene límite y también diverge.</p>
 <div id="definición-formal-de-limite-de-una-sucesión" class="section level3">
 <h3><span class="header-section-number">3.6.1</span> Definición formal de limite de una sucesión</h3>
@@ -376,9 +378,9 @@ si para cualquier número positivo <span class="math inline">\(\varepsilon\)</sp
 </div>
 
 <p>Esto lo podemos representar gráficamente. Si lo hacemos con la primera representación, tenemos para cualquier <span class="math inline">\(\varepsilon\)</span> que escojamos, un intervalo <span class="math inline">\((L-\varepsilon, L+\varepsilon)\)</span> tal que a partir de un cierto término <span class="math inline">\(N\)</span>, <em>todos</em> los puntos de la sucesión están dentro del intervalo.</p>
-<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
-<p>Si lo hacemos con la segunda forma de representación, hay una banda entre <span class="math inline">\((L-\varepsilon\)</span> y <span class="math inline">\(L+\varepsilon)\)</span> tal que todos los puntos de la sucesión están dentro de esta banda.</p>
 <p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Si lo hacemos con la segunda forma de representación, hay una banda entre <span class="math inline">\((L-\varepsilon\)</span> y <span class="math inline">\(L+\varepsilon)\)</span> tal que todos los puntos de la sucesión están dentro de esta banda.</p>
+<p><img src="Matem%C3%A1ticas-II--C%C3%A1lculo_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
 </div>
 <div id="un-teorema-importante" class="section level3">
 <h3><span class="header-section-number">3.6.2</span> Un teorema importante</h3>
@@ -391,7 +393,7 @@ si para cualquier número positivo <span class="math inline">\(\varepsilon\)</sp
 <p>No vamos a demostrar este teorema, pero si lo pensamos un poco es bastante lógico. Consideremos el caso monótona creciente y acotada superiormente. El caso decreciente es análogo. Si la sucesión es monótona creciente, cada término es al menos tan grande como el anterior. Al ser acotada, no puede crecer sin límite, pues no puede pasar la cota. Luego tiene que tender hacia algún valor sin pasarlo, acercándose a este valor más y más. Luego tiene límite.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-12" class="example"><strong>Ejemplo 3.5  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{a_n = \frac{1}{n}\}\)</span> tiene límite.</p>
+<p><span id="exm:unnamed-chunk-13" class="example"><strong>Ejemplo 3.5  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{a_n = \frac{1}{n}\}\)</span> tiene límite.</p>
 <p>vamos a empezar por demostrar que es monótona decreciente. Para ello calculamos <span class="math inline">\(a_{n+1}/a_n\)</span> y demostramos que es menor que 1:
 <span class="math display">\[ \frac{a_{n+1}}{a_n} = \frac{\frac{1}{n+1}}{\frac{1}{n}} = \frac{n}{n+1} &lt; 1\]</span></p>
 <p>Una vez demostrado que la sucesión es monótona decreciente, vamos a demostrar que tiene una cota inferior. Es inmediato: todos los términos son estrictamente positivos, luego 0 es una cota inferior.</p>
@@ -403,7 +405,7 @@ Como la sucesión <span class="math inline">\(\{a_n = \frac{1}{n}\}\)</span> es 
 <h3><span class="header-section-number">3.6.3</span> Ejemplos</h3>
 
 <div class="example">
-<span id="exm:unnamed-chunk-13" class="example"><strong>Ejemplo 3.6  </strong></span>Hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiende al valor 1. Vamos a demostrar que el límite de esta sucesión es efectivamente 1.
+<span id="exm:unnamed-chunk-14" class="example"><strong>Ejemplo 3.6  </strong></span>Hemos visto gráficamente que la sucesión <span class="math inline">\(\{a_n = n/(n+1)\}\)</span> tiende al valor 1. Vamos a demostrar que el límite de esta sucesión es efectivamente 1.
 </div>
 
 <p>Como la sucesión es siempre menor que 1, podemos escribir <span class="math inline">\(|a_n – L| &lt; \varepsilon\)</span> como <span class="math inline">\((1 - \frac{n}{n+1}) &lt; \varepsilon\)</span> sin el valor absoluto y entonces tenemos</p>
@@ -418,7 +420,7 @@ y despejando la <span class="math inline">\(n\)</span> nos queda
 <p>Es un buen ejercicio en estos momentos demostrar que efectivamente <span class="math inline">\(lim_{n \to \infty} (1/n) = 0\)</span>.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-14" class="example"><strong>Ejemplo 3.7  </strong></span>Vamos a demostrar que la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… no tiene límite.
+<span id="exm:unnamed-chunk-15" class="example"><strong>Ejemplo 3.7  </strong></span>Vamos a demostrar que la sucesión 0, 1, 2, 1, 0, 1, 2, 1, 0… no tiene límite.
 </div>
 
 <p>Escojamos un valor de <span class="math inline">\(\varepsilon\)</span> menor que 1. Por ejemplo <span class="math inline">\(\varepsilon = 0,7\)</span>. Entonces no hay ningún valor <span class="math inline">\(L\)</span> tal que el intervalo <span class="math inline">\((L - 0.7, L + 0.7)\)</span> cubra el 0, el 1 y el 2. Como hemos encontrado un valor de <span class="math inline">\(\varepsilon\)</span> que hace que no se cumpla la condición, la sucesión no tiene límite.</p>
@@ -426,7 +428,7 @@ y despejando la <span class="math inline">\(n\)</span> nos queda
 <p>Nótese que para que haya límite debo poder encontrar el valor de <span class="math inline">\(N\)</span> para cualquier valor de <span class="math inline">\(\varepsilon\)</span>. Pero para que no la haya, basta encontrar un valor de <span class="math inline">\(\varepsilon\)</span> para el que no haya ningún valor de <span class="math inline">\(N\)</span>.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-15" class="example"><strong>Ejemplo 3.8  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{n^2 - n \}\)</span> no tiene límite.
+<span id="exm:unnamed-chunk-16" class="example"><strong>Ejemplo 3.8  </strong></span>Demuestre que la sucesión <span class="math inline">\(\{n^2 - n \}\)</span> no tiene límite.
 </div>
 
 <p>Es fácil ver que esta sucesión crece sin límite. Vamos a demostrar que la sucesión no se acerca a ningún valor, sino que se <em>aleja</em> de cualquier valor <span class="math inline">\(L\)</span>. Es decir, para cualquier valor <span class="math inline">\(L\)</span> hay un <span class="math inline">\(N\)</span> tal que para valores <span class="math inline">\(n &gt; N\)</span> la sucesión es siempre mayor que <span class="math inline">\(L\)</span>.</p>
@@ -444,7 +446,7 @@ Podemos resolver la ecuación de segundo grado y quedarnos sólo con el valor po
 <p>Las operaciones con sucesiones son muy interesantes pues facilita el cálculo de límites Tenemos las sucesiones <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> y <span class="math inline">\(\{c_n\} = \{a_n\} \circ \{b_n\}\)</span> y tenemos que los límites de <span class="math inline">\(\{a_n\}\)</span>, <span class="math inline">\(\{b_n\}\)</span> existen y son <span class="math inline">\(\lim_{n \to \infty}a_n = A\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = B\)</span>. Entonces, en general, <span class="math inline">\(\lim_{n \to \infty}c_n = A\circ B\)</span>. En el caso de la suma esto se resume en la frase “el límite de la suma es la suma de los límites”. Y lo mismo con las demás operaciones, aunque hay excepciones que veremos un poco más adelante.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-16" class="example"><strong>Ejemplo 3.9  </strong></span>Sea <span class="math inline">\(\{a_n = 3 + (1/n)\}\)</span> y <span class="math inline">\(\{ b_n = 2 - (1/n^2)\}\)</span>. Es fácil ver y demostrar que <span class="math inline">\(\lim_{n \to \infty}a_n = 3\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = 2\)</span>. Entonces</p>
+<p><span id="exm:unnamed-chunk-17" class="example"><strong>Ejemplo 3.9  </strong></span>Sea <span class="math inline">\(\{a_n = 3 + (1/n)\}\)</span> y <span class="math inline">\(\{ b_n = 2 - (1/n^2)\}\)</span>. Es fácil ver y demostrar que <span class="math inline">\(\lim_{n \to \infty}a_n = 3\)</span> y <span class="math inline">\(\lim_{n \to \infty}b_n = 2\)</span>. Entonces</p>
 <span class="math display">\[\begin{align}
 \lim_{n \to \infty} (a_n + b_n) &amp;= \lim_{n \to \infty}a_n + \lim_{n \to \infty}b_n = 3 + 2 = 5\\
 \lim_{n \to \infty} (a_n - b_n) &amp;= \lim_{n \to \infty}a_n - \lim_{n \to \infty}b_n = 3 - 2 = 1\\
@@ -496,7 +498,7 @@ Todos los límites son fáciles de calcular y nos queda
 <p>Veamos otro ejemplo.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-17" class="example"><strong>Ejemplo 3.10  </strong></span>Encuentre el límite de la sucesión
+<span id="exm:unnamed-chunk-18" class="example"><strong>Ejemplo 3.10  </strong></span>Encuentre el límite de la sucesión
 <span class="math display">\[c_n = \frac{n - 6}{n^2 + 4}\]</span>
 Es otra vez de tipo <span class="math inline">\(\frac{\infty}{\infty}\)</span>. Dividimos numerador y denominador por el <span class="math inline">\(n\)</span> con mayor exponente y tenemos
 <span class="math display">\[\lim_{n \to \infty} c_n = \lim_{n \to \infty} \frac{\frac{n-6}{n^2}}{\frac{n^2 + 4}{n^2}} = 
@@ -518,7 +520,7 @@ Y hemos convertido la indeterminación de tipo <span class="math inline">\(\inft
 Veamos otro ejemplo.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-18" class="example"><strong>Ejemplo 3.11  </strong></span>Encuentre el límite de la sucesión
+<p><span id="exm:unnamed-chunk-19" class="example"><strong>Ejemplo 3.11  </strong></span>Encuentre el límite de la sucesión
 <span class="math display">\[c_n = \sqrt{n^2 - n + 1} - 2n\]</span></p>
 <p>Multiplicamos y dividimos por el conjugado:
 <span class="math display">\[\lim_{n \to \infty} c_n = \frac{(\sqrt{n^2 - n + 1} - 2n)(\sqrt{n^2 - n + 1} + 2n)}{\sqrt{n^2 - n + 1} + 2n}\]</span>
@@ -548,7 +550,7 @@ Y ahora:
 <p>A veces la manipulación es un poco más complicada, como en el siguiente ejemplo.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-19" class="example"><strong>Ejemplo 3.12  </strong></span>Calcule el límite de la sucesión
+<span id="exm:unnamed-chunk-20" class="example"><strong>Ejemplo 3.12  </strong></span>Calcule el límite de la sucesión
 <span class="math display">\[\{c_n = \left(\frac{2n + 3}{2n -4}\right)^{n-3}\}\]</span>
 Como <span class="math inline">\(2n+3 = (2n-4) + 7\)</span>, podemos reescribir la fracción como
 <span class="math display">\[\left(\frac{2n -4 + 7}{2n -4}\right)^{n-3} = \left(1 + \frac{7}{2n -4}\right)^{n-3}\]</span>
@@ -572,7 +574,7 @@ Y ya podemos calcular el límite:
 <p>El caso más interesante es cuando <span class="math inline">\(\lim_{n \to \infty} \{b_n\} = \lim_{n \to \infty} \{a_n\}\)</span>, porque entonces los tres límites han de ser iguales: <span class="math inline">\(\lim_{n \to \infty} \{b_n\} = \lim_{n \to \infty} \{c_n\} = \lim_{n \to \infty} \{a_n\}\)</span>. Esta regla del encaje nos es muy útil en algunos casos, por ejemplo si tenemos funciones trigonométricas.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-20" class="example"><strong>Ejemplo 3.13  </strong></span>Calcule el límite de la sucesión de término general
+<span id="exm:unnamed-chunk-21" class="example"><strong>Ejemplo 3.13  </strong></span>Calcule el límite de la sucesión de término general
 <span class="math display">\[\frac{n - \cos(nπ)}{3n}\]</span>
 </div>
 
@@ -597,14 +599,62 @@ y dentro de las potencias <span class="math inline">\(n^{p} \ll n^q\)</span> si 
 <p>Para calcular un límite, de las sumas o restas de sucesiones buscamos cuál es el infinito de orden superior y eliminamos el resto.</p>
 
 <div class="example">
-<span id="exm:unnamed-chunk-21" class="example"><strong>Ejemplo 3.14  </strong></span>Calcule el límite de la sucesión de término general
+<span id="exm:unnamed-chunk-22" class="example"><strong>Ejemplo 3.14  </strong></span>Calcule el límite de la sucesión de término general
 <span class="math display">\[\frac{n^2 - \sqrt{n^2 - 5n} + \log(n^2)}{3n + 1,2^n}\]</span>
 En el numerador el infinito de orden superior es <span class="math inline">\(n^2\)</span> y en el denominador es <span class="math inline">\(1,2^n\)</span>, luego
 <span class="math display">\[\lim_{n \to \infty}\frac{n^2 - \sqrt{n^2 - 5n} + \log(n^2)}{3n + 1.2^n} = \lim_{n \to \infty} \frac{n^2}{1.2^n} = 0\]</span>
 </div>
 
-
 </div>
+</div>
+<div id="preguntas-y-problemas-1" class="section level2">
+<h2><span class="header-section-number">3.11</span> Preguntas y problemas</h2>
+<p><strong>Prob 3.1</strong> La curva de Koch se crea de forma iterativa. Se parte de un segmento, que supondremos de longitud 1. Se divide el segmento en 3 partes iguales, y se reemplaza la parte central por otros dos segmentos de la misma longitud, formando un ángulo de 60º con el segmento original. Tras esta primera iteración tenemos 4 segmentos, todos de longitud 1/3. Para la siguiente iteración se cogen estos 4 segmentos y cada uno de los 4 se divide en 3 partes y se sustituye la central por dos de la misma longitud que forman un ángulo de 60º con el segmento original. Y esto se puede seguir iterando tantas veces como se quiera. Los resultados tras cada una de las 6 primeras iteraciones son:</p>
+<p><img src="imagenes/Koch.jpg" /><!-- --></p>
+<p>La longitud de la curva es una sucesión. Determine el término general de la sucesión. Escriba también la sucesión como una fórmula de recurrencia.</p>
+<hr />
+<p><strong>Prob 3.2</strong> Tenemos la sucesión <span class="math inline">\(-3, -2,7; -2,4; -2,1; …\)</span>. Es una progresión aritmética. Escriba el término general de la sucesión y la fórmula de recurrencia.</p>
+<hr />
+<p><strong>Prob 3.3</strong> Tenemos la sucesión <span class="math inline">\(2; -1; 0,5; -0,25, …\)</span>. Es una progresión geométrica. Escriba el término general de la sucesión y la fórmula de recurrencia.</p>
+<hr />
+<p><strong>Prob 3.4</strong> Estudie formalmente la monotonicidad de la sucesión
+<span class="math inline">\(\{a_{n} = (n-3)^{2} - 3n\}\)</span></p>
+<hr />
+<p><strong>Prob 3.5</strong> Estudie formalmente si la sucesión <span class="math inline">\(\{a_{n} = \sqrt{2n +1} - n\}\)</span> está o no acotada. Establezca, si las hay, cotas superiores e inferiores.</p>
+<hr />
+<p><strong>Prob 3.6</strong> Considere las redes de resistencias en las que hay <span class="math inline">\(n\)</span> ramales en paralelo y en cada ramal hay <span class="math inline">\(n-1\)</span> resistencias en serie. Todas las resistencias son iguales. Las redes para <span class="math inline">\(N = 1, 2, 3\)</span> son:</p>
+<p><img src="imagenes/Resist.jpg" /><!-- --></p>
+<p>Podemos considerar la resistencia total de cada red como una sucesión. Escriba el término general y estudie su monotonicidad y acotamiento. Establezca, si las hay, cotas superiores e inferiores.</p>
+<hr />
+<p><strong>Prob 3.7</strong> Calcula el limite de las siguientes sucesiones. Para ello indica primero el tipo de indeterminación, aplica el método adecuado y resuelve el límite.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\(\left(1 + \frac{3}{\sqrt{n}}\right)^{n/4}\)</span></p></li>
+<li><p><span class="math inline">\(\left(\frac{n^2 +5}{n^2}\right)^{3n}\)</span></p></li>
+<li><p><span class="math inline">\((n+3)^2 - 2\sqrt{n}\)</span></p></li>
+<li><p><span class="math inline">\(5(n+1)^2 - 2n^4\)</span></p></li>
+<li><p><span class="math inline">\(\frac{((n+1)^2 + 3n)^2}{5n^3 - 10n}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{2n^3 + 2n + 1}{10 - 3n^3}\)</span></p></li>
+<li><p><span class="math inline">\(\left(1 + \frac{1}{3n + 1}\right)^n\)</span></p></li>
+<li><p><span class="math inline">\(\frac{5n^2 + \sqrt[3]{n^7 - 3n^2}}{\sqrt{n+5} + n}\)</span></p></li>
+<li><p><span class="math inline">\(\left(\frac{n}{n+10}\right)^{\sqrt{n + 2}}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{n^3 + (n+2)^2} -3(n+1)\)</span></p></li>
+<li><p><span class="math inline">\(\left(1 + \frac{n}{n^2 + 1}\right)^{2n}\)</span></p></li>
+<li><p><span class="math inline">\(3n^2 - 2(n+2)\)</span></p></li>
+<li><p><span class="math inline">\(\frac{n + 10(n^2+3)^2 - 5n^3}{3n^4 - 20n^2 - 5}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{\sqrt{2n^4 - 3n^3 + 6}}{(n+4)^2 + 7}\)</span></p></li>
+<li><p><span class="math inline">\(\sqrt{n^2 + 5} - 2n\)</span></p></li>
+</ol>
+<hr />
+<p><strong>Prob 3.8</strong> Aplicando la jerarquía de infinitos, calcula los límites de las siguientes sucesiones.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math inline">\((n +10) \log(n^2) - 3n^2\)</span></p></li>
+<li><p><span class="math inline">\(\frac{0.7^n - \sqrt{3n}}{\sqrt{n + \sqrt{n^2 - 25}}}\)</span></p></li>
+<li><p><span class="math inline">\(\log(n^5) - \sqrt[5]{\frac{n^4 + 2}{n^2 + 5}}\)</span></p></li>
+<li><p><span class="math inline">\(n^{0.01} - \log(100^n)\)</span></p></li>
+<li><p><span class="math inline">\(\frac{n^4 - 10^{0.3n}}{(n!/n)}\)</span></p></li>
+</ol>
+<hr />
+
 </div>
 </div>
             </section>

@@ -73,6 +73,7 @@
 <li class="chapter" data-level="2.1" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#infinitos-en-números"><i class="fa fa-check"></i><b>2.1</b> Infinitos en números</a></li>
 <li class="chapter" data-level="2.2" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#lo-infinitamente-pequeño"><i class="fa fa-check"></i><b>2.2</b> Lo infinitamente pequeño</a></li>
 <li class="chapter" data-level="2.3" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#el-uso-de-las-matemáticas"><i class="fa fa-check"></i><b>2.3</b> El uso de las matemáticas</a></li>
+<li class="chapter" data-level="2.4" data-path="el-infinito-no-existe.html"><a href="el-infinito-no-existe.html#preguntas-y-problemas"><i class="fa fa-check"></i><b>2.4</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="sucesiones.html"><a href="sucesiones.html"><i class="fa fa-check"></i><b>3</b> Sucesiones</a><ul>
 <li class="chapter" data-level="3.1" data-path="sucesiones.html"><a href="sucesiones.html#ejemplos"><i class="fa fa-check"></i><b>3.1</b> Ejemplos</a></li>
@@ -98,6 +99,7 @@
 <li class="chapter" data-level="3.10.1" data-path="sucesiones.html"><a href="sucesiones.html#regla-del-encaje"><i class="fa fa-check"></i><b>3.10.1</b> Regla del encaje</a></li>
 <li class="chapter" data-level="3.10.2" data-path="sucesiones.html"><a href="sucesiones.html#jerinf"><i class="fa fa-check"></i><b>3.10.2</b> Jerarquía de infinitos</a></li>
 </ul></li>
+<li class="chapter" data-level="3.11" data-path="sucesiones.html"><a href="sucesiones.html#preguntas-y-problemas-1"><i class="fa fa-check"></i><b>3.11</b> Preguntas y problemas</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="inducción-matemática.html"><a href="inducción-matemática.html"><i class="fa fa-check"></i><b>4</b> Inducción matemática</a><ul>
 <li class="chapter" data-level="4.1" data-path="inducción-matemática.html"><a href="inducción-matemática.html#la-inducción-nos-hace-inteligentes"><i class="fa fa-check"></i><b>4.1</b> La inducción nos hace inteligentes</a></li>
@@ -276,7 +278,7 @@ Para saber cómo se mueve muestra pelota, hemos de encontrar una función <span 
 <p>En estas ecuaciones aparece no sólo la función, sino también una o más <em>derivadas</em> de la función. Por eso reciben el nombre de <em>ecuaciones diferenciales</em>.</p>
 
 <div class="definition">
-<span id="def:unnamed-chunk-137" class="definition"><strong>Definición 12.1  </strong></span>Una <em>ecuación diferencial</em> es una ecuación en la que aparece no sólo la función <span class="math inline">\(f\)</span>, sino también sus derivadas.
+<span id="def:unnamed-chunk-140" class="definition"><strong>Definición 12.1  </strong></span>Una <em>ecuación diferencial</em> es una ecuación en la que aparece no sólo la función <span class="math inline">\(f\)</span>, sino también sus derivadas.
 </div>
 
 <hr />
@@ -330,7 +332,7 @@ es una ecuación diferencial lineal, pero ni tiene coeficientes constantes, ni e
 </ul>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-138" class="example"><strong>Ejemplo 12.1  </strong></span>La ecuación diferencial
+<p><span id="exm:unnamed-chunk-141" class="example"><strong>Ejemplo 12.1  </strong></span>La ecuación diferencial
 <span class="math display">\[ml \frac{d\theta^2}{dt^2} + kl\frac{d\theta}{dt} + mg\sin(\theta) = 0\]</span>
 es una ecuación de segundo orden y de primer grado, pero no es lineal porque tenemos <span class="math inline">\(\sin(\theta)\)</span>. Es una ecuación diferencial muy difícil de resolver.</p>
 Si nos limitamos a valores pequeños de <span class="math inline">\(\theta\)</span> podemos aproximar <span class="math inline">\(\sin(\theta)\)</span> por su polinomio de Taylor: <span class="math inline">\(\sin(\theta) \approx \theta\)</span>. La ecuación resultante es
@@ -362,7 +364,7 @@ que también resolvimos separando las variables:
 Este caso era muy fácil. Otros no lo son tanto.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-139" class="example"><strong>Ejemplo 12.2  </strong></span>Tenemos un controlador de velocidad, para mantener una velocidad constante especificada <span class="math inline">\(v_e\)</span>. Este controlador ejerce una fuerza sobre el objeto proporcional a la diferencia de velocidad entre la que lleva y la especificada:
+<p><span id="exm:unnamed-chunk-142" class="example"><strong>Ejemplo 12.2  </strong></span>Tenemos un controlador de velocidad, para mantener una velocidad constante especificada <span class="math inline">\(v_e\)</span>. Este controlador ejerce una fuerza sobre el objeto proporcional a la diferencia de velocidad entre la que lleva y la especificada:
 <span class="math display">\[F = k(v_e - v).\]</span>
 Nótese que si la velocidad es inferior a <span class="math inline">\(v_e\)</span> la fuerza es positiva (acelera), mientras que si es mayor que la especificada, la fuerza es negativa (decelera). Así va acercando siempre la velocidad del objeto a la velocidad <span class="math inline">\(v_e\)</span>.</p>
 <p>Queremos saber cómo varía la velocidad si inicialmente es <span class="math inline">\(v_0\)</span>.</p>
@@ -422,7 +424,7 @@ Y ahora despejando <span class="math inline">\(x(t)\)</span> tenemos la solució
 Veamos un ejemplo.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-143" class="example"><strong>Ejemplo 12.3  </strong></span>Resuelve la ecuación diferencial
+<p><span id="exm:unnamed-chunk-146" class="example"><strong>Ejemplo 12.3  </strong></span>Resuelve la ecuación diferencial
 <span class="math display">\[m\frac{dv}{dt} = k(v_e - v).\]</span></p>
 <p>Antes la resolvimos por el método de separación de variables. Pero la podemos escribir como una ecuación diferencial lineal. La reescribimos en forma estándar:
 <span class="math display">\[\frac{dv}{dt} + \frac{k}{m}v =  \frac{k}{m}v_e.\]</span>
@@ -447,7 +449,7 @@ Es, efectivamente, el mismo resultado que el obtenido anteriormente.
 Veamos otro ejemplo.
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-144" class="example"><strong>Ejemplo 12.4  </strong></span>Resuelve la ecuación diferencial <span class="math inline">\(x^\prime t = 2x + t^3 \cos(t)\)</span>.
+<p><span id="exm:unnamed-chunk-147" class="example"><strong>Ejemplo 12.4  </strong></span>Resuelve la ecuación diferencial <span class="math inline">\(x^\prime t = 2x + t^3 \cos(t)\)</span>.
 Sabemos que en <span class="math inline">\(t = 1\)</span> el valor de <span class="math inline">\(x\)</span> es 0.</p>
 <p>A primera vista no parece una ecuación diferencial lineal, pero sí que lo es. La reescribimos en forma estándar para asegurarnos:</p>
 <p><span class="math display">\[x^\prime - \frac{2}{t} x  = t^2 \cos(t)\]</span>
