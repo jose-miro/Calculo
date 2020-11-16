@@ -262,7 +262,7 @@
 <span class="math display">\[F(x) = \frac{1}{2} x \frac{x}{3} = \frac{x^2}{6}\]</span>
 Nótese que, como debía pasar, <span class="math inline">\(F_0^\prime(x) = f(x)\)</span>. Si nos interesa el área bajo la curva entre el punto <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 5\)</span>, lo calculamos con facilidad: <span class="math inline">\(F(5) = \frac{5^2}{6} = 4.1667\)</span>.</p>
 <p>Pero digamos que no queremos en área entre <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 5\)</span>, sino que queremos empezar en <span class="math inline">\(x = 3\)</span>, es decir, queremos el área entre <span class="math inline">\(x = 3\)</span> y <span class="math inline">\(x = 5\)</span>. La solución es simple: el área entre <span class="math inline">\(x = 3\)</span> y <span class="math inline">\(x = 5\)</span> es el área entre <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 5\)</span> menos el área entre <span class="math inline">\(x = 0\)</span> y <span class="math inline">\(x = 3\)</span>:</p>
-<p><img src="imagenes/Barrow1.jpeg" /><!-- --></p>
+<p><img src="imagenes/Barrow2.jpeg" /><!-- --></p>
 <p>Luego el área que nos interesa es</p>
 <p><span class="math display">\[F(5) - F(3) = \frac{5^2}{6} - \frac{3^2}{6} = \frac{16}{6} = 2.667\]</span></p>
 <p>A esto se le llama la regla de Barrow:</p>
@@ -283,7 +283,7 @@ recibe el nombre de integral <em>definida</em> y el resultado es, en general, un
 </div>
 <div id="técnica-1-cuadro-de-primitivas-elementales" class="section level2">
 <h2><span class="header-section-number">11.2</span> Técnica 1: Cuadro de primitivas elementales</h2>
-<p>La primera técnica es el punto de partida de todas las demás. Es muy simple, pero aburrida y con poco <em>glamour</em>: consiste en saberse de memoria unas cuantas primitivas elementales. No es simplemente saberlas, hay que dominarlas. La diferencia entre saber y dominar es esta: cuando uno simplemente <em>sabe</em> algo, tiene que activamente buscar la solución, pero cuando lo domina, la solución le “salta” a la mente. Cuando uno mira una integral y de repente “ve” que hay que hacerla por partes, es porque domina las primitivas elementales. Este dominio se consigue de un única manera. con la práctica.</p>
+<p>La primera técnica es el punto de partida de todas las demás. Es muy simple, pero aburrida y con poco <em>glamour</em>: consiste en saberse de memoria unas cuantas primitivas elementales. No es simplemente saberlas, hay que dominarlas. La diferencia entre saber y dominar es esta: cuando uno simplemente <em>sabe</em> algo, tiene que activamente buscar la solución, pero cuando lo domina, la solución le “salta” a la mente. Cuando uno mira una integral y de repente “ve” que hay que hacerla por partes, es porque domina las primitivas elementales. Este dominio se consigue de una única manera: con la práctica.</p>
 <p>Dominar la tabla es muy fácil: repetición, repetición, repetición, práctica, práctica, práctica. Sí, es un proceso árido. Pero para llegar al oasis, primero hay que pasar por el desierto.</p>
 <p>No hay una lista oficial de primitivas elementales, pero con la docena que hay en el cuadro siguiente, tenemos lo suficiente para resolver la mayoría de las integrales que salen habitualmente.</p>
 <table>
@@ -447,14 +447,14 @@ Deshaciendo el cambio de variable nos queda:
 
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-123" class="example"><strong>Ejemplo 11.8  </strong></span>Calcula <span class="math inline">\(\int x\sqrt{3x^2 -5}\, dx\)</span>.</p>
-Al ver esta integral es muy fácil que un novato se quede parado. No hay que desesperar, sino ir probando cosas. Hay una raíz cuadrada (o <span class="math inline">\(x^{1/2}\)</span>) y nos sabemos la primitiva inmediata de <span class="math inline">\(x^n\)</span> (si no se dominan las primitivas, es mucho más difícil ver esto). Probamos el cambio de variable <span class="math inline">\(u = 3x^2 -5\)</span>, lo que implica que <span class="math inline">\(du = 6x\, dx\)</span>. Tenemos un <span class="math inline">\(x\,dx\)</span>, y a partir de aquí todo es fácil:
+<span id="exm:unnamed-chunk-123" class="example"><strong>Ejemplo 11.8  </strong></span>Calcula <span class="math inline">\(\int x\sqrt{3x^2 -5}\, dx\)</span>.
+</div>
+
+<p>Al ver esta integral es muy fácil que un novato se quede parado. No hay que desesperar, sino ir probando cosas. Hay una raíz cuadrada (o <span class="math inline">\(x^{1/2}\)</span>) y nos sabemos la primitiva inmediata de <span class="math inline">\(x^n\)</span> (si no se dominan las primitivas, es mucho más difícil ver esto). Probamos el cambio de variable <span class="math inline">\(u = 3x^2 -5\)</span>, lo que implica que <span class="math inline">\(du = 6x\, dx\)</span>. Tenemos un <span class="math inline">\(x\,dx\)</span>, y a partir de aquí todo es fácil:
 <span class="math display">\[\int x\sqrt{3x^2 -5} \,dx = \int \frac{1}{6} u^{1/2}du = 
        \frac{1}{6} \frac{2}{3}u^{3/2} \]</span>
 Y ahora deshacemos el cambio de variable:
-<span class="math display">\[\int x\sqrt{3x^2 -5}\, dx = \frac{1}{9} \sqrt{(3x^2 -5)^3}\]</span>
-</div>
-
+<span class="math display">\[\int x\sqrt{3x^2 -5}\, dx = \frac{1}{9} \sqrt{(3x^2 -5)^3}\]</span></p>
 <hr />
 <p>Vemos en este ejemplo que si en la función a integrar está una cosa y su derivada, el cambio de variable puede ser el camino.</p>
 
@@ -468,11 +468,11 @@ Y ahora deshacemos el cambio de variable:
 <p>La técnica del cambio de variable permite resolver muchas más integrales, pero no todas, como vemos en el siguiente ejemplo.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-125" class="example"><strong>Ejemplo 11.10  </strong></span>Calcula <span class="math inline">\(\int x^2 \cos(3x) \,dx\)</span>.</p>
-Probamos el cambio de variable <span class="math inline">\(3x = u\)</span> lo que implica que <span class="math inline">\(dx = du\)</span>. Desgraciadamente tenemos un <span class="math inline">\(x^2\)</span> que nos impide continuar. Ese cambio de variable no va a resolver esta integral.
+<span id="exm:unnamed-chunk-125" class="example"><strong>Ejemplo 11.10  </strong></span>Calcula <span class="math inline">\(\int x^2 \cos(3x) \,dx\)</span>.
 </div>
 
-<p>Esta integral es fácilmente resoluble, pero hemos de utilizar otra técnica: la integración por partes.</p>
+<p>Probamos el cambio de variable <span class="math inline">\(3x = u\)</span> lo que implica que <span class="math inline">\(dx = du\)</span>. Desgraciadamente tenemos un <span class="math inline">\(x^2\)</span> que nos impide continuar. Ese cambio de variable no va a resolver esta integral.
+Esta integral es fácilmente resoluble, pero hemos de utilizar otra técnica: la integración por partes.</p>
 </div>
 <div id="técnica-4-integración-por-partes" class="section level2">
 <h2><span class="header-section-number">11.5</span> Técnica 4: Integración por partes</h2>
@@ -555,8 +555,10 @@ Recordamos que cada fila representa a una integral. Sabemos integrar la segunda 
 <p>La parada en esta caso la hemos hecho cuando hemos obtenido una fila que sabíamos integrar. Veamos una tercera condición de parada.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-128" class="example"><strong>Ejemplo 11.13  </strong></span>Calcula <span class="math inline">\(\int e^{2x} \cos(x) dx\)</span>.</p>
-Vamos a integrar <span class="math inline">\(e^{2x}\)</span> y derivar <span class="math inline">\(\cos(x)\)</span> (probad a hacerlo al revés). La tabla DI queda:
+<span id="exm:unnamed-chunk-128" class="example"><strong>Ejemplo 11.13  </strong></span>Calcula <span class="math inline">\(\int e^{2x} \cos(x) dx\)</span>.
+</div>
+
+<p>Vamos a integrar <span class="math inline">\(e^{2x}\)</span> y derivar <span class="math inline">\(\cos(x)\)</span> (probad a hacerlo al revés). La tabla DI queda:
 <span class="math display">\[\begin{array}{ccc}
        &amp; D &amp;   I\\
      + &amp; \cos(x) &amp; e^{2x} \\
@@ -570,9 +572,7 @@ Pasamos la integral al otro lado:
 <span class="math display">\[\int e^{2x} \cos(x) dx + \frac{1}{4}\int e^{2x} \cos(x) dx = 
      \frac{\cos(x)e^{2x}}{2}  + \frac{\sin(x) e^{2x}}{4}\]</span>
 Despejamos la integral, arreglamos un poco y nos queda:
-<span class="math display">\[\int e^{2x} \cos(x) dx = \frac{4}{5} \frac{e^{2x}}{2} \left(\cos(x)  + \frac{1}{2}\sin(x)\right) \]</span>
-</div>
-
+<span class="math display">\[\int e^{2x} \cos(x) dx = \frac{4}{5} \frac{e^{2x}}{2} \left(\cos(x)  + \frac{1}{2}\sin(x)\right) \]</span></p>
 <hr />
 <p>Para resolver una integral por partes usando el método DI debemos:</p>
 <ol style="list-style-type: decimal">
@@ -591,11 +591,11 @@ Despejamos la integral, arreglamos un poco y nos queda:
 <p>Para acabar, vamos a integrar por partes algo que parece que no es un producto de dos funciones.</p>
 
 <div class="example">
-<p><span id="exm:unnamed-chunk-129" class="example"><strong>Ejemplo 11.14  </strong></span>Calcula <span class="math inline">\(\int \log(x) dx\)</span>.</p>
-Aunque parece que sólo hay una función, tenemos dos: <span class="math inline">\(\log(x)\)</span> y <span class="math inline">\(1\)</span>. Vamos a derivar <span class="math inline">\(\log(x)\)</span> y a integrar el 1. Nos queda:
-<span class="math display">\[\int \log(x) dx = x \log(x) - \int x \frac{1}{x}\, dx = x \log(x) - x\]</span>
+<span id="exm:unnamed-chunk-129" class="example"><strong>Ejemplo 11.14  </strong></span>Calcula <span class="math inline">\(\int \log(x) dx\)</span>.
 </div>
 
+<p>Aunque parece que sólo hay una función, tenemos dos: <span class="math inline">\(\log(x)\)</span> y <span class="math inline">\(1\)</span>. Vamos a derivar <span class="math inline">\(\log(x)\)</span> y a integrar el 1. Nos queda:
+<span class="math display">\[\int \log(x) dx = x \log(x) - \int x \frac{1}{x}\, dx = x \log(x) - x\]</span></p>
 <hr />
 <p>Con las técnicas vistas hasta ahora podemos resolver la mayoría de las integrales que nos aparecen. Veamos una última técnica para resolver cierto tipo de integrales que aparecen mucho en ingeniería: las funciones racionales.</p>
 </div>
@@ -656,11 +656,12 @@ Quizá se ve mejor si reescribimos la integral como <span class="math inline">\(
 <span class="math display">\[\int \frac{A}{(x-a)^n} dx = \frac{-A}{(n-1)(x-a)^{n-1}}  \]</span>
 </div>
 
-<p>El tercer tipo de fracción es un poco más complicada.</p>
+<hr />
+<p>El tercer tipo de fracción es un poco más complicado.</p>
 <p>Queremos calcular <span class="math inline">\(\int \frac{Mx + N}{(x^2 + bx + c)} dx\)</span>.</p>
 <p>Hemos supuesto que el término en <span class="math inline">\(x^2\)</span> tiene coeficiente 1. Si es otra cosa, es cuestión de multiplicar o dividir por una constante, lo que sea más fácil.</p>
 <p>También hemos supuesto que este polinomio no tiene raíces reales. Esto quiere decir que el discriminante <span class="math inline">\(b^2 - 4c\)</span> es negativo. En este caso, podemos reescribir el polinomio como
-<span class="math display">\[\left(x- \frac{b}{2}\right)^2 + \frac{4c - b^2}{4}.\]</span>
+<span class="math display">\[\left(x+ \frac{b}{2}\right)^2 + \frac{4c - b^2}{4}.\]</span>
 Como nos estamos quedando sin letras, aunque sea un poco confuso, lo escribiremos como <span class="math inline">\((x-a)^2 + b\)</span>.</p>
 <p>Pueden comprobar efectivamente que
 <span class="math display">\[x^2 + 2x + 4 = \left(x + \frac{2}{2}\right)^2 + \frac{4\cdot 4 - 2^2}{4} = (x+1)^2 + 3.\]</span></p>
@@ -677,17 +678,17 @@ Y esta ya es inmediata. Resolviendo y deshaciendo el cambio de variable nos qued
 <p>El segundo caso es cuando <span class="math inline">\(M ≠ 0\)</span>. Tenemos
 <span class="math display">\[\int \frac{Mx + N}{(x-a)^2 + b}\,dx\]</span>
 Queremos hacer el cambio de variable <span class="math inline">\((x-a)^2 + b = u\)</span>. Más adelante se entenderá el porqué de este cambio de variable. Este cambio da lugar a <span class="math inline">\(2(x-a)dx = du\)</span>. Luego queremos un 2 multiplicando en el numerador a la <span class="math inline">\(x\)</span>. Eso es fácil:
-<span class="math display">\[\frac{2}{M} \int \frac{2x + \frac{2N}{M}}{(x-a)^2 + b}\,dx\]</span>
+<span class="math display">\[\frac{M}{2} \int \frac{2x + \frac{2N}{M}}{(x-a)^2 + b}\,dx\]</span>
 Como queremos un <span class="math inline">\(2(x-a) = 2x - 2a\)</span> en el numerador, sumamos y restamos <span class="math inline">\(2a\)</span>:
-<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a + \frac{2N}{M} +2a}{(x-a)^2 + b}\,dx\]</span>
+<span class="math display">\[\frac{M}{2} \int \frac{2x - 2a + \frac{2N}{M} +2a}{(x-a)^2 + b}\,dx\]</span>
 Y ahora dividimos la integral en 2:
-<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx + \frac{2}{M} \int \frac{\frac{2N}{M} +2a}{(x-a)^2 + b}\,dx\]</span></p>
+<span class="math display">\[\frac{M}{2} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx + \frac{M}{2} \int \frac{\frac{2N}{M} +2a}{(x-a)^2 + b}\,dx\]</span></p>
 <p>La segunda integral es la del <span class="math inline">\(\arctan\)</span> que acabamos de hacer. Vayamos con la primera. Hacemos el cambio de variable:
-<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx  = \frac{2}{M} \int \frac{du}{u}.\]</span>
+<span class="math display">\[\frac{M}{2} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx  = \frac{M}{2} \int \frac{du}{u}.\]</span>
 Ahora se entiende el cambio de variable: esto es un logaritmo:
-<span class="math display">\[\frac{2}{M} \int \frac{du}{u} = \frac{2}{M} \log(|u|).\]</span>
+<span class="math display">\[\frac{M}{2} \int \frac{du}{u} = \frac{M}{2} \log(|u|).\]</span>
 Deshacemos el cambio de variable:
-<span class="math display">\[\frac{2}{M} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx  = \frac{2}{M} \log(|(x-a)^2 +b|)\]</span></p>
+<span class="math display">\[\frac{M}{2} \int \frac{2x - 2a}{(x-a)^2 + b}\,dx  = \frac{M}{2} \log(|(x-a)^2 +b|)\]</span></p>
 <hr />
 <p>Vemos que integrar funciones racionales es un proceso sin misterios, pero que puede ser largo y tedioso. A veces muy largo y muy tedioso. Pero en algunas áreas estas integrales son muy habituales y hay que saber hacerlas (aunque luego se las “encarguemos” al ordenador).</p>
 <p>Acabemos con un último ejemplo.</p>
